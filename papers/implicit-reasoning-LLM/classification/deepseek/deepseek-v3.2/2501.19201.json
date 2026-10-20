@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19201.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19201.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 40,
+          "reason": "The paper uses a single thinking token to condense intermediate reasoning into a compact hidden representation, directly manipulating tokens to steer reasoning, which aligns with token-level approaches like non-interpretable latent tokens and hybrid reasoning formats."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 35,
+          "reason": "The Heima framework anchors latent reasoning trajectories to explicit textual CoT supervision via a decoder that reconstructs reasoning processes, ensuring semantic fidelity, matching the description of compressing traces into tokens with contrastive training."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 25,
+          "reason": "The approach dynamically compresses intermediate thoughts into hidden representations to reduce token usage and improve efficiency, aligning with adaptive efficiency through dynamic trajectory compression and adjusting reasoning length."
+        }
+      ]
+    }
+  }
+}

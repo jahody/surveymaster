@@ -1,0 +1,25 @@
+{
+  "filename": "2502.01567.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.01567.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 55,
+          "reason": "Focus on efficient test-time scaling and iterative reasoning via inference-time computation (inference-time iterations) for LTMs."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 25,
+          "reason": "Centers on latent-space pretraining with latent thought vectors and continuous representations guiding learning and generation."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 20,
+          "reason": "Describes latent-space SFT with continuous hidden representations for reasoning in latent space rather than explicit chain-of-thought tokens."
+        }
+      ]
+    }
+  }
+}

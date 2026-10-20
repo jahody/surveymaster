@@ -1,0 +1,25 @@
+{
+  "filename": "2405.14838.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.14838.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper explicitly proposes a training strategy (stepwise internalization) to compress explicit CoT into implicit reasoning, which is the core contribution."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 30,
+          "reason": "The method enables latent reasoning capabilities in standard transformer architectures without changing their structure, fitting the definition of training-induced recurrence."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper demonstrates the capability of these models to perform complex multi-step reasoning tasks like multi-digit multiplication and GSM8K without explicit steps."
+        }
+      ]
+    }
+  }
+}

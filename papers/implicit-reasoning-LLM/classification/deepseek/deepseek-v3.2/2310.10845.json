@@ -1,0 +1,25 @@
+{
+  "filename": "2310.10845.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.10845.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "The paper proposes CoTFormer, which mimics Chain-of-Thought by re-applying the model multiple times, aligning with 'layer_recurrent_execution' key phrases like 'token-wise adaptive repeats' and 'recurrence into forward computation'."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 30,
+          "reason": "The paper introduces a compute adaptive model that dynamically allocates compute to tokens needing it most, matching 'adaptive_efficiency' concepts of dynamic trajectory compression and adjusting reasoning length."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "CoTFormer mimics CoT at the token level, steering reasoning by manipulating individual tokens, which fits 'token_level' description, though it does not generate full explicit CoT text sequences."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2503.22675.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.22675.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "The paper introduces an autoregressive inference-time computing framework that feeds hidden states back into the model, effectively creating a recurrent execution loop to refine user representations."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "The approach focuses on regulating the model's internal hidden states by feeding the last hidden state back into the encoder to enhance user representation."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 20,
+          "reason": "The Progressive Reasoning Learning (PRL) method explicitly uses iterative updating and progressive learning to refine the reasoning process."
+        }
+      ]
+    }
+  }
+}

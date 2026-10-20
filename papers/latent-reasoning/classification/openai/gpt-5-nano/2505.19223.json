@@ -1,0 +1,25 @@
+{
+  "filename": "2505.19223.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.19223.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 70,
+          "reason": "Core focus on Masked Diffusion Models (MDMs) and their application to LLaDA, including variance-reduced preference optimization."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 20,
+          "reason": "Related diffusion modeling category (Embedding-based Diffusion Models); relevant to diffusion-based language modeling context."
+        },
+        {
+          "chapter": "5.2.2",
+          "confidence": 10,
+          "reason": "Touches on optimization and training-time strategies during inference, aligning loosely with test-time training concepts in diffusion/model alignment."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2211.04928.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2211.04928.md",
+      "chapters": [
+        {
+          "chapter": "4.2.1",
+          "confidence": 50,
+          "reason": "The paper focuses on sentence embeddings, which are primarily derived from shallow/early layer representations that capture syntactic and semantic features for downstream tasks."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 30,
+          "reason": "The approach uses mutual information and alignment of attention patterns across augmented views, which relates to how information is structured and transmitted within the model."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "The contrastive learning framework acts as a distillation process to refine the latent representations, which is a core function of intermediate layers in the context of embedding quality."
+        }
+      ]
+    }
+  }
+}

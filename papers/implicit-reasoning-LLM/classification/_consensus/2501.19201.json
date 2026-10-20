@@ -1,0 +1,17 @@
+{
+  "filename": "2501.19201.md",
+  "classifications": {
+    "taxonomy": {
+      "chapter": "3.1.2(a)",
+      "score": 110.0,
+      "votes": {
+        "3.1.2(a)": 110,
+        "3.1.2(b)": 75,
+        "3.1.1": 70,
+        "3.1.3": 25,
+        "3.2.1": 20
+      },
+      "reason": "Consensus: 1/3 models ranked this #1"
+    }
+  }
+}

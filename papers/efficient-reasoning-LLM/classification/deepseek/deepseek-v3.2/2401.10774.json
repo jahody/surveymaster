@@ -1,0 +1,25 @@
+{
+  "filename": "2401.10774.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2401.10774.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "The paper introduces Medusa, which adds multiple decoding heads to a backbone LLM to predict multiple subsequent tokens in parallel, closely aligning with speculative decoding concepts. However, it avoids using a separate draft model, fitting the 'Model Switch' description of routing or augmenting computational budgets across model components for verification and acceleration."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 30,
+          "reason": "Medusa employs a tree-based attention mechanism to construct and verify multiple candidate continuations simultaneously, which matches the 'Parallel Search' category of generating multiple outputs concurrently and using early pruning or evaluation to reduce latency."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The framework accelerates inference by parallelizing token prediction, effectively scaling compute dynamically during inference via increased search width (parallel candidate generation), which relates to techniques for efficient test-time scaling through parallel sampling and search strategies."
+        }
+      ]
+    }
+  }
+}

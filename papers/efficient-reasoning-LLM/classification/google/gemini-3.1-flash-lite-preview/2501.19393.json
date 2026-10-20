@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19393.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19393.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 50,
+          "reason": "The paper focuses on test-time scaling by controlling the reasoning process length and depth, which is the core definition of this category."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 30,
+          "reason": "The 'budget forcing' mechanism described in the paper is a direct implementation of inference-time length budgeting to control compute."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The paper involves supervised fine-tuning on a curated dataset (s1K) to internalize reasoning traces, which aligns with training models to produce specific reasoning paths."
+        }
+      ]
+    }
+  }
+}

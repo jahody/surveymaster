@@ -1,0 +1,25 @@
+{
+  "filename": "2410.09918.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.09918.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 60,
+          "reason": "Dynamically switches between fast (System 1) and slow (System 2) reasoning within a single model via randomized traces and an auto mode."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 30,
+          "reason": "Uses randomized reasoning traces with partial trace dropping, akin to reasoning chain compression and token-budgeted training."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "Supports dynamic test-time scaling by enabling different reasoning modes and shorter/longer traces, aligning with dynamic inference compute."
+        }
+      ]
+    }
+  }
+}

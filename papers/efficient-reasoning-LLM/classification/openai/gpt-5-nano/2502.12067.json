@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12067.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12067.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 75,
+          "reason": "Primary focus on reasoning chain compression via selective token skipping (CoT compression)."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "Involves length budgeting concepts by controlling CoT token usage during inference."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 5,
+          "reason": "Addresses test-time efficiency and scaling related to reasoning length and latency."
+        }
+      ]
+    }
+  }
+}

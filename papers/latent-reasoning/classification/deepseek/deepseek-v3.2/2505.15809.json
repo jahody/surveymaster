@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15809.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15809.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 50,
+          "reason": "The paper introduces MMaDA, a multimodal diffusion foundation model. While it is primarily a diffusion model, its architecture is unified and modality-agnostic, designed for both reasoning and generation. The taxonomy's 'Hybrid AR-Diffusion Models' category describes models that integrate autoregressive and diffusion paradigms for global planning and sequential fluency. Although MMaDA is not explicitly described as having a standard autoregressive component, its use of a diffusion process for multimodal tasks (including text generation and image generation) and its focus on combining reasoning (potentially sequential) with a diffusion framework align with the core idea of hybrid paradigms. The paper's emphasis on a unified architecture for diverse tasks makes this the most relevant category among those provided, as other categories are more specific to recurrence, layer depth analysis, or pure masked/embedding diffusion."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 30,
+          "reason": "MMaDA is described as a multimodal diffusion model. The 'Embedding-based Diffusion Models' category operates on continuous embeddings with Gaussian noise, which is a common design for diffusion models applied to modalities like images and potentially text via latent representations. The paper's abstract mentions 'text-to-image generation,' which typically uses continuous latent spaces (e.g., like Stable Diffusion). While the exact noise process isn't detailed in the abstract, the model's foundation as a diffusion model for multimodal tasks suggests it likely operates in a continuous embedding space for at least some modalities, making this category relevant. It is less relevant than 5.1.3 because the paper emphasizes a unified, potentially hybrid approach rather than a pure embedding-based diffusion."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 20,
+          "reason": "The paper details a 'mixed long chain-of-thought (CoT) fine-tuning strategy' that aligns reasoning across modalities and facilitates training for reinforcement learning. This aligns with the 'Training Strategies for Recurrent Reasoning' category, which focuses on specialized training strategies (like CoT-aligned supervision) to optimize models that leverage iterative computation. Although MMaDA is a diffusion model, not explicitly a recurrent model, the use of CoT fine-tuning to enhance reasoning capabilities is a core part of its training methodology. This category is relevant but secondary, as the primary innovation is the diffusion architecture itself, not necessarily a recurrent structure. The hard negative states it should not be assigned if focused on architectural design, which the paper is, but the training strategy is a significant component."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1393 @@
+{
+  "pairwise_agreement": {
+    "pairs": {
+      "deepseek\\deepseek-v3.2 vs google\\gemini-3.1-flash-lite-preview": {
+        "agreement_rate": 0.8571,
+        "cohens_kappa": 0.8456,
+        "n_compared": 77,
+        "per_taxonomy": {
+          "taxonomy": {
+            "agreement_rate": 0.8571,
+            "cohens_kappa": 0.8456,
+            "n": 77
+          }
+        }
+      },
+      "deepseek\\deepseek-v3.2 vs openai\\gpt-5-nano": {
+        "agreement_rate": 0.7273,
+        "cohens_kappa": 0.7059,
+        "n_compared": 77,
+        "per_taxonomy": {
+          "taxonomy": {
+            "agreement_rate": 0.7273,
+            "cohens_kappa": 0.7059,
+            "n": 77
+          }
+        }
+      },
+      "google\\gemini-3.1-flash-lite-preview vs openai\\gpt-5-nano": {
+        "agreement_rate": 0.6753,
+        "cohens_kappa": 0.6485,
+        "n_compared": 77,
+        "per_taxonomy": {
+          "taxonomy": {
+            "agreement_rate": 0.6753,
+            "cohens_kappa": 0.6485,
+            "n": 77
+          }
+        }
+      }
+    },
+    "matrix": [
+      [
+        1.0,
+        0.8571,
+        0.7273
+      ],
+      [
+        0.8571,
+        1.0,
+        0.6753
+      ],
+      [
+        0.7273,
+        0.6753,
+        1.0
+      ]
+    ],
+    "model_names": [
+      "deepseek\\deepseek-v3.2",
+      "google\\gemini-3.1-flash-lite-preview",
+      "openai\\gpt-5-nano"
+    ]
+  },
+  "fleiss_kappa": {
+    "overall": 0.7326,
+    "per_taxonomy": {
+      "taxonomy": 0.7326
+    },
+    "n_raters": 3,
+    "n_items_overall": 77
+  },
+  "consensus_strength": {
+    "overall": {
+      "mean": 91.2,
+      "median": 100,
+      "std": 50.7,
+      "min": 0,
+      "max": 195,
+      "weak_count": 5,
+      "strong_count": 72,
+      "n": 77
+    },
+    "per_taxonomy": {
+      "taxonomy": {
+        "mean": 91.2,
+        "median": 100,
+        "std": 50.7,
+        "min": 0,
+        "max": 195,
+        "weak_count": 5,
+        "strong_count": 72,
+        "n": 77
+      }
+    },
+    "per_paper": {
+      "2302.07863.md": {
+        "taxonomy": {
+          "margin": 155,
+          "winner": "3.3",
+          "winner_score": 200
+        }
+      },
+      "2310.05707.md": {
+        "taxonomy": {
+          "margin": 46,
+          "winner": "4.2",
+          "winner_score": 105
+        }
+      },
+      "2311.08692.md": {
+        "taxonomy": {
+          "margin": 105,
+          "winner": "3.3",
+          "winner_score": 180
+        }
+      },
+      "2312.06635.md": {
+        "taxonomy": {
+          "margin": 100,
+          "winner": "6.2",
+          "winner_score": 139
+        }
+      },
+      "2401.10774.md": {
+        "taxonomy": {
+          "margin": 10,
+          "winner": "3.3",
+          "winner_score": 100
+        }
+      },
+      "2401.15077.md": {
+        "taxonomy": {
+          "margin": 100,
+          "winner": "3.3",
+          "winner_score": 155
+        }
+      },
+      "2404.16710.md": {
+        "taxonomy": {
+          "margin": 115,
+          "winner": "3.3",
+          "winner_score": 180
+        }
+      },
+      "2405.14838.md": {
+        "taxonomy": {
+          "margin": 30,
+          "winner": "4.2",
+          "winner_score": 145
+        }
+      },
+      "2405.17381.md": {
+        "taxonomy": {
+          "margin": 170,
+          "winner": "6.2",
+          "winner_score": 220
+        }
+      },
+      "2405.21060.md": {
+        "taxonomy": {
+          "margin": 130,
+          "winner": "6.2",
+          "winner_score": 185
+        }
+      },
+      "2406.18665.md": {
+        "taxonomy": {
+          "margin": 145,
+          "winner": "3.3",
+          "winner_score": 200
+        }
+      },
+      "2407.01009.md": {
+        "taxonomy": {
+          "margin": 125,
+          "winner": "3.2",
+          "winner_score": 195
+        }
+      },
+      "2407.06023.md": {
+        "taxonomy": {
+          "margin": 110,
+          "winner": "4.1",
+          "winner_score": 170
+        }
+      },
+      "2407.14414.md": {
+        "taxonomy": {
+          "margin": 120,
+          "winner": "3.2",
+          "winner_score": 185
+        }
+      },
+      "2408.08862.md": {
+        "taxonomy": {
+          "margin": 122,
+          "winner": "3.2",
+          "winner_score": 192
+        }
+      },
+      "2408.13457.md": {
+        "taxonomy": {
+          "margin": 25,
+          "winner": "3.4",
+          "winner_score": 120
+        }
+      },
+      "2408.17017.md": {
+        "taxonomy": {
+          "margin": 70,
+          "winner": "3.4",
+          "winner_score": 150
+        }
+      },
+      "2410.09918.md": {
+        "taxonomy": {
+          "margin": 100,
+          "winner": "3.2",
+          "winner_score": 180
+        }
+      },
+      "2410.10254.md": {
+        "taxonomy": {
+          "margin": 105,
+          "winner": "6.3",
+          "winner_score": 180
+        }
+      },
+      "2410.16033.md": {
+        "taxonomy": {
+          "margin": 35,
+          "winner": "3.4",
+          "winner_score": 150
+        }
+      },
+      "2410.20290.md": {
+        "taxonomy": {
+          "margin": 90,
+          "winner": "3.4",
+          "winner_score": 165
+        }
+      },
+      "2411.01855.md": {
+        "taxonomy": {
+          "margin": 145,
+          "winner": "4.1",
+          "winner_score": 195
+        }
+      },
+      "2412.06464.md": {
+        "taxonomy": {
+          "margin": 20,
+          "winner": "6.2",
+          "winner_score": 135
+        }
+      },
+      "2412.06769.md": {
+        "taxonomy": {
+          "margin": 130,
+          "winner": "4.2",
+          "winner_score": 200
+        }
+      },
+      "2412.08821.md": {
+        "taxonomy": {
+          "margin": 45,
+          "winner": "6.1",
+          "winner_score": 104
+        }
+      },
+      "2412.09871.md": {
+        "taxonomy": {
+          "margin": 120,
+          "winner": "6.1",
+          "winner_score": 170
+        }
+      },
+      "2412.11664.md": {
+        "taxonomy": {
+          "margin": 175,
+          "winner": "4.1",
+          "winner_score": 210
+        }
+      },
+      "2412.13171.md": {
+        "taxonomy": {
+          "margin": 95,
+          "winner": "4.2",
+          "winner_score": 160
+        }
+      },
+      "2412.16339.md": {
+        "taxonomy": {
+          "margin": 170,
+          "winner": "7.3",
+          "winner_score": 210
+        }
+      },
+      "2412.18547.md": {
+        "taxonomy": {
+          "margin": 145,
+          "winner": "3.1",
+          "winner_score": 200
+        }
+      },
+      "2412.20993.md": {
+        "taxonomy": {
+          "margin": 125,
+          "winner": "7.2",
+          "winner_score": 170
+        }
+      },
+      "2412.21187.md": {
+        "taxonomy": {
+          "margin": 55,
+          "winner": "7.5",
+          "winner_score": 120
+        }
+      },
+      "2501.01306.md": {
+        "taxonomy": {
+          "margin": 15,
+          "winner": "3.2",
+          "winner_score": 125
+        }
+      },
+      "2501.12570.md": {
+        "taxonomy": {
+          "margin": 105,
+          "winner": "5.1",
+          "winner_score": 170
+        }
+      },
+      "2501.12599.md": {
+        "taxonomy": {
+          "margin": 20,
+          "winner": "7.2",
+          "winner_score": 105
+        }
+      },
+      "2501.12895.md": {
+        "taxonomy": {
+          "margin": 130,
+          "winner": "7.2",
+          "winner_score": 180
+        }
+      },
+      "2501.14342.md": {
+        "taxonomy": {
+          "margin": 20,
+          "winner": "7.4",
+          "winner_score": 135
+        }
+      },
+      "2501.17974.md": {
+        "taxonomy": {
+          "margin": 20,
+          "winner": "5.1",
+          "winner_score": 125
+        }
+      },
+      "2501.18585.md": {
+        "taxonomy": {
+          "margin": 90,
+          "winner": "7.5",
+          "winner_score": 155
+        }
+      },
+      "2501.19201.md": {
+        "taxonomy": {
+          "margin": 140,
+          "winner": "4.2",
+          "winner_score": 190
+        }
+      },
+      "2501.19393.md": {
+        "taxonomy": {
+          "margin": 90,
+          "winner": "7.2",
+          "winner_score": 170
+        }
+      },
+      "2502.01567.md": {
+        "taxonomy": {
+          "margin": 35,
+          "winner": "6.1",
+          "winner_score": 125
+        }
+      },
+      "2502.03275.md": {
+        "taxonomy": {
+          "margin": 50,
+          "winner": "4.2",
+          "winner_score": 109
+        }
+      },
+      "2502.03373.md": {
+        "taxonomy": {
+          "margin": 50,
+          "winner": "5.1",
+          "winner_score": 120
+        }
+      },
+      "2502.04463.md": {
+        "taxonomy": {
+          "margin": 25,
+          "winner": "5.1",
+          "winner_score": 69
+        }
+      },
+      "2502.07563.md": {
+        "taxonomy": {
+          "margin": 150,
+          "winner": "6.2",
+          "winner_score": 210
+        }
+      },
+      "2502.08235.md": {
+        "taxonomy": {
+          "margin": 80,
+          "winner": "7.5",
+          "winner_score": 165
+        }
+      },
+      "2502.08524.md": {
+        "taxonomy": {
+          "margin": 15,
+          "winner": "4.2",
+          "winner_score": 70
+        }
+      },
+      "2502.09990.md": {
+        "taxonomy": {
+          "margin": 195,
+          "winner": "7.3",
+          "winner_score": 230
+        }
+      },
+      "2502.11089.md": {
+        "taxonomy": {
+          "margin": 120,
+          "winner": "6.2",
+          "winner_score": 190
+        }
+      },
+      "2502.12025.md": {
+        "taxonomy": {
+          "margin": 125,
+          "winner": "7.3",
+          "winner_score": 190
+        }
+      },
+      "2502.12067.md": {
+        "taxonomy": {
+          "margin": 90,
+          "winner": "4.1",
+          "winner_score": 134
+        }
+      },
+      "2502.12134.md": {
+        "taxonomy": {
+          "margin": 175,
+          "winner": "4.2",
+          "winner_score": 200
+        }
+      },
+      "2502.13189.md": {
+        "taxonomy": {
+          "margin": 140,
+          "winner": "6.2",
+          "winner_score": 230
+        }
+      },
+      "2502.13260.md": {
+        "taxonomy": {
+          "margin": 156,
+          "winner": "4.1",
+          "winner_score": 208
+        }
+      },
+      "2502.13685.md": {
+        "taxonomy": {
+          "margin": 115,
+          "winner": "6.2",
+          "winner_score": 190
+        }
+      },
+      "2502.14458.md": {
+        "taxonomy": {
+          "margin": 30,
+          "winner": "6.3",
+          "winner_score": 110
+        }
+      },
+      "2502.15589.md": {
+        "taxonomy": {
+          "margin": 65,
+          "winner": "4.1",
+          "winner_score": 160
+        }
+      },
+      "2502.18482.md": {
+        "taxonomy": {
+          "margin": 105,
+          "winner": "3.3",
+          "winner_score": 180
+        }
+      },
+      "2502.18600.md": {
+        "taxonomy": {
+          "margin": 65,
+          "winner": "3.1",
+          "winner_score": 160
+        }
+      },
+      "2502.19918.md": {
+        "taxonomy": {
+          "margin": 35,
+          "winner": "3.2",
+          "winner_score": 140
+        }
+      },
+      "2502.20122.md": {
+        "taxonomy": {
+          "margin": 145,
+          "winner": "4.1",
+          "winner_score": 200
+        }
+      },
+      "2502.20339.md": {
+        "taxonomy": {
+          "margin": 70,
+          "winner": "6.4",
+          "winner_score": 145
+        }
+      },
+      "2502.21074.md": {
+        "taxonomy": {
+          "margin": 135,
+          "winner": "4.2",
+          "winner_score": 200
+        }
+      },
+      "2503.00031.md": {
+        "taxonomy": {
+          "margin": 125,
+          "winner": "7.2",
+          "winner_score": 195
+        }
+      },
+      "2503.01422.md": {
+        "taxonomy": {
+          "margin": 15,
+          "winner": "7.2",
+          "winner_score": 140
+        }
+      },
+      "2503.01496.md": {
+        "taxonomy": {
+          "margin": 125,
+          "winner": "6.3",
+          "winner_score": 195
+        }
+      },
+      "2503.01544.md": {
+        "taxonomy": {
+          "margin": 35,
+          "winner": "6.4",
+          "winner_score": 120
+        }
+      },
+      "2503.04472.md": {
+        "taxonomy": {
+          "margin": 0,
+          "winner": "3.1",
+          "winner_score": 110
+        }
+      },
+      "2503.04697.md": {
+        "taxonomy": {
+          "margin": 55,
+          "winner": "5.1",
+          "winner_score": 145
+        }
+      },
+      "2503.05179.md": {
+        "taxonomy": {
+          "margin": 105,
+          "winner": "3.1",
+          "winner_score": 160
+        }
+      },
+      "2503.06252.md": {
+        "taxonomy": {
+          "margin": 115,
+          "winner": "7.1",
+          "winner_score": 170
+        }
+      },
+      "2503.07572.md": {
+        "taxonomy": {
+          "margin": 20,
+          "winner": "5.2",
+          "winner_score": 135
+        }
+      },
+      "2503.14456.md": {
+        "taxonomy": {
+          "margin": 55,
+          "winner": "6.2",
+          "winner_score": 120
+        }
+      },
+      "2503.15558.md": {
+        "taxonomy": {
+          "margin": 40,
+          "winner": "7.1",
+          "winner_score": 140
+        }
+      },
+      "2503.15793.md": {
+        "taxonomy": {
+          "margin": 180,
+          "winner": "7.5",
+          "winner_score": 215
+        }
+      },
+      "2503.16385.md": {
+        "taxonomy": {
+          "margin": 115,
+          "winner": "4.1",
+          "winner_score": 180
+        }
+      }
+    }
+  },
+  "confidence_agreement": {
+    "pearson_r": 0.2374,
+    "n_points": 77,
+    "points": [
+      {
+        "paper": "2302.07863.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 66.7
+      },
+      {
+        "paper": "2310.05707.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 34.7
+      },
+      {
+        "paper": "2311.08692.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2312.06635.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 46.3
+      },
+      {
+        "paper": "2401.10774.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 50
+      },
+      {
+        "paper": "2401.15077.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 65
+      },
+      {
+        "paper": "2404.16710.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2405.14838.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 61.7
+      },
+      {
+        "paper": "2405.17381.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 73.3
+      },
+      {
+        "paper": "2405.21060.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 61.7
+      },
+      {
+        "paper": "2406.18665.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 66.7
+      },
+      {
+        "paper": "2407.01009.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 65
+      },
+      {
+        "paper": "2407.06023.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2407.14414.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 61.7
+      },
+      {
+        "paper": "2408.08862.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 64
+      },
+      {
+        "paper": "2408.13457.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.3333,
+        "mean_confidence": 63.3
+      },
+      {
+        "paper": "2408.17017.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 50
+      },
+      {
+        "paper": "2410.09918.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2410.10254.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2410.16033.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2410.20290.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 55
+      },
+      {
+        "paper": "2411.01855.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 65
+      },
+      {
+        "paper": "2412.06464.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2412.06769.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 66.7
+      },
+      {
+        "paper": "2412.08821.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 34.7
+      },
+      {
+        "paper": "2412.09871.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2412.11664.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 70
+      },
+      {
+        "paper": "2412.13171.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2412.16339.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 70
+      },
+      {
+        "paper": "2412.18547.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 66.7
+      },
+      {
+        "paper": "2412.20993.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2412.21187.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 51.7
+      },
+      {
+        "paper": "2501.01306.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 45
+      },
+      {
+        "paper": "2501.12570.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2501.12599.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.3333,
+        "mean_confidence": 46.7
+      },
+      {
+        "paper": "2501.12895.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2501.14342.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2501.17974.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2501.18585.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 51.7
+      },
+      {
+        "paper": "2501.19201.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 63.3
+      },
+      {
+        "paper": "2501.19393.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2502.01567.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.3333,
+        "mean_confidence": 58.3
+      },
+      {
+        "paper": "2502.03275.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 36.3
+      },
+      {
+        "paper": "2502.03373.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 53.3
+      },
+      {
+        "paper": "2502.04463.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 31.3
+      },
+      {
+        "paper": "2502.07563.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 70
+      },
+      {
+        "paper": "2502.08235.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 55
+      },
+      {
+        "paper": "2502.08524.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 18.3
+      },
+      {
+        "paper": "2502.09990.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 76.7
+      },
+      {
+        "paper": "2502.11089.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 63.3
+      },
+      {
+        "paper": "2502.12025.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 63.3
+      },
+      {
+        "paper": "2502.12067.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 44.7
+      },
+      {
+        "paper": "2502.12134.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 66.7
+      },
+      {
+        "paper": "2502.13189.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 76.7
+      },
+      {
+        "paper": "2502.13260.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 69.3
+      },
+      {
+        "paper": "2502.13685.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 63.3
+      },
+      {
+        "paper": "2502.14458.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2502.15589.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2502.18482.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2502.18600.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2502.19918.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 53.3
+      },
+      {
+        "paper": "2502.20122.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 66.7
+      },
+      {
+        "paper": "2502.20339.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 48.3
+      },
+      {
+        "paper": "2502.21074.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 66.7
+      },
+      {
+        "paper": "2503.00031.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 65
+      },
+      {
+        "paper": "2503.01422.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 63.3
+      },
+      {
+        "paper": "2503.01496.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 65
+      },
+      {
+        "paper": "2503.01544.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 48.3
+      },
+      {
+        "paper": "2503.04472.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 53.3
+      },
+      {
+        "paper": "2503.04697.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 51.7
+      },
+      {
+        "paper": "2503.05179.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 53.3
+      },
+      {
+        "paper": "2503.06252.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2503.07572.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 56.7
+      },
+      {
+        "paper": "2503.14456.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 60
+      },
+      {
+        "paper": "2503.15558.md",
+        "taxonomy": "taxonomy",
+        "agreement": 0.6667,
+        "mean_confidence": 55
+      },
+      {
+        "paper": "2503.15793.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 71.7
+      },
+      {
+        "paper": "2503.16385.md",
+        "taxonomy": "taxonomy",
+        "agreement": 1.0,
+        "mean_confidence": 60
+      }
+    ]
+  },
+  "model_deviation": {
+    "models": {
+      "deepseek\\deepseek-v3.2": {
+        "deviation_rate": 0.0519,
+        "deviations": 4,
+        "total": 77,
+        "per_taxonomy": {
+          "taxonomy": {
+            "deviation_rate": 0.0519,
+            "deviations": 4,
+            "total": 77
+          }
+        }
+      },
+      "google\\gemini-3.1-flash-lite-preview": {
+        "deviation_rate": 0.1299,
+        "deviations": 10,
+        "total": 77,
+        "per_taxonomy": {
+          "taxonomy": {
+            "deviation_rate": 0.1299,
+            "deviations": 10,
+            "total": 77
+          }
+        }
+      },
+      "openai\\gpt-5-nano": {
+        "deviation_rate": 0.2468,
+        "deviations": 19,
+        "total": 77,
+        "per_taxonomy": {
+          "taxonomy": {
+            "deviation_rate": 0.2468,
+            "deviations": 19,
+            "total": 77
+          }
+        }
+      }
+    },
+    "outlier_model": "openai\\gpt-5-nano"
+  },
+  "taxonomy_difficulty": {
+    "taxonomies": {
+      "taxonomy": {
+        "unanimous_rate": 0.6494,
+        "majority_rate": 0.961,
+        "mean_top1_confidence": 58.0,
+        "unique_chapters_used": 17,
+        "entropy": 3.854,
+        "n_papers": 77
+      }
+    },
+    "easiest": "taxonomy",
+    "hardest": "taxonomy"
+  },
+  "metadata": {
+    "topic": "efficient-reasoning-LLM",
+    "n_models": 3,
+    "n_papers": 77,
+    "models": [
+      "deepseek\\deepseek-v3.2",
+      "google\\gemini-3.1-flash-lite-preview",
+      "openai\\gpt-5-nano"
+    ],
+    "taxonomies": [
+      "taxonomy"
+    ]
+  },
+  "coverage_analysis": {
+    "taxonomy": {
+      "n_leaves": 17,
+      "n_papers": 77,
+      "mean_papers_per_leaf": 4.5,
+      "dead_count": 0,
+      "fat_count": 0,
+      "gini": 0.315,
+      "normalized_entropy": 0.943,
+      "dead_leaves": [],
+      "fat_leaves": [],
+      "per_leaf": {
+        "3.1": {
+          "name": "Length Budgeting",
+          "count": 4,
+          "dead": false,
+          "fat": false
+        },
+        "3.2": {
+          "name": "System Switch",
+          "count": 6,
+          "dead": false,
+          "fat": false
+        },
+        "3.3": {
+          "name": "Model Switch",
+          "count": 7,
+          "dead": false,
+          "fat": false
+        },
+        "3.4": {
+          "name": "Parallel Search",
+          "count": 4,
+          "dead": false,
+          "fat": false
+        },
+        "4.1": {
+          "name": "Reasoning Chain Compression",
+          "count": 8,
+          "dead": false,
+          "fat": false
+        },
+        "4.2": {
+          "name": "Latent-Space SFT",
+          "count": 9,
+          "dead": false,
+          "fat": false
+        },
+        "5.1": {
+          "name": "with Length Reward",
+          "count": 5,
+          "dead": false,
+          "fat": false
+        },
+        "5.2": {
+          "name": "without Length Reward",
+          "count": 1,
+          "dead": false,
+          "fat": false
+        },
+        "6.1": {
+          "name": "Latent-space Pretraining",
+          "count": 3,
+          "dead": false,
+          "fat": false
+        },
+        "6.2": {
+          "name": "Subquadratic Attention",
+          "count": 9,
+          "dead": false,
+          "fat": false
+        },
+        "6.3": {
+          "name": "Linearization",
+          "count": 3,
+          "dead": false,
+          "fat": false
+        },
+        "6.4": {
+          "name": "Efficient Reasoning with Subquadratic Attention",
+          "count": 2,
+          "dead": false,
+          "fat": false
+        },
+        "7.1": {
+          "name": "Efficient Multimodality and Video Reasoning",
+          "count": 2,
+          "dead": false,
+          "fat": false
+        },
+        "7.2": {
+          "name": "Efficient Test-time Scaling and Infinity Thinking",
+          "count": 6,
+          "dead": false,
+          "fat": false
+        },
+        "7.3": {
+          "name": "Efficient and Trustworthy Reasoning",
+          "count": 3,
+          "dead": false,
+          "fat": false
+        },
+        "7.4": {
+          "name": "Efficient Reasoning Applications",
+          "count": 1,
+          "dead": false,
+          "fat": false
+        },
+        "7.5": {
+          "name": "Evaluation and Benchmark",
+          "count": 4,
+          "dead": false,
+          "fat": false
+        }
+      }
+    }
+  },
+  "taxonomy_independence": {
+    "pairs": {},
+    "matrix": [],
+    "taxonomy_names": [
+      "taxonomy"
+    ],
+    "redundant_pairs": []
+  },
+  "verdicts": {
+    "m1": {
+      "id": "m1",
+      "name": "Fleiss' Kappa",
+      "group": "Inter-Model Agreement",
+      "passed": true,
+      "value": 0.7326,
+      "threshold": 0.4,
+      "detail": "Overall kappa 0.733 >= 0.4",
+      "action": null,
+      "failing_taxonomies": []
+    },
+    "m2": {
+      "id": "m2",
+      "name": "Pairwise Agreement",
+      "group": "Inter-Model Agreement",
+      "passed": true,
+      "value": 0.7532,
+      "threshold": 0.5,
+      "detail": "Mean agreement 75.3% >= 50%",
+      "action": null,
+      "failing_taxonomies": []
+    },
+    "m3": {
+      "id": "m3",
+      "name": "Consensus Strength",
+      "group": "Consensus Quality",
+      "passed": true,
+      "value": 0.0649,
+      "threshold": 0.3,
+      "detail": "Weak consensus 6% of items <= 30%",
+      "action": null,
+      "failing_taxonomies": []
+    },
+    "m4": {
+      "id": "m4",
+      "name": "Confidence-Agreement Correlation",
+      "group": "Consensus Quality",
+      "passed": false,
+      "value": 0.2374,
+      "threshold": 0.3,
+      "detail": "Pearson r = 0.237 (|r| < 0.3)",
+      "action": "Category descriptions may be misleading — models are confident but disagree",
+      "failing_taxonomies": []
+    },
+    "m5": {
+      "id": "m5",
+      "name": "Per-Model Deviation",
+      "group": "Model Outliers",
+      "passed": true,
+      "value": 0.2468,
+      "threshold": 0.4,
+      "detail": "Max deviation 24.7% <= 40%",
+      "action": null,
+      "failing_taxonomies": []
+    },
+    "m6": {
+      "id": "m6",
+      "name": "Taxonomy Difficulty",
+      "group": "Taxonomy Clarity",
+      "passed": true,
+      "value": 0.6494,
+      "threshold": 0.3,
+      "detail": "All taxonomies have unanimous rate >= 30%",
+      "action": null,
+      "failing_taxonomies": []
+    },
+    "m7": {
+      "id": "m7",
+      "name": "Coverage Analysis",
+      "group": "Structural Balance",
+      "passed": true,
+      "value": null,
+      "threshold": {
+        "max_gini": 0.5,
+        "min_entropy": 0.7,
+        "dead_threshold": 0
+      },
+      "detail": "All taxonomies structurally balanced",
+      "action": null,
+      "failing_taxonomies": []
+    },
+    "m8": {
+      "id": "m8",
+      "name": "Taxonomy Independence",
+      "group": "Taxonomy Diversity",
+      "passed": true,
+      "value": null,
+      "threshold": 0.7,
+      "detail": "All taxonomy pairs are adequately independent",
+      "action": null,
+      "failing_taxonomies": [],
+      "redundant_pairs": []
+    }
+  }
+}

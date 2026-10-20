@@ -1,0 +1,25 @@
+{
+  "filename": "2310.10845.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.10845.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 65,
+          "reason": "Introduces CoTFormer with explicit architectural modifications enabling token-level dynamic depth akin to recurrence; central idea is architectural recurrence with budget-adaptive computation."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "Emphasizes multi-step CoT-like reasoning capabilities and applications of the proposed compute-adaptive architecture."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 10,
+          "reason": "Relates to depth as a bottleneck for latent reasoning, aligning with the paper's focus on layer-depth-informed computation and CoT-style reasoning."
+        }
+      ]
+    }
+  }
+}

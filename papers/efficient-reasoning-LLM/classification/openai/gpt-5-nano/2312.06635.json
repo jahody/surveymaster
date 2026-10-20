@@ -1,0 +1,25 @@
+{
+  "filename": "2312.06635.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2312.06635.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "Core focus on subquadratic/linear attention mechanisms to reduce computation."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 25,
+          "reason": "Discusses linearization and efficient deployment of transformers using linear attention."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "Addresses efficient reasoning with subquadratic attention architectures and throughput gains."
+        }
+      ]
+    }
+  }
+}

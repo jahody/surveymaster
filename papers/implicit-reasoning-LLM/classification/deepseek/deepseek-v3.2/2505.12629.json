@@ -1,0 +1,25 @@
+{
+  "filename": "2505.12629.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.12629.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 70,
+          "reason": "The paper introduces 'latent tokens' which are dummy tokens inserted to steer the autoregressive decoding process via attention, directly aligning with the token-level manipulation description and key phrases like 'non-interpretable latent tokens'."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 20,
+          "reason": "The method uses a single type of auxiliary token (latent tokens) to uniformly modulate the reasoning dynamics, matching the description of a single control mechanism like 'generic prefix planning tokens'."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 10,
+          "reason": "The latent tokens operate by influencing the model's attention mechanism, which is an internal state-level regulation, though the primary focus is on token insertion rather than direct hidden state distillation."
+        }
+      ]
+    }
+  }
+}

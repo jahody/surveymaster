@@ -1,0 +1,25 @@
+{
+  "filename": "2502.02013.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.02013.md",
+      "chapters": [
+        {
+          "chapter": "4.1.1",
+          "confidence": 45,
+          "reason": "Macro-level findings linking layer depth to reasoning capabilities; paper shows mid-depth representations can surpass final-layer performance."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 35,
+          "reason": "Micro-level analysis of distinct layer roles and information flow; aligns with investigation of how individual layers contribute to reasoning."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "Intermediate layers as core sub-circuits for latent CoT and reasoning with specialized representations."
+        }
+      ]
+    }
+  }
+}

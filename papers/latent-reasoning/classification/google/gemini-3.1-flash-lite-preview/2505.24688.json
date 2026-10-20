@@ -1,0 +1,25 @@
+{
+  "filename": "2505.24688.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.24688.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 50,
+          "reason": "The paper uses Bayesian optimization to refine embeddings during inference, which aligns with the test-time optimization paradigm of treating hidden states/embeddings as fast-adapting parameters."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 30,
+          "reason": "The method involves embedding perturbation and refinement, which is conceptually similar to the continuous latent space exploration and denoising/optimization found in embedding-based diffusion models."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper focuses on improving reasoning capabilities and accuracy in LLMs through a novel search framework, which is a direct application of recurrent/iterative reasoning techniques."
+        }
+      ]
+    }
+  }
+}

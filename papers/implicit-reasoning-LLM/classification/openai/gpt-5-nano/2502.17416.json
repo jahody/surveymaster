@@ -1,0 +1,25 @@
+{
+  "filename": "2502.17416.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.17416.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "Introduces iterative computation via looped Transformer layers with shared parameters to progressively refine hidden states."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 25,
+          "reason": "Deals with step-by-step internalization and iterative updates of reasoning processes (progressive refinement)."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "Targets the model's internal states/latent thoughts, aligning reasoning dynamics with internal state regulation."
+        }
+      ]
+    }
+  }
+}

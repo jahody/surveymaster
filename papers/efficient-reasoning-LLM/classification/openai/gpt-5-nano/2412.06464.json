@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06464.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06464.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 60,
+          "reason": "Main focus on efficient reasoning using subquadratic attention and hybrid architectures; directly aligns with the paper's approach (Gated DeltaNet with Mamba2/DeltaNet)"
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 25,
+          "reason": "Discusses subquadratic attention mechanisms generally; the paper relies on subquadratic attention (Mamba2) and sliding window concepts"
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 15,
+          "reason": "Covers efficient reasoning applications like retrieval-augmented generation and real-world deployment; aligns with long-context and retrieval tasks in the paper"
+        }
+      ]
+    }
+  }
+}

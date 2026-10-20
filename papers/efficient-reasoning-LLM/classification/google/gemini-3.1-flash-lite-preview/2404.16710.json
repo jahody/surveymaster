@@ -1,0 +1,25 @@
+{
+  "filename": "2404.16710.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.16710.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper introduces self-speculative decoding, which uses early layers as a draft model to verify against the full model, fitting the definition of speculative decoding and model-based routing."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "The paper focuses on early exit mechanisms as a practical inference solution to speed up real-world tasks like summarization and semantic parsing."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 15,
+          "reason": "The early exit mechanism acts as a form of dynamic toggling between 'fast' (early exit) and 'slow' (full model) reasoning paths within the same architecture."
+        }
+      ]
+    }
+  }
+}

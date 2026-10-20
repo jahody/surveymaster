@@ -1,0 +1,25 @@
+{
+  "filename": "2405.14838.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.14838.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 60,
+          "reason": "The paper explicitly describes a method of step-by-step internalization of CoT reasoning through gradual removal of intermediate steps, which aligns perfectly with progressive refinement."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "The approach relies on using explicit CoT supervision to train the model initially, ensuring the internalized reasoning maintains semantic fidelity to the original reasoning traces."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "The method effectively compresses the reasoning process by removing intermediate steps, resulting in a more efficient, direct reasoning path during inference."
+        }
+      ]
+    }
+  }
+}

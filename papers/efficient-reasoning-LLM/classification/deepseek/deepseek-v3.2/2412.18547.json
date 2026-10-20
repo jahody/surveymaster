@@ -1,0 +1,25 @@
+{
+  "filename": "2412.18547.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.18547.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 70,
+          "reason": "The paper's core method is a token-budget-aware reasoning framework that dynamically adjusts reasoning token length based on problem complexity, operating via prompt-based constraints at inference time, which directly matches the description and key phrases of 'Length Budgeting'."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "The paper evaluates its method by measuring the trade-off between answer accuracy and token cost reduction, aligning with the focus of 'Evaluation and Benchmark' on quantifying reasoning efficiency and token consumption trade-offs."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 10,
+          "reason": "The work identifies that LLM reasoning can be compressed and aims to produce shorter explicit reasoning chains, which relates to 'Reasoning Chain Compression', though the paper's primary approach is inference-time budgeting rather than training-based compression."
+        }
+      ]
+    }
+  }
+}

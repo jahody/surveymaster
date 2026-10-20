@@ -1,0 +1,25 @@
+{
+  "filename": "2502.15589.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.15589.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 60,
+          "reason": "Dynamic compression of intermediate thoughts to adjust reasoning length and speed, reducing memory and compute."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "Targets model internal states by distilling hidden states into condensed gist tokens, enabling memory-efficient reasoning."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 15,
+          "reason": "Involves manipulating tokens by compressing verbose thoughts into compact representations."
+        }
+      ]
+    }
+  }
+}

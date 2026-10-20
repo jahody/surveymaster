@@ -1,0 +1,25 @@
+{
+  "filename": "2410.11268.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.11268.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "Core focus on looped Transformer architecture implementing recurrence via explicit architectural modifications."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 25,
+          "reason": "Paper uses gradient-based iterative updates (multi-step gradient descent) within the loop, relating to gradient-state recurrence."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "Demonstrates in-context learning capabilities and multi-step computation in recurrent architecture."
+        }
+      ]
+    }
+  }
+}

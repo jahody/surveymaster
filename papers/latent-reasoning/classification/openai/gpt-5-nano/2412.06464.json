@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06464.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06464.md",
+      "chapters": [
+        {
+          "chapter": "5.2.1",
+          "confidence": 60,
+          "reason": "Directly describes compressive memory and linear-delta rule analogous to gated delta networks"
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "Discusses information flow across layers, aligning with memory gating/delta updates affecting information transfer"
+        },
+        {
+          "chapter": "5.2.3",
+          "confidence": 15,
+          "reason": "Related to fixed-point/state iteration in memory networks, akin to delta-rule memory updates"
+        }
+      ]
+    }
+  }
+}

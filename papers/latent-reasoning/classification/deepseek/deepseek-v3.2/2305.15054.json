@@ -1,0 +1,25 @@
+{
+  "filename": "2305.15054.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2305.15054.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 50,
+          "reason": "The paper uses causal mediation analysis to identify intermediate layers as the core of latent reasoning, showing they create specialized sub-circuits for arithmetic and causally influence final outcomes, aligning with the description of intermediate layers forming the core of Latent CoT."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 30,
+          "reason": "The study examines how information relevant to arithmetic queries is transmitted from mid-sequence early layers to the final token via attention mechanisms, directly addressing cross-layer information flow and the role of attention in connecting early processing to final tokens."
+        },
+        {
+          "chapter": "4.2.3",
+          "confidence": 20,
+          "reason": "The paper discusses how deep layers act as the output refinement stage, processing result-related information from MLP modules to determine the final answer, which matches the description of deep layers performing logical integration and decision-making."
+        }
+      ]
+    }
+  }
+}

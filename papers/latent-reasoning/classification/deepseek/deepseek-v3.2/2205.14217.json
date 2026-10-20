@@ -1,0 +1,25 @@
+{
+  "filename": "2205.14217.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2205.14217.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 80,
+          "reason": "The paper introduces Diffusion-LM, a non-autoregressive language model based on continuous diffusions that iteratively denoises Gaussian vectors into continuous word embeddings, aligning with the 'Embedding-based Diffusion Models' description of operating on continuous token embeddings with Gaussian noise."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 15,
+          "reason": "While the paper's primary focus is on a diffusion model, it discusses controllable generation tasks, which may involve sequential planning. However, it does not explicitly integrate autoregressive components, making this a secondary, less direct match."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 5,
+          "reason": "The paper demonstrates applications of Diffusion-LM for complex, fine-grained controllable generation tasks, which involve multi-step reasoning and structured inference, though the core contribution is the diffusion model architecture itself."
+        }
+      ]
+    }
+  }
+}

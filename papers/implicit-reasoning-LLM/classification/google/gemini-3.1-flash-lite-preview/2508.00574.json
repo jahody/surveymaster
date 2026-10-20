@@ -1,0 +1,25 @@
+{
+  "filename": "2508.00574.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2508.00574.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 50,
+          "reason": "The paper focuses on generating synthetic continuous CoT to serve as a precise alignment target for LLMs, ensuring semantic fidelity between latent reasoning and explicit CoT."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 30,
+          "reason": "The paper addresses efficiency by replacing discrete CoT with continuous CoT and uses a difficulty classifier to adaptively re-think hard questions, adjusting reasoning effort."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 20,
+          "reason": "The framework involves an adaptive re-thinking mechanism for hard questions, which functions as a form of progressive refinement of the reasoning process."
+        }
+      ]
+    }
+  }
+}

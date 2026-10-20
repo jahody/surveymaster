@@ -1,0 +1,25 @@
+{
+  "filename": "2412.09871.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.09871.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": 60,
+          "reason": "The paper introduces a byte-level architecture that uses dynamically sized patches as the primary unit of computation, which aligns with pretraining from scratch using latent-like representations instead of standard tokens."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 25,
+          "reason": "The paper focuses on improving inference efficiency by using dynamically selected long patches, which effectively reduces the sequence length and computational complexity of the transformer architecture."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "The model uses entropy-based segmentation to allocate compute dynamically, which functions as a form of adaptive budget allocation during the generation process."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08524.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08524.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "CoCoMix directly manipulates the model's hidden states by interleaving continuous concept representations, which aligns with internal state-level reasoning regulation."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The framework involves inserting semantic concepts into the hidden state sequence, functioning as a hybrid reasoning format that steers the model beyond standard token prediction."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 20,
+          "reason": "The use of continuous concepts learned from a sparse autoencoder introduces a continuous concept space to the model's internal processing, promoting more diverse and steerable latent representations."
+        }
+      ]
+    }
+  }
+}

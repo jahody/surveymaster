@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 50,
+          "reason": "The paper focuses on enabling additional reasoning capabilities in off-the-shelf decoder models through contemplation tokens, directly addressing multi-step reasoning performance."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "The method involves generating contentful contemplation tokens as compressed representations of reasoning chains, which aligns with training strategies for CoT-aligned supervision and compression."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "The approach utilizes intermediate representations (contemplation tokens) to distill essential reasoning information, functioning as a form of latent CoT within the model's processing flow."
+        }
+      ]
+    }
+  }
+}

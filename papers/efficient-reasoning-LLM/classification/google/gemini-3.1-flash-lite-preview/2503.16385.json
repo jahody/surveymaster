@@ -1,0 +1,25 @@
+{
+  "filename": "2503.16385.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.16385.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 60,
+          "reason": "The paper focuses on distilling long CoT by decomposing, simplifying, and optimizing reasoning chains to create more efficient training data, which aligns with CoT compression."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 25,
+          "reason": "The paper explicitly mentions 'AL-CoTD' (Adaptive-Length Chain-of-Thought Distillation) as a framework for optimizing reasoning, which is a key phrase associated with this category."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper investigates the effectiveness of distillation data and identifies key components for efficient transfer, contributing to the understanding of trade-offs between reasoning performance and token efficiency."
+        }
+      ]
+    }
+  }
+}

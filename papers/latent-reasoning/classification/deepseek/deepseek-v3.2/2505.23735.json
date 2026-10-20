@@ -1,0 +1,25 @@
+{
+  "filename": "2505.23735.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.23735.md",
+      "chapters": [
+        {
+          "chapter": "3.2.2",
+          "confidence": 60,
+          "reason": "The paper introduces ATLAS, a long-term memory module that learns to optimize its memory based on current and past tokens, which aligns with the 'gradient-state recurrence' description of treating the hidden state as fast-adapting parameters updated via a learnable optimizer. The abstract mentions overcoming the 'online nature of update' by optimizing memory, which is a core concept of this chapter."
+        },
+        {
+          "chapter": "5.2.2",
+          "confidence": 25,
+          "reason": "ATLAS learns to 'optimally memorize the context at test time,' which involves updating memory during inference. This matches the 'Test-time training (TTT) and its descendants' chapter, which describes performing optimization steps on the hidden state during inference to process long streams efficiently. The paper's focus on test-time memory optimization is a key aspect."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 15,
+          "reason": "The paper discusses long-term memory modules and recurrent models, which are related to linear-state recurrence concepts. However, ATLAS emphasizes learning and optimization of memory rather than predetermined algebraic update rules, making this less relevant than the gradient-state and test-time training categories. It is included as ATLAS is compared to linear recurrent models."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+# Shared across all steps
+topic: "evolutionary algorithms llm"
+topic_dir: "${slugify:${topic}}" # auto-slugified for file paths
+source: "abstracts" # "abstracts" | "blogPosts" | "papers_markdown"
+
+# Shared LLM settings (referenced by each step via interpolation)
+llm:
+  api_key: ${oc.env:OPENROUTER_API_KEY}
+  base_url: "https://openrouter.ai/api/v1"
+  models:
+    # - "qwen/qwen3.6-plus:free"
+    # - "stepfun/step-3.5-flash:free"
+    # - "deepseek/deepseek-v3.2"
+    # - "google/gemini-3.1-flash-lite-preview"
+    # - "openai/gpt-5-nano"
+    - "nvidia/nemotron-3-super-120b-a12b:free"
+    - "openai/gpt-oss-120b:free"
+    - "inclusionai/ling-2.6-flash:free"
+  refiner_model: "nvidia/nemotron-3-super-120b-a12b:free"
+
+# Step 1: Fetch papers (1_fetch.py)
+asta:
+  url: "https://asta-tools.allen.ai/mcp/v1"
+  api_key: ${oc.env:ASTA_API_KEY}
+  search_query: ${topic}
+  fields: "title,abstract,externalIds"
+  limit: 30 # Papers to retrieve per query
+  output_dir: "papers" # Base dir; each query creates a subfolder
+  fetch_full_papers: true # Set true to download full papers via arxiv2md
+  full_paper_delay: 2.0 # Seconds between requests (30 req/min limit)
+  full_paper_concurrent: 3
+
+ # Step 1b: Scrape papers (1b_scrape.py) 
+query_dir: "papers/efficient-reasoning-LLM"
+
+# Step 2: Taxonomy design (2_taxonomize.py)
+generation:
+  api_key: ${llm.api_key}
+  base_url: ${llm.base_url}
+  models: ${llm.models}
+  refiner_model: ${llm.refiner_model}
+  source: ${source}
+  query_dir: "${asta.output_dir}/${topic_dir}"
+  max_tokens: 16384 # needs headroom for N taxonomies in one response
+  temperature: 0.5
+  refiner_temperature: 0.0
+
+# Step 3: Classify + aggregate (3_classify.py)
+taxonomy:
+  api_key: ${llm.api_key}
+  base_url: ${llm.base_url}
+  models: ${llm.models}
+  source: ${source}
+  papers_dir: "${generation.query_dir}/${.source}"
+  taxonomies_dir: "${generation.query_dir}/taxonomies"
+  output_dir: "${generation.query_dir}/classification"
+  aggregate_dir: ${.output_dir}
+  max_concurrent: 10
+  temperature: 0.0
+  seed: 42
+  top_k: 3
+  max_tokens: 4096
+  skip_existing: true
+  reclassify: false  # set true to delete existing results and reclassify from scratch
+  auto_topic: false
+  output_dir_override: null
+  prompts_file: null
+  include_hard_negative: true
+
+# Step 4: Evaluate + refine (4_evaluate.py)
+evaluation:
+  output_dir: "${asta.output_dir}/${topic_dir}/evaluation"
+  generate_plots: true
+
+# Step 4b: Refinement thresholds (used by 4_evaluate.py)
+refinement:
+  api_key: ${llm.api_key}
+  base_url: ${llm.base_url}
+  refiner_model: ${llm.refiner_model}
+  dead_threshold: 0          # leaf categories with <= this many papers are "dead"
+  fat_multiplier: 2.5        # leaf categories with > mean × this are "fat" (overcrowded)
+  min_coverage_entropy: 0.7  # skip refinement if normalized entropy >= this AND no dead leaves
+  max_tokens: ${generation.max_tokens}
+  refiner_temperature: ${generation.refiner_temperature}
+  # Metric verdicts — thresholds for pass/fail (used by evaluation UI)
+  thresholds:
+    min_fleiss_kappa: 0.4            # M1: below "moderate" agreement
+    min_mean_pairwise_agreement: 0.5 # M2: mean agreement rate across all pairs
+    min_pairwise_kappa: 0.2          # M2: per-pair Cohen's kappa floor
+    max_weak_consensus_fraction: 0.3 # M3: fraction of items with margin < 20
+    min_confidence_agreement_r: 0.3  # M4: Pearson r between confidence and agreement
+    max_outlier_deviation: 0.4       # M5: worst model's deviation rate
+    min_unanimous_rate: 0.3          # M6: per-taxonomy unanimous agreement floor
+    max_gini: 0.5                    # M7: Gini coefficient ceiling
+    max_cramers_v: 0.7              # M8: Cramer's V redundancy ceiling
+
+# Step 5: Evolution tree (5_evolve.py)
+evolution:
+  api_key: ${llm.api_key}
+  base_url: ${llm.base_url}
+  models: ${llm.models}
+  refiner_model: ${llm.refiner_model}
+  source: ${source}
+  query_dir: "${asta.output_dir}/${topic_dir}"
+  max_tokens: 8192
+  temperature: 0.3
+  chunk_size: 20       # papers per chunk (0 = disable chunking)
+  chunk_overlap: 5     # papers shared between adjacent chunks
+  content_chars: 1200  # chars of paper content per paper in prompt
+
+hydra:
+  run:
+    dir: ./hydra_outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: ./hydra_outputs/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.17416.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.17416.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 60,
+          "reason": "The paper introduces a 'looping-inspired regularization' as a training strategy for recurrent models and discusses performance scaling akin to inference-time CoT."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 30,
+          "reason": "The paper demonstrates how looped models solve complex multi-step reasoning tasks like addition, induction, and math problems, showcasing applications and capabilities."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 10,
+          "reason": "The paper claims layer depth is the primary bottleneck for reasoning and shows looped models match the performance of deeper non-looped models, aligning with depth bottleneck theories."
+        }
+      ]
+    }
+  }
+}

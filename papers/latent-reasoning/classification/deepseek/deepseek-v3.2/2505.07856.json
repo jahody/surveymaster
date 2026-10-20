@@ -1,0 +1,25 @@
+{
+  "filename": "2505.07856.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.07856.md",
+      "chapters": [
+        {
+          "chapter": "4.2.1",
+          "confidence": 40,
+          "reason": "The paper investigates how inflection (a syntactic and morphological feature) affects model robustness and uses mechanistic interpretability to analyze circuits. This aligns with the study of shallow layers as basic representational processors handling syntactic structures and forming early circuit primitives."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 35,
+          "reason": "The paper uses Edge Attribution Patching (EAP) to identify mechanistic inflection-related elements of circuits and analyze their behavior under attack. This involves analyzing specialized computational sub-circuits and their causal influence on outcomes, which is the core focus of intermediate layers."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "The proposed evaluation protocol and mechanistic analysis aim to explain the relationship between inflection and adversarial robustness by tracing how information (related to inflectional features) flows and is transmitted across model layers during processing under attack."
+        }
+      ]
+    }
+  }
+}

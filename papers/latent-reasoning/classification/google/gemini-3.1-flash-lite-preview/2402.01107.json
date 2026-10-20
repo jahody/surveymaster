@@ -1,0 +1,25 @@
+{
+  "filename": "2402.01107.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.01107.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "The paper explicitly introduces a 'looped transformer' architecture with extra attention heads to simulate iterative graph algorithms, fitting the definition of explicit structural modification for recurrence."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 30,
+          "reason": "The paper provides a theoretical proof of Turing Completeness for the proposed looped transformer architecture with constant width."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper demonstrates the capability of the model to perform multi-step algorithmic reasoning, specifically simulating graph algorithms like Dijkstra and BFS."
+        }
+      ]
+    }
+  }
+}

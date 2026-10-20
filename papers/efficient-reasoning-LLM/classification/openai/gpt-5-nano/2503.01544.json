@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01544.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01544.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 45,
+          "reason": "Discusses explicit reasoning length budgets and token-delimited prompts; relates to inference-time reasoning costs in CRQs."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 35,
+          "reason": "Introduces evaluation metrics and datasets for reasoning efficiency, exemplified by CRQs."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 20,
+          "reason": "Examines efficient reasoning approaches (subquadratic attention) relevant to CRQ architectures."
+        }
+      ]
+    }
+  }
+}

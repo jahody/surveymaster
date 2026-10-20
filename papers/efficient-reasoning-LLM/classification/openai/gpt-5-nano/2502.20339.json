@@ -1,0 +1,25 @@
+{
+  "filename": "2502.20339.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.20339.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 45,
+          "reason": "Uses subquadratic attention architectures (Mamba) to enable efficient reasoning; distillation from Transformers; focus on efficient reasoning with subquadratic models."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 35,
+          "reason": "Analyzes dynamic test-time scaling (search width/depth) and iterative reasoning with intermediate summaries; aims for infinite reasoning."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 20,
+          "reason": "Generates multiple CoT candidates in parallel and uses aggregation/early termination; aligns with parallel search."
+        }
+      ]
+    }
+  }
+}

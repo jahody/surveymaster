@@ -1,0 +1,25 @@
+{
+  "filename": "2505.10446.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.10446.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "Paper uses Masked Diffusion Models (LLaDA) with token masking/unmasking and diffusion-based reinforcement learning components."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 30,
+          "reason": "Paper discusses diffusion over continuous latent representations (SEDD) and score-based policies, aligning with embedding-based diffusion models."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 10,
+          "reason": "Hybrid AR-Diffusion models are a related diffusion framework; the paper centers on diffusion-based reasoning but does not primarily adopt AR-diffusion architecture."
+        }
+      ]
+    }
+  }
+}

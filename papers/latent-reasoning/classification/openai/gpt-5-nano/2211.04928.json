@@ -1,0 +1,25 @@
+{
+  "filename": "2211.04928.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2211.04928.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 60,
+          "reason": "Relates to information flow and attention, aligning with the paper's focus on attention pattern alignment and how information is transmitted in transformer-based sentence embeddings."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "Discusses applications and capabilities of recurrent/advanced models, which loosely aligns with evaluating few-shot self-supervised learning capabilities in NLP."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 15,
+          "reason": "Theoretical angle on Turing completeness; tangentially relevant to fundamental capabilities of model architectures, though not directly addressed by the paper."
+        }
+      ]
+    }
+  }
+}

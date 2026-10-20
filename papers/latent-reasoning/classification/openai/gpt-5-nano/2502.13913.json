@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13913.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13913.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 60,
+          "reason": "Shows multi-hop reasoning capabilities and symbolic reasoning in LLMs, central to the paper."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "Addresses information flow across layers via attention, relevant to how two-hop reasoning unfolds."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 15,
+          "reason": "Connects layer-level roles to reasoning progression, aligning with micro-level reasoning steps."
+        }
+      ]
+    }
+  }
+}

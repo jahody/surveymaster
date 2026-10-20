@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06769.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06769.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper explicitly uses the model's last hidden state as a representation of the reasoning state, feeding it back as input to regulate reasoning."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 30,
+          "reason": "The continuous thought paradigm allows the model to encode multiple alternative reasoning steps, enabling a breadth-first search approach."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The approach replaces explicit text tokens with continuous latent representations to perform reasoning, fitting the non-interpretable latent tokens category."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": -1,
+          "reason": "The paper proposes generating 'contemplation tokens' (continuous, contentful representations) during inference to enable extra computation without architectural modifications to off-the-shelf decoder LMs, aligning with training-induced recurrence that unlocks latent reasoning capabilities through specialized use of existing models."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": -1,
+          "reason": "The method involves generating compressed representations of explicit reasoning chains, which relates to training strategies that internalize or compress Chain-of-Thought reasoning, though the paper focuses more on the inference framework than detailed training procedures."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": -1,
+          "reason": "CCoT addresses reasoning latency by generating variable-length contemplation tokens, effectively expanding computational depth adaptively, which relates to layer depth as a bottleneck for reasoning capacity and the need to scale computational steps."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2302.07863.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2302.07863.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 70,
+          "reason": "The paper explicitly uses a speculative decoding framework with a small draft model and a large verification model, which is the definition of model switching/routing."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The framework is applied to practical text generation tasks like machine translation and summarization, focusing on inference latency reduction in real-world deployment."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 10,
+          "reason": "The approach involves generating candidate tokens with a small model and verifying them, which shares conceptual similarities with parallel candidate generation and verification."
+        }
+      ]
+    }
+  }
+}

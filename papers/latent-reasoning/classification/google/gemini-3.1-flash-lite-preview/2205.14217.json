@@ -1,0 +1,25 @@
+{
+  "filename": "2205.14217.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2205.14217.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 80,
+          "reason": "The paper explicitly introduces Diffusion-LM, which maps discrete tokens to continuous embeddings and iteratively denoises them, fitting the definition of embedding-based diffusion."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper focuses on controllable text generation, demonstrating the model's capability to perform complex, fine-grained control tasks through gradient-based optimization."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 5,
+          "reason": "The model's iterative denoising process involves a trajectory of latent variables that can be interpreted as a form of information flow refinement across the diffusion steps."
+        }
+      ]
+    }
+  }
+}

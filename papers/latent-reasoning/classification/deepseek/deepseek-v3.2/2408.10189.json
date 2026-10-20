@@ -1,0 +1,25 @@
+{
+  "filename": "2408.10189.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.10189.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 65,
+          "reason": "The paper presents a distillation method (MOHAWK) that converts a pretrained Transformer into a subquadratic SSM architecture, explicitly fitting the 'Training-induced Hidden-State Conversion' category. The method starts from a pretrained Transformer checkpoint and distills it into a recurrent/SSM model, aligning with key phrases like 'Transformer-to-RNN conversion', 'architecture distillation', and 'low-rank linearization'."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The distilled model is a state space model (SSM), specifically a Mamba variant, which inherently uses a linear-state recurrence mechanism with a matrix-valued hidden state and predetermined update rules (e.g., via a parallel scan). This matches the 'Linear-State Recurrence' description and its key phrases like 'matrix-valued hidden state' and 'parallel scan'."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 10,
+          "reason": "The distillation process involves progressive matching (mixing matrices, hidden units, end-to-end predictions), which resembles a specialized training strategy for transitioning to a recurrent model. It addresses how to leverage iterative computation through a structured distillation curriculum, fitting 'Training Strategies for Recurrent Reasoning' concepts like 'progressive stacking' and 'curriculum-based compression'."
+        }
+      ]
+    }
+  }
+}

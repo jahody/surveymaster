@@ -1,0 +1,25 @@
+{
+  "filename": "2502.20339.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.20339.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 50,
+          "reason": "The paper focuses on using distilled Mamba models (a subquadratic attention architecture) for efficient reasoning, specifically evaluating them on mathematical reasoning tasks, which directly aligns with the description of 'Efficient Reasoning with Subquadratic Attention'."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 30,
+          "reason": "The core technical approach involves replacing standard Transformers with Mamba models, which are state space models that reduce quadratic complexity to subquadratic, fitting the 'Subquadratic Attention' category focused on architectural efficiency."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The paper investigates scaling inference compute at test time by generating multiple Chain-of-Thought trajectories and aggregating outputs, which relates to 'Efficient Test-time Scaling and Infinity Thinking' through parallel sampling and dynamic compute allocation."
+        }
+      ]
+    }
+  }
+}

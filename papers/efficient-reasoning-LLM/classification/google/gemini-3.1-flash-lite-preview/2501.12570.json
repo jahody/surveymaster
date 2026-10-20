@@ -1,0 +1,25 @@
+{
+  "filename": "2501.12570.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.12570.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 50,
+          "reason": "The paper explicitly uses RL-style fine-tuning to encourage shorter reasoning processes under accuracy constraints, treating length as a trajectory-level resource."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 30,
+          "reason": "The core objective is to minimize reasoning overhead by training the model to produce more concise reasoning paths, which aligns with chain compression."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "The paper experimentally demonstrates the overthinking phenomenon and evaluates the trade-offs between inference overhead and accuracy on mathematical benchmarks."
+        }
+      ]
+    }
+  }
+}

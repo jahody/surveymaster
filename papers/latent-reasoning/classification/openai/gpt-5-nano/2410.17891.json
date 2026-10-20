@@ -1,0 +1,25 @@
+{
+  "filename": "2410.17891.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.17891.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 65,
+          "reason": "Core approach blends autoregressive models with diffusion, using AR components (prefix caching, initialization) to build diffusion models."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 25,
+          "reason": "Diffusion operates on continuous embeddings/latent vectors with Gaussian noise and denoising, aligning with embedding-based diffusion models."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 10,
+          "reason": "Diffusion for text sequences is discussed as a category; less central than the AR-diffusion hybrid, but related to diffusion approaches."
+        }
+      ]
+    }
+  }
+}

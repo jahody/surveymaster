@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01544.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01544.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 50,
+          "reason": "The paper explicitly compares the expressive power of Transformers and RNNs on compositional reasoning tasks, focusing on the architectural requirements for solving these problems."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 30,
+          "reason": "The paper introduces 'Compositional Reasoning Questions' (CRQs) as a new family of tasks to evaluate and compare the reasoning capabilities and limitations of different architectures."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 20,
+          "reason": "The paper discusses the necessity of embedding dimension and depth for RNNs and Transformers to solve compositional tasks, which relates to the architectural efficiency and structural properties of these models."
+        }
+      ]
+    }
+  }
+}

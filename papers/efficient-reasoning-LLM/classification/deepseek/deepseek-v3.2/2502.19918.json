@@ -1,0 +1,25 @@
+{
+  "filename": "2502.19918.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.19918.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 50,
+          "reason": "The paper's Meta-Reasoner framework dynamically adapts reasoning strategies (e.g., backtracking, switching approaches) during inference, aligning with the dual-process concept of toggling between different reasoning modes within a single model based on the current state, without routing to separate models."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "The approach optimizes inference by dynamically adjusting search depth (via backtracking or restarting) and potentially width (through strategy switching) in real-time, fitting the description of test-time scaling that balances sequential revision and parallel exploration for efficient reasoning."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 20,
+          "reason": "While not explicitly parallel, the use of contextual multi-armed bandits to evaluate states and select strategies involves exploring multiple candidate paths (strategies) during inference, with pruning of unproductive ones, which relates to parallel search concepts like tree-search pruning for efficiency."
+        }
+      ]
+    }
+  }
+}

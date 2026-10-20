@@ -1,0 +1,25 @@
+{
+  "filename": "2404.08634.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.08634.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 60,
+          "reason": "Emphasizes layer depth as the primary bottleneck for latent reasoning and demonstrates inefficiency in deeper, degenerate layers, motivating compression via inheritance of early layers."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 25,
+          "reason": "Discusses micro-level roles of specific layers and how depth correlates with reasoning capabilities, aligning with the paper's focus on layer-wise contributions."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 15,
+          "reason": "Highlights intermediate layers as core sub-circuits for reasoning; aligns with the paper's observation that mid-depth layers play crucial roles in processing, with deeper layers being underutilized."
+        }
+      ]
+    }
+  }
+}

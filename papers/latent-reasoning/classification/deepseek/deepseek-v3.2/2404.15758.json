@@ -1,0 +1,25 @@
+{
+  "filename": "2404.15758.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.15758.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 50,
+          "reason": "The paper demonstrates that additional intermediate tokens (filler tokens) enable transformers to solve algorithmic tasks they otherwise cannot, directly linking the number of processing steps (analogous to layer depth) to reasoning capacity, which aligns with the concept that layer depth serves as a primary bottleneck for latent reasoning."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 30,
+          "reason": "The paper provides a theoretical characterization of problems where filler tokens are useful in terms of quantifier depth, relating to the computational capabilities and universal computational potential of transformers when augmented with intermediate tokens, akin to exploring Turing completeness through computational steps."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 20,
+          "reason": "The study shows transformers can learn to use filler tokens for hidden computation through specialized, dense supervision, indicating training-induced recurrence where standard models develop latent iterative reasoning capabilities without architectural modifications, though it requires specific training strategies."
+        }
+      ]
+    }
+  }
+}

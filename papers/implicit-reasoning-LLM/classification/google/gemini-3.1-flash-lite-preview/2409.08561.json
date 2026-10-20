@@ -1,0 +1,25 @@
+{
+  "filename": "2409.08561.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2409.08561.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 50,
+          "reason": "The paper explicitly focuses on compressing full CoT traces into compact special tokens using contrastive training to ensure semantic alignment with the original reasoning process."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The method relies on inserting special token representations into the input to steer the model's reasoning, effectively replacing explicit text-based CoT with latent token-level representations."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 20,
+          "reason": "The primary goal of the proposed compression is to achieve efficient decoding and speedups by reducing the length of the reasoning sequence, which aligns with dynamic trajectory compression."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08235.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08235.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 50,
+          "reason": "The paper introduces a framework to study overthinking, analyzes 4018 trajectories, and provides a dataset to quantify the overthinking phenomenon."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 30,
+          "reason": "The research focuses specifically on agentic tasks and software engineering environments, applying mitigation strategies to improve agent performance."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 20,
+          "reason": "The paper suggests selecting solutions from multiple candidates (Best-of-N) to mitigate overthinking, which aligns with parallel search and evaluation strategies."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Flask
+httpx
+hydra-core
+omegaconf
+openai
+playwright
+python-dotenv
+matplotlib
+markdownify

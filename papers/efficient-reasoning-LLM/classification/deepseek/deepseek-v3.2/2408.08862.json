@@ -1,0 +1,25 @@
+{
+  "filename": "2408.08862.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.08862.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 70,
+          "reason": "The paper explicitly introduces a 'Fast and Slow Thinking mechanism' that dynamically switches between System 1 and System 2 reasoning modes based on task complexity, directly aligning with the System Switch description and key phrases like 'dual process theory' and 'switch module'."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 20,
+          "reason": "The paper focuses on visual agents handling multimodal inputs (visual question answering and reasoning segmentation), employing dynamic reasoning strategies to adjust to task complexity and noisy visual information, which matches the Efficient Multimodality and Video Reasoning category."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 10,
+          "reason": "FaST is applied to practical visual reasoning tasks like VQA and segmentation, demonstrating its use in real-world agent systems, though the core contribution is more architectural than purely application-focused."
+        }
+      ]
+    }
+  }
+}

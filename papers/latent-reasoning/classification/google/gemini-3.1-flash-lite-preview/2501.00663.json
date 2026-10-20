@@ -1,0 +1,25 @@
+{
+  "filename": "2501.00663.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.00663.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 60,
+          "reason": "Titans explicitly use a neural memory module that acts as fast-adapting parameters updated via gradient-based optimization steps, aligning with the Test-time training (TTT) paradigm."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 25,
+          "reason": "The paper describes the memory module as treating the hidden state as fast-adapting parameters updated by a learnable optimizer, which is the definition of Gradient-State Recurrence."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 15,
+          "reason": "The architecture incorporates linear recurrent components to handle long-term dependencies, which relates to the broader category of linear-state recurrence mechanisms."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 60,
+          "reason": "The paper introduces CODI, a training framework that enables standard transformers to perform reasoning in a latent continuous space without architectural modifications, aligning with 'training-induced recurrence' which creates implicit recurrent flows through specialized training."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "CODI employs a self-distillation strategy to compress natural language Chain-of-Thought into continuous space, which is a specialized training approach for models with recurrent activation flows, fitting the description of 'training strategies for recurrent reasoning'."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 15,
+          "reason": "The method distills reasoning ability from language into continuous space by aligning hidden states, which resembles converting a transformer's operation through targeted fine-tuning or distillation, similar to 'training-induced hidden-state conversion'."
+        }
+      ]
+    }
+  }
+}

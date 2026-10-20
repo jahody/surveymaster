@@ -1,0 +1,25 @@
+{
+  "filename": "2409.08561.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2409.08561.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 60,
+          "reason": "Core idea is semantic anchoring: compressing full chain-of-thought into semantically aligned tokens with contrastive training."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "Uses a single compact token as a control signal to modulate reasoning (token-level compression)."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "Aims to improve decoding efficiency via compressed reasoning to speed up inference."
+        }
+      ]
+    }
+  }
+}

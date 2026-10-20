@@ -1,0 +1,25 @@
+{
+  "filename": "2501.01306.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.01306.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 50,
+          "reason": "The paper explicitly introduces a hierarchical thinking system switch mechanism inspired by dual process theory to dynamically alternate between fast and slow thinking modes, which directly matches the description and key phrases of System Switch."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 30,
+          "reason": "The paper's HaluSearch framework incorporates tree search-based algorithms (e.g., MCTS) to generate and evaluate multiple candidate reasoning pathways, aligning with Parallel Search's focus on tree-search and generating multiple candidates simultaneously."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 20,
+          "reason": "The core objective of the paper is to mitigate hallucinations and produce more trustworthy and factually accurate responses via a deliberative reasoning process, which aligns with Efficient and Trustworthy Reasoning's focus on hallucination mitigation and reliable thinking mechanisms."
+        }
+      ]
+    }
+  }
+}

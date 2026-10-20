@@ -1,0 +1,25 @@
+{
+  "filename": "2501.14342.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.14342.md",
+      "chapters": [
+        {
+          "chapter": "7.4",
+          "confidence": 50,
+          "reason": "The paper explicitly focuses on improving Retrieval-Augmented Generation (RAG) through a chain-of-retrieval approach, which is a core application of efficient reasoning."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "The paper proposes decoding strategies to scale test-time compute by controlling the length and number of sampled retrieval chains, aligning with test-time scaling."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 20,
+          "reason": "The methodology involves sampling multiple retrieval chains and using decoding strategies to select or aggregate them, which relates to parallel search and candidate evaluation."
+        }
+      ]
+    }
+  }
+}

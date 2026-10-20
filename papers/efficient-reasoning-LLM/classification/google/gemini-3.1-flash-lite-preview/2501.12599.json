@@ -1,0 +1,25 @@
+{
+  "filename": "2501.12599.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.12599.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 40,
+          "reason": "The paper explicitly discusses 'long2short' methods that use long-CoT techniques to train models to produce more concise, efficient reasoning paths."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 35,
+          "reason": "The paper focuses on RL training techniques for reasoning without relying on complex reward structures like process reward models, letting efficient reasoning emerge from the RL framework."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The paper emphasizes scaling reinforcement learning and long-CoT techniques to achieve state-of-the-art reasoning performance, which aligns with test-time compute scaling."
+        }
+      ]
+    }
+  }
+}

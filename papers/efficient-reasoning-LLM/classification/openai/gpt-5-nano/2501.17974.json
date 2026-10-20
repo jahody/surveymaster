@@ -1,0 +1,25 @@
+{
+  "filename": "2501.17974.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.17974.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 60,
+          "reason": "Explicitly budgets computational resources during inference by managing the length of the reasoning chain and allocating budget according to difficulty."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "Discusses dynamic test-time compute scaling and efficient reasoning under resource constraints, aligning with budgeted inference."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 15,
+          "reason": "Involves trajectory-level budgeting/reward framing for reasoning length, closely related to length-aware optimization."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 45,
+          "reason": "The paper proposes generating contemplation tokens as compressed representations of explicit reasoning chains, aligning with semantic anchoring's focus on compressing full traces into contemplation tokens to ensure semantic fidelity."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 35,
+          "reason": "The method allows adaptive control over reasoning by generating variable-length contemplation tokens, matching adaptive efficiency's emphasis on dynamic trajectory compression and adjusting reasoning length."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The approach manipulates individual contemplation tokens during inference, fitting token-level steering with non-interpretable latent tokens, though it avoids generating full explicit CoT text sequences."
+        }
+      ]
+    }
+  }
+}

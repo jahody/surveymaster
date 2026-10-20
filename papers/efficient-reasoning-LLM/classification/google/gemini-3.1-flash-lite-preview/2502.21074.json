@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 70,
+          "reason": "The paper explicitly focuses on replacing explicit CoT with continuous hidden representations via self-distillation, which is the core definition of Latent-Space SFT."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The paper aims to compress reasoning chains, though it does so via latent space rather than text, making it a secondary relevant category for the goal of compression."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper introduces a new approach and evaluates it against standard benchmarks to demonstrate efficiency gains, which aligns with the focus on quantifying reasoning efficiency."
+        }
+      ]
+    }
+  }
+}

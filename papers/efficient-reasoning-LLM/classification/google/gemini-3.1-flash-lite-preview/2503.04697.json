@@ -1,0 +1,25 @@
+{
+  "filename": "2503.04697.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.04697.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 50,
+          "reason": "The paper introduces Length Controlled Policy Optimization (LCPO), which uses reinforcement learning with explicit length constraints to optimize reasoning trajectories."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 30,
+          "reason": "The core contribution is enabling the model to adhere to user-specified length constraints, allowing for controlled allocation of test-time compute."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The paper demonstrates the ability to generate 'Short Reasoning Models' (SRMs) that produce concise reasoning paths, effectively compressing the chain-of-thought."
+        }
+      ]
+    }
+  }
+}

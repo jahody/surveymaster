@@ -1,0 +1,25 @@
+{
+  "filename": "2412.09871.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.09871.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": 70,
+          "reason": "The paper introduces BLT, a byte-level LLM using dynamically sized patches as primary units, which aligns with 'continuous representations instead of traditional token-based approaches during pretraining' and 'byte-level patches' keywords."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 20,
+          "reason": "BLT improves inference efficiency via patch length selection, but does not explicitly replace standard self-attention with subquadratic mechanisms; however, its focus on efficiency relates to reducing computational costs."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 10,
+          "reason": "The paper mentions qualitative improvements in reasoning and generalization, but does not focus on compressing explicit reasoning chains into shorter text sequences via fine-tuning."
+        }
+      ]
+    }
+  }
+}

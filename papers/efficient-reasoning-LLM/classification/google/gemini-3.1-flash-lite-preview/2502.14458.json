@@ -1,0 +1,25 @@
+{
+  "filename": "2502.14458.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.14458.md",
+      "chapters": [
+        {
+          "chapter": "6.3",
+          "confidence": 50,
+          "reason": "The paper explicitly focuses on distilling a Transformer (Llama-3) into a recurrent architecture (Mamba), which is the core definition of architectural distillation and linearization."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 30,
+          "reason": "The paper utilizes the Mamba architecture, which is a state-space model providing subquadratic complexity compared to standard Transformer attention mechanisms."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The paper emphasizes practical deployment on resource-constrained devices (smartphones/edge platforms), focusing on the application layer of efficient model deployment."
+        }
+      ]
+    }
+  }
+}

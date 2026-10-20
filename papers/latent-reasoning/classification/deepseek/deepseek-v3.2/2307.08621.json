@@ -1,0 +1,25 @@
+{
+  "filename": "2307.08621.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2307.08621.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "RetNet's retention mechanism uses a matrix-valued hidden state with predetermined update and decay rules, directly matching Linear-State Recurrence's description."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "RetNet introduces explicit architectural modifications for recurrence, including chunk-wise recurrence, aligning with Architectural Recurrence's focus on structural changes."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "RetNet's recurrent representation enables O(1) inference and efficient long-sequence modeling, sharing goals with Infini-attention's constant-memory streaming for infinite contexts."
+        }
+      ]
+    }
+  }
+}

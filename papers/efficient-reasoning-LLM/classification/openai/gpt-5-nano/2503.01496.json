@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01496.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01496.md",
+      "chapters": [
+        {
+          "chapter": "6.3",
+          "confidence": 65,
+          "reason": "Core topic is linearizing pretrained LLMs into gated linear recurrent structures (linearization)."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 25,
+          "reason": "Touches on attention mechanism efficiency related to the proposed architecture."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "Addresses deployment efficiency and test-time compute considerations."
+        }
+      ]
+    }
+  }
+}

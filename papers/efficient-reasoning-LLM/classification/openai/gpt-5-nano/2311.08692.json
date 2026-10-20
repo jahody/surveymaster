@@ -1,0 +1,25 @@
+{
+  "filename": "2311.08692.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2311.08692.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "Routing queries to different LLMs based on their expertise constitutes a Model Switch mechanism."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "Describes efficient reasoning applications via dynamic query routing and ensemble methods across models."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "Discusses efficient test-time scaling and dynamic inference strategies to manage compute."
+        }
+      ]
+    }
+  }
+}

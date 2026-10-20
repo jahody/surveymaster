@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01496.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01496.md",
+      "chapters": [
+        {
+          "chapter": "6.3",
+          "confidence": 70,
+          "reason": "The paper directly introduces Liger, a method for converting pretrained LLMs into linear recurrent structures, which matches the description of linearization as converting pretrained transformers to linear RNNs without extensive retraining."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 20,
+          "reason": "Liger replaces standard self-attention with linear recurrent modeling to achieve subquadratic complexity, aligning with the focus on mechanisms that reduce quadratic complexity in transformers."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 10,
+          "reason": "The paper evaluates Liger on reasoning benchmarks, showing it recovers 93% of Transformer performance, indicating an application of subquadratic attention models to reasoning tasks, though it is less central than the linearization conversion itself."
+        }
+      ]
+    }
+  }
+}

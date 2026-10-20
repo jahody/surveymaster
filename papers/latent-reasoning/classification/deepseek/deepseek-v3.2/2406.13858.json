@@ -1,0 +1,25 @@
+{
+  "filename": "2406.13858.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.13858.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 45,
+          "reason": "The paper analyzes internal multi-hop reasoning at a micro level, showing distinct computational roles for different layers (middle layers generate interpretable intermediate answer embeddings) and how they integrate information, which aligns with the description of functional differentiation and intermediate information integration."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 35,
+          "reason": "The study focuses on intermediate layers as the core of latent reasoning, demonstrating they create specialized representations (potential intermediate answers) for multi-hop questions and causally influence the final output, matching the key phrases about the core of Latent CoT and specialized sub-circuits."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 20,
+          "reason": "The research investigates multi-hop reasoning in LLMs, which inherently relates to the correlation between layer depth and reasoning capabilities, as the analysis of internal processes across layers touches on macro-level constraints for multi-step reasoning chains."
+        }
+      ]
+    }
+  }
+}

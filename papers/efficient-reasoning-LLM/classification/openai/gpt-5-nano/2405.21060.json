@@ -1,0 +1,25 @@
+{
+  "filename": "2405.21060.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.21060.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 55,
+          "reason": "Paper centers on subquadratic attention mechanisms and their role in efficient sequence modeling with SSMs."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 30,
+          "reason": "Discusses efficient reasoning using subquadratic attention and Mamba-based architectures, aligning with performance- and efficiency-focused goals."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "Addresses linearization of transformers into more efficient architectures, a related efficiency topic covered in the work."
+        }
+      ]
+    }
+  }
+}

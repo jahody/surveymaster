@@ -1,0 +1,25 @@
+{
+  "filename": "1807.03819.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "1807.03819.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 80,
+          "reason": "The paper explicitly proposes the Universal Transformer, which introduces an explicit recurrent loop across layers (architectural recurrence) with adaptive computation time and dynamic halting, directly matching the description and key phrases."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 15,
+          "reason": "The paper states that the Universal Transformer can be shown to be Turing-complete under certain assumptions, which aligns with the chapter's focus on proofs of Turing completeness in model architectures."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 5,
+          "reason": "The paper demonstrates the model's capabilities on algorithmic tasks (e.g., copying strings, logical inference) and language understanding, showing multi-step reasoning and generalization, though this is a secondary focus compared to the architectural innovation."
+        }
+      ]
+    }
+  }
+}

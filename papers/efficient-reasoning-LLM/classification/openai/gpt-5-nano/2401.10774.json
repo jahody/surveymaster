@@ -1,0 +1,25 @@
+{
+  "filename": "2401.10774.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2401.10774.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 50,
+          "reason": "Efficient reasoning with subquadratic attention aligns with Medusa's tree-based attention and parallel decoding heads."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 30,
+          "reason": "Parallel search / generating multiple candidate outputs concurrently matches Medusa's multiple heads and verification process."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "Efficient test-time scaling via parallel sampling and width/depth tradeoffs is relevant to the paper's acceleration goals."
+        }
+      ]
+    }
+  }
+}

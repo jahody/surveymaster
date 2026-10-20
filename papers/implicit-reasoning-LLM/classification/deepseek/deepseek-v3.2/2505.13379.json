@@ -1,0 +1,25 @@
+{
+  "filename": "2505.13379.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.13379.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "The paper uses two control tokens (<short> and <long>) to steer reasoning mode selection, directly aligning with the token-level approach of manipulating individual tokens for hybrid reasoning formats, which is the primary mechanism described."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 30,
+          "reason": "Thinkless adaptively selects between short-form and long-form reasoning based on task complexity, dynamically adjusting reasoning length for efficiency, matching the key phrases for adaptive_efficiency like 'dynamic trajectory compression' and 'adjusting reasoning length'."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 20,
+          "reason": "The framework employs two distinct control tokens (<short> and <long>) to enable finer-grained control over reasoning behaviors, aligning with multi_type_signal's description of using multiple distinct control signals for disentangled control."
+        }
+      ]
+    }
+  }
+}

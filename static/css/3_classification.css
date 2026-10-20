@@ -1,0 +1,256 @@
+/* Classification page */
+
+#runSelect, #taxonomySelect {
+  padding: .45rem .7rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: .85rem;
+  background: var(--surface);
+  color: var(--text);
+}
+.cls-status {
+  text-align: center;
+  color: var(--text-dim);
+  padding: 4rem 1rem;
+  font-size: .9rem;
+}
+
+/* Scrollable table container */
+.cls-wrap {
+  overflow: auto;
+  max-height: calc(100vh - 48px);  /* header height */
+  padding: 0;
+}
+
+/* Table */
+.cls-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: max-content;
+  min-width: 100%;
+  font-size: .8rem;
+}
+
+.cls-table th,
+.cls-table td {
+  padding: .45rem .7rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+/* Sticky header */
+.cls-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--surface);
+  font-weight: 600;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--text-dim);
+  white-space: nowrap;
+  border-top: 1px solid var(--border);
+}
+
+/* Sticky paper column */
+.cls-table th:first-child,
+.cls-table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--bg);
+  border-left: 1px solid var(--border);
+  min-width: 220px;
+  max-width: 280px;
+}
+
+.cls-table thead th:first-child {
+  z-index: 3;
+  background: var(--surface);
+}
+
+/* Alternating rows */
+.cls-table tbody tr:nth-child(even) td {
+  background: var(--surface2);
+}
+.cls-table tbody tr:nth-child(even) td:first-child {
+  background: var(--surface2);
+}
+.cls-table tbody tr:hover td {
+  background: rgba(108,140,255,.06);
+}
+.cls-table tbody tr:hover td:first-child {
+  background: rgba(108,140,255,.06);
+}
+
+/* Manual assignment column */
+.th-manual {
+  color: var(--accent3, #f0a050) !important;
+  border-bottom: 2px solid var(--accent3, #f0a050) !important;
+  white-space: nowrap;
+}
+
+.manual-cell {
+  vertical-align: middle;
+  min-width: 150px;
+}
+
+.manual-cell.has-value {
+  background: rgba(240,160,80,.08) !important;
+}
+
+.manual-select {
+  width: 100%;
+  font-size: .72rem;
+  padding: .2rem .3rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.manual-select:focus {
+  outline: none;
+  border-color: var(--accent3, #f0a050);
+}
+
+/* GT column header */
+.th-gt {
+  color: var(--accent2, #4caf7d) !important;
+  border-bottom: 2px solid var(--accent2, #4caf7d) !important;
+}
+
+/* Consensus column header */
+.th-consensus {
+  color: var(--accent4) !important;
+  border-bottom: 2px solid var(--accent4) !important;
+}
+
+/* Paper cell */
+.paper-arxiv {
+  font-size: .72rem;
+  color: var(--text-dim);
+  display: block;
+  margin-bottom: .15rem;
+}
+.paper-arxiv a {
+  color: var(--accent1);
+  text-decoration: none;
+}
+.paper-arxiv a:hover { text-decoration: underline; }
+
+.paper-title {
+  color: var(--text);
+  font-size: .78rem;
+  line-height: 1.3;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Chapter badges */
+.cls-preds {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 120px;
+}
+
+.cls-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .15rem .45rem;
+  border-radius: 5px;
+  font-size: .72rem;
+  font-weight: 600;
+  width: fit-content;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cls-badge.rank-1 {
+  background: color-mix(in srgb, var(--gc) 15%, transparent);
+  color: var(--gc);
+}
+
+.cls-badge.rank-2 {
+  background: color-mix(in srgb, var(--gc) 8%, transparent);
+  color: var(--gc);
+  font-weight: 500;
+  font-size: .68rem;
+  opacity: .75;
+}
+
+.cls-badge.rank-3 {
+  background: transparent;
+  color: var(--gc);
+  font-weight: 400;
+  font-size: .65rem;
+  opacity: .45;
+}
+
+.cls-conf {
+  font-size: .6rem;
+  font-weight: 400;
+  opacity: .75;
+}
+
+/* GT badge */
+.cls-badge.gt {
+  background: rgba(76,175,125,.15);
+  color: var(--accent2, #4caf7d);
+  font-weight: 700;
+}
+
+/* Consensus badge */
+.cls-badge.consensus {
+  background: color-mix(in srgb, var(--gc) 15%, transparent);
+  color: var(--gc);
+  font-weight: 700;
+}
+
+.cls-na {
+  color: var(--text-dim);
+  opacity: .4;
+  font-size: .72rem;
+}
+
+/* Match column */
+.th-match {
+  width: 32px;
+  min-width: 32px;
+}
+
+.cls-match {
+  font-size: .85rem;
+  font-weight: 700;
+}
+.cls-match.match-yes { color: var(--accent2, #4caf7d); }
+.cls-match.match-no  { color: var(--negative, #e05c5c); }
+
+/* Accuracy footer */
+.cls-table tfoot td {
+  border-top: 2px solid var(--border);
+  background: var(--surface);
+  font-size: .8rem;
+  padding: .5rem .7rem;
+}
+.foot-label {
+  color: var(--text-dim);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: .72rem;
+}
+.foot-acc {
+  color: var(--accent2, #4caf7d);
+  white-space: nowrap;
+}

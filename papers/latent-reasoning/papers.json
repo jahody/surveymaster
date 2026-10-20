@@ -1,0 +1,402 @@
+[
+    {
+        "name": "Universal Transformer",
+        "arxiv": "1807.03819"
+    },
+    {
+        "name": "Turing Completeness",
+        "arxiv": "1901.03429"
+    },
+    {
+        "name": "Linear Attention",
+        "arxiv": "2006.16236"
+    },
+    {
+        "name": "Feed-forward Layers",
+        "arxiv": "2012.14913"
+    },
+    {
+        "name": "Diffusion-LM",
+        "arxiv": "2205.14217"
+    },
+    {
+        "name": "Bit Diffusion",
+        "arxiv": "2208.04202"
+    },
+    {
+        "name": "Interpretability",
+        "arxiv": "2211.00593"
+    },
+    {
+        "name": "Micse",
+        "arxiv": "2211.04928"
+    },
+    {
+        "name": "CDCD",
+        "arxiv": "2211.15089"
+    },
+    {
+        "name": "TESS",
+        "arxiv": "2305.08379"
+    },
+    {
+        "name": "Causal Mediation Analysis",
+        "arxiv": "2305.15054"
+    },
+    {
+        "name": "Plaid",
+        "arxiv": "2305.18619"
+    },
+    {
+        "name": "RetNet",
+        "arxiv": "2307.08621"
+    },
+    {
+        "name": "BFN",
+        "arxiv": "2308.07037"
+    },
+    {
+        "name": "Pause Tokens",
+        "arxiv": "2310.02226"
+    },
+    {
+        "name": "Planning Token",
+        "arxiv": "2310.05707"
+    },
+    {
+        "name": "Planning Tokens",
+        "arxiv": "2310.05707"
+    },
+    {
+        "name": "CoTFormer",
+        "arxiv": "2310.10845"
+    },
+    {
+        "name": "MechanisticProbe",
+        "arxiv": "2310.14491"
+    },
+    {
+        "name": "SEDD",
+        "arxiv": "2310.16834"
+    },
+    {
+        "name": "GLA",
+        "arxiv": "2312.06635"
+    },
+    {
+        "name": "Looped Transformers",
+        "arxiv": "2402.01107"
+    },
+    {
+        "name": "DoT-SEDD",
+        "arxiv": "2402.07754"
+    },
+    {
+        "name": "DoT-Plaid",
+        "arxiv": "2402.07754"
+    },
+    {
+        "name": "Lift",
+        "arxiv": "2402.11700"
+    },
+    {
+        "name": "AlgoFormer",
+        "arxiv": "2402.13572"
+    },
+    {
+        "name": "Multi-hop Reasoning",
+        "arxiv": "2402.16837"
+    },
+    {
+        "name": "Step-by-step",
+        "arxiv": "2402.18312"
+    },
+    {
+        "name": "Transformers with infini-attention",
+        "arxiv": "2404.05892"
+    },
+    {
+        "name": "RWKV-6",
+        "arxiv": "2404.05892"
+    },
+    {
+        "name": "HGRN-2",
+        "arxiv": "2404.07904"
+    },
+    {
+        "name": "Inheritune",
+        "arxiv": "2404.08634"
+    },
+    {
+        "name": "Filler Tokens",
+        "arxiv": "2404.15758"
+    },
+    {
+        "name": "SUPRA",
+        "arxiv": "2405.06640"
+    },
+    {
+        "name": "Edge of Generalization",
+        "arxiv": "2405.15071"
+    },
+    {
+        "name": "Matching Operation",
+        "arxiv": "2405.15302"
+    },
+    {
+        "name": "Stepwise Internalization",
+        "arxiv": "2405.14838"
+    },
+    {
+        "name": "Mamba-2",
+        "arxiv": "2405.21060"
+    },
+    {
+        "name": "Iteration Head",
+        "arxiv": "2406.02128"
+    },
+    {
+        "name": "RADD",
+        "arxiv": "2406.03736"
+    },
+    {
+        "name": "DeltaNet",
+        "arxiv": "2406.06484"
+    },
+    {
+        "name": "Hopping",
+        "arxiv": "2406.12775"
+    },
+    {
+        "name": "Distributional Reasoning",
+        "arxiv": "2406.13858"
+    },
+    {
+        "name": "TTT",
+        "arxiv": "2407.04620"
+    },
+    {
+        "name": "Factual Recall Behaviors",
+        "arxiv": "2408.03247"
+    },
+    {
+        "name": "MOHAWK",
+        "arxiv": "2408.10189"
+    },
+    {
+        "name": "Unveiling Induction Heads",
+        "arxiv": "2409.10559"
+    },
+    {
+        "name": "Group Operations",
+        "arxiv": "2410.07476"
+    },
+    {
+        "name": "LoLCATs",
+        "arxiv": "2410.10254"
+    },
+    {
+        "name": "Optimization and Meta-Learning",
+        "arxiv": "2410.11268"
+    },
+    {
+        "name": "MGDM",
+        "arxiv": "2410.14157"
+    },
+    {
+        "name": "DiffuLLaMA",
+        "arxiv": "2410.17891"
+    },
+    {
+        "name": "MDM",
+        "arxiv": "2410.18514"
+    },
+    {
+        "name": "Recursive Transformer",
+        "arxiv": "2410.20672"
+    },
+    {
+        "name": "Transformers",
+        "arxiv": "2410.20672"
+    },
+    {
+        "name": "Decomposes Reasoning",
+        "arxiv": "2411.13504"
+    },
+    {
+        "name": "Implicit Reasoning",
+        "arxiv": "2411.15862"
+    },
+    {
+        "name": "Gated DeltaNet",
+        "arxiv": "2412.06464"
+    },
+    {
+        "name": "Gated delta",
+        "arxiv": "2412.06464"
+    },
+    {
+        "name": "Coconut",
+        "arxiv": "2412.06769"
+    },
+    {
+        "name": "Representation",
+        "arxiv": "2412.09563"
+    },
+    {
+        "name": "CCOT",
+        "arxiv": "2412.13171"
+    },
+    {
+        "name": "Titans",
+        "arxiv": "2501.00663"
+    },
+    {
+        "name": "L2D",
+        "arxiv": "2501.15781"
+    },
+    {
+        "name": "Layer by Layer",
+        "arxiv": "2502.02013"
+    },
+    {
+        "name": "VO-VAE",
+        "arxiv": "2502.03275"
+    },
+    {
+        "name": "Recurrent-Depth",
+        "arxiv": "2502.05171"
+    },
+    {
+        "name": "Test-time Compute",
+        "arxiv": "2502.05171"
+    },
+    {
+        "name": "Gemini Diffusion",
+        "arxiv": "2502.05171"
+    },
+    {
+        "name": "Curse of Depth",
+        "arxiv": "2502.05795"
+    },
+    {
+        "name": "Implicit language models are rnns",
+        "arxiv": "2502.07827"
+    },
+    {
+        "name": "RELAY",
+        "arxiv": "2502.08482"
+    },
+    {
+        "name": "Back Attention",
+        "arxiv": "2502.10835"
+    },
+    {
+        "name": "Interwoven Structured Knowledge",
+        "arxiv": "2502.10871"
+    },
+    {
+        "name": "Two-Hop Reasoning",
+        "arxiv": "2502.13913"
+    },
+    {
+        "name": "Gpt-2",
+        "arxiv": "2502.13913"
+    },
+    {
+        "name": "TESS 2",
+        "arxiv": "2502.13917"
+    },
+    {
+        "name": "Llamba",
+        "arxiv": "2502.14458"
+    },
+    {
+        "name": "Compositional Generalization",
+        "arxiv": "2502.15801"
+    },
+    {
+        "name": "Light thinker",
+        "arxiv": "2502.15589"
+    },
+    {
+        "name": "Looping-Inspired Regularization",
+        "arxiv": "2502.17416"
+    },
+    {
+        "name": "Looped Transformers",
+        "arxiv": "2502.17416"
+    },
+    {
+        "name": "CODI",
+        "arxiv": "2502.21074"
+    },
+    {
+        "name": "Liger",
+        "arxiv": "2503.01496"
+    },
+    {
+        "name": "Mercury",
+        "arxiv": "2503.01496"
+    },
+    {
+        "name": "Log-Depth Transformers",
+        "arxiv": "2503.03961"
+    },
+    {
+        "name": "Emergent Abilities",
+        "arxiv": "2503.05788"
+    },
+    {
+        "name": "d1-LLaDA",
+        "arxiv": "2504.12216"
+    },
+    {
+        "name": "Unpacking Robustness",
+        "arxiv": "2505.07856"
+    },
+    {
+        "name": "DCoLT",
+        "arxiv": "2505.10446"
+    },
+    {
+        "name": "LLM Depth",
+        "arxiv": "2505.13898"
+    },
+    {
+        "name": "Void in LLM",
+        "arxiv": "2505.14467"
+    },
+    {
+        "name": "dKV-Cache",
+        "arxiv": "2505.15781"
+    },
+    {
+        "name": "MMaDA",
+        "arxiv": "2505.15809"
+    },
+    {
+        "name": "LLaDA 1.5",
+        "arxiv": "2505.19223"
+    },
+    {
+        "name": "OmegaNet and Atlas",
+        "arxiv": "2505.23735"
+    },
+    {
+        "name": "ATLAS",
+        "arxiv": "2505.23735"
+    },
+    {
+        "name": "Soft Reasoning",
+        "arxiv": "2505.24688"
+    },
+    {
+        "name": "dLLM-Cache",
+        "arxiv": "2506.06295"
+    },
+    {
+        "name": "Dream",
+        "arxiv": "2508.15487"
+    }
+]

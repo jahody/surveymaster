@@ -1,0 +1,25 @@
+{
+  "filename": "2503.06252.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.06252.md",
+      "chapters": [
+        {
+          "chapter": "7.1",
+          "confidence": 60,
+          "reason": "The paper focuses on multimodal mathematical reasoning using atomic step decomposition to handle noisy visual information and dynamically adjust reasoning complexity, aligning directly with the key phrases and description of Efficient Multimodality and Video Reasoning."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 25,
+          "reason": "The paper incorporates 'slow thinking' and dynamically combines different reasoning abilities based on task complexity, which matches the dual process theory and complexity-based toggling described in System Switch, without routing to different models."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper introduces an atomic capability metric to evaluate single step utilization rate and discusses overthinking mitigation, which relates to evaluating reasoning efficiency and trade-offs, though it is not the primary focus."
+        }
+      ]
+    }
+  }
+}

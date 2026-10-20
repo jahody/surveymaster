@@ -1,0 +1,25 @@
+{
+  "filename": "2406.06484.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.06484.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 50,
+          "reason": "The paper explicitly frames DeltaNet as a gradient-based update rule (delta rule) where the hidden state acts as fast weights, and focuses on hardware-efficient chunk-wise parallelization for training."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 30,
+          "reason": "The paper describes the delta rule as a form of online learning/optimization where the hidden state is updated to steer toward key-value targets, fitting the gradient-state recurrence definition."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 20,
+          "reason": "The paper is a linear transformer variant that replaces standard attention with a linear-time alternative, sharing characteristics with associative recurrent neural networks."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2503.15558.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.15558.md",
+      "chapters": [
+        {
+          "chapter": "7.1",
+          "confidence": 50,
+          "reason": "The paper focuses on Physical AI, which involves multimodal (visual/physical) inputs and embodied reasoning, aligning directly with the scope of chapter 7.1."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 30,
+          "reason": "A significant portion of the paper is dedicated to building comprehensive benchmarks for physical common sense and embodied reasoning to evaluate the models."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The paper develops models for embodied decision-making and autonomous agents, which falls under the application of reasoning techniques to real-world systems."
+        }
+      ]
+    }
+  }
+}

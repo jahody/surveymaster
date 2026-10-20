@@ -1,0 +1,25 @@
+{
+  "filename": "2505.18962.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.18962.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper's core method, System-1.5 Reasoning, operates on the model's internal states (hidden states) to create dynamic shortcuts in Transformer layers, directly aligning with the description of internal_state_level."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 30,
+          "reason": "The framework dynamically allocates computation across reasoning steps via shortcuts to compress the reasoning process and improve efficiency, which matches the adaptive_efficiency category focused on dynamic compression and adjusting reasoning length."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 20,
+          "reason": "The training involves a two-stage self-distillation process from natural language CoT to latent-space reasoning, anchoring the latent trajectories to explicit reasoning supervision for semantic fidelity, fitting semantic_anchoring."
+        }
+      ]
+    }
+  }
+}

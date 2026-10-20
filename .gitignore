@@ -1,0 +1,14 @@
+.env
+.claude/
+.gemini/
+hydra_outputs/
+outputs*/
+__pycache__/
+*.pyc
+*.bak
+*.pdf
+nul
+
+# Third-party content: fetch locally with 1_fetch.py / 1b_scrape.py, don't redistribute
+papers/*/blogPosts/
+papers/*/papers_markdown/

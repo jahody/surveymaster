@@ -1,0 +1,25 @@
+{
+  "filename": "2402.11700.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.11700.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 50,
+          "reason": "The paper directly investigates the role of layer depth as a bottleneck for model size and efficiency, challenging the assumption that more layers are necessary for performance, which aligns with the chapter's focus on layer depth as a primary bottleneck for capacity."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 30,
+          "reason": "The study systematically explores reducing the number of layers in LLMs and observes performance retention, which relates to the macro-level correlation between layer depth and reasoning capabilities discussed in this chapter."
+        },
+        {
+          "chapter": "4.2.3",
+          "confidence": 20,
+          "reason": "The paper discusses models with fewer layers, including potentially a single layer, outperforming full models, which touches on the role of deep layers in output refinement and the phenomenon of layer degradation mentioned in this chapter."
+        }
+      ]
+    }
+  }
+}

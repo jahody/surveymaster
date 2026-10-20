@@ -1,0 +1,25 @@
+{
+  "filename": "2311.01460.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2311.01460.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper's core approach uses the language model's internal hidden states to perform implicit reasoning, distilling reasoning into these states rather than generating explicit tokens."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 30,
+          "reason": "The implicit reasoning steps are distilled from a teacher model trained on explicit chain-of-thought, anchoring the latent process to explicit semantic supervision."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The method manipulates reasoning at the level of hidden states across layers, which is a form of latent token-level steering, as opposed to generating full explicit CoT text."
+        }
+      ]
+    }
+  }
+}

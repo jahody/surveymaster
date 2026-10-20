@@ -1,0 +1,25 @@
+{
+  "filename": "2305.18619.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2305.18619.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 70,
+          "reason": "The paper introduces Plaid, a diffusion language model that operates on continuous token embeddings with Gaussian noise corruption and denoising, aligning with the description of embedding-based diffusion models."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 20,
+          "reason": "While the paper focuses on embedding-based diffusion, it discusses algorithmic improvements for diffusion language models, which may relate to masked diffusion techniques, though not as the primary approach."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 10,
+          "reason": "The paper compares diffusion models to autoregressive models like GPT-2, but does not explicitly integrate both paradigms; thus, hybrid AR-diffusion models are only marginally relevant."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2311.08692.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2311.08692.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper proposes Zooter, a method that routes queries to different LLMs based on their expertise, which directly aligns with Model Switch's focus on routing between distinct models to optimize computational efficiency."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "Zooter applies efficient reasoning through dynamic query routing in an ensemble of LLMs, fitting Efficient Reasoning Applications' emphasis on practical systems like dynamic routing for real-world use."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 15,
+          "reason": "The method involves selecting the best model for each query, which parallels Parallel Search's generation of multiple candidates (here, model outputs) and selection, though it routes before generation rather than after."
+        }
+      ]
+    }
+  }
+}

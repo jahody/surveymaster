@@ -1,0 +1,25 @@
+{
+  "filename": "2502.05171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.05171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly describes a model that iterates a recurrent block to unroll to arbitrary depth at test-time, which is an architectural modification for recurrence, aligning with the 'explicit structural modifications' and 'adaptive computation time' key phrases. It contrasts with training-induced recurrence."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 25,
+          "reason": "The work focuses on scaling test-time compute by increasing depth (recurrent iterations), treating depth as a computational resource that enhances reasoning performance, which directly relates to the concept of layer depth as a primary bottleneck for latent reasoning capacity."
+        },
+        {
+          "chapter": "5.2.3",
+          "confidence": 15,
+          "reason": "The model's recurrent block iteration at test-time to achieve unbounded depth and improve reasoning resembles the 'adaptive self-iterations' and 'convergence halting' described for implicit fixed-point RNNs, though it is not explicitly framed as reaching a fixed-point equilibrium."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.11484.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.11484.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 50,
+          "reason": "The paper explicitly focuses on enabling diverse exploration of thinking paths in continuous latent space by perturbing latent thoughts."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The method uses specialized initial tokens to manipulate the latent reasoning process, fitting the token-level manipulation category."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 20,
+          "reason": "The approach utilizes contrastive learning to promote diversity and maintain representation quality, aligning with semantic anchoring techniques."
+        }
+      ]
+    }
+  }
+}

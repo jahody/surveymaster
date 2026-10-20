@@ -1,0 +1,25 @@
+{
+  "filename": "1807.03819.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "1807.03819.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The Universal Transformer introduces explicit architectural recurrence by sharing weights across layers and implementing a dynamic halting mechanism, which is the core contribution of the paper."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 25,
+          "reason": "The paper explicitly discusses and proves that the Universal Transformer is Turing-complete, distinguishing it from standard Transformers."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper demonstrates the model's capabilities on algorithmic tasks and language understanding, showing improved generalization compared to standard Transformers."
+        }
+      ]
+    }
+  }
+}

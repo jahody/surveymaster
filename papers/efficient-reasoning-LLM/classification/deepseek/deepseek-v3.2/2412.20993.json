@@ -1,0 +1,25 @@
+{
+  "filename": "2412.20993.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.20993.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "The paper introduces Certaindex to dynamically scale compute during inference by detecting answer stabilization, enabling early exit and dynamic token allocation, which aligns with efficient test-time scaling via confidence-based methods and balancing search depth/width."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "The work integrates Certaindex into Dynasor, a reasoning-aware LLM serving system, demonstrating practical applications in real-world systems with compute savings and throughput improvements, matching the focus on efficient reasoning applications like early exit strategies and dynamic query routing."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "Certaindex is introduced as a metric to quantify answer stabilization and overthinking, contributing to evaluation benchmarks that measure reasoning efficiency and trade-offs between accuracy and token consumption, though it is not the primary focus."
+        }
+      ]
+    }
+  }
+}

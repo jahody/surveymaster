@@ -1,0 +1,25 @@
+{
+  "filename": "2402.13572.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.13572.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly introduces a novel 'AlgoFormer' architecture with a specific pre-transformer, looped transformer, and post-transformer structure to enable algorithmic capabilities."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "The paper focuses on empowering transformers with algorithmic capabilities and demonstrates performance on tasks requiring algorithm representation and learning."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 15,
+          "reason": "The paper provides theoretical evidence of the expressive power of AlgoFormer in solving challenging problems, mirroring human-designed algorithms."
+        }
+      ]
+    }
+  }
+}

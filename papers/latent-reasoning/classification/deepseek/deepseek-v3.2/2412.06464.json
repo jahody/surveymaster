@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06464.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06464.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces Gated DeltaNet, which builds on Mamba2 and DeltaNet, both linear-state models using predetermined algebraic update rules (delta rule) for a matrix-valued hidden state, fitting the linear-state recurrence description."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 25,
+          "reason": "The gated delta rule and architecture are related to Infini-attention's use of a compressive memory and linear-delta rule for efficient long-context processing, though Gated DeltaNet is a distinct model improving on Mamba2."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 15,
+          "reason": "While the paper focuses on linear-state recurrence, it mentions hybrid architectures and adaptive memory control, which have conceptual overlap with gradient-state methods, but the core mechanism is not gradient-based optimization."
+        }
+      ]
+    }
+  }
+}

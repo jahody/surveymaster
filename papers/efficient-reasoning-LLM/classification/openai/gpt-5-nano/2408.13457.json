@@ -1,0 +1,25 @@
+{
+  "filename": "2408.13457.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.13457.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 60,
+          "reason": "Primary focus on difficulty-adaptive budgeting for inference steps and token usage."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 25,
+          "reason": "Describes parallel candidate reasoning and self-consistency-like sampling to reduce cost."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "Addresses dynamic compute at test time and resource allocation for efficient reasoning."
+        }
+      ]
+    }
+  }
+}

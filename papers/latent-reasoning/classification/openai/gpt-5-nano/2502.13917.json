@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13917.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13917.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 55,
+          "reason": "Hybrid AR-diffusion training: starts from a strong autoregressive model and uses diffusion loss; explicit AR-diffusion integration."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 30,
+          "reason": "Diffusion-based text modeling on discrete tokens with diffusion loss; aligns with masked diffusion model concepts."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 15,
+          "reason": "Embedding-based diffusion models conceptually related but not the primary approach; diffusion on embeddings vs. tokens."
+        }
+      ]
+    }
+  }
+}

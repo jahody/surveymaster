@@ -1,0 +1,25 @@
+{
+  "filename": "2502.05171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.05171.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on a recurrent block architecture that iterates at test-time to scale computation, which is the definition of layer-recurrent execution."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "The model performs reasoning by manipulating internal hidden states through recurrent updates rather than explicit text tokens."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 15,
+          "reason": "The iterative unrolling of the recurrent block acts as a form of progressive refinement of the model's internal state to improve reasoning performance."
+        }
+      ]
+    }
+  }
+}

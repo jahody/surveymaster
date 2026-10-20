@@ -1,0 +1,25 @@
+{
+  "filename": "2405.14838.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.14838.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 70,
+          "reason": "The paper proposes internalizing CoT steps by gradually removing explicit intermediate steps during fine-tuning, which aligns with latent-space SFT's focus on replacing explicit CoT with continuous hidden representations, as the model learns to reason implicitly without generating discrete tokens."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The method involves training the model to produce concise reasoning by removing intermediate steps, which relates to reasoning chain compression, though the paper emphasizes internalization rather than just shortening explicit text, making it less central."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 10,
+          "reason": "The approach improves reasoning efficiency without explicit length rewards, using gradual step removal during fine-tuning, which aligns with implicit methods that achieve efficiency through training dynamics rather than direct penalties."
+        }
+      ]
+    }
+  }
+}

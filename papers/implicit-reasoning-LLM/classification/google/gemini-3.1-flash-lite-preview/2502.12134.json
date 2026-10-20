@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12134.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12134.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "The paper focuses on generating instance-specific soft thought tokens (continuous-space reasoning) to steer the LLM's reasoning process."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 30,
+          "reason": "The method maps soft thought tokens into the LLM's representation space, ensuring semantic alignment with explicit reasoning supervision."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 20,
+          "reason": "The approach utilizes soft latent representations to explore reasoning in a continuous concept space rather than relying on discrete text tokens."
+        }
+      ]
+    }
+  }
+}

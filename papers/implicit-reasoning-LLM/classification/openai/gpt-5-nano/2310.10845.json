@@ -1,0 +1,25 @@
+{
+  "filename": "2310.10845.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.10845.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "Paper emphasizes token-wise variable depth with recurrent-like computation and per-token adaptive repeats, aligning with layer_recurrent_execution."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "Core idea involves reasoning at the token level and mimicking chain-of-thought (CoT) at the token granularity."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 20,
+          "reason": "Introduces a compute-adaptive model that allocates compute to tokens most in need, reflecting adaptive efficiency in reasoning."
+        }
+      ]
+    }
+  }
+}

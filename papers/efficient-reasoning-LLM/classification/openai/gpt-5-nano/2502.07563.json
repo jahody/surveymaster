@@ -1,0 +1,25 @@
+{
+  "filename": "2502.07563.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.07563.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "Focuses on subquadratic/linear attention techniques and efficiency, matching the paper's core topic."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "Covers efficient reasoning with subquadratic attention, aligning with the paper’s emphasis on efficient architectures and hybrid models."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "Related to linearization concepts (transformer-to-linear structures), tangentially connected to linear attention."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2411.01855.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.01855.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 60,
+          "reason": "The paper focuses on training models to generate shorter, accurate reasoning paths by fine-tuning on datasets containing both complete and skipped reasoning sequences."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 25,
+          "reason": "The approach uses iterative refinement and fine-tuning to encourage step-skipping behavior rather than relying on explicit length-penalty reward functions."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper introduces a controlled framework to evaluate the trade-offs between reasoning efficiency (step skipping) and accuracy, contributing to the study of reasoning efficiency metrics."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2503.06252.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.06252.md",
+      "chapters": [
+        {
+          "chapter": "7.1",
+          "confidence": 50,
+          "reason": "The paper explicitly proposes 'atomic step decomposition' for multimodal reasoning, which is the defining characteristic of this category."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 30,
+          "reason": "The paper focuses on generating high-quality, structured reasoning paths and fine-tuning models to improve efficiency and data utilization, aligning with chain compression."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "The paper introduces an 'atomic capability metric' to evaluate step utilization and benchmarks efficiency gains, directly addressing the need for process-aware metrics."
+        }
+      ]
+    }
+  }
+}

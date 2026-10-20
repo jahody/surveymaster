@@ -1,0 +1,25 @@
+{
+  "filename": "2406.13858.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.13858.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 50,
+          "reason": "The paper focuses on intermediate layers forming specialized reasoning sub-circuits and latent CoT through internal multi-hop reasoning embeddings."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 30,
+          "reason": "Provides micro-level perspective on how different layers contribute to reasoning, aligning with the observed layer-specific intermediates and information flow."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 20,
+          "reason": "Discusses theory of information flow across layers, relevant to how intermediate results influence final outputs and token activations."
+        }
+      ]
+    }
+  }
+}

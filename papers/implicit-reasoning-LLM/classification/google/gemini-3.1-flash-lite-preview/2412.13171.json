@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 50,
+          "reason": "The paper explicitly focuses on compressing full explicit reasoning chains into continuous contemplation tokens, ensuring semantic fidelity between the latent representation and the reasoning trace."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 30,
+          "reason": "The method allows for adaptive modification of reasoning improvements by controlling the number of contemplation tokens generated, directly addressing dynamic reasoning length."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The approach steers reasoning by manipulating individual continuous contemplation tokens inserted during inference, which serves as the primary mechanism for the proposed framework."
+        }
+      ]
+    }
+  }
+}

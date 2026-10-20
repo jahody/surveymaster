@@ -1,0 +1,25 @@
+{
+  "filename": "2404.16710.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.16710.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "Utilizes draft/verification (self-speculative decoding) to allocate compute and perform early exits, aligning with Model Switch concepts."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "Addresses efficient test-time scaling and infinite thinking through dynamic inference and early exit strategies."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 15,
+          "reason": "Demonstrates efficient reasoning techniques applied to real-world tasks (summarization, coding, semantic parsing) with speedups."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2405.21060.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.21060.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "The paper introduces Mamba-2, a state-space model (SSM) that is closely related to Transformers and aims to reduce computational complexity, directly aligning with subquadratic attention mechanisms like linear attention and state space models."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "The paper develops a theoretical framework connecting SSMs to attention and applies it to create an efficient architecture for language modeling, which involves architectural modifications for reasoning tasks, though not explicitly evaluated on CoT reasoning in this abstract."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "The paper connects Transformers and SSMs through structured matrix decompositions, which could relate to converting transformer-like attention into linear recurrent structures, though it focuses more on new architecture design than conversion of pretrained models."
+        }
+      ]
+    }
+  }
+}

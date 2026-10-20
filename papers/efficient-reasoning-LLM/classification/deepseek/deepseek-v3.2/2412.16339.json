@@ -1,0 +1,25 @@
+{
+  "filename": "2412.16339.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.16339.md",
+      "chapters": [
+        {
+          "chapter": "7.3",
+          "confidence": 70,
+          "reason": "The paper directly introduces 'Deliberative Alignment' to improve safety and reliability by training models to explicitly reason over safety specifications before answering, which aligns with the chapter's focus on trustworthy reasoning and hallucination mitigation."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The approach trains models to recall and reason over specifications without explicit length rewards, improving efficiency implicitly through structured reasoning, matching the description of methods without direct length penalties."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 10,
+          "reason": "While not the main focus, the method involves training models to produce explicit, structured reasoning chains (recalling policies) which relates to building concise reasoning paths, though it does not emphasize compression of existing chains."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2406.02128.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.02128.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 70,
+          "reason": "The paper studies how CoT reasoning emerges in standard transformers through training, without explicit architectural modifications, focusing on the appearance of 'iteration heads' as a learned, implicit recurrent mechanism."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "The paper analyzes specialized attention mechanisms ('iteration heads') that form computational sub-circuits for iterative reasoning, which aligns with the role of intermediate layers as the core of latent CoT."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 10,
+          "reason": "The study tracks the precise working of iteration heads at the attention level, clarifying how information is transmitted across layers during the reasoning process."
+        }
+      ]
+    }
+  }
+}

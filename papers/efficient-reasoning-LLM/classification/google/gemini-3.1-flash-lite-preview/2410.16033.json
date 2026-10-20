@@ -1,0 +1,25 @@
+{
+  "filename": "2410.16033.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.16033.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 60,
+          "reason": "The paper explicitly proposes a tree-search strategy integrated into Best-of-N sampling, which is a core parallel search technique involving branching and pruning."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "The approach focuses on scaling compute dynamically during inference by managing search width and depth to improve alignment without additional training."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 10,
+          "reason": "The speculative tree-search mechanism shares conceptual similarities with speculative decoding by using draft-like expansion to guide the search process."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 60,
+          "reason": "Paper focuses on training-induced recurrence: implicit CoT via training without architectural changes (self-distillation into a latent space)."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "Discusses training strategies for recurrent reasoning and CoT compression, aligning with curriculum-style training and CoT-aligned supervision."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "Demonstrates capabilities and robustness on reasoning tasks (e.g., GSM8k), illustrating applications of latent CoT."
+        }
+      ]
+    }
+  }
+}

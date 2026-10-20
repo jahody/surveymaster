@@ -1,0 +1,25 @@
+{
+  "filename": "2407.06023.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.06023.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 50,
+          "reason": "The paper focuses on distilling System 2 reasoning (like Chain-of-Thought) into System 1 via self-supervised methods, which aligns with compressing reasoning chains into concise forms through supervised fine-tuning, as described in Reasoning Chain Compression."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 30,
+          "reason": "The distillation process involves internalizing reasoning without intermediate tokens, which relates to replacing explicit CoT steps with continuous hidden representations, though the paper does not explicitly mention latent-space operations, making it a secondary fit."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The method improves reasoning efficiency without explicit length rewards by distilling higher-quality outputs, which matches the implicit efficiency gains described in 'without Length Reward', though it is not the primary focus."
+        }
+      ]
+    }
+  }
+}

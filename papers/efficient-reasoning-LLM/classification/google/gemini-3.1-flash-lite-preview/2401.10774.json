@@ -1,0 +1,25 @@
+{
+  "filename": "2401.10774.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2401.10774.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "Medusa functions as a form of speculative decoding by using auxiliary heads to predict multiple tokens, effectively acting as a draft model mechanism to accelerate inference."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 30,
+          "reason": "The paper utilizes a tree-based attention mechanism to construct and verify multiple candidate continuations in parallel, which aligns with parallel search strategies."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The framework focuses on scaling compute during inference by increasing search width through parallel token prediction to reduce latency."
+        }
+      ]
+    }
+  }
+}

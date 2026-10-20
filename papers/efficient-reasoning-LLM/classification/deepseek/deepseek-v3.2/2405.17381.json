@@ -1,0 +1,25 @@
+{
+  "filename": "2405.17381.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.17381.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 70,
+          "reason": "The paper introduces Lightning Attention, a linear attention implementation that reduces the quadratic complexity of standard self-attention, directly aligning with the subquadratic attention category's focus on mechanisms like linear attention to improve computational efficiency."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 20,
+          "reason": "The paper proposes TransNormerLLM (TNL), a new architecture tailored to Lightning Attention, and evaluates it on reasoning tasks, showing it performs on par with state-of-the-art LLMs, which fits the category of applying subquadratic attention models to efficient reasoning solutions."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 10,
+          "reason": "While the paper does not convert a pre-trained transformer into a linear recurrent structure, it introduces a novel linear attention mechanism that could be seen as a step toward more efficient architectures, though it is primarily a new pretraining approach rather than a conversion of existing models."
+        }
+      ]
+    }
+  }
+}

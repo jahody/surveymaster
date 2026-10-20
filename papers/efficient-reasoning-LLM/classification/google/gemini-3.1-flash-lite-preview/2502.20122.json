@@ -1,0 +1,25 @@
+{
+  "filename": "2502.20122.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.20122.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 60,
+          "reason": "The paper proposes fine-tuning models on self-generated concise reasoning paths to internalize shorter, more efficient reasoning, which is the definition of chain compression."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 25,
+          "reason": "The method relies on best-of-N sampling to generate and select concise reasoning paths, which is a core component of the proposed approach."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 15,
+          "reason": "The approach achieves efficiency through supervised fine-tuning on selected concise traces rather than using explicit length-based reward functions during training."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2410.20290.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.20290.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 60,
+          "reason": "The paper explicitly improves Best-of-N sampling, which is a core parallel search technique, by introducing speculative rejection to prune candidates."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The paper focuses on optimizing inference-time compute scaling for Best-of-N, which is a primary method for test-time compute allocation."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 15,
+          "reason": "The speculative rejection mechanism functions similarly to speculative decoding by using a faster, lighter process to verify or reject candidates, aligning with model-switching logic."
+        }
+      ]
+    }
+  }
+}

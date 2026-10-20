@@ -1,0 +1,25 @@
+{
+  "filename": "2502.14458.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.14458.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "Llamba is described as scalable recurrent models implemented via architectural changes (Mamba), i.e., explicit architectural recurrence across layers."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 35,
+          "reason": "The work involves cross-architecture distillation converting Transformer checkpoints into a recurrent hidden-state model (Mamba) using distillation methods like MOHAWK."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "Demonstrates practical applications of the recurrent model in terms of throughput, memory efficiency, and edge-device deployment."
+        }
+      ]
+    }
+  }
+}

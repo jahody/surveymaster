@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12025.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12025.md",
+      "chapters": [
+        {
+          "chapter": "7.3",
+          "confidence": 60,
+          "reason": "The paper directly addresses the safety and reliability challenges of long chain-of-thought reasoning, focusing on preventing harmful outputs in LRMs."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "The paper introduces SafeChain, a dataset used to fine-tune models to produce safer and more efficient reasoning traces, aligning with the goal of internalizing concise/safe reasoning."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper develops new safety metrics and evaluates 12 state-of-the-art LRMs on specific safety datasets, contributing to the benchmarking of LRM safety."
+        }
+      ]
+    }
+  }
+}

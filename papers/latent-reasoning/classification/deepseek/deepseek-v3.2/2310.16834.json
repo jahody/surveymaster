@@ -1,0 +1,25 @@
+{
+  "filename": "2310.16834.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.16834.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 50,
+          "reason": "The paper introduces SEDD, a discrete diffusion model for language modeling that operates on discrete token spaces, aligning with masked diffusion models which corrupt discrete tokens via masking rather than continuous embeddings."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 30,
+          "reason": "SEDD generalizes score matching to discrete spaces via score entropy, which is conceptually related to embedding-based diffusion that denoises continuous representations, though it operates directly on discrete structures without Gaussian noise."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 20,
+          "reason": "The paper compares SEDD to autoregressive models like GPT-2 and discusses trade-offs, but it does not integrate AR and diffusion paradigms; this category is less relevant as SEDD is a pure diffusion approach."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2508.00574.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2508.00574.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 60,
+          "reason": "Uses synthetic continuous CoT as an explicit reasoning supervision target to align the model's traces with correct answers, emphasizing semantic fidelity."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 30,
+          "reason": "Involves iterative refinement of reasoning by identifying hard questions and prompting the model to re-think, aligning with progressive refinement."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 10,
+          "reason": "Highlights efficiency and adaptive control in reasoning by leveraging continuous CoT and adaptive prompting to manage reasoning length/effort."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.01567.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.01567.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 50,
+          "reason": "The paper explicitly uses an EM-style dual-rate optimization process with iterative inference-time computation to refine latent thought vectors."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The model incorporates explicit latent thought vectors that guide the autoregressive generation, functioning as non-interpretable latent tokens."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 20,
+          "reason": "The model utilizes iterative inference-time computation (number of iterations) to refine the latent thought process, aligning with the concept of iterative refinement within the architecture."
+        }
+      ]
+    }
+  }
+}

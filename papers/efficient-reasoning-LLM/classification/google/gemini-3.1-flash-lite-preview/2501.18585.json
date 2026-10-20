@@ -1,0 +1,25 @@
+{
+  "filename": "2501.18585.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.18585.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 50,
+          "reason": "The paper introduces a novel metric to quantify underthinking and systematically analyzes reasoning inefficiencies, which is the core contribution."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "The paper proposes a decoding strategy (TIP) to manage the reasoning process during inference, directly influencing how the model scales its thinking depth."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "The proposed thought switching penalty acts as an inference-time constraint to manage the reasoning chain length and depth."
+        }
+      ]
+    }
+  }
+}

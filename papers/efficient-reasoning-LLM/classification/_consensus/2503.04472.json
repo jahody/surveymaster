@@ -1,0 +1,17 @@
+{
+  "filename": "2503.04472.md",
+  "classifications": {
+    "taxonomy": {
+      "chapter": "3.1",
+      "score": 110.0,
+      "votes": {
+        "3.1": 110,
+        "5.1": 110,
+        "4.1": 40,
+        "5.2": 30,
+        "7.2": 10
+      },
+      "reason": "Consensus: 2/3 models ranked this #1"
+    }
+  }
+}

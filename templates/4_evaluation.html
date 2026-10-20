@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Evaluation - SurveyMaster{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/4_evaluation.css">
+{% endblock %}
+
+{% block body %}
+
+<div class="eval-status" id="evalStatus">Select a topic to load evaluation metrics.</div>
+
+<div class="eval-wrap" id="evalWrap" style="display:none;">
+
+  <section class="eval-section" id="summarySection">
+    <h2>Summary</h2>
+    <div class="summary-cards" id="summaryCards"></div>
+  </section>
+
+  <section class="eval-section" id="m1Section">
+    <h2>M1: Fleiss' Kappa (Inter-Model Agreement)</h2>
+    <p class="metric-desc">Measures agreement across all models simultaneously, correcting for chance. &lt;0.2 = poor, 0.2&ndash;0.4 = fair, 0.4&ndash;0.6 = moderate, 0.6&ndash;0.8 = good, &ge;0.8 = excellent. Low values suggest category boundaries are ambiguous &mdash; clarify descriptions and add hard negatives.</p>
+    <div class="metric-verdict" id="m1Verdict"></div>
+    <div id="fleissContent"></div>
+  </section>
+
+  <section class="eval-section" id="m2Section">
+    <h2>M2: Pairwise Agreement</h2>
+    <p class="metric-desc">How often each pair of models assigns the same top-1 category. Cohen's &kappa; adjusts for chance. Low per-pair kappa points to specific model disagreements &mdash; sharpen overlapping category distinctions.</p>
+    <div class="metric-verdict" id="m2Verdict"></div>
+    <div id="pairwiseContent"></div>
+  </section>
+
+  <section class="eval-section" id="m3Section">
+    <h2>M3: Consensus Strength</h2>
+    <p class="metric-desc">Margin between top-voted and runner-up categories (confidence-weighted). High margins = clear-cut; low margins = boundary papers. Too many weak items suggests categories need merging or sharper differentiation.</p>
+    <div class="metric-verdict" id="m3Verdict"></div>
+    <div id="consensusContent"></div>
+  </section>
+
+  <section class="eval-section" id="m4Section">
+    <h2>M4: Confidence-Agreement Correlation</h2>
+    <p class="metric-desc">Pearson r between model confidence and actual agreement. High correlation means models &ldquo;know when they know.&rdquo; Low or negative r suggests category descriptions mislead models into false confidence.</p>
+    <div class="metric-verdict" id="m4Verdict"></div>
+    <div id="confidenceContent"></div>
+  </section>
+
+  <section class="eval-section" id="m5Section">
+    <h2>M5: Per-Model Deviation</h2>
+    <p class="metric-desc">Fraction of papers where each model's top-1 pick differs from consensus. A consistently high rate flags a model as an outlier. Informational &mdash; consider excluding the outlier or investigating its disagreement patterns.</p>
+    <div class="metric-verdict" id="m5Verdict"></div>
+    <div id="deviationContent"></div>
+  </section>
+
+  <section class="eval-section" id="m6Section">
+    <h2>M6: Taxonomy Difficulty</h2>
+    <p class="metric-desc">Ranks taxonomies by how hard they are for models to agree on. Low unanimous rates and high entropy indicate a taxonomy is too fine-grained or has overlapping categories &mdash; consider merging similar leaves.</p>
+    <div class="metric-verdict" id="m6Verdict"></div>
+    <div id="difficultyContent"></div>
+  </section>
+
+  <section class="eval-section" id="m7Section">
+    <h2>M7: Coverage Analysis (Structural Balance)</h2>
+    <p class="metric-desc">How papers distribute across leaf categories. Dead leaves (0 papers) and fat leaves (overcrowded) indicate structural imbalance. High Gini or low entropy means the taxonomy doesn't match the corpus &mdash; split fat leaves and merge/replace dead ones.</p>
+    <div class="metric-verdict" id="m7Verdict"></div>
+    <div id="coverageContent"></div>
+  </section>
+
+  <section class="eval-section" id="m8Section">
+    <h2>M8: Taxonomy Independence</h2>
+    <p class="metric-desc">Cramer's V measures whether taxonomy pairs classify papers differently. 0 = independent (good), 1 = redundant (one duplicates another). Redundant pairs should be merged or one replaced with a genuinely different perspective.</p>
+    <div class="metric-verdict" id="m8Verdict"></div>
+    <div id="independenceContent"></div>
+  </section>
+
+  <section class="eval-section" id="plotsSection">
+    <h2>Plots</h2>
+    <div class="plots-grid" id="plotsGrid"></div>
+  </section>
+
+</div>
+
+<script src="/static/js/4_evaluation.js"></script>
+
+{% endblock %}

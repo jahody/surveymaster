@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15781.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15781.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 70,
+          "reason": "Directly addresses diffusion language models and KV-cache integration with delayed KV-cache, matching the paper's core idea."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 20,
+          "reason": "Discusses memory augmentation in Transformer blocks and streaming inference, related to caching KV states used in DLMs."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 10,
+          "reason": "Hybrid AR-Diffusion Models; involves diffusion combined with autoregressive caching strategies, tangentially related to the paper's caching approach."
+        }
+      ]
+    }
+  }
+}

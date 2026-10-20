@@ -1,0 +1,25 @@
+{
+  "filename": "2412.09871.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.09871.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": 40,
+          "reason": "BLT uses byte-level inputs with dynamically sized patches, aligning with latent-space pretraining concepts and continuous representations."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 35,
+          "reason": "The method budgets compute by adapting patch lengths based on data complexity, effectively a difficulty-adaptive resource budget at inference."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "Emphasizes efficient test-time scaling and dynamic compute during inference through patch-based processing, relevant to inference-time efficiency."
+        }
+      ]
+    }
+  }
+}

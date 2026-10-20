@@ -1,0 +1,25 @@
+{
+  "filename": "2407.01009.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.01009.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 60,
+          "reason": "The paper explicitly implements a framework that toggles between 'Fast' (System 1) and 'Slow' (System 2) reasoning pathways based on task complexity and confidence."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The framework dynamically scales compute at test-time by choosing between simple inference and more complex, multi-path reasoning processes."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "The approach functions as a form of difficulty-adaptive budget allocation, deciding whether to use a short or long reasoning chain to optimize efficiency."
+        }
+      ]
+    }
+  }
+}

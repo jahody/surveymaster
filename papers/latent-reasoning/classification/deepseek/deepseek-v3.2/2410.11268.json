@@ -1,0 +1,25 @@
+{
+  "filename": "2410.11268.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.11268.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly studies 'looped Transformers' that implement multi-step gradient descent through explicit architectural modifications (looping), fitting the description of architectural recurrence with dynamic computational resource allocation based on task complexity."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 25,
+          "reason": "The paper demonstrates that looped Transformers implement multi-step gradient descent updates during in-context learning, treating hidden states as fast-adapting parameters updated via optimization steps, aligning with gradient-state recurrence."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper shows how recurrent models (looped Transformers) solve complex tasks by performing multi-step gradient descent for in-context learning, which involves multi-step computation and algorithmic generalization."
+        }
+      ]
+    }
+  }
+}

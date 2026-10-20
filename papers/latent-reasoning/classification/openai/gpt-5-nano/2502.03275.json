@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03275.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03275.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 70,
+          "reason": "Demonstrates multi-step reasoning and symbolic reasoning capabilities through latent-text token mixing and latent trace abstractions."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "Latent CoT concept; latent tokens act as specialized computational sub-circuits guiding reasoning."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 10,
+          "reason": "Presents a training strategy involving mixing latent and text tokens, a technique for enabling recurrent-like reasoning."
+        }
+      ]
+    }
+  }
+}

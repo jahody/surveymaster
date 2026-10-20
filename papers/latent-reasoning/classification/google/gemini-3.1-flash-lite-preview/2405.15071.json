@@ -1,0 +1,25 @@
+{
+  "filename": "2405.15071.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.15071.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 45,
+          "reason": "The paper focuses on the formation of generalizing circuits within the model's internals, which aligns with the creation of specialized computational sub-circuits for reasoning."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 30,
+          "reason": "The study explicitly analyzes the mechanism behind grokking and the formation of circuits, which relates to how information is transmitted and processed across layers."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "The paper evaluates the model's ability to perform complex reasoning tasks (composition and comparison) and compares it against state-of-the-art LLMs."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2407.14414.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.14414.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 60,
+          "reason": "The core contribution is a framework that dynamically toggles between System-1 (fast) and System-2 (slow) planning modes based on problem difficulty."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "The paper focuses on applying these planning techniques to autonomous agent tasks like Maze Navigation and Blocksworld."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "The paper implements a controllable hybridization factor that allows for scaling search depth at test-time to improve performance."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12025.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12025.md",
+      "chapters": [
+        {
+          "chapter": "7.3",
+          "confidence": 60,
+          "reason": "Focus on safety and reliability of long chain-of-thought reasoning; develops safety mechanisms."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 30,
+          "reason": "Introduces evaluation metrics and SafeChain benchmark datasets to quantify safety and efficiency in CoT."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "Discusses test-time compute strategies (decoding) related to inference cost and safety via constrained traces."
+        }
+      ]
+    }
+  }
+}

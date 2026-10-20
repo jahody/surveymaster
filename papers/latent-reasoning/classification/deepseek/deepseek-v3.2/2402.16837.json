@@ -1,0 +1,25 @@
+{
+  "filename": "2402.16837.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.16837.md",
+      "chapters": [
+        {
+          "chapter": "4.1.1",
+          "confidence": 50,
+          "reason": "The paper directly studies multi-hop reasoning capabilities in LLMs, examining how layer depth influences the ability to perform implicit reasoning steps, which aligns with the macro-level correlation between layer depth and reasoning capabilities described in this chapter."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 30,
+          "reason": "The analysis investigates distinct computational roles across layers (e.g., identifying bridge entities vs. utilizing knowledge about them) and how intermediate information is integrated, matching the micro-level observation of functional differentiation in reasoning processes."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 20,
+          "reason": "The paper explores latent reasoning pathways in standard LLMs without architectural modifications, focusing on how training enables implicit multi-hop reasoning, which corresponds to training-induced recurrence where models develop latent capabilities through training alone."
+        }
+      ]
+    }
+  }
+}

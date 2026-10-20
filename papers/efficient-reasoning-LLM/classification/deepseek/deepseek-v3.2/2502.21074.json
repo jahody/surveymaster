@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 70,
+          "reason": "The paper's core contribution, CODI, replaces explicit CoT steps with continuous hidden representations via self-distillation, aligning hidden states to compress reasoning into latent space, which directly matches the description of Latent-Space SFT."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The paper involves compressing reasoning chains, but the hard negative specifies it should not be assigned if the method replaces explicit CoT with continuous representations. Since CODI does exactly that, this is a secondary fit, as the goal is compression, but the mechanism is latent-space based."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 10,
+          "reason": "The paper explores reasoning in continuous representations, which relates to latent-space concepts, but the hard negative excludes latent-space SFT from this category. It is a tertiary connection as CODI uses self-distillation to internalize reasoning in a latent space, though it fine-tunes a pretrained model rather than pretraining from scratch."
+        }
+      ]
+    }
+  }
+}

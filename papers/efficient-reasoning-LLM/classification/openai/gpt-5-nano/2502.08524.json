@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08524.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08524.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": 65,
+          "reason": "Core idea uses latent, continuous concept representations during pretraining; aligns with CoCoMix's continuous concept mixing."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 25,
+          "reason": "Describes latent-space reasoning using hidden representations instead of explicit CoT steps, matching CoCoMix's latent approach."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 10,
+          "reason": "Discusses compression of reasoning chains and concise reasoning; tangentially related to latent reasoning goals."
+        }
+      ]
+    }
+  }
+}

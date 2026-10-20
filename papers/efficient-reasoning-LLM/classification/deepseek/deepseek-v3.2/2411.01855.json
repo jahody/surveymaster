@@ -1,0 +1,25 @@
+{
+  "filename": "2411.01855.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.01855.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 60,
+          "reason": "The paper introduces a framework to train models to generate shorter, accurate reasoning paths via supervised fine-tuning on datasets with both complete and skipped sequences, directly aligning with the 'Reasoning Chain Compression' description of building target datasets with concise reasoning paths and training models to internalize concise reasoning."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 25,
+          "reason": "The approach involves iteratively refining models to produce shorter reasoning paths, which can be framed as a constrained optimization problem to minimize reasoning steps while preserving accuracy, matching the 'with Length Reward' category's focus on treating reasoning length as a trajectory-level resource for efficiency."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The work empirically evaluates models on efficiency and generalization, contributing to understanding trade-offs between accuracy and computational cost, though it is not primarily focused on developing new benchmarks, making it a secondary fit for 'Evaluation and Benchmark'."
+        }
+      ]
+    }
+  }
+}

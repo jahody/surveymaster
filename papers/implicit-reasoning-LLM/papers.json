@@ -1,0 +1,174 @@
+[
+    {
+        "name": "ICoT-KD",
+        "arxiv": "2311.01460"
+    },
+    {
+        "name": "CoTFormer",
+        "arxiv": "2310.02226"
+    },
+    {
+        "name": "Pause Tokens",
+        "arxiv": "2310.02226"
+    },
+    {
+        "name": "Planning Tokens",
+        "arxiv": "2310.05707"
+    },
+    {
+        "name": "CoTFormer",
+        "arxiv": "2310.10845"
+    },
+    {
+        "name": "Quiet-STaR",
+        "arxiv": "2403.09629"
+    },
+    {
+        "name": "Filler Tokens",
+        "arxiv": "2404.15758"
+    },
+    {
+        "name": "Thinking Tokens",
+        "arxiv": "2405.08644"
+    },
+    {
+        "name": "ICoT-SI",
+        "arxiv": "2405.14838"
+    },
+    {
+        "name": "System2 Distillation",
+        "arxiv": "2407.06023"
+    },
+    {
+        "name": "HCoT",
+        "arxiv": "2409.08561"
+    },
+    {
+        "name": "LaTRO",
+        "arxiv": "2411.04282"
+    },
+    {
+        "name": "Memory & Reasoning",
+        "arxiv": "2411.13504"
+    },
+    {
+        "name": "Coconut",
+        "arxiv": "2412.06769"
+    },
+    {
+        "name": "CCoT",
+        "arxiv": "2412.13171"
+    },
+    {
+        "name": "Heima",
+        "arxiv": "2501.19201"
+    },
+    {
+        "name": "LTMs",
+        "arxiv": "2502.01567"
+    },
+    {
+        "name": "Token Assorted",
+        "arxiv": "2502.03275"
+    },
+    {
+        "name": "Huginn",
+        "arxiv": "2502.05171"
+    },
+    {
+        "name": "RELAY",
+        "arxiv": "2502.08482"
+    },
+    {
+        "name": "CoCoMix",
+        "arxiv": "2502.08524"
+    },
+    {
+        "name": "CoT-Valve",
+        "arxiv": "2502.09601"
+    },
+    {
+        "name": "SoftCoT",
+        "arxiv": "2502.12134"
+    },
+    {
+        "name": "ITT",
+        "arxiv": "2502.13842"
+    },
+    {
+        "name": "Light Thinker",
+        "arxiv": "2502.15589"
+    },
+    {
+        "name": "looped Transformer",
+        "arxiv": "2502.17416"
+    },
+    {
+        "name": "Beyond Words",
+        "arxiv": "2502.21030"
+    },
+    {
+        "name": "CODI",
+        "arxiv": "2502.21074"
+    },
+    {
+        "name": "BOLT",
+        "arxiv": "2503.18866"
+    },
+    {
+        "name": "ReaRec",
+        "arxiv": "2503.22675"
+    },
+    {
+        "name": "LPC",
+        "arxiv": "2505.04993"
+    },
+    {
+        "name": "SoftCoT++",
+        "arxiv": "2505.11484"
+    },
+    {
+        "name": "Latent Token",
+        "arxiv": "2505.12629"
+    },
+    {
+        "name": "LatentSeek",
+        "arxiv": "2505.13308"
+    },
+    {
+        "name": "Thinkless",
+        "arxiv": "2505.13379"
+    },
+    {
+        "name": "Soft Thinking",
+        "arxiv": "2505.15778"
+    },
+    {
+        "name": "CoLaR",
+        "arxiv": "2505.16552"
+    },
+    {
+        "name": "HRPO",
+        "arxiv": "2505.18454"
+    },
+    {
+        "name": "System-1.5 Reasoning",
+        "arxiv": "2505.18962"
+    },
+    {
+        "name": "PonderingLM",
+        "arxiv": "2505.20674"
+    },
+    {
+        "name": "COT2",
+        "arxiv": "2505.23648"
+    },
+    {
+        "name": "DIT",
+        "arxiv": "2506.03616"
+    },
+    {
+        "name": "SynAdapt",
+        "arxiv": "2508.00574"
+    }
+]

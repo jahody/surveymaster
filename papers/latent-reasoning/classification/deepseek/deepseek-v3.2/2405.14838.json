@@ -1,0 +1,25 @@
+{
+  "filename": "2405.14838.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.14838.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 60,
+          "reason": "The paper's core contribution is a training strategy ('stepwise internalization') that gradually removes explicit CoT steps during fine-tuning to teach models to internalize reasoning, aligning directly with the description of 'Training Strategies for Recurrent Reasoning' and its key phrase 'stepwise internalization'."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 25,
+          "reason": "The method creates implicit recurrent reasoning (Implicit CoT) in standard transformer architectures (GPT-2 Small, Mistral 7B) through specialized fine-tuning, without architectural modifications, fitting the 'Training-induced Recurrence' description of unlocking latent iterative capabilities via training."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 15,
+          "reason": "The process of internalizing CoT suggests a micro-level correspondence where different layers may take on distinct computational roles analogous to explicit reasoning steps, as the model learns to integrate intermediate information across depths without explicit output."
+        }
+      ]
+    }
+  }
+}

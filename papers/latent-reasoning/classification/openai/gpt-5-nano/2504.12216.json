@@ -1,0 +1,25 @@
+{
+  "filename": "2504.12216.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2504.12216.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 70,
+          "reason": "Core focus on Masked Diffusion Models; the paper develops masked diffusion with RL (diffu-GRPO) and discusses distillation for masked dLLMs."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "Demonstrates multi-step reasoning capabilities and algorithmic/problem-solving benchmarks, illustrating applications of the approach."
+        },
+        {
+          "chapter": "5.2.2",
+          "confidence": 10,
+          "reason": "Related to training-time optimization/TTT-like adaptation context; less central than the masked-diffusion modeling focus."
+        }
+      ]
+    }
+  }
+}

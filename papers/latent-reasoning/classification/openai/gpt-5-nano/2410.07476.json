@@ -1,0 +1,25 @@
+{
+  "filename": "2410.07476.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.07476.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 70,
+          "reason": "Paper focuses on mechanistic interpretability and symbolic capabilities of models in the context of group operation tasks."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 20,
+          "reason": "Mentions information-flow style analysis of hidden representations and validation of explanations; aligns with theory of information flow."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 10,
+          "reason": "Discusses architectural aspects and explicit explanations of model internals, albeit not recurrence-specific."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2503.07572.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.07572.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "Focuses on dynamic test-time compute scaling and iterative reasoning (parallel/sequential tradeoffs, intermediate summaries) to achieve efficient inferences."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 25,
+          "reason": "Uses meta-reinforcement learning with preference optimization between concise and extended traces, emphasizing implicit budget awareness rather than explicit length rewards."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "Introduces evaluation metrics for reasoning efficiency and token-cost trade-offs, aligning with the paper's efficiency-focused evaluations."
+        }
+      ]
+    }
+  }
+}

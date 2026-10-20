@@ -1,0 +1,25 @@
+{
+  "filename": "2504.12216.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2504.12216.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on masked diffusion large language models (dLLMs) and develops a framework (d1) to adapt them for reasoning."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "The core contribution is enabling reasoning capabilities in diffusion models, specifically for mathematical and planning benchmarks."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "The paper introduces specific training strategies, including masked SFT and a novel RL algorithm (diffu-GRPO), to improve reasoning in these models."
+        }
+      ]
+    }
+  }
+}

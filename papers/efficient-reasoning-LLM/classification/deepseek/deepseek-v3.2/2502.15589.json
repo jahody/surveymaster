@@ -1,0 +1,25 @@
+{
+  "filename": "2502.15589.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.15589.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 70,
+          "reason": "The paper's core method, LightThinker, trains models to compress verbose intermediate thought steps into compact representations, explicitly aiming to produce fewer explicit text tokens. This directly aligns with the 'Reasoning Chain Compression' description of building datasets and training models for concise reasoning."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 20,
+          "reason": "The method maps hidden states to condensed 'gist tokens' and uses specialized attention masks, which involves operating on continuous hidden representations to reduce token overhead. However, it still produces discrete gist tokens, making it less central than pure latent-space SFT."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper introduces the 'Dependency (Dep) metric' to quantify compression by measuring reliance on historical tokens. This contributes to evaluating reasoning efficiency, aligning with the development of new metrics as described in 'Evaluation and Benchmark'."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.07827.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.07827.md",
+      "chapters": [
+        {
+          "chapter": "5.2.3",
+          "confidence": 60,
+          "reason": "Directly corresponds to implicit fixed-point RNNs: iterating a state-space block until convergence to achieve RNN-like dynamics with parallelizable training."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "Describes architectural recurrence via explicit modifications to enable recurrence, aligning with the paper's fixed-point iterative architecture."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "Demonstrates applications and multi-step reasoning capabilities of recurrent mechanisms, aligned with the paper's evaluation on tasks requiring iterative computation."
+        }
+      ]
+    }
+  }
+}

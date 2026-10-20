@@ -1,0 +1,25 @@
+{
+  "filename": "2405.06640.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.06640.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 60,
+          "reason": "The paper explicitly proposes a method to convert existing pre-trained Transformers into RNNs (linearized models) through a process of 'uptraining' or distillation."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The core objective is to transform Transformers into linear-state recurrent models to achieve subquadratic inference costs."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 15,
+          "reason": "The approach leverages the existing pre-trained weights of Transformers to develop recurrent capabilities, focusing on the transition from standard architectures to recurrent ones."
+        }
+      ]
+    }
+  }
+}

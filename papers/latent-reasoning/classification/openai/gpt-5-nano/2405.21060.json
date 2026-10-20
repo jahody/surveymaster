@@ -1,0 +1,25 @@
+{
+  "filename": "2405.21060.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.21060.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "Core focus on linear-state recurrence via state-space models (SSMs) and their connection to Transformers."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "Involves architectural recurrence concepts with explicit structural design changes to leverage SSM-based computation."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 15,
+          "reason": "Addresses information flow across layers and the role of attention via a theoretical framing related to information propagation."
+        }
+      ]
+    }
+  }
+}

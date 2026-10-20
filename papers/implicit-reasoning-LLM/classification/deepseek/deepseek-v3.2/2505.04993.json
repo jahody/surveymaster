@@ -1,0 +1,25 @@
+{
+  "filename": "2505.04993.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.04993.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper introduces Latent Preference Coding (LPC) which uses discrete latent codes to model implicit preference factors, directly aligning with the 'discrete latent codes' key phrase in the token_level description."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "LPC models the underlying factors of human preferences as implicit states, which relates to reasoning regulation via internal states, though it is not explicitly about distilling hidden states or Transformer layer dynamics."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 15,
+          "reason": "The framework models combinations of preference factors, which could involve a form of diversification in representing multifaceted preferences, though it is not explicitly about promoting diverse reasoning trajectories via soft latents."
+        }
+      ]
+    }
+  }
+}

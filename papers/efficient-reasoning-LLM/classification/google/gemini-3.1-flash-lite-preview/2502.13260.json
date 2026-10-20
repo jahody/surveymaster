@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13260.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13260.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 70,
+          "reason": "The paper explicitly focuses on identifying critical reasoning steps using perplexity and fine-tuning the model to internalize these concise reasoning paths."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "The paper addresses the goal of reducing reasoning length and computational costs, though it achieves this via training rather than purely inference-time constraints."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper emphasizes the trade-off between reasoning accuracy and efficiency, which is a core focus of the evaluation metrics discussed in this category."
+        }
+      ]
+    }
+  }
+}

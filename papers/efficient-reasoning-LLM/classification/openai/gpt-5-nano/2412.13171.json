@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 50,
+          "reason": "Focuses on compressing explicit chain-of-thought reasoning into concise representations (Reasoning Chain Compression)."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 30,
+          "reason": "Uses continuous/latent representations for reasoning (latent-space SFT) with dense thought vectors."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "Introduces adaptive contemplation token count and token-budget-like control for inference."
+        }
+      ]
+    }
+  }
+}

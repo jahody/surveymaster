@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06769.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06769.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "Replaces explicit CoT with continuous hidden representations and back-propagated reasoning states."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 30,
+          "reason": "Proposes parallel search by exploring multiple latent reasoning paths (BFS) instead of a single chain-of-thought."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 10,
+          "reason": "Touches latent representations in pretraining, aligning with latent-space reasoning concepts."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.18482.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.18482.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "paper proposes routing queries across multiple LLMs using a model-switching mechanism to optimize quality, latency, and cost."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "applies efficient reasoning techniques to practical systems via dynamic, cost-aware routing across models (dynamic query routing)."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "evaluates performance trade-offs and efficiency metrics, aligning with evaluation/benchmark of reasoning efficiency."
+        }
+      ]
+    }
+  }
+}

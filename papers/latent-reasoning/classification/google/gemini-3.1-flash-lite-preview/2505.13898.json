@@ -1,0 +1,25 @@
+{
+  "filename": "2505.13898.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.13898.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 40,
+          "reason": "The paper performs a micro-level analysis of how different layers contribute to computation and reasoning, directly addressing the functional differentiation of layers."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 35,
+          "reason": "The paper investigates the macro-level correlation between depth and performance, specifically questioning if deeper models actually perform more complex reasoning."
+        },
+        {
+          "chapter": "4.2.3",
+          "confidence": 25,
+          "reason": "The findings regarding the second half of the model contributing less to output predictions relate to the role of deep layers in refinement and potential layer degradation."
+        }
+      ]
+    }
+  }
+}

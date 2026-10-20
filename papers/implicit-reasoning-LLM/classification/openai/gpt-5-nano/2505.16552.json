@@ -1,0 +1,25 @@
+{
+  "filename": "2505.16552.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.16552.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 60,
+          "reason": "Dynamic compression of reasoning to adjust length/speed in latent space."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 25,
+          "reason": "Promotes diversity of possible latent reasoning trajectories via RL."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 15,
+          "reason": "Latent compression with an auxiliary objective anchors latent reasoning to semantics."
+        }
+      ]
+    }
+  }
+}

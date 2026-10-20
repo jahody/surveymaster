@@ -1,0 +1,25 @@
+{
+  "filename": "2012.14913.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2012.14913.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 40,
+          "reason": "Micro-level: discusses how layer depth corresponds to different reasoning roles, aligning with the paper's analysis of shallow vs semantic patterns across layers."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 35,
+          "reason": "Intermediate layers as core reasoning sub-circuits, matching the paper's focus on FFN memories shaping intermediate computations."
+        },
+        {
+          "chapter": "4.2.3",
+          "confidence": 25,
+          "reason": "Deep layers as output refinement/decision stage, aligning with how FFN memories influence final output distributions and residual refinement."
+        }
+      ]
+    }
+  }
+}

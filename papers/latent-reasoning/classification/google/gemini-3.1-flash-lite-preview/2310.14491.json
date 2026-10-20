@@ -1,0 +1,25 @@
+{
+  "filename": "2310.14491.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.14491.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 50,
+          "reason": "The paper focuses on the micro-level analysis of how attention patterns across different layers correspond to specific steps in a reasoning tree, aligning with functional differentiation."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 30,
+          "reason": "The study investigates the transmission of reasoning information across layers, which is central to the theory of information flow in latent reasoning."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper evaluates the model's capability to perform multi-step reasoning on tasks like ProofWriter and AI2 Reasoning Challenge."
+        }
+      ]
+    }
+  }
+}

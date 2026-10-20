@@ -1,0 +1,25 @@
+{
+  "filename": "2501.12895.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.12895.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 70,
+          "reason": "TPO performs iterative sequential revision (search depth) and can scale with search width (parallel sampling) during inference, aligning with the chapter's focus on dynamic test-time compute scaling via iterative processes."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "TPO uses textual critiques as rewards for iterative refinement without explicit length penalties, improving alignment through preference optimization, which matches the implicit efficiency methods described."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 10,
+          "reason": "TPO can incorporate parallel search by generating multiple candidate outputs initially, though its core mechanism is iterative sequential refinement, making this a secondary aspect."
+        }
+      ]
+    }
+  }
+}

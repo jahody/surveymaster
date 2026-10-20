@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01496.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01496.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on converting pretrained Transformers into linear recurrent structures (gated recurrent models) using fine-tuning, which is the definition of training-induced hidden-state conversion."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The resulting architecture is a gated linear recurrent model, which falls under the category of linear-state recurrence using matrix-valued hidden states and predetermined update rules."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 15,
+          "reason": "The approach repurposes existing pretrained weights to facilitate recurrent behavior without adding extra parameters, aligning with the goal of unlocking latent recurrent capabilities in standard architectures."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Classification - SurveyMaster{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/css/3_classification.css">
+{% endblock %}
+
+{% block header_controls %}
+<select id="fileSelect"></select>
+<button id="saveBtn" class="btn btn-primary btn-sm" disabled>Save</button>
+<span id="status"></span>
+{% endblock %}
+
+{% block body %}
+
+<div class="cls-status" id="clsStatus">Select a topic to load classifications.</div>
+
+<div class="cls-wrap" id="clsWrap" style="display:none;">
+  <table class="cls-table" id="clsTable">
+    <thead id="clsHead"></thead>
+    <tbody id="clsBody"></tbody>
+    <tfoot id="clsFoot"></tfoot>
+  </table>
+</div>
+
+<script src="/static/js/3_classification.js"></script>
+
+{% endblock %}

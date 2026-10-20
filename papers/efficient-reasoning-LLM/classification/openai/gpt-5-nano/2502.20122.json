@@ -1,0 +1,25 @@
+{
+  "filename": "2502.20122.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.20122.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 70,
+          "reason": "Primary focus on reasoning chain compression via concise, supervised fine-tuning to reduce token usage while preserving accuracy."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 20,
+          "reason": "Uses Best-of-N sampling (parallel search concept) to generate concise reasoning traces, aligning with parallel search ideas."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "Includes evaluation of token efficiency and trade-offs between verbosity and accuracy, relevant to evaluation benchmarks."
+        }
+      ]
+    }
+  }
+}

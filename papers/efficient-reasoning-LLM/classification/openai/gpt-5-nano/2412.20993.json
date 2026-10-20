@@ -1,0 +1,25 @@
+{
+  "filename": "2412.20993.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.20993.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "focus on efficient test-time scaling and dynamic compute management via a scheduling approach (Certaindex) in Dynasor."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 25,
+          "reason": "introduces an evaluation/benchmark aspect (Certaindex metric) to quantify reasoning efficiency and trade-offs."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "addresses length budgeting via early exit and token allocation, aligning with inference-time resource budgeting."
+        }
+      ]
+    }
+  }
+}

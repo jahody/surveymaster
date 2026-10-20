@@ -1,0 +1,25 @@
+{
+  "filename": "2503.14456.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.14456.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "RWKV-7 is a linear recurrent architecture with constant memory and inference time per token, directly aligning with subquadratic attention mechanisms that reduce computational complexity, as highlighted by its state space model characteristics and comparison to Transformers' limitations."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "The paper evaluates RWKV-7's capabilities on language modeling and reasoning tasks, demonstrating its effectiveness in multilingual and English downstream performance, which fits the focus on applying subquadratic models to reasoning tasks, though it is not exclusively centered on CoT reasoning."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "RWKV-7 is trained from scratch rather than converted from a pretrained transformer, but its linear recurrent structure and efficiency gains relate to linearization themes, though it does not involve distillation or conversion of existing transformers, making this a weaker match."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2506.06295.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2506.06295.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "Primary relevance: paper focuses on diffusion-based LLMs with masking and caching to accelerate inference, aligning with masked diffusion model concepts."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 25,
+          "reason": "Related relevance: discusses diffusion models in conjunction with autoregressive approaches, which resonates with the paper's focus on diffusion model speedups and potential AR-diffusion integration aspects."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "Supplementary relevance: memory- and caching-oriented methods in diffusion/model inference literature, which conceptually aligns with the paper's caching strategy to speed up diffusion LLMs."
+        }
+      ]
+    }
+  }
+}

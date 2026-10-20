@@ -1,0 +1,25 @@
+{
+  "filename": "2412.09563.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.09563.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 50,
+          "reason": "The paper's core investigation focuses on the quality and role of intermediate layers in LLMs, finding they are often more informative for downstream tasks, which directly aligns with the description of intermediate layers forming the core of latent reasoning and having specialized computational roles."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 30,
+          "reason": "The study examines how representations evolve across different layers (micro-level observation) and their distinct qualities for tasks, exploring the functional differentiation and computational roles of layers, which matches the micro-level correspondence between layer depth and reasoning."
+        },
+        {
+          "chapter": "4.2.1",
+          "confidence": 20,
+          "reason": "The paper analyzes layers across the entire depth spectrum, including shallow layers, to understand representation quality evolution, which involves studying their basic representational processing roles as part of the overall layer-wise analysis."
+        }
+      ]
+    }
+  }
+}

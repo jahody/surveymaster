@@ -1,0 +1,25 @@
+{
+  "filename": "2505.23648.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.23648.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 60,
+          "reason": "The paper emphasizes semantic fidelity by supervising CoT2 traces to match target token distributions, aligning latent reasoning with explicit supervision."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 25,
+          "reason": "It discusses dynamic control of reasoning length/parallelism and efficiency benefits, aligning with adaptive efficiency in decoding."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 15,
+          "reason": "The work explores parallel traces and sampling strategies to diversify reasoning trajectories, related to exploratory diversification."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2405.08644.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.08644.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 50,
+          "reason": "The paper proposes using special 'thinking tokens' as a uniform mechanism to allow the model to perform more calculations, fitting the definition of a single control signal for reasoning dynamics."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The approach relies on manipulating individual tokens (thinking tokens) to steer the reasoning process, which aligns with token-level reasoning control."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 20,
+          "reason": "The use of thinking tokens to construct a solution over time implies a form of step-by-step internalization or iterative refinement of the reasoning process."
+        }
+      ]
+    }
+  }
+}

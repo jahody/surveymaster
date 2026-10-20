@@ -1,0 +1,25 @@
+{
+  "filename": "2404.15758.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.15758.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper explicitly investigates the use of meaningless filler tokens as a mechanism to improve performance, which aligns directly with the definition of a single control mechanism modulating reasoning dynamics."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The study focuses on steering reasoning by manipulating individual tokens (filler tokens) rather than relying on semantic chain-of-thought content."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 15,
+          "reason": "The paper discusses the difficulty of learning to use these filler tokens and the requirement for specific, dense supervision to converge, which relates to the training process of internalizing reasoning patterns."
+        }
+      ]
+    }
+  }
+}

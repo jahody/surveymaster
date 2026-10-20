@@ -1,0 +1,25 @@
+{
+  "filename": "2412.11664.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.11664.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 75,
+          "reason": "The paper's core contribution is a framework (C3oT) that compresses an original longer Chain-of-Thought into a shorter CoT while maintaining key information, and trains the model via supervised fine-tuning to produce concise reasoning. This directly matches the description of 'Reasoning Chain Compression', including its key phrases like 'CoT compression' and 'step skipping'. The method produces explicit text tokens, fitting the category's definition."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 15,
+          "reason": "The paper aims to reduce decoding costs by shortening CoT length, which aligns with treating reasoning length as a resource constraint. While it doesn't explicitly describe using a length reward function during training, the goal of preserving effectiveness within a shorter budget relates to the 'with Length Reward' category's focus on constrained optimization for efficient reasoning. However, the primary mechanism is compression and conditioned training, not an explicit trajectory-level reward."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 10,
+          "reason": "The paper addresses the problem of long CoT causing additional decoding costs in latency-sensitive applications, which is related to managing computational resources. However, its solution involves training a compressor and using conditioned inference, not purely inference-time prompt-based constraints or decoding strategies like 'Length Budgeting'. The 'Hard negative' clause specifies not assigning if the approach involves training (SFT), which C3oT does, making this a less relevant match."
+        }
+      ]
+    }
+  }
+}

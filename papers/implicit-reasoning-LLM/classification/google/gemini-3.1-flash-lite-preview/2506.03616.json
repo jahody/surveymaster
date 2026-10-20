@@ -1,0 +1,25 @@
+{
+  "filename": "2506.03616.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2506.03616.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces a dynamic token insertion method using [PAUSE] tokens to modulate reasoning, which fits the definition of a single control mechanism for reasoning dynamics."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The core methodology relies on manipulating individual tokens (inserting special tokens) to steer the model's reasoning process."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "The dynamic insertion of tokens based on model confidence acts as a form of adaptive control over the reasoning sequence length and processing."
+        }
+      ]
+    }
+  }
+}

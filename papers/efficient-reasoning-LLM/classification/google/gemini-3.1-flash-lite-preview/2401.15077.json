@@ -1,0 +1,25 @@
+{
+  "filename": "2401.15077.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2401.15077.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 70,
+          "reason": "EAGLE is a speculative sampling framework that uses a draft model to predict features, which is a core technique of speculative decoding/model switching."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 20,
+          "reason": "Speculative sampling involves generating candidate tokens in parallel and verifying them, which aligns with the parallel search category."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "The paper focuses on optimizing inference latency and throughput during the test-time generation process."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2402.01107.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.01107.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 70,
+          "reason": "Proposes looped transformer with explicit architectural recurrence to enable iterative computation and graph interactions."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "Demonstrates algorithmic generalization and multi-step reasoning via the recurrent architecture (applications to graph algorithms)."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 10,
+          "reason": "Provides a theoretical proof of Turing completeness for the architecture with constant width."
+        }
+      ]
+    }
+  }
+}

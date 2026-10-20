@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19201.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19201.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 45,
+          "reason": "The paper focuses on compressing full Chain-of-Thought traces into compact 'thinking tokens' while maintaining semantic fidelity through reconstruction."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The core mechanism involves steering reasoning by manipulating hidden latent representations via a single thinking token instead of explicit text tokens."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "The approach operates directly on the model's internal hidden states to regulate reasoning, effectively distilling the reasoning process into latent space."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2310.05707.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.05707.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 70,
+          "reason": "Primary focus on steering reasoning by inserting and utilizing planning tokens at the token level."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 20,
+          "reason": "Uses a single control signal (planning tokens) to modulate reasoning dynamics."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 10,
+          "reason": "Describes progressive refinement of reasoning steps, aligned with step-by-step planning and updating."
+        }
+      ]
+    }
+  }
+}

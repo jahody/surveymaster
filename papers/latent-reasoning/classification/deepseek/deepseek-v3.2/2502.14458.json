@@ -1,0 +1,25 @@
+{
+  "filename": "2502.14458.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.14458.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 60,
+          "reason": "The paper's core method is distilling a Transformer (Llama-3.x) into a recurrent architecture (Mamba), explicitly describing 'Transformer-to-RNN conversion' and 'architecture distillation'."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 30,
+          "reason": "The student model is based on the Mamba architecture, which is a linear-state recurrent model (SSM) with a matrix-valued hidden state updated via closed-form rules like the 'parallel scan', fitting the description."
+        },
+        {
+          "chapter": "5.2.3",
+          "confidence": 10,
+          "reason": "While not the primary focus, the recurrent Mamba architecture used can be viewed as implementing iterative state-space computation, aligning with 'state-space block iteration' for efficient inference."
+        }
+      ]
+    }
+  }
+}

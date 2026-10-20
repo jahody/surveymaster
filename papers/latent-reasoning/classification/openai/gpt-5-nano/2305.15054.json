@@ -1,0 +1,25 @@
+{
+  "filename": "2305.15054.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2305.15054.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 60,
+          "reason": "Focus on information flow across layers and attention mechanisms, central to mechanistic interpretation in the paper."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 25,
+          "reason": "Highlights the role of intermediate layers as core sub-circuits driving reasoning, aligning with the paper's identification of modules like MLPs."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 15,
+          "reason": "Micro-level layer roles and differentiation across depths, matching this paper's analysis of how specific layers contribute to reasoning."
+        }
+      ]
+    }
+  }
+}

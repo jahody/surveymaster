@@ -1,0 +1,25 @@
+{
+  "filename": "2502.18482.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.18482.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper explicitly builds a dynamic routing system (MixLLM) to allocate queries among distinct separate LLM candidates ('mixed LLMs') based on quality, cost, and latency. This directly aligns with the Model Switch description of allocating computational budgets across different models and routing queries."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "MixLLM is applied as a practical system for dynamic query routing to optimize real-world trade-offs, which fits the application-focused nature of this category. However, the core contribution is the routing framework itself rather than a specific application like RAG or agents."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper includes extensive experiments evaluating trade-offs between response quality, cost, and latency, which involves quantifying efficiency trade-offs. However, it does not introduce new efficiency-specific metrics or benchmarks; it uses established performance measures."
+        }
+      ]
+    }
+  }
+}

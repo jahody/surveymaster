@@ -1,0 +1,25 @@
+{
+  "filename": "2405.21060.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.21060.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 70,
+          "reason": "The paper introduces Mamba-2, a state-space model architecture designed to achieve subquadratic complexity, directly addressing the limitations of standard transformer attention."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 20,
+          "reason": "The paper proposes a new theoretical framework (SSD) that reinterprets state-space models as a form of structured attention, influencing how models are designed and pretrained."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 10,
+          "reason": "The work explores the duality between SSMs and attention, providing a foundation for converting or relating transformer-like architectures to more efficient linear recurrent structures."
+        }
+      ]
+    }
+  }
+}

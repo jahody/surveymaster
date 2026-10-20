@@ -1,0 +1,25 @@
+{
+  "filename": "2406.12775.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.12775.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 40,
+          "reason": "Formal theory that layer depth is the primary bottleneck for latent reasoning and CoT step length."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 35,
+          "reason": "Micro-level analysis of distinct layer roles, showing how intermediate results are transferred across depths."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 25,
+          "reason": "Macro-level correlation between layer depth and reasoning capabilities relevant to multi-hop reasoning."
+        }
+      ]
+    }
+  }
+}

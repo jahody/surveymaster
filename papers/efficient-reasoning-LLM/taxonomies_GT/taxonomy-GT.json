@@ -1,0 +1,612 @@
+[
+  {
+    "chapter": "3",
+    "name": "Efficient Reasoning during Inference",
+    "description": "Methods that improve reasoning efficiency at inference time by constraining the reasoning budget, allocating resources across different systems or models, and incorporating parallel search strategies.",
+    "items": [
+      {
+        "name": "Length Budgeting",
+        "description": "Explicitly budgets computational resources during inference by managing the length of the reasoning chain. Includes prompt-based constraints, forced end-of-thinking delimiters, and difficulty-adaptive budget allocation.",
+        "phrases": [
+          "Token budget",
+          "length constraint in prompt",
+          "end-of-thinking delimiter",
+          "difficulty-adaptive budget",
+          "concise intermediate steps"
+        ],
+        "hard_negative": "Training the model with SFT or RL to produce shorter reasoning — length budgeting operates purely at inference time via prompts or decoding strategies.",
+        "papers": [
+          {
+            "name": "TALE",
+            "arxiv": "2412.18547"
+          },
+          {
+            "name": "SketchofThought",
+            "arxiv": "2503.05179"
+          },
+          {
+            "name": "Planning Tokens",
+            "arxiv": "2310.05707"
+          },
+          {
+            "name": "Chain of Draft",
+            "arxiv": "2502.18600"
+          },
+          {
+            "name": "S1",
+            "arxiv": "2501.19393"
+          },
+          {
+            "name": "SafeChain",
+            "arxiv": "2502.12025"
+          },
+          {
+            "name": "DSC",
+            "arxiv": "2408.13457"
+          },
+          {
+            "name": "Dynasor",
+            "arxiv": "2412.20993"
+          },
+          {
+            "name": "TSP",
+            "arxiv": "2501.18585"
+          }
+        ],
+        "chapter": "3.1"
+      },
+      {
+        "name": "System Switch",
+        "description": "Dynamically alternates between fast intuitive reasoning (System 1) and slow deliberative reasoning (System 2) based on task complexity, drawing on dual process theory.",
+        "phrases": [
+          "Dual process theory",
+          "System 1 and System 2",
+          "switch module",
+          "randomized reasoning trace",
+          "complexity-based toggling"
+        ],
+        "hard_negative": "Routing queries to entirely different models of different sizes — system switch toggles reasoning modes within a single model or framework.",
+        "papers": [
+          {
+            "name": "Dualformer",
+            "arxiv": "2410.09918"
+          },
+          {
+            "name": "System 1.x",
+            "arxiv": "2407.14414"
+          },
+          {
+            "name": "FaST",
+            "arxiv": "2408.08862"
+          },
+          {
+            "name": "HaluSearch",
+            "arxiv": "2501.01306"
+          },
+          {
+            "name": "Dyna-Think",
+            "arxiv": "2407.01009"
+          }
+        ],
+        "chapter": "3.2"
+      },
+      {
+        "name": "Model Switch",
+        "description": "Allocates computational budgets across different models, such as routing queries between large and small models or using speculative decoding with draft models for verification.",
+        "phrases": [
+          "Speculative decoding",
+          "draft model",
+          "routing module",
+          "early exit",
+          "query difficulty routing"
+        ],
+        "hard_negative": "Switching between System 1 and System 2 reasoning modes within one model — model switch involves distinct separate models.",
+        "papers": [
+          {
+            "name": "BiLD",
+            "arxiv": "2302.07863"
+          },
+          {
+            "name": "EAGLE",
+            "arxiv": "2401.15077"
+          },
+          {
+            "name": "MEDUSA",
+            "arxiv": "2401.10774"
+          },
+          {
+            "name": "LayerSkip",
+            "arxiv": "2404.16710"
+          },
+          {
+            "name": "Zooter",
+            "arxiv": "2311.08692"
+          },
+          {
+            "name": "RouteLLM",
+            "arxiv": "2406.18665"
+          },
+          {
+            "name": "MixLLM",
+            "arxiv": "2502.18482"
+          }
+        ],
+        "chapter": "3.3"
+      },
+      {
+        "name": "Parallel Search",
+        "description": "Generates multiple candidate outputs concurrently and employs early termination or pruning to reduce latency. Includes Best-of-N variants, tree-search, and combined sequential-parallel approaches.",
+        "phrases": [
+          "Best-of-N sampling",
+          "majority voting",
+          "self-consistency",
+          "early termination",
+          "tree-search pruning"
+        ],
+        "hard_negative": "Sequential revision where the model iteratively refines a single reasoning trace — parallel search generates and evaluates multiple candidates simultaneously.",
+        "papers": [
+          {
+            "name": "SBoN",
+            "arxiv": "2410.20290"
+          },
+          {
+            "name": "TreeBoN",
+            "arxiv": "2410.16033"
+          },
+          {
+            "name": "STBoN",
+            "arxiv": "2503.01422"
+          },
+          {
+            "name": "SelfCalibration",
+            "arxiv": "2503.00031"
+          },
+          {
+            "name": "MetaReasoner",
+            "arxiv": "2502.19918"
+          },
+          {
+            "name": "TPO",
+            "arxiv": "2501.12895"
+          }
+        ],
+        "chapter": "3.4"
+      }
+    ]
+  },
+  {
+    "chapter": "4",
+    "name": "Efficient Reasoning with SFT",
+    "description": "Methods that fine-tune models via supervised learning to internalize concise reasoning, either by compressing explicit reasoning chains or by shifting reasoning into latent space representations.",
+    "items": [
+      {
+        "name": "Reasoning Chain Compression",
+        "description": "Builds target datasets with concise reasoning paths or compresses existing reasoning chains to remove redundant information, then trains the model to internalize concise reasoning via supervised fine-tuning.",
+        "phrases": [
+          "Token budget-aware training",
+          "step skipping",
+          "token importance",
+          "CoT compression",
+          "perplexity-based step selection"
+        ],
+        "hard_negative": "Replacing explicit CoT steps with continuous hidden representations — chain compression still produces explicit text tokens, just fewer of them.",
+        "papers": [
+          {
+            "name": "TokenSkip",
+            "arxiv": "2502.12067"
+          },
+          {
+            "name": "SPIRIT-FT",
+            "arxiv": "2502.13260"
+          },
+          {
+            "name": "Skip Steps",
+            "arxiv": "2411.01855"
+          },
+          {
+            "name": "Distill System 2",
+            "arxiv": "2407.06023"
+          },
+          {
+            "name": "C3ot",
+            "arxiv": "2412.11664"
+          },
+          {
+            "name": "Self-Training",
+            "arxiv": "2502.20122"
+          }
+        ],
+        "chapter": "4.1"
+      },
+      {
+        "name": "Latent-Space SFT",
+        "description": "Replaces explicit chain-of-thought steps with continuous hidden representations. Models reason in latent space using hidden states fed back as inputs, reducing token overhead while preserving reasoning capability.",
+        "phrases": [
+          "Continuous thought",
+          "hidden state feedback",
+          "curriculum learning",
+          "self-distillation",
+          "latent discrete tokens"
+        ],
+        "hard_negative": "Compressing explicit CoT text into shorter text sequences — latent-space SFT operates on continuous hidden representations, not discrete tokens.",
+        "papers": [
+          {
+            "name": "Coconut",
+            "arxiv": "2412.06769"
+          },
+          {
+            "name": "CCoT",
+            "arxiv": "2412.13171"
+          },
+          {
+            "name": "CODI",
+            "arxiv": "2502.21074"
+          },
+          {
+            "name": "Token Assorted",
+            "arxiv": "2502.03275"
+          },
+          {
+            "name": "SoftCoT",
+            "arxiv": "2502.12134"
+          },
+          {
+            "name": "Heima",
+            "arxiv": "2501.19201"
+          },
+          {
+            "name": "Implicit CoT",
+            "arxiv": "2405.14838"
+          },
+          {
+            "name": "LightThinker",
+            "arxiv": "2502.15589"
+          }
+        ],
+        "chapter": "4.2"
+      }
+    ]
+  },
+  {
+    "chapter": "5",
+    "name": "Efficient Reasoning with RL",
+    "description": "Methods that use reinforcement learning to optimize the trade-off between reasoning depth and token efficiency.",
+    "items": [
+      {
+        "name": "with Length Reward",
+        "description": "Treats reasoning length as a trajectory-level resource, framing efficient reasoning as a constrained optimization problem where the objective is to remain within a soft or target budget while preserving correctness.",
+        "phrases": [
+          "Cosine reward function",
+          "length penalty normalized by baseline",
+          "target length instruction",
+          "overthinking penalty",
+          "trajectory-level budget"
+        ],
+        "hard_negative": "Step-level rewards that evaluate individual reasoning steps — trajectory-level methods operate on the entire reasoning trace as a unit.",
+        "papers": [
+          {
+            "name": "O1-Pruner",
+            "arxiv": "2501.12570"
+          },
+          {
+            "name": "Training",
+            "arxiv": "2502.04463"
+          },
+          {
+            "name": "L1",
+            "arxiv": "2503.04697"
+          },
+          {
+            "name": "Kimi-1.5",
+            "arxiv": "2501.12599"
+          },
+          {
+            "name": "DAST",
+            "arxiv": "2503.04472"
+          },
+          {
+            "name": "Demisifying",
+            "arxiv": "2502.03373"
+          }
+        ],
+        "chapter": "5.1"
+      },
+      {
+        "name": "without Length Reward",
+        "description": "Improves reasoning efficiency without introducing direct length-related rewards, exploiting implicit biases from RL formulations, preference modeling, or training dynamics to let efficient reasoning emerge naturally.",
+        "phrases": [
+          "Meta-reinforcement learning",
+          "preference optimization between concise and extended traces",
+          "implicit budget awareness",
+          "token-level loss averaging bias",
+          "advantage normalization bias"
+        ],
+        "hard_negative": "Explicitly adding a length penalty term to the reward function — implicit methods achieve efficiency through algorithmic properties or preference modeling, not direct length rewards.",
+        "papers": [
+          {
+            "name": "Meta-RL",
+            "arxiv": "2503.07572"
+          },
+          {
+            "name": "IBPO",
+            "arxiv": "2501.17974"
+          },
+          {
+            "name": "overthink",
+            "arxiv": "2412.21187"
+          }
+        ],
+        "chapter": "5.2"
+      }
+    ]
+  },
+  {
+    "chapter": "6",
+    "name": "Efficient Reasoning during Pre-training",
+    "description": "Pretraining approaches designed to accelerate reasoning efficiency through latent space pretraining, subquadratic attention mechanisms, and linearization of transformer models.",
+    "items": [
+      {
+        "name": "Latent-space Pretraining",
+        "description": "Explores continuous representations instead of traditional token-based approaches during pretraining, enhancing depth of understanding and efficiency through dynamically sized patches, concept-level processing, or latent thought vectors.",
+        "phrases": [
+          "Byte-level patches",
+          "abstract concept units",
+          "continuous concept mixing",
+          "latent thought vectors",
+          "sparse autoencoders"
+        ],
+        "hard_negative": "Latent-space SFT where a pretrained model is fine-tuned to reason in hidden states — this category covers pretraining from scratch with latent representations.",
+        "papers": [
+          {
+            "name": "BLT",
+            "arxiv": "2412.09871"
+          },
+          {
+            "name": "LCMs",
+            "arxiv": "2412.08821"
+          },
+          {
+            "name": "CoCoMix",
+            "arxiv": "2502.08524"
+          },
+          {
+            "name": "LTMs",
+            "arxiv": "2502.01567"
+          }
+        ],
+        "chapter": "6.1"
+      },
+      {
+        "name": "Subquadratic Attention",
+        "description": "Replaces standard self-attention in transformers with mechanisms that reduce the quadratic complexity of processing sequences, including linear sequence modeling and sparse attention.",
+        "phrases": [
+          "Linear attention",
+          "state space models",
+          "sparse attention",
+          "subquadratic complexity",
+          "sliding window attention"
+        ],
+        "hard_negative": "Compressing the reasoning chain text to be shorter — subquadratic attention reduces the computational cost of processing any given sequence length.",
+        "papers": [
+          {
+            "name": "Lightning Attention",
+            "arxiv": "2405.17381"
+          },
+          {
+            "name": "LASP-2",
+            "arxiv": "2502.07563"
+          },
+          {
+            "name": "GLA",
+            "arxiv": "2312.06635"
+          },
+          {
+            "name": "Gated DeltaNet",
+            "arxiv": "2412.06464"
+          },
+          {
+            "name": "MoM",
+            "arxiv": "2502.13685"
+          },
+          {
+            "name": "Mamba-2",
+            "arxiv": "2405.21060"
+          },
+          {
+            "name": "RWKV-7",
+            "arxiv": "2503.14456"
+          },
+          {
+            "name": "NSA",
+            "arxiv": "2502.11089"
+          },
+          {
+            "name": "MoBA",
+            "arxiv": "2502.13189"
+          }
+        ],
+        "chapter": "6.2"
+      },
+      {
+        "name": "Linearization",
+        "description": "Converts pre-trained standard transformer models into linear recurrent structures, enhancing deployment efficiency without requiring extensive retraining from scratch.",
+        "phrases": [
+          "Transformer to linear RNN conversion",
+          "softmax attention replacement",
+          "architecture distillation",
+          "KV-cache reduction",
+          "progressive distillation"
+        ],
+        "hard_negative": "Pretraining a linear model from scratch — linearization starts from a pretrained transformer and converts it into a more efficient architecture.",
+        "papers": [
+          {
+            "name": "Liger",
+            "arxiv": "2503.01496"
+          },
+          {
+            "name": "Llamba",
+            "arxiv": "2502.14458"
+          },
+          {
+            "name": "LoLCATs",
+            "arxiv": "2410.10254"
+          }
+        ],
+        "chapter": "6.3"
+      },
+      {
+        "name": "Efficient Reasoning with Subquadratic Attention",
+        "description": "Studies that specifically explore efficient reasoning solutions using subquadratic attention models, investigating distillation, architectural modifications, and hybrid architectures for reasoning tasks.",
+        "phrases": [
+          "Mamba distillation for reasoning",
+          "hybrid Mamba-Transformer",
+          "compositional reasoning expressiveness",
+          "multi-path CoT with subquadratic models",
+          "Physical AI reasoning"
+        ],
+        "hard_negative": "General subquadratic attention architectures not specifically evaluated on reasoning tasks — this category focuses on applying these architectures to CoT reasoning.",
+        "papers": [
+          {
+            "name": "TSF",
+            "arxiv": "2502.20339"
+          },
+          {
+            "name": "CRQs",
+            "arxiv": "2503.01544"
+          },
+          {
+            "name": "Cosmos-Reason1",
+            "arxiv": "2503.15558"
+          }
+        ],
+        "chapter": "6.4"
+      }
+    ]
+  },
+  {
+    "chapter": "7",
+    "name": "Future Directions",
+    "description": "Potential future research directions for efficient reasoning in the era of LRMs.",
+    "items": [
+      {
+        "name": "Efficient Multimodality and Video Reasoning",
+        "description": "Focuses on dynamically adjusting the complexity of reasoning processes to align with the inherent difficulty of multimodal and video inputs, employing strategies like atomic step decomposition to handle noisy visual information.",
+        "phrases": [
+          "Atomic step decomposition",
+          "Adaptive-Length Chain-of-Thought Distillation (AL-CoTD)",
+          "Dynamic reasoning strategies across different modalities",
+          "Balancing expressiveness with efficiency",
+          "Multimodal large reasoning models"
+        ],
+        "hard_negative": "Uniform reasoning processes regardless of input type — this category focuses on dynamically adjusting reasoning depth based on specific modalities and task complexities.",
+        "papers": [
+          {
+            "name": "SCoT",
+            "arxiv": "2503.06252"
+          },
+          {
+            "name": "AL-CoTD",
+            "arxiv": "2503.16385"
+          },
+          {
+            "name": "Heima",
+            "arxiv": "2501.19201"
+          }
+        ],
+        "chapter": "7.1"
+      },
+      {
+        "name": "Efficient Test-time Scaling and Infinity Thinking",
+        "description": "Investigates scaling compute dynamically during inference via search width (parallel sampling) and search depth (sequential revision), including transforming reasoning into iterative processes with intermediate summaries to achieve infinite thinking capabilities.",
+        "phrases": [
+          "Parallel sampling and sequential revision",
+          "Best-of-N sampling",
+          "Iterative process with intermediate summarizations",
+          "Balancing search depth with search width",
+          "Confidence-based methods"
+        ],
+        "hard_negative": "Training-time computation scaling — this covers techniques that allocate compute on-the-fly during the test phase, including infinite reasoning loops.",
+        "papers": [
+          {
+            "name": "Self-Calibration",
+            "arxiv": "2503.00031"
+          },
+          {
+            "name": "Dynamic self-consistency",
+            "arxiv": "2408.17017"
+          }
+        ],
+        "chapter": "7.2"
+      },
+      {
+        "name": "Efficient and Trustworthy Reasoning",
+        "description": "Addresses the safety and reliability challenges introduced by long reasoning chains, focusing on developing mechanisms to prevent models from exposing sensitive information during thought processes or accumulating noisy, untrustworthy information that leads to hallucinations.",
+        "phrases": [
+          "Deliberative alignment",
+          "Factuality and faithfulness hallucinations",
+          "Safe rate of the thinking process",
+          "Inherently safe reasoning mechanisms",
+          "X-Boundary"
+        ],
+        "hard_negative": "Optimizing reasoning speed without regard to output safety or factual alignment — this area strictly targets the intersection of efficiency, safety, and hallucination mitigation.",
+        "papers": [
+          {
+            "name": "Deliberative Alignment",
+            "arxiv": "2412.16339"
+          },
+          {
+            "name": "X-Boundary",
+            "arxiv": "2502.09990"
+          }
+        ],
+        "chapter": "7.3"
+      },
+      {
+        "name": "Efficient Reasoning Applications",
+        "description": "Applies efficient reasoning techniques to practical real-world systems, such as Retrieval-Augmented Generation (RAG), autonomous agents, and tool learning, using strategies like dynamic knowledge retrieval and early exit mechanisms.",
+        "phrases": [
+          "Retrieval-augmented Generation (RAG)",
+          "Agentic RAG",
+          "Iterative reflection",
+          "Early exit strategies",
+          "Dynamic query routing"
+        ],
+        "hard_negative": "Core architectural or foundational model training — this focuses on the downstream application layer like agents, RAG, and tools.",
+        "papers": [
+          {
+            "name": "Chain-of-Retrieval",
+            "arxiv": "2501.14342"
+          },
+          {
+            "name": "Overthinking in Agent",
+            "arxiv": "2502.08235"
+          }
+        ],
+        "chapter": "7.4"
+      },
+      {
+        "name": "Evaluation and Benchmark",
+        "description": "Develops new metrics and datasets designed to quantify reasoning efficiency, overthinking phenomena, and the trade-offs between answer accuracy and computational token costs.",
+        "phrases": [
+          "Outcome efficiency metric",
+          "Process metric",
+          "Overthinking phenomenon",
+          "Trade-offs between accuracy and token consumption",
+          "DNA Bench"
+        ],
+        "hard_negative": "Standard capability benchmarks that only measure final answer correctness — these benchmarks explicitly measure the cost, verbosity, and efficiency of the reasoning process itself.",
+        "papers": [
+          {
+            "name": "Overthinking",
+            "arxiv": "2412.21187"
+          },
+          {
+            "name": "DNA Bench",
+            "arxiv": "2503.15793"
+          }
+        ],
+        "chapter": "7.5"
+      }
+    ]
+  }
+]

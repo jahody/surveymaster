@@ -1,0 +1,25 @@
+{
+  "filename": "2502.19918.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.19918.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 50,
+          "reason": "The paper focuses on dynamic inference-time reasoning strategies like backtracking and restarting, which are core components of test-time scaling and iterative reasoning processes."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 30,
+          "reason": "The framework dynamically adapts reasoning strategies (e.g., switching approaches or backtracking) based on the current state, which aligns with the concept of toggling between different reasoning modes."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The approach uses contextual multi-armed bandits to learn an adaptive policy for inference-time guidance, achieving efficiency through algorithmic decision-making rather than explicit length-based reward penalties."
+        }
+      ]
+    }
+  }
+}

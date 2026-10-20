@@ -1,0 +1,25 @@
+{
+  "filename": "2412.08821.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.08821.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": 60,
+          "reason": "The paper introduces a model that operates on explicit higher-level semantic representations (concepts) in a latent embedding space rather than raw tokens, which is the core contribution."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 25,
+          "reason": "The model performs autoregressive prediction in a continuous embedding space, effectively replacing token-level reasoning with latent-space operations."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 15,
+          "reason": "The model uses SONAR embeddings to be modality-agnostic (text and speech), aligning with the goal of processing information at a higher level of abstraction across modalities."
+        }
+      ]
+    }
+  }
+}

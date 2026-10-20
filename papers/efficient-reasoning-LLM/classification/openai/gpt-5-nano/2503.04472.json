@@ -1,0 +1,25 @@
+{
+  "filename": "2503.04472.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.04472.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 60,
+          "reason": "Core mechanism budgets inference-time reasoning length via difficulty-adaptive token budgets (Length Budgeting)."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 30,
+          "reason": "Uses trajectory-level length rewards/budget shaping to penalize overlong/simple reasoning based on task difficulty."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "Involves dynamic test-time compute scaling to balance reasoning depth/width, aligning with adaptive inference strategies."
+        }
+      ]
+    }
+  }
+}

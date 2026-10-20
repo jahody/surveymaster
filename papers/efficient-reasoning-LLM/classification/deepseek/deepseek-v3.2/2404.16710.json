@@ -1,0 +1,25 @@
+{
+  "filename": "2404.16710.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.16710.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper's core contribution, 'self-speculative decoding', involves early exit and verification within a single model, aligning with Model Switch's description of speculative decoding and early exit mechanisms. It does not route to entirely separate models, fitting the category's scope."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "The work applies efficient reasoning via early exit strategies to practical tasks like summarization, coding, and semantic parsing, which matches the focus of Efficient Reasoning Applications on applying techniques like early exit to downstream systems."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 15,
+          "reason": "The training method uses layer dropout (higher rates for later layers) and an early exit loss, which can be seen as a form of step skipping or internal compression of the model's computational path, analogous to compressing a reasoning chain, though it operates on transformer layers rather than explicit text tokens."
+        }
+      ]
+    }
+  }
+}

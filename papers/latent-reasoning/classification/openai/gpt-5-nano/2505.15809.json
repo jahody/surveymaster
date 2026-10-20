@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15809.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15809.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 50,
+          "reason": "The work centers on diffusion-based multimodal models and mentions diffusion foundations, aligning with Masked Diffusion Models as a core category."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 40,
+          "reason": "The approach likely operates in embedding space across modalities, which fits Embedding-based Diffusion Models for continuous representations."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 10,
+          "reason": "Hybrid AR-Diffusion Models represent a diffusion variant; relevant as a diffusion taxonomy leaf, though less directly evidenced in the abstract."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2310.10845.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.10845.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper proposes CoTFormer, a novel architecture that explicitly modifies the Transformer to implement token-level recurrence and adaptive computation, aligning with the description of Architectural Recurrence. It treats network depth as a dynamic resource and uses mechanisms like dynamic stopping, which matches the key phrases and avoids the hard negative of training-induced recurrence."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 25,
+          "reason": "The work is based on the insight that Chain-of-Thought reasoning resembles applying a deeper transformer, and it addresses the bottleneck of layer depth for reasoning by proposing an architecture that allows variable depth per token. This connects to the concept that layer depth is a primary bottleneck for expressive power and reasoning step length, avoiding the hard negative on temporal expansion limits."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 15,
+          "reason": "CoTFormer's mechanism of allocating more computation to specific tokens to perform multi-step reasoning aligns with the role of intermediate layers in forming the core of latent CoT and creating specialized sub-circuits for reasoning functions. The paper discusses how tokens undergo iterative refinement, which relates to intermediate information processing and causal influence on outcomes, distinct from shallow or deep layer functions as per the hard negatives."
+        }
+      ]
+    }
+  }
+}

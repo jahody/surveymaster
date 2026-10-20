@@ -1,0 +1,25 @@
+{
+  "filename": "2501.12895.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.12895.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 50,
+          "reason": "Focuses on test-time compute scaling (width/depth) and iterative reasoning, matching TPO's on-the-fly alignment during inference."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 30,
+          "reason": "Describes efficiency via implicit preferences rather than explicit length rewards, aligning with TPO's textual reward approach."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 20,
+          "reason": "Addresses safety and reliability in long reasoning, aligning outputs with human preferences and safe behavior."
+        }
+      ]
+    }
+  }
+}

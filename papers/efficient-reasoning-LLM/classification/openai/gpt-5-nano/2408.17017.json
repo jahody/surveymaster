@@ -1,0 +1,25 @@
+{
+  "filename": "2408.17017.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.17017.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 50,
+          "reason": "Core method relies on parallel search with multiple reasoning paths, self-consistency, criteria-based stopping, and weighted voting to improve efficiency and faithfulness."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 30,
+          "reason": "Addresses efficient and trustworthy reasoning, including faithfulness of outputs and selection of high-quality rationales to reduce hallucinations."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "Discusses dynamic test-time compute scaling via parallel sampling and iterative reasoning, aligning with efficient inference strategies."
+        }
+      ]
+    }
+  }
+}

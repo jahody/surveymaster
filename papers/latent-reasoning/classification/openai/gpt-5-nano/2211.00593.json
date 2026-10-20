@@ -1,0 +1,25 @@
+{
+  "filename": "2211.00593.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2211.00593.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 60,
+          "reason": "Discusses hidden information transmission across specialized layers, attention, and chain-of-embedding — aligns with mechanistic interpretability of information flow in GPT-2."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 25,
+          "reason": "Identifies intermediate layers as core sub-circuits for reasoning/latent CoT via 7 classes of attention heads; micro-level layer roles."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 15,
+          "reason": "Notes that different layers perform distinct computational roles in reasoning, mapping to multi-step inductive reasoning across depth."
+        }
+      ]
+    }
+  }
+}

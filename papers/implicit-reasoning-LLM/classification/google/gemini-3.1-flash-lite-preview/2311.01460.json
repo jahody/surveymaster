@@ -1,0 +1,25 @@
+{
+  "filename": "2311.01460.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2311.01460.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper explicitly focuses on distilling explicit chain-of-thought reasoning into the model's internal hidden states to perform implicit reasoning."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 30,
+          "reason": "The approach relies on distilling reasoning from a teacher model trained on explicit CoT, effectively anchoring the latent trajectories to semantic reasoning supervision."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The method moves away from explicit text tokens for reasoning, focusing on non-interpretable latent representations within the model layers."
+        }
+      ]
+    }
+  }
+}

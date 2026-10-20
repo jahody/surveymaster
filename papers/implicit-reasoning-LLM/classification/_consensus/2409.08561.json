@@ -1,0 +1,16 @@
+{
+  "filename": "2409.08561.md",
+  "classifications": {
+    "taxonomy": {
+      "chapter": "3.1.2(a)",
+      "score": 170.0,
+      "votes": {
+        "3.1.2(a)": 170,
+        "3.1.1": 55,
+        "3.1.2(b)": 50,
+        "3.2.1": 25
+      },
+      "reason": "Consensus: 3/3 models ranked this #1"
+    }
+  }
+}

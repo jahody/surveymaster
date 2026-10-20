@@ -1,0 +1,1081 @@
+{% extends "base.html" %}
+
+{% block title %}Taxonomy Editor - SurveyMaster{% endblock %}
+
+{% block head %}
+<style>
+  #fileSelect {
+    padding: .45rem .7rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: .85rem;
+    background: var(--surface);
+    color: var(--text);
+  }
+  #saveBtn:disabled { opacity: .35; cursor: default; }
+  #status { font-size: .8rem; color: var(--text-dim); }
+  #status.dirty { color: var(--negative); font-weight: 600; }
+  #status.saved { color: var(--success); }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+    border-bottom: 1px solid var(--border);
+  }
+  .tab {
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-dim);
+    font-size: .82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s;
+    white-space: nowrap;
+  }
+  .tab:hover { border-color: var(--accent1); color: var(--text); }
+  .tab.active { background: var(--accent1); color: #fff; border-color: var(--accent1); }
+  .tab-add { border-style: dashed; font-size: 1rem; padding: .4rem .8rem; }
+  .tab-add:hover { border-color: var(--accent1); color: var(--accent1); }
+
+  /* Graph area */
+  .graph-wrap {
+    overflow: auto;
+    padding: 1.5rem;
+  }
+  .graph-canvas {
+    position: relative;
+    min-height: 300px;
+  }
+  .graph-svg {
+    position: absolute;
+    top: 0; left: 0;
+    pointer-events: none;
+  }
+  .graph-svg path {
+    fill: none;
+    stroke-width: 1.5;
+  }
+
+  /* Nodes */
+  .node {
+    position: absolute;
+    width: 190px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-left: 3px solid var(--ac, var(--accent1));
+    border-radius: 8px;
+    padding: .45rem .65rem;
+    cursor: pointer;
+    transition: all .15s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .1rem;
+  }
+  .node:hover, .node.selected {
+    border-color: var(--ac);
+    background: var(--surface2);
+    transform: translateX(3px);
+    box-shadow: 0 2px 14px rgba(0,0,0,.35);
+    z-index: 2;
+  }
+  .node.root {
+    border-left-width: 1.5px;
+    border-width: 2px;
+    border-color: var(--text-dim);
+    background: var(--surface2);
+  }
+  .node.root:hover, .node.root.selected {
+    border-color: var(--text);
+  }
+  .node-ch {
+    font-size: .55rem;
+    font-weight: 700;
+    color: var(--ac, var(--text-dim));
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    opacity: .85;
+  }
+  .node-name {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .node-meta {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    margin-top: .15rem;
+  }
+  .node-papers {
+    font-size: .55rem;
+    padding: .08rem .35rem;
+    border-radius: 8px;
+    background: var(--ac, var(--accent1));
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  /* Detail panel */
+  .detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem 2rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .3s, opacity .3s, padding .3s;
+  }
+  .detail.open {
+    max-height: 5000px;
+    opacity: 1;
+    padding-bottom: 3rem;
+  }
+  .detail-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--ac, var(--accent1));
+    border-radius: var(--radius);
+    padding: 1.25rem;
+  }
+  .detail-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: .5rem;
+  }
+  .detail-ch {
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--ac);
+    margin-right: .5rem;
+  }
+  .detail-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .detail-close {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0 .3rem;
+    line-height: 1;
+  }
+  .detail-close:hover { color: var(--text); }
+  .detail-desc {
+    font-size: .88rem;
+    color: var(--text-dim);
+    line-height: 1.65;
+    margin-bottom: .75rem;
+  }
+  .detail-section { margin-bottom: .6rem; }
+  .detail-label {
+    font-size: .68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--text-dim);
+    margin-bottom: .25rem;
+  }
+  .detail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+  }
+  .detail-tag {
+    font-size: .75rem;
+    padding: .2rem .5rem;
+    border-radius: 14px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .detail-neg {
+    background: rgba(239, 68, 68, .06);
+    border-left: 3px solid var(--negative);
+    border-radius: 0 6px 6px 0;
+    padding: .5rem .7rem;
+  }
+  .detail-neg .detail-label { color: var(--negative); }
+  .detail-neg p { font-size: .82rem; color: var(--text-dim); line-height: 1.55; }
+  .detail-papers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+  }
+  .detail-paper {
+    font-size: .78rem;
+    padding: .2rem .55rem;
+    border-radius: 6px;
+    background: var(--surface2);
+    color: var(--accent1);
+    text-decoration: none;
+    transition: all .15s;
+    display: inline-flex;
+    align-items: center;
+    gap: .25rem;
+  }
+  .detail-paper:hover { background: var(--accent1); color: #fff; }
+  .detail-arxiv { font-size: .6rem; color: var(--text-dim); }
+  .detail-paper:hover .detail-arxiv { color: rgba(255,255,255,.7); }
+
+  /* Edit content */
+  .edit-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 4rem;
+  }
+
+  /* Taxonomy header (editable) */
+  .taxonomy-header { margin-bottom: 2rem; }
+  .taxonomy-header input {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: .3rem .5rem;
+    background: transparent;
+    color: var(--accent1);
+    margin-bottom: .5rem;
+  }
+  .taxonomy-header input:focus {
+    outline: none;
+    border-color: var(--accent1);
+    background: var(--surface);
+  }
+  .taxonomy-header textarea {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: .9rem;
+    font-family: inherit;
+    line-height: 1.7;
+    resize: none;
+    overflow: hidden;
+    color: var(--text-dim);
+    background: transparent;
+  }
+  .taxonomy-header textarea:focus {
+    outline: none;
+    border-color: var(--border);
+    background: var(--surface);
+    color: var(--text);
+  }
+
+  /* Items grid */
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 1.25rem;
+  }
+
+  /* Item card */
+  .item-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: border-color .2s;
+  }
+  .item-card:hover { border-color: var(--accent1); }
+  .item-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: .4rem;
+    margin-bottom: .6rem;
+  }
+  .item-ch {
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    margin-right: .15rem;
+    padding-top: .25rem;
+    white-space: nowrap;
+  }
+  .item-card-header input {
+    flex: 1;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: .15rem .35rem;
+    background: transparent;
+    color: var(--accent1);
+  }
+  .item-card-header input:focus {
+    outline: none;
+    border-color: var(--accent1);
+    background: var(--surface2);
+  }
+  .item-card textarea.desc {
+    width: 100%;
+    padding: .4rem .5rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: .85rem;
+    font-family: inherit;
+    line-height: 1.65;
+    resize: none;
+    overflow: hidden;
+    color: var(--text-dim);
+    background: transparent;
+    margin-bottom: 1rem;
+  }
+  .item-card textarea.desc:focus {
+    outline: none;
+    border-color: var(--border);
+    background: var(--surface2);
+    color: var(--text);
+  }
+  .item-card .btn-danger { opacity: 0; transition: opacity .15s; }
+  .item-card:hover .btn-danger { opacity: 1; }
+
+  /* Phrases */
+  .phrases {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  .phrase {
+    display: inline-flex;
+    align-items: center;
+    gap: .2rem;
+    font-size: .75rem;
+    padding: .25rem .6rem;
+    border-radius: 20px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-weight: 500;
+  }
+  .phrase-text {
+    cursor: text;
+    word-break: break-word;
+  }
+  .phrase-text:focus {
+    outline: none;
+    background: var(--surface);
+    border-radius: 2px;
+    padding: 0 2px;
+  }
+  .tag-remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: .8rem;
+    color: var(--text-dim);
+    line-height: 1;
+    padding: 0;
+    flex-shrink: 0;
+  }
+  .tag-remove:hover { color: var(--negative); }
+  .tag-input {
+    border: 1px dashed var(--border);
+    border-radius: 20px;
+    padding: .2rem .55rem;
+    font-size: .75rem;
+    min-width: 90px;
+    outline: none;
+    background: transparent;
+    color: var(--text);
+  }
+  .tag-input:focus { border-color: var(--accent1); }
+  .tag-input::placeholder { color: var(--text-dim); }
+
+  /* Hard negative */
+  .hard-negative {
+    font-size: .8rem;
+    color: var(--text-dim);
+    padding: .65rem .85rem;
+    background: rgba(239, 68, 68, .07);
+    border-left: 3px solid var(--negative);
+    border-radius: 0 6px 6px 0;
+    line-height: 1.55;
+  }
+  .hard-negative-label {
+    color: var(--negative);
+    font-weight: 600;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    margin-bottom: .35rem;
+  }
+  .hard-negative textarea {
+    width: 100%;
+    padding: .3rem 0;
+    border: none;
+    font-size: .82rem;
+    font-family: inherit;
+    line-height: 1.55;
+    resize: none;
+    overflow: hidden;
+    color: var(--text-dim);
+    background: transparent;
+  }
+  .hard-negative textarea:focus { outline: none; color: var(--text); }
+
+  /* Action buttons */
+  .btn-primary {
+    background: var(--accent1);
+    color: #fff;
+    border-color: var(--accent1);
+  }
+  .btn-primary:hover { background: #5a7ae6; }
+  .btn-danger {
+    color: var(--negative);
+    border-color: transparent;
+    font-size: .75rem;
+    padding: .2rem .5rem;
+  }
+  .btn-danger:hover { border-color: var(--negative); }
+  .taxonomy-actions {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .empty { text-align: center; color: var(--text-dim); padding: 4rem; }
+
+  @media (max-width: 640px) {
+    .graph-wrap { padding: .75rem; }
+    .detail { padding: 0 .75rem 2rem; }
+    .edit-content { padding: 1rem .75rem 3rem; }
+    .items-grid { grid-template-columns: 1fr; }
+    .tabs { gap: .35rem; }
+    .tab { font-size: .75rem; padding: .45rem .8rem; }
+  }
+</style>
+{% endblock %}
+
+{% block header_controls %}
+<select id="fileSelect"></select>
+<button id="saveBtn" class="btn btn-primary btn-sm" disabled>Save</button>
+<span id="status"></span>
+{% endblock %}
+
+{% block body %}
+<nav class="tabs" id="tabs"></nav>
+
+<div class="graph-wrap" id="graphWrap">
+  <p class="empty">Loading...</p>
+</div>
+
+<div class="detail" id="detail"></div>
+
+<main class="edit-content" id="editContent" style="display:none"></main>
+
+<script>
+/* Taxonomy Editor */
+
+const NW = 190, HGAP = 60, VGAP = 14, PAD = 30, MIN_H = 44;
+
+let nodeMap = {};
+let data = null;
+let colorCounter = 0;
+let dirty = false;
+let activeView = 'graph';
+
+function genColor(i) {
+  const hue = (i * 137.508) % 360;
+  return 'hsl(' + Math.round(hue) + ',58%,56%)';
+}
+
+const folderSelect = document.getElementById('topicSelect');
+const fileSelect = document.getElementById('fileSelect');
+const saveBtn = document.getElementById('saveBtn');
+const statusEl = document.getElementById('status');
+const tabsEl = document.getElementById('tabs');
+const graphWrap = document.getElementById('graphWrap');
+const detailEl = document.getElementById('detail');
+const editContent = document.getElementById('editContent');
+
+// --- API ---
+
+async function fetchJSON(url, opts) {
+  const r = await fetch(url, opts);
+  if (!r.ok) throw new Error(r.statusText);
+  return r.json();
+}
+
+function apiUrl(path) {
+  const folder = folderSelect.value;
+  return '/api/paper-folder/' + encodeURIComponent(folder) + path;
+}
+
+async function loadFileList() {
+  const folder = folderSelect.value;
+  if (!folder) return;
+  const files = await fetchJSON(apiUrl('/taxonomies'));
+  fileSelect.innerHTML = '';
+  files.forEach(f => {
+    const o = document.createElement('option');
+    o.value = f;
+    o.textContent = f;
+    fileSelect.appendChild(o);
+  });
+  if (fileSelect.value) loadFile(fileSelect.value);
+}
+
+async function loadFile(name) {
+  const folder = folderSelect.value;
+  if (!folder) return;
+  data = await fetchJSON(apiUrl('/taxonomy/' + name));
+  setDirty(false);
+  activeView = 'graph';
+  renderTabs();
+  activate('graph');
+}
+
+async function saveTaxonomy() {
+  if (!data) return;
+  syncFromDOM();
+  const file = fileSelect.value;
+  if (!file) return;
+  await fetchJSON(apiUrl('/taxonomy/' + file), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  setDirty(false);
+  statusEl.textContent = 'Saved';
+  statusEl.className = 'saved';
+}
+
+// --- Dirty state ---
+
+function setDirty(d) {
+  dirty = d;
+  saveBtn.disabled = !d;
+  if (d) {
+    statusEl.textContent = 'Unsaved changes';
+    statusEl.className = 'dirty';
+  } else {
+    statusEl.textContent = '';
+    statusEl.className = '';
+  }
+}
+
+function markDirty() {
+  if (!dirty) setDirty(true);
+}
+
+// --- Tabs ---
+
+function renderTabs() {
+  if (!data || !data.length) { tabsEl.innerHTML = ''; return; }
+  var html = '<button class="tab' + (activeView === 'graph' ? ' active' : '') + '" data-target="graph">Graph</button>';
+  data.forEach(function(axis, i) {
+    var id = 'tax-' + i;
+    var name = (axis.name || '').replace(/_/g, ' ');
+    var label = name.length > 30 ? name.substring(0, 27) + '...' : name;
+    html += '<button class="tab' + (activeView === id ? ' active' : '') + '" data-target="' + id + '">' + esc(label) + '</button>';
+  });
+  html += '<button class="tab tab-add" data-add-axis title="Add axis">+</button>';
+  tabsEl.innerHTML = html;
+}
+
+function activate(viewId) {
+  if (activeView !== 'graph') syncFromDOM();
+  activeView = viewId;
+
+  tabsEl.querySelectorAll('.tab').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.target === viewId);
+  });
+
+  if (viewId === 'graph') {
+    graphWrap.style.display = '';
+    detailEl.style.display = '';
+    editContent.style.display = 'none';
+    renderGraph();
+  } else {
+    graphWrap.style.display = 'none';
+    detailEl.style.display = 'none';
+    detailEl.classList.remove('open');
+    editContent.style.display = '';
+    var ai = parseInt(viewId.replace('tax-', ''));
+    renderEditView(ai);
+  }
+}
+
+// --- Sync DOM -> data ---
+
+function syncFromDOM() {
+  if (!data || activeView === 'graph') return;
+  var ai = parseInt(editContent.dataset.ai);
+  var axis = data[ai];
+  if (!axis) return;
+
+  var nameEl = editContent.querySelector('.axis-name');
+  var descEl = editContent.querySelector('.axis-desc');
+  if (nameEl) axis.name = nameEl.value;
+  if (descEl) axis.description = descEl.value;
+
+  editContent.querySelectorAll('.item-card').forEach(function(cardEl, ii) {
+    var item = axis.items[ii];
+    if (!item) return;
+    var n = cardEl.querySelector('.item-name');
+    var d = cardEl.querySelector('.item-desc');
+    var h = cardEl.querySelector('.hard-neg-textarea');
+    if (n) item.name = n.value;
+    if (d) item.description = d.value;
+    if (h) item.hard_negative = h.value;
+  });
+}
+
+// --- Renumbering ---
+
+function renumberItems(ai) {
+  var ch = data[ai].chapter || String(ai + 1);
+  (data[ai].items || []).forEach(function(item, i) {
+    item.chapter = ch + '.' + (i + 1);
+  });
+}
+
+function renumberAll() {
+  data.forEach(function(axis, i) {
+    axis.chapter = String(i + 1);
+    renumberItems(i);
+  });
+}
+
+// --- Edit rendering ---
+
+function autoResize(el) {
+  el.style.height = 'auto';
+  el.style.height = el.scrollHeight + 'px';
+}
+
+function autoResizeAll() {
+  editContent.querySelectorAll('textarea').forEach(autoResize);
+}
+
+function renderEditView(ai) {
+  editContent.innerHTML = renderTaxonomy(data[ai], ai);
+  editContent.dataset.ai = String(ai);
+  autoResizeAll();
+}
+
+function renderTaxonomy(axis, ai) {
+  return '<div class="taxonomy-header">' +
+    '<input class="axis-name" value="' + esc(axis.name) + '" placeholder="Axis name">' +
+    '<textarea class="axis-desc" placeholder="Axis description">' + esc(axis.description || '') + '</textarea>' +
+    '</div>' +
+    '<div class="items-grid">' +
+    (axis.items || []).map(function(item, ii) { return renderItem(item, ai, ii); }).join('') +
+    '</div>' +
+    '<div class="taxonomy-actions">' +
+    '<button class="btn btn-sm" data-add-item="' + ai + '">+ Add Item</button>' +
+    '<button class="btn btn-sm btn-danger" data-delete-axis="' + ai + '">Delete This Axis</button>' +
+    '</div>';
+}
+
+function renderItem(item, ai, ii) {
+  var hn = typeof item.hard_negative === 'string' ? item.hard_negative :
+           Array.isArray(item.hard_negative) ? item.hard_negative.join('; ') : '';
+  return '<div class="item-card" data-ai="' + ai + '" data-ii="' + ii + '">' +
+    '<div class="item-card-header">' +
+    '<span class="item-ch">' + esc(item.chapter || '') + '</span>' +
+    '<input class="item-name" value="' + esc(item.name) + '" placeholder="Item name">' +
+    '<button class="btn btn-danger" data-delete-item="' + ai + ',' + ii + '">&times;</button>' +
+    '</div>' +
+    '<textarea class="desc item-desc" placeholder="Description">' + esc(item.description || '') + '</textarea>' +
+    '<div class="phrases">' +
+    renderPhrases(item.phrases, ai, ii) +
+    '<input class="tag-input" data-add-tag="' + ai + ',' + ii + '" placeholder="+ phrase (Enter)">' +
+    '</div>' +
+    '<div class="hard-negative">' +
+    '<div class="hard-negative-label">Hard Negative</div>' +
+    '<textarea class="hard-neg-textarea" placeholder="Hard negative description">' + esc(hn) + '</textarea>' +
+    '</div>' +
+    '</div>';
+}
+
+function renderPhrases(arr, ai, ii) {
+  if (!arr || !arr.length) return '';
+  return arr.map(function(t, ti) {
+    return '<span class="phrase">' +
+      '<span class="phrase-text" contenteditable data-edit-tag="' + ai + ',' + ii + ',' + ti + '">' + esc(t) + '</span>' +
+      '<button class="tag-remove" data-remove-tag="' + ai + ',' + ii + ',' + ti + '">&times;</button>' +
+      '</span>';
+  }).join('');
+}
+
+// --- Tree (for graph) ---
+
+function buildTree(item, isRoot) {
+  var ci = isRoot ? -1 : colorCounter++;
+  var node = {
+    id: item.chapter || item.name,
+    name: item.name,
+    chapter: item.chapter || '',
+    description: item.description || '',
+    ci: ci,
+    isRoot: isRoot,
+    papers: item.papers || [],
+    phrases: item.phrases || [],
+    hardNeg: item.hard_negative || '',
+    children: (item.items || []).map(function(ch) { return buildTree(ch, false); }),
+    h: MIN_H
+  };
+  nodeMap[node.id] = node;
+  return node;
+}
+
+// --- Measure actual node heights ---
+
+function nodeInnerHTML(node) {
+  var c = node.isRoot ? '#e2e4ed' : genColor(node.ci);
+  var pc = node.papers.length;
+  var badge = pc ? '<div class="node-meta"><span class="node-papers" style="background:' + c + '">' + pc + ' papers</span></div>' : '';
+  return '<div class="node-ch">' + esc(node.chapter) + '</div>' +
+    '<div class="node-name">' + esc(node.name.replace(/_/g, ' ')) + '</div>' + badge;
+}
+
+function measureTree(node, container) {
+  var div = document.createElement('div');
+  div.className = node.isRoot ? 'node root' : 'node';
+  div.style.cssText = 'position:static;width:' + NW + 'px;';
+  div.innerHTML = nodeInnerHTML(node);
+  container.appendChild(div);
+  node.h = Math.max(MIN_H, div.offsetHeight);
+  container.removeChild(div);
+  node.children.forEach(function(ch) { measureTree(ch, container); });
+}
+
+// --- Horizontal layout (left-to-right) ---
+
+function layout(node, depth, y0) {
+  node.x = PAD + depth * (NW + HGAP);
+  if (!node.children.length) {
+    node.y = y0;
+    node.th = node.h;
+    return node.h;
+  }
+  var cy = y0;
+  node.children.forEach(function(ch, i) {
+    var h = layout(ch, depth + 1, cy);
+    cy += h + (i < node.children.length - 1 ? VGAP : 0);
+  });
+  node.th = cy - y0;
+  var first = node.children[0], last = node.children[node.children.length - 1];
+  node.y = (first.y + last.y + last.h) / 2 - node.h / 2;
+  return Math.max(node.th, node.h);
+}
+
+// --- Edges (horizontal Bezier) ---
+
+function buildEdges(node) {
+  var s = '';
+  var c = node.isRoot ? '#8b8fa5' : genColor(node.ci);
+  node.children.forEach(function(ch) {
+    var x1 = node.x + NW, y1 = node.y + node.h / 2;
+    var x2 = ch.x, y2 = ch.y + ch.h / 2;
+    var mx = (x1 + x2) / 2;
+    s += '<path d="M' + x1 + ',' + y1 + ' C' + mx + ',' + y1 + ' ' + mx + ',' + y2 + ' ' + x2 + ',' + y2 + '" stroke="' + c + '" opacity=".35"/>';
+    s += buildEdges(ch);
+  });
+  return s;
+}
+
+// --- Nodes HTML ---
+
+function buildNodes(node) {
+  var c = node.isRoot ? '#e2e4ed' : genColor(node.ci);
+  var cls = node.isRoot ? 'node root' : 'node';
+  var h = '<div class="' + cls + '" style="left:' + node.x + 'px;top:' + node.y + 'px;height:' + node.h + 'px;--ac:' + c + '" data-id="' + esc(node.id) + '">';
+  h += nodeInnerHTML(node);
+  h += '</div>';
+  node.children.forEach(function(ch) { h += buildNodes(ch); });
+  return h;
+}
+
+function esc(s) {
+  if (s == null) return '';
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// --- Render graph ---
+
+function renderGraph() {
+  if (!data || !data.length) {
+    graphWrap.innerHTML = '<p class="empty">No taxonomy data found.</p>';
+    return;
+  }
+  detailEl.classList.remove('open');
+  nodeMap = {};
+  colorCounter = 0;
+
+  var trees = data.map(function(axis) { return buildTree(axis, true); });
+
+  // Measure actual node heights
+  var measurer = document.createElement('div');
+  measurer.style.cssText = 'position:absolute;left:-9999px;top:0;';
+  document.body.appendChild(measurer);
+  trees.forEach(function(t) { measureTree(t, measurer); });
+  document.body.removeChild(measurer);
+
+  var y = PAD;
+  trees.forEach(function(t) { y += layout(t, 0, y) + PAD; });
+
+  var mxX = 0, mxY = 0;
+  function bounds(n) {
+    mxX = Math.max(mxX, n.x + NW);
+    mxY = Math.max(mxY, n.y + n.h);
+    n.children.forEach(bounds);
+  }
+  trees.forEach(bounds);
+
+  var W = mxX + PAD, H = mxY + PAD;
+  var edgeSvg = '', nodeHtml = '';
+  trees.forEach(function(t) { edgeSvg += buildEdges(t); nodeHtml += buildNodes(t); });
+
+  graphWrap.innerHTML =
+    '<div class="graph-canvas" style="width:' + W + 'px;height:' + H + 'px">' +
+    '<svg class="graph-svg" width="' + W + '" height="' + H + '">' + edgeSvg + '</svg>' +
+    nodeHtml +
+    '</div>';
+}
+
+// --- Graph interaction ---
+
+graphWrap.addEventListener('click', function(e) {
+  var el = e.target.closest('[data-id]');
+  if (!el) return;
+  showDetail(el.dataset.id);
+});
+
+detailEl.addEventListener('click', function(e) {
+  if (e.target.classList.contains('detail-close')) {
+    detailEl.classList.remove('open');
+    graphWrap.querySelectorAll('.node.selected').forEach(function(n) { n.classList.remove('selected'); });
+  }
+});
+
+function showDetail(id) {
+  var n = nodeMap[id];
+  if (!n) return;
+  var c = n.isRoot ? '#e2e4ed' : genColor(n.ci);
+
+  var phrases = n.phrases.length
+    ? '<div class="detail-section"><div class="detail-label">Phrases</div><div class="detail-tags">' +
+      n.phrases.map(function(p) { return '<span class="detail-tag">' + esc(p) + '</span>'; }).join('') +
+      '</div></div>' : '';
+
+  var hardNeg = n.hardNeg
+    ? '<div class="detail-section detail-neg"><div class="detail-label">Hard Negative</div><p>' +
+      esc(typeof n.hardNeg === 'string' ? n.hardNeg : Array.isArray(n.hardNeg) ? n.hardNeg.join('; ') : '') +
+      '</p></div>' : '';
+
+  var papers = n.papers.length
+    ? '<div class="detail-section"><div class="detail-label">Papers (' + n.papers.length + ')</div><div class="detail-papers">' +
+      n.papers.map(function(p) {
+        if (p.arxiv) return '<a class="detail-paper" href="https://arxiv.org/abs/' + p.arxiv + '" target="_blank" rel="noopener">' + esc(p.name) + ' <span class="detail-arxiv">' + p.arxiv + '</span></a>';
+        return '<span class="detail-paper">' + esc(p.name) + '</span>';
+      }).join('') +
+      '</div></div>' : '';
+
+  detailEl.innerHTML =
+    '<div class="detail-card" style="--ac:' + c + '">' +
+    '<div class="detail-top">' +
+    '<div><span class="detail-ch">' + esc(n.chapter) + '</span> <span class="detail-name">' + esc(n.name.replace(/_/g, ' ')) + '</span></div>' +
+    '<button class="detail-close">&times;</button>' +
+    '</div>' +
+    '<p class="detail-desc">' + esc(n.description) + '</p>' +
+    phrases + hardNeg + papers +
+    '</div>';
+
+  detailEl.classList.add('open');
+  graphWrap.querySelectorAll('.node.selected').forEach(function(el) { el.classList.remove('selected'); });
+  var nodeEl = graphWrap.querySelector('[data-id="' + id + '"]');
+  if (nodeEl) nodeEl.classList.add('selected');
+}
+
+// --- Events ---
+
+// Folder/file selection
+document.addEventListener('topicChanged', function() {
+  if (dirty && !confirm('Unsaved changes will be lost. Continue?')) return;
+  dirty = false;
+  loadFileList();
+});
+
+fileSelect.addEventListener('change', function() {
+  if (!fileSelect.value) return;
+  if (dirty && !confirm('Unsaved changes will be lost. Continue?')) return;
+  loadFile(fileSelect.value);
+});
+
+// Save
+saveBtn.addEventListener('click', function() { saveTaxonomy(); });
+
+// Ctrl+S
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+    e.preventDefault();
+    if (dirty) saveTaxonomy();
+  }
+});
+
+// Tab clicks
+tabsEl.addEventListener('click', function(e) {
+  var t = e.target;
+  if (t.dataset.target) {
+    activate(t.dataset.target);
+  } else if (t.dataset.addAxis !== undefined) {
+    syncFromDOM();
+    data.push({
+      chapter: String(data.length + 1),
+      name: 'New Axis',
+      description: '',
+      items: []
+    });
+    renderTabs();
+    activate('tax-' + (data.length - 1));
+    markDirty();
+  }
+});
+
+// Edit area clicks (delegated)
+editContent.addEventListener('click', function(e) {
+  var t = e.target;
+
+  // Delete item
+  if (t.dataset.deleteItem !== undefined) {
+    syncFromDOM();
+    var parts = t.dataset.deleteItem.split(',');
+    var ai = parseInt(parts[0]), ii = parseInt(parts[1]);
+    data[ai].items.splice(ii, 1);
+    renumberItems(ai);
+    renderEditView(ai);
+    markDirty();
+    return;
+  }
+
+  // Add item
+  if (t.dataset.addItem !== undefined) {
+    syncFromDOM();
+    var ai = parseInt(t.dataset.addItem);
+    var ch = data[ai].chapter || String(ai + 1);
+    data[ai].items.push({
+      chapter: ch + '.' + (data[ai].items.length + 1),
+      name: 'New Item',
+      description: '',
+      phrases: [],
+      hard_negative: '',
+      papers: []
+    });
+    renderEditView(ai);
+    markDirty();
+    return;
+  }
+
+  // Delete axis
+  if (t.dataset.deleteAxis !== undefined) {
+    var ai = parseInt(t.dataset.deleteAxis);
+    if (!confirm('Delete axis "' + (data[ai]?.name || '') + '"?')) return;
+    syncFromDOM();
+    data.splice(ai, 1);
+    renumberAll();
+    activeView = 'graph';
+    renderTabs();
+    activate('graph');
+    markDirty();
+    return;
+  }
+
+  // Remove phrase tag
+  if (t.dataset.removeTag !== undefined) {
+    var parts = t.dataset.removeTag.split(',').map(Number);
+    var ai = parts[0], ii = parts[1], ti = parts[2];
+    var item = data[ai] && data[ai].items[ii];
+    if (item && item.phrases) {
+      syncFromDOM();
+      item.phrases.splice(ti, 1);
+      renderEditView(ai);
+      markDirty();
+    }
+    return;
+  }
+});
+
+// Tag input - add phrase on Enter
+editContent.addEventListener('keydown', function(e) {
+  if (e.key === 'Enter' && e.target.dataset.addTag !== undefined) {
+    e.preventDefault();
+    var val = e.target.value.trim();
+    if (!val) return;
+    syncFromDOM();
+    var parts = e.target.dataset.addTag.split(',').map(Number);
+    var ai = parts[0], ii = parts[1];
+    var item = data[ai] && data[ai].items[ii];
+    if (item) {
+      if (!item.phrases) item.phrases = [];
+      item.phrases.push(val);
+      renderEditView(ai);
+      markDirty();
+      var newInput = editContent.querySelector('[data-add-tag="' + ai + ',' + ii + '"]');
+      if (newInput) newInput.focus();
+    }
+  }
+});
+
+// Phrase edit (contenteditable blur)
+editContent.addEventListener('focusout', function(e) {
+  if (e.target.dataset.editTag !== undefined) {
+    var parts = e.target.dataset.editTag.split(',').map(Number);
+    var ai = parts[0], ii = parts[1], ti = parts[2];
+    var item = data[ai] && data[ai].items[ii];
+    if (item && item.phrases) {
+      var newVal = e.target.textContent.trim();
+      if (newVal && newVal !== item.phrases[ti]) {
+        item.phrases[ti] = newVal;
+        markDirty();
+      } else if (!newVal) {
+        item.phrases.splice(ti, 1);
+        var currentAi = parseInt(editContent.dataset.ai);
+        renderEditView(currentAi);
+        markDirty();
+      }
+    }
+  }
+});
+
+// Track changes on inputs/textareas
+editContent.addEventListener('input', function(e) {
+  if (e.target.matches('input, textarea')) markDirty();
+  if (e.target.matches('textarea')) autoResize(e.target);
+});
+
+// Warn on page leave
+window.addEventListener('beforeunload', function(e) {
+  if (dirty) {
+    e.preventDefault();
+    e.returnValue = '';
+  }
+});
+
+// --- Init --- (topic loaded via shared base selector)
+</script>
+
+{% endblock %}

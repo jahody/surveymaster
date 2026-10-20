@@ -1,0 +1,25 @@
+{
+  "filename": "2405.15302.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.15302.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 45,
+          "reason": "The paper investigates how information is propagated and stored in distinct buffers across Transformer layers, focusing on the micro-level functional roles of layers in reasoning."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 35,
+          "reason": "The study explicitly analyzes the information propagation mechanisms and how the model selectively extracts information through the query-key matrix across layers."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper evaluates the proposed mechanism on symbolic multi-step reasoning tasks, demonstrating improved performance on datasets like PrOntoQA and LogicInference."
+        }
+      ]
+    }
+  }
+}

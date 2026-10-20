@@ -1,0 +1,25 @@
+{
+  "filename": "2503.15558.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.15558.md",
+      "chapters": [
+        {
+          "chapter": "7.1",
+          "confidence": 60,
+          "reason": "The paper presents multimodal large language models (Cosmos-Reason1) specifically designed for embodied reasoning and physical common sense, focusing on dynamically adjusting reasoning for multimodal inputs and complex physical world tasks, aligning with the category's focus on efficient reasoning for multimodal and video inputs."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "The paper develops models for Physical AI reasoning, which involves complex chain-of-thought reasoning about the physical world. While it does not explicitly mention subquadratic attention architectures, the core task of 'embodied reasoning' through long reasoning processes is a central theme of studies in this category that explore efficient reasoning solutions."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper builds comprehensive benchmarks for evaluating physical common sense and embodied reasoning according to their defined ontologies. This aligns with the category's focus on developing new datasets and metrics to quantify reasoning capabilities, though the emphasis is more on task-specific evaluation than on measuring reasoning efficiency trade-offs."
+        }
+      ]
+    }
+  }
+}

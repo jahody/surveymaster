@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13189.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13189.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 70,
+          "reason": "MoBA introduces a novel subquadratic attention mechanism (Mixture of Block Attention) that reduces computational complexity for long sequences, directly aligning with the description of replacing standard self-attention with mechanisms to reduce quadratic complexity."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 20,
+          "reason": "The paper evaluates MoBA on long-context tasks, which often involve complex reasoning, and focuses on applying this subquadratic attention architecture to improve efficiency in such scenarios, matching the category's focus on efficient reasoning with subquadratic attention models."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 10,
+          "reason": "MoBA has been deployed to support Kimi's long-context requests, indicating application in practical systems like RAG or agentic frameworks, though this is a secondary aspect compared to its core architectural contribution."
+        }
+      ]
+    }
+  }
+}

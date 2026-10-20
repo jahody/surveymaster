@@ -1,0 +1,25 @@
+{
+  "filename": "2404.08634.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.08634.md",
+      "chapters": [
+        {
+          "chapter": "4.2.3",
+          "confidence": 50,
+          "reason": "The paper identifies 'attention collapse' and 'lazy layers' in the deep layers of LLMs, directly discussing the degradation and underutilization of these layers, which aligns with the 'layer degradation' key phrase for deep layers."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 30,
+          "reason": "The work addresses layer depth as a structural inefficiency and bottleneck, proposing to remove redundant deep layers to create smaller models, which relates to the concept of layer depth as a primary bottleneck for model capacity and efficiency."
+        },
+        {
+          "chapter": "3.1.3",
+          "reason": "The proposed 'Inheritune' method is a training strategy that involves progressive training and expansion after inheriting early layers, which matches the description of 'progressive stacking' and 'curriculum-based compression' for optimizing model structure.",
+          "confidence": 20
+        }
+      ]
+    }
+  }
+}

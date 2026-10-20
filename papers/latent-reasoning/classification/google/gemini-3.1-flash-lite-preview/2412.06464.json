@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06464.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06464.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces Gated DeltaNet, which utilizes a delta update rule and gating mechanism within a linear-state recurrence framework, similar to Mamba2 and DeltaNet."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 25,
+          "reason": "The architecture uses a compressive memory mechanism with a delta update rule, which is directly related to the Infini-attention paradigm of constant-memory streaming."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 15,
+          "reason": "The paper discusses hybrid architectures that combine Gated DeltaNet with existing models, effectively replacing or augmenting standard Transformer layers with recurrent state-space mixers."
+        }
+      ]
+    }
+  }
+}

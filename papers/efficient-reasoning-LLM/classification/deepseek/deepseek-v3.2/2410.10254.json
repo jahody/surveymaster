@@ -1,0 +1,25 @@
+{
+  "filename": "2410.10254.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.10254.md",
+      "chapters": [
+        {
+          "chapter": "6.3",
+          "confidence": 70,
+          "reason": "The paper's core contribution is LoLCATs, a method to convert pre-trained transformers into linear recurrent structures by replacing softmax attentions with linear attentions and using LoRA, directly aligning with the definition of linearization."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 20,
+          "reason": "The paper focuses on subquadratic attention mechanisms, specifically linear attention, as a replacement for standard quadratic attention to improve computational efficiency, which is central to the subquadratic attention category."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 10,
+          "reason": "The paper evaluates linearized models on reasoning tasks like MMLU, demonstrating efficient reasoning with subquadratic attention architectures, though it is less focused on reasoning-specific adaptations compared to architectural conversion."
+        }
+      ]
+    }
+  }
+}

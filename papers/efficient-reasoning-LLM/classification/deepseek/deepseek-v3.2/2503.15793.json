@@ -1,0 +1,25 @@
+{
+  "filename": "2503.15793.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.15793.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 85,
+          "reason": "The paper introduces DNR Bench, a new benchmark designed to evaluate LLMs' ability to avoid unnecessary generation and over-reasoning, explicitly focusing on measuring reasoning efficiency and overthinking phenomena."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "The paper evaluates reasoning LLMs that use test-time scaling (increased reasoning depth/compute during inference) and highlights their inefficiency, which relates to the study of efficient test-time scaling."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 5,
+          "reason": "The paper identifies excessive token generation as a problem, which implicitly relates to the challenge of managing reasoning length, though it does not propose a solution with length rewards."
+        }
+      ]
+    }
+  }
+}

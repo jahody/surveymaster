@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06769.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06769.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 80,
+          "reason": "The paper's core contribution, Coconut, replaces explicit CoT steps with continuous hidden representations (continuous thoughts) where hidden states are fed back as inputs, directly matching the description and key phrases of Latent-Space SFT."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 15,
+          "reason": "The paper describes how continuous thoughts can encode multiple alternative next steps, enabling a breadth-first search (BFS), which aligns with Parallel Search's generation and evaluation of multiple candidates concurrently."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 5,
+          "reason": "The BFS capability allows for dynamic scaling of search width during inference, which relates to techniques that scale compute via search width, as discussed in Efficient Test-time Scaling and Infinity Thinking."
+        }
+      ]
+    }
+  }
+}

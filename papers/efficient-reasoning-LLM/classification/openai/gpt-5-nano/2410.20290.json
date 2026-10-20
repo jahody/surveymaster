@@ -1,0 +1,25 @@
+{
+  "filename": "2410.20290.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.20290.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 45,
+          "reason": "Centers on parallel search and Best-of-N style decoding, which matches the paper's focus on efficient multiple-candidate generation and selection."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 30,
+          "reason": "Involves model switching with draft/verification models (speculative decoding) akin to Speculative Rejection used to accelerate decoding."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "Discusses efficient test-time scaling via adjustably wide/narrow search (parallel sampling, iterative refinement), aligning with the paper's inference-time efficiency goals."
+        }
+      ]
+    }
+  }
+}

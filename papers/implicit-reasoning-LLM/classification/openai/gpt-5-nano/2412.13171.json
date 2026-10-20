@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 60,
+          "reason": "compressing explicit reasoning traces into contemplation tokens for semantic fidelity (semantic anchoring)"
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 30,
+          "reason": "adaptive compression to adjust reasoning length/latency via number of contemplation tokens"
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 10,
+          "reason": "uses a single control mechanism (contemplation tokens) to modulate reasoning dynamics"
+        }
+      ]
+    }
+  }
+}

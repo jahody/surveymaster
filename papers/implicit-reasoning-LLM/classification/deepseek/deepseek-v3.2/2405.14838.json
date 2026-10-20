@@ -1,0 +1,25 @@
+{
+  "filename": "2405.14838.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.14838.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 60,
+          "reason": "The paper's method involves gradually removing explicit CoT steps and fine-tuning the model, which aligns with 'step-by-step internalization' and 'curriculum training' for progressive refinement of implicit reasoning."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "The approach starts with a model trained on explicit CoT reasoning, anchoring latent reasoning to explicit supervision to maintain semantic fidelity, matching 'semantic anchoring'."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "The method internalizes reasoning steps into the model's internal states without explicit tokens, relating to 'distilling hidden states' and implicit reasoning regulation."
+        }
+      ]
+    }
+  }
+}

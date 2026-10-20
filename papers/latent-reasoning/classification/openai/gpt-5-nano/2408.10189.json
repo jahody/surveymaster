@@ -1,0 +1,25 @@
+{
+  "filename": "2408.10189.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.10189.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 70,
+          "reason": "Paper focuses on Transformer-to-SSM conversion via distillation (Training-induced Hidden-State Conversion), i.e., converting fixed-architecture Transformers to hidden-state RNN/SSM models."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 20,
+          "reason": "Discusses linear-state recurrence and state-space updates, which aligns with subquadratic, matrix-valued hidden-state dynamics used by SSMs."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 10,
+          "reason": "Touches on architectural recurrence concepts and recurrent computation, relevant to the idea of using recurrent/SSM structures as successors to Transformers."
+        }
+      ]
+    }
+  }
+}

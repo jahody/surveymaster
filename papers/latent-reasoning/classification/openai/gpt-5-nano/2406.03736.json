@@ -1,0 +1,25 @@
+{
+  "filename": "2406.03736.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.03736.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 60,
+          "reason": "The paper explicitly unifies absorbing discrete diffusion with any-order autoregressive models (AO-ARMs), i.e., a Hybrid AR-Diffusion approach."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 30,
+          "reason": "The work centers on discrete diffusion processes and absorbing dynamics, aligning with the Masked Diffusion Models family."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 10,
+          "reason": "Related to diffusion over embeddings, but the paper focuses on discrete token-level diffusion rather than continuous embedding diffusion."
+        }
+      ]
+    }
+  }
+}

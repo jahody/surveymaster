@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19201.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19201.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "Main focus on latent-space SFT: reasoning in hidden representations to reduce token overhead while preserving reasoning."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "Conceptually aligns with reasoning chain compression by condensing CoT into concise form, here via hidden representations."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "Explicit aim to budget length/verbosity by reducing tokens and CoT length during inference."
+        }
+      ]
+    }
+  }
+}

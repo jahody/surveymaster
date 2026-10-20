@@ -1,0 +1,25 @@
+{
+  "filename": "2502.14458.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.14458.md",
+      "chapters": [
+        {
+          "chapter": "6.3",
+          "confidence": 60,
+          "reason": "The paper introduces Llamba, a family of models distilled from Llama-3.x (a transformer) into the Mamba architecture (a linear recurrent structure), which aligns with the 'Linearization' category's focus on converting pre-trained transformers into efficient linear recurrent models via distillation."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 25,
+          "reason": "The paper's core architecture, Mamba, is a state space model that provides subquadratic sequence modeling, replacing standard self-attention to improve efficiency, which fits the 'Subquadratic Attention' category."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "The paper applies a subquadratic attention model (Mamba) to language modeling, demonstrating efficient performance on benchmarks, which relates to 'Efficient Reasoning with Subquadratic Attention', though the paper's primary focus is on general language processing rather than specifically chain-of-thought reasoning tasks."
+        }
+      ]
+    }
+  }
+}

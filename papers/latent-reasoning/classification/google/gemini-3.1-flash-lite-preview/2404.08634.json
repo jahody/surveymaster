@@ -1,0 +1,25 @@
+{
+  "filename": "2404.08634.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.08634.md",
+      "chapters": [
+        {
+          "chapter": "4.2.3",
+          "confidence": 50,
+          "reason": "The paper explicitly identifies 'attention collapse' in deeper layers as a source of inefficiency, directly addressing the degradation of deep layers."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "Inheritune uses a progressive training recipe to build smaller models by inheriting early layers, which aligns with curriculum-based compression strategies."
+        },
+        {
+          "chapter": "4.2.1",
+          "confidence": 20,
+          "reason": "The method relies on the premise that early layers are 'potent' and contain the essential representational primitives, which are then inherited by the compact model."
+        }
+      ]
+    }
+  }
+}

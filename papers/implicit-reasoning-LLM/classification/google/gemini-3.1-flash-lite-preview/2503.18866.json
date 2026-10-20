@@ -1,0 +1,25 @@
+{
+  "filename": "2503.18866.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.18866.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 60,
+          "reason": "The paper explicitly uses an EM algorithm to iteratively improve the model and the quality of thought-augmented data, which aligns with iterative updating and progressive refinement."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "The approach focuses on inferring latent thoughts to improve data efficiency, effectively anchoring the model's learning process to explicit reasoning steps."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "The methodology involves modeling latent thoughts that underlie text generation, which relates to regulating the model's internal reasoning states during pretraining."
+        }
+      ]
+    }
+  }
+}

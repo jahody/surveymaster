@@ -1,0 +1,25 @@
+{
+  "filename": "2006.16236.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2006.16236.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "Paper frames attention as a linear/stateful recurrence with a matrix-valued hidden state, linking Transformer attention to recurrent architectures."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "Discusses information flow through attention mechanisms; analyzes how hidden information is transmitted, relevant to linear attention mechanics."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "Related to streaming/constant-memory computation aspects of long sequences, aligning with the paper's efficiency goals and memory considerations."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2211.15089.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2211.15089.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 70,
+          "reason": "CDCD maps discrete language tokens to continuous embeddings and denoises latent vectors, aligning with Embedding-based Diffusion Models."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 20,
+          "reason": "Diffusion for text sequences with masking; relevant as diffusion applied to language data, though CDCD emphasizes continuous input space."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 10,
+          "reason": "Hybrid AR-Diffusion Models combine diffusion with autoregressive components; related diffusion paradigms for sequences though not the primary approach of CDCD."
+        }
+      ]
+    }
+  }
+}

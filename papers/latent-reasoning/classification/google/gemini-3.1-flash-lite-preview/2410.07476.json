@@ -1,0 +1,25 @@
+{
+  "filename": "2410.07476.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.07476.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 40,
+          "reason": "The paper focuses on mechanistic interpretability of neural networks, specifically identifying the internal sub-circuits and computational structures that perform group operations."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 35,
+          "reason": "The research investigates how information is processed and represented within the network to explain model performance and accuracy, aligning with the theory of information flow."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "The paper demonstrates how these models perform symbolic reasoning tasks (finite group operations) and provides a formal verification of their computational logic."
+        }
+      ]
+    }
+  }
+}

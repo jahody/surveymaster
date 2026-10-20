@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01422.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01422.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "Addresses test-time compute scaling via dynamic parallel search and Best-of-N sampling, aligning with Efficient Test-time Scaling and Infinity Thinking."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 30,
+          "reason": "Uses parallel candidate generation (Best-of-N) and pruning to improve efficiency, a core Parallel Search concept."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "Touches on evaluation metrics and trade-offs for reasoning efficiency and cost, related to Evaluation and Benchmark."
+        }
+      ]
+    }
+  }
+}

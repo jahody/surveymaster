@@ -1,0 +1,162 @@
+[
+  {
+    "chapter": "3",
+    "name": "Technical Paradigms",
+    "description": "Technical paradigms for implicit reasoning categorized based on where and how the internal computation unfolds.",
+    "items": [
+      {
+        "name": "latent_optimization",
+        "chapter": "3.1",
+        "description": "Directly adjusts and optimizes internal representations without emitting intermediate text.",
+        "phrases": [
+          "Manipulating internal representations",
+          "continuous process over latent units",
+          "adjusting target units in latent space"
+        ],
+        "hard_negative": "Prompting the model to output a hidden <think> block in the text response (this is an explicit output, even if it is hidden from the user's UI).",
+        "items": [
+          {
+            "name": "token_level",
+            "chapter": "3.1.1",
+            "description": "Steers reasoning by manipulating individual tokens.",
+            "phrases": [
+              "Inserting semantic concepts",
+              "non-interpretable latent tokens",
+              "discrete latent codes",
+              "hybrid reasoning formats"
+            ],
+            "hard_negative": "Generating a full explicit Chain-of-Thought sequence of text tokens.",
+            "papers": []
+          },
+          {
+            "name": "trajectory_level",
+            "chapter": "3.1.2",
+            "description": "Treats the reasoning trajectory as a unit of optimization, replacing explicit reasoning steps with continuous latent thoughts.",
+            "phrases": [
+              "Granularity of reasoning steps",
+              "continuous latent thoughts",
+              "compressed reasoning steps"
+            ],
+            "hard_negative": "Modifying the weights of a single attention layer to process all inputs faster.",
+            "items": [
+              {
+                "name": "semantic_anchoring",
+                "chapter": "3.1.2(a)",
+                "description": "Anchors latent trajectories to explicit reasoning supervision to ensure semantic fidelity.",
+                "phrases": [
+                  "Semantic fidelity",
+                  "compressing full traces into contemplation tokens",
+                  "contrastive training with explicit CoT"
+                ],
+                "hard_negative": "Randomly perturbing the latent space without any semantic alignment target.",
+                "papers": []
+              },
+              {
+                "name": "adaptive_efficiency",
+                "chapter": "3.1.2(b)",
+                "description": "Dynamically compresses intermediate thoughts during generation to adjust reasoning length or speed.",
+                "phrases": [
+                  "Dynamic trajectory compression",
+                  "adjusting reasoning length",
+                  "elastic control over reasoning"
+                ],
+                "hard_negative": "Statically pruning 50% of the model parameters before inference.",
+                "papers": []
+              },
+              {
+                "name": "progressive_refinement",
+                "chapter": "3.1.2(c)",
+                "description": "Refines the implicit reasoning process progressively by step-by-step internalization or iterative updating.",
+                "phrases": [
+                  "Step-by-step internalization",
+                  "iterative updating",
+                  "curriculum training",
+                  "EM-style iterations"
+                ],
+                "hard_negative": "Standard one-pass supervised fine-tuning on final answers only.",
+                "papers": []
+              },
+              {
+                "name": "exploratory_diversification",
+                "chapter": "3.1.2(d)",
+                "description": "Introduces soft or perturbed latent representations to promote the diversity of possible reasoning trajectories.",
+                "phrases": [
+                  "Soft latent representations",
+                  "probabilistic mixtures",
+                  "parallel reasoning trajectories",
+                  "continuous concept space"
+                ],
+                "hard_negative": "Using standard nucleus sampling (top-p) to generate multiple diverse text responses.",
+                "papers": []
+              }
+            ]
+          },
+          {
+            "name": "internal_state_level",
+            "chapter": "3.1.3",
+            "description": "Takes the model's internal states as the target of reasoning regulation.",
+            "phrases": [
+              "Distilling hidden states",
+              "implicit memory modules",
+              "dynamic shortcuts in Transformer layers",
+              "hybrid latent rollouts"
+            ],
+            "hard_negative": "Inserting special control tokens into the prompt context.",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "name": "signal_guided_control",
+        "chapter": "3.2",
+        "description": "Leverages specially designed control signals to steer the model's internal computation process.",
+        "phrases": [
+          "Inserting specialized control tokens",
+          "modulating computation",
+          "lightweight computational markers"
+        ],
+        "hard_negative": "Rewriting the user's prompt using an external system before passing it to the LLM.",
+        "items": [
+          {
+            "name": "single_type_signal",
+            "chapter": "3.2.1",
+            "description": "A single control mechanism that uniformly modulates the reasoning dynamics (e.g., fixed tokens or adaptive token placement).",
+            "phrases": [
+              "Pause tokens",
+              "filler tokens",
+              "generic prefix planning tokens",
+              "delayed next-token prediction"
+            ],
+            "hard_negative": "Using distinct tokens to explicitly trigger memory retrieval vs. logic calculation separately.",
+            "papers": []
+          },
+          {
+            "name": "multi_type_signal",
+            "chapter": "3.2.2",
+            "description": "Employs multiple distinct control signals to enable finer-grained control over reasoning behaviors.",
+            "phrases": [
+              "Multiple distinct control signals",
+              "finer-grained control",
+              "disentangling memory and reasoning ability"
+            ],
+            "hard_negative": "Inserting multiple identical <pause> tokens in a row.",
+            "papers": []
+          }
+        ]
+      },
+      {
+        "name": "layer_recurrent_execution",
+        "chapter": "3.3",
+        "description": "Introduces iterative computation within the model's architecture to progressively refine hidden states.",
+        "phrases": [
+          "Recurrence into forward computation",
+          "looping layers",
+          "shared weights",
+          "token-wise adaptive repeats"
+        ],
+        "hard_negative": "Making the Transformer literally 1000 layers deep with completely distinct parameters for each layer.",
+        "papers": []
+      }
+    ]
+  }
+]

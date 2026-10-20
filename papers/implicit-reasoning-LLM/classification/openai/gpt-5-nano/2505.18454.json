@@ -1,0 +1,25 @@
+{
+  "filename": "2505.18454.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.18454.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 60,
+          "reason": "Leverages and regulates internal hidden states as part of latent reasoning via gating of prior hidden states into tokens."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 25,
+          "reason": "Describes progressive incorporation of more hidden features during training, aligning with progressive refinement of reasoning."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 15,
+          "reason": "Uses stochastic token sampling to induce latent reasoning trajectories, promoting exploration/diversity in reasoning."
+        }
+      ]
+    }
+  }
+}

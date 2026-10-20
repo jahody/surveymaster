@@ -1,0 +1,25 @@
+{
+  "filename": "2302.07863.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2302.07863.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "This work centers on routing and coordinating between a small and a large model for speculative decoding (Model Switch)."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The approach dynamically scales compute at test time by deciding when to invoke the large model and how to refine outputs (test-time scaling)."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 15,
+          "reason": "Applied efficient reasoning techniques to real tasks; BiLD focuses on practical applications with speedups in MT and summarization."
+        }
+      ]
+    }
+  }
+}

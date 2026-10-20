@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19201.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19201.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "The paper explicitly proposes replacing explicit CoT steps with compact hidden representations (thinking tokens) and training the model to interpret these latent states."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 25,
+          "reason": "The framework is specifically designed for Multimodal Large Language Models (MLLMs) to improve reasoning efficiency on multimodal benchmarks."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 15,
+          "reason": "The core goal is to minimize verbosity and reduce the number of tokens required for reasoning, which aligns with the objective of chain compression, even though the method uses latent space."
+        }
+      ]
+    }
+  }
+}

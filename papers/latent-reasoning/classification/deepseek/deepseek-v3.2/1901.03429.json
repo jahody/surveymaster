@@ -1,0 +1,25 @@
+{
+  "filename": "1901.03429.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "1901.03429.md",
+      "chapters": [
+        {
+          "chapter": "4.3.2",
+          "confidence": 80,
+          "reason": "The paper's core contribution is a theoretical proof demonstrating the Turing completeness of the Transformer and Neural GPU architectures, directly aligning with the description of investigating proofs of universal computational capability."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 15,
+          "reason": "The study discusses the computational power of architectures based on their internal structure (like depth and capacity to compute dense representations), which relates to how layer depth serves as a bottleneck for expressive power, though the paper's focus is more on theoretical universality than empirical scaling."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 5,
+          "reason": "The paper touches on the models' capabilities for complex, multi-step computation (implied by Turing completeness), but this is a secondary aspect compared to its primary theoretical proof focus."
+        }
+      ]
+    }
+  }
+}

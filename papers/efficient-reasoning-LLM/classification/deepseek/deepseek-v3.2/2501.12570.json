@@ -1,0 +1,25 @@
+{
+  "filename": "2501.12570.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.12570.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 60,
+          "reason": "The paper uses RL-style fine-tuning with a length reward to encourage shorter reasoning processes under accuracy constraints, directly aligning with the 'with Length Reward' category's description of treating reasoning length as a trajectory-level resource for constrained optimization."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "The method fine-tunes the model to generate shorter reasoning chains, which matches 'Reasoning Chain Compression' as it produces explicit but concise text tokens via supervised fine-tuning, though the primary mechanism is RL with length reward."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "The paper addresses difficulty-adaptive budget allocation, a key phrase in 'Length Budgeting', but its approach is training-based (SFT/RL) rather than inference-time prompting, making it a secondary fit due to the hard negative exclusion."
+        }
+      ]
+    }
+  }
+}

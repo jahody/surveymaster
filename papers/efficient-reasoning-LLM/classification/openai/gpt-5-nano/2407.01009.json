@@ -1,0 +1,25 @@
+{
+  "filename": "2407.01009.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.01009.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 65,
+          "reason": "The paper proposes dynamically switching between fast (System 1) and slow (System 2) reasoning modes based on task complexity, fitting the System Switch category."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The work involves adaptive test-time computation and scalable reasoning strategies, aligning with Efficient Test-time Scaling and Infinity Thinking concepts."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper evaluates reasoning efficiency on multiple benchmarks, tying into Evaluation and Benchmark for measuring efficiency and trade-offs."
+        }
+      ]
+    }
+  }
+}

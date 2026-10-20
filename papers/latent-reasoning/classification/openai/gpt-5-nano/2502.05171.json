@@ -1,0 +1,25 @@
+{
+  "filename": "2502.05171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.05171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper uses explicit architectural recurrence with a recurrent block and unrolling depth at test-time."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "Demonstrates multi-step latent reasoning capabilities via recurrent depth; aligns with applications/capabilities of recurrent models."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 15,
+          "reason": "Discusses depth as a bottleneck and how increasing depth (via test-time recurrence) can enhance reasoning capacity."
+        }
+      ]
+    }
+  }
+}

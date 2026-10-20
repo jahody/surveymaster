@@ -1,0 +1,25 @@
+{
+  "filename": "2501.18585.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.18585.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 45,
+          "reason": "The paper introduces a novel metric to quantify 'underthinking' by measuring token efficiency in incorrect answers, which aligns with developing new metrics to evaluate reasoning efficiency and overthinking phenomena."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 35,
+          "reason": "The paper proposes a decoding strategy (TIP) that discourages premature thought switching to encourage deeper exploration, which relates to scaling compute dynamically during inference via search depth (sequential revision) and balancing search depth."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "The paper's TIP decoding strategy implicitly manages computational resources by penalizing thought switching, which can be seen as a form of inference-time length budgeting to encourage deeper reasoning paths, though it does not explicitly set a token budget."
+        }
+      ]
+    }
+  }
+}

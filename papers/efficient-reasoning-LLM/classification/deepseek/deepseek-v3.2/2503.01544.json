@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01544.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01544.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 50,
+          "reason": "The paper directly studies the expressive power and efficiency of different architectures, including transformers and subquadratic models like RNNs, on compositional reasoning tasks, aligning with the focus on applying subquadratic models to reasoning."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 30,
+          "reason": "The paper analyzes transformers and RNNs, with RNNs representing linear or subquadratic sequence models, and discusses their computational requirements in solving tasks, relating to mechanisms that reduce quadratic complexity."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "The paper introduces Compositional Reasoning Questions (CRQ) as a family of tasks to evaluate model capabilities, which contributes to benchmarking reasoning efficiency and trade-offs, though it is not the primary focus."
+        }
+      ]
+    }
+  }
+}

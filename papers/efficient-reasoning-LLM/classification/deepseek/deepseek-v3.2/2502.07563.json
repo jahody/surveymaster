@@ -1,0 +1,25 @@
+{
+  "filename": "2502.07563.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.07563.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 70,
+          "reason": "The paper's core contribution is a new sequence parallelism method (LASP-2) optimized for linear attention, which is a subquadratic attention mechanism. The work directly addresses improving the training efficiency of linear attention models."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 20,
+          "reason": "The paper evaluates its method on a Linear-Llama3 model for training, which involves architectural modifications for efficiency. While not explicitly focused on reasoning tasks, it contributes to the infrastructure for efficient training of subquadratic attention models, which is a prerequisite for their use in reasoning."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 10,
+          "reason": "The paper mentions hybrid models (LASP-2H) that blend linear and standard attention, which relates to architectural modifications and efficiency for deployment, though the primary focus is on parallel training rather than converting a pre-trained model."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2307.08621.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2307.08621.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "RetNet introduces a retention mechanism that uses a matrix-valued hidden state with predetermined decay and update rules, fitting the definition of linear-state recurrence."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 25,
+          "reason": "The paper focuses on efficient long-sequence modeling and constant-memory inference, which aligns with the goals of compressive memory architectures like Infini-attention."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 15,
+          "reason": "The paper proposes RetNet as a successor to Transformer, effectively replacing the quadratic self-attention mechanism with a sub-quadratic, recurrent-capable architecture."
+        }
+      ]
+    }
+  }
+}

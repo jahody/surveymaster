@@ -1,0 +1,25 @@
+{
+  "filename": "2502.18482.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.18482.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper focuses on routing queries between different LLMs to optimize for cost, latency, and quality, which is the definition of Model Switch."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "The paper implements a dynamic query routing system as a practical application layer for managing LLM usage in real-world systems."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper emphasizes the trade-offs between response quality, cost, and latency, providing empirical metrics to evaluate the efficiency of the routing system."
+        }
+      ]
+    }
+  }
+}

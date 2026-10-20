@@ -1,0 +1,25 @@
+{
+  "filename": "2401.15077.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2401.15077.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 55,
+          "reason": "Engages in latent-space reasoning by predicting and manipulating second-to-top-layer features."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "Focuses on test-time compute scaling and inference efficiency strategies."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 15,
+          "reason": "Uses speculative sampling concepts related to model-level efficiency and draft-model ideas."
+        }
+      ]
+    }
+  }
+}

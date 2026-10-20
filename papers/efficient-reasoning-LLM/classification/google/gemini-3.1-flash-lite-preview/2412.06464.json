@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06464.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06464.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "The paper introduces Gated DeltaNet, a state space model architecture designed to improve upon Mamba2, which falls directly under subquadratic attention and linear sequence modeling."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "The paper evaluates the architecture on reasoning tasks and long-context understanding, demonstrating the application of subquadratic models to improve reasoning efficiency."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "The paper discusses hybrid architectures and improvements over existing linear models, which relates to the architectural evolution and efficiency improvements of linear recurrent structures."
+        }
+      ]
+    }
+  }
+}

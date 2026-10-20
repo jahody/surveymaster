@@ -1,0 +1,25 @@
+{
+  "filename": "2411.13504.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.13504.md",
+      "chapters": [
+        {
+          "chapter": "3.2.2",
+          "confidence": 60,
+          "reason": "The paper explicitly introduces two distinct special tokens (memory and reason) to disentangle and control different inference behaviors, which aligns perfectly with the definition of multi-type signal control."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 25,
+          "reason": "The proposed paradigm decomposes the inference process into sequential steps (memory recall followed by reasoning), which represents a form of step-by-step internalization of the reasoning process."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 15,
+          "reason": "The approach steers the model's reasoning process by manipulating the input sequence with specific semantic tokens to guide the model's internal logic flow."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.10871.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.10871.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 40,
+          "reason": "Micro-level layer role differentiation aligns with the paper's findings that distinct layers perform specific reasoning and information integration."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 35,
+          "reason": "Intermediate layers are described as core for Latent CoT and specialized sub-circuits, matching the paper's layer-wise reasoning phenomena."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "Theory of information flow across layers corresponds to the paper's focus on cross-layer information transmission and chain-of-embedding trajectories."
+        }
+      ]
+    }
+  }
+}

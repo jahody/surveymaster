@@ -1,0 +1,25 @@
+{
+  "filename": "2502.11089.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.11089.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 80,
+          "reason": "The paper introduces NSA, a sparse attention mechanism designed to reduce the quadratic complexity of standard attention, which is the core contribution."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "The paper evaluates the efficiency of the sparse attention mechanism on long-context tasks and reasoning benchmarks, aligning with the application of subquadratic models to reasoning."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 5,
+          "reason": "The paper discusses end-to-end pretraining with the sparse attention mechanism, which relates to architectural innovations at the pretraining stage."
+        }
+      ]
+    }
+  }
+}

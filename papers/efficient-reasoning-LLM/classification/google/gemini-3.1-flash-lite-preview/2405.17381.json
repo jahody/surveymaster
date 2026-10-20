@@ -1,0 +1,25 @@
+{
+  "filename": "2405.17381.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.17381.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 80,
+          "reason": "The paper introduces Lightning Attention, a linear attention mechanism designed to reduce the quadratic complexity of standard transformers."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "The paper discusses TransNormerLLM, which utilizes the proposed attention mechanism to create a more efficient architecture, aligning with the goal of converting transformer-like structures into more efficient linear forms."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 5,
+          "reason": "The paper evaluates the proposed architecture on language modeling tasks, which is the foundational step for applying subquadratic attention to reasoning tasks."
+        }
+      ]
+    }
+  }
+}

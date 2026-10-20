@@ -1,0 +1,25 @@
+{
+  "filename": "2505.04993.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.04993.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "Uses discrete latent codes to model implicit factors behind human preferences (discrete latent tokens/latent codes)."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 25,
+          "reason": "Employs multiple latent signals (latent codes) to capture multi-factor preferences for finer-grained control."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 15,
+          "reason": "Latent codes aim to capture distribution of human preferences, enabling soft/diverse reasoning trajectories."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2407.14414.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.14414.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 55,
+          "reason": "Central focus on dynamically switching between fast (System-1) and slow (System-2) reasoning based on task difficulty."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "Discusses efficient test-time scaling and dynamic compute management, aligning with balancing between fast and slow planning."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 15,
+          "reason": "Notes a neuro-symbolic variant with neural System-1 and symbolic System-2, indicating cross-model switching in planning."
+        }
+      ]
+    }
+  }
+}

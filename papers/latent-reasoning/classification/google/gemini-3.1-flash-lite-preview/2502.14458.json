@@ -1,0 +1,25 @@
+{
+  "filename": "2502.14458.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.14458.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 60,
+          "reason": "The paper explicitly describes distilling a Transformer (Llama-3.x) into a recurrent architecture (Mamba) to maintain performance while achieving constant-memory inference."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The Mamba architecture used in the paper is a state-space model that relies on linear-state recurrence with predetermined update rules."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper focuses on the practical application of these models for efficient language processing on resource-constrained devices."
+        }
+      ]
+    }
+  }
+}

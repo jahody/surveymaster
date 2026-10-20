@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06769.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06769.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 50,
+          "reason": "The paper introduces a paradigm where the model learns to use its hidden state for reasoning without changing the underlying Transformer architecture, fitting the definition of training-induced recurrence."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 30,
+          "reason": "The paper demonstrates that this latent reasoning paradigm enables advanced reasoning patterns like breadth-first search, which is a core application of recurrent reasoning capabilities."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "The approach relies on the model's internal hidden states (intermediate layers) to perform reasoning, which aligns with the concept of intermediate layers forming the core of latent CoT."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}SurveyMaster{% endblock %}</title>
+<link rel="stylesheet" href="/static/css/common.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="brand">SurveyMaster</a>
+    <nav class="header-nav">
+      <a href="/papers" class="nav-link{% if request.path == '/papers' %} active{% endif %}">1. Papers</a>
+      <a href="/editor" class="nav-link{% if request.path == '/editor' %} active{% endif %}">2. Taxonomy</a>
+      <a href="/classification" class="nav-link{% if request.path == '/classification' %} active{% endif %}">3. Classification</a>
+      <a href="/evaluation" class="nav-link{% if request.path == '/evaluation' %} active{% endif %}">4. Evaluation</a>
+      <a href="/evolution-tree" class="nav-link{% if request.path == '/evolution-tree' %} active{% endif %}">5. Evolution Tree</a>
+    </nav>
+    <div class="header-selectors">
+      <select id="topicSelect"></select>
+    </div>
+    <div class="header-controls">
+      {% block header_controls %}{% endblock %}
+    </div>
+  </div>
+</header>
+{% block subheader %}{% endblock %}
+
+{% block body %}{% endblock %}
+
+<script>
+(function () {
+  var TOPIC_KEY = 'sm_topic';
+  var TAXONOMY_KEY = 'sm_taxonomy';
+  var topicEl = document.getElementById('topicSelect');
+  var taxEl = document.getElementById('taxonomySelect');
+
+  function fetchJSON(url) {
+    return fetch(url).then(function (r) { return r.json(); });
+  }
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function populateTaxonomies(topic) {
+    if (!taxEl) return Promise.resolve();
+    taxEl.innerHTML = '<option value="">(none)</option>';
+    if (!topic) {
+      document.dispatchEvent(new CustomEvent('taxonomyChanged', { detail: '' }));
+      return Promise.resolve();
+    }
+    return fetchJSON('/api/paper-folder/' + encodeURIComponent(topic) + '/taxonomies')
+      .then(function (files) {
+        files.forEach(function (f) {
+          var o = document.createElement('option');
+          o.value = f;
+          o.textContent = f.replace('.json', '').replace(/_/g, ' ');
+          taxEl.appendChild(o);
+        });
+        var saved = localStorage.getItem(TAXONOMY_KEY) || '';
+        if (saved) taxEl.value = saved;
+        document.dispatchEvent(new CustomEvent('taxonomyChanged', { detail: taxEl.value }));
+      });
+  }
+
+  topicEl.addEventListener('change', function () {
+    var topic = topicEl.value;
+    localStorage.setItem(TOPIC_KEY, topic);
+    document.dispatchEvent(new CustomEvent('topicChanged', { detail: topic }));
+    populateTaxonomies(topic);
+  });
+
+  if (taxEl) {
+    taxEl.addEventListener('change', function () {
+      localStorage.setItem(TAXONOMY_KEY, taxEl.value);
+      document.dispatchEvent(new CustomEvent('taxonomyChanged', { detail: taxEl.value }));
+    });
+  }
+
+  fetchJSON('/api/paper-folders').then(function (folders) {
+    topicEl.innerHTML = '<option value="">Select topic\u2026</option>' +
+      folders.map(function (f) {
+        return '<option value="' + esc(f) + '">' + esc(f) + '</option>';
+      }).join('');
+    var saved = localStorage.getItem(TOPIC_KEY) || '';
+    if (saved) topicEl.value = saved;
+    topicEl.dispatchEvent(new Event('change'));
+  });
+})();
+</script>
+
+</body>
+</html>

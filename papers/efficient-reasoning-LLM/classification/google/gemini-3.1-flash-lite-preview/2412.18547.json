@@ -1,0 +1,25 @@
+{
+  "filename": "2412.18547.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.18547.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 60,
+          "reason": "The paper explicitly proposes a framework that dynamically adjusts the number of reasoning tokens based on a budget provided in the prompt, which is the core mechanism described."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 25,
+          "reason": "The paper focuses on the trade-off between reasoning accuracy and token costs, providing empirical analysis on how token budgets affect performance, which aligns with evaluating reasoning efficiency."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 15,
+          "reason": "The paper addresses the compression of reasoning chains to remove redundant information, which is a key aspect of their approach to reducing token costs."
+        }
+      ]
+    }
+  }
+}

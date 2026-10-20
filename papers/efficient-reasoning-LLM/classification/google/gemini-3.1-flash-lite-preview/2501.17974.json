@@ -1,0 +1,25 @@
+{
+  "filename": "2501.17974.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.17974.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 50,
+          "reason": "The paper formulates reasoning as a utility maximization problem with an inference budget constraint, training the model to allocate budgets based on query difficulty."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 30,
+          "reason": "The model is fine-tuned to learn to understand query difficulty and produce reasoning chains that align with allocated budgets, effectively compressing or expanding chains based on need."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "The core objective is to make models aware of inference budgets and adaptively allocate them, which aligns with the definition of difficulty-adaptive budget allocation."
+        }
+      ]
+    }
+  }
+}

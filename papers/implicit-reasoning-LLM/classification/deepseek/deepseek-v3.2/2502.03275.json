@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03275.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03275.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper's core method involves manipulating individual reasoning steps using discrete latent tokens (VQ-VAE) to create a hybrid representation, directly aligning with the key phrases 'non-interpretable latent tokens' and 'discrete latent codes'."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "The approach compresses full reasoning traces into latent tokens while using explicit CoT data for training, ensuring semantic fidelity, which matches the description of anchoring latent trajectories to explicit reasoning supervision."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 15,
+          "reason": "The method introduces new latent tokens into the vocabulary as a single type of control signal to modulate reasoning, analogous to using special tokens like pause or filler tokens for efficiency."
+        }
+      ]
+    }
+  }
+}

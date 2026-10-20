@@ -1,0 +1,25 @@
+{
+  "filename": "2505.13898.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.13898.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 40,
+          "reason": "Micro-level analysis of layer-specific computational roles and how depth affects reasoning steps."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 35,
+          "reason": "Macro-level correlation between layer depth and reasoning capabilities."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 25,
+          "reason": "Discussion of depth as a primary bottleneck for latent reasoning capacity."
+        }
+      ]
+    }
+  }
+}

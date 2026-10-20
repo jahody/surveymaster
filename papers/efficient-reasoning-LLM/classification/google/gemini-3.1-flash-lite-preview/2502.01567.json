@@ -1,0 +1,25 @@
+{
+  "filename": "2502.01567.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.01567.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 50,
+          "reason": "The paper explicitly replaces explicit chain-of-thought tokens with continuous latent thought vectors that guide generation, which is the core mechanism of the proposed LTMs."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 30,
+          "reason": "The paper introduces a novel class of models that incorporate latent thought vectors as part of the model architecture and training framework, aligning with latent-space representation learning."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The paper highlights scaling dimensions such as the number of iterations in inference-time computation, which allows for trading model size for more inference steps."
+        }
+      ]
+    }
+  }
+}

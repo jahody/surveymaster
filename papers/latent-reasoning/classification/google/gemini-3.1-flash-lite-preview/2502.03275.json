@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03275.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03275.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper introduces a training procedure to mix latent and text tokens, focusing on CoT-aligned supervision and compression of reasoning traces."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 30,
+          "reason": "The latent tokens act as an information bottleneck, distilling reasoning steps into compact representations that causally influence the model's output."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper demonstrates the application of these latent reasoning traces to improve performance on logical and mathematical reasoning benchmarks."
+        }
+      ]
+    }
+  }
+}

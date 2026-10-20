@@ -1,0 +1,25 @@
+{
+  "filename": "2404.05892.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.05892.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "Paper uses matrix-valued hidden states with a fixed recurrence mechanism, aligning with Linear-State Recurrence."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "Introduces architectural recurrence via dynamic recurrence and memory-like states within the model architecture."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 10,
+          "reason": "Demonstrates performance and capabilities on benchmarks, indicating practical recurrent computation abilities."
+        }
+      ]
+    }
+  }
+}

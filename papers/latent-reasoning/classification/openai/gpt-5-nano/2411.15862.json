@@ -1,0 +1,25 @@
+{
+  "filename": "2411.15862.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.15862.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 60,
+          "reason": "Directly matches training-induced recurrence via implicit internal reasoning when trained vs prompted."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "Discusses information flow across layers during reasoning; aligns with theory of information transmission in models."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "Addresses multi-step computation and symbolic reasoning capabilities under CoT contexts."
+        }
+      ]
+    }
+  }
+}

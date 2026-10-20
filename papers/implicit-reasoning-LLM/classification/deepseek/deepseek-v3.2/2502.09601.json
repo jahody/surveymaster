@@ -1,0 +1,25 @@
+{
+  "filename": "2502.09601.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.09601.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": -1,
+          "reason": "The paper's core contribution is CoT-Valve, which enables elastic control over reasoning chain length to dynamically reduce inference overhead based on task difficulty, directly aligning with the 'adaptive_efficiency' category's focus on dynamic trajectory compression and adjusting reasoning length."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": -1,
+          "reason": "The paper explores a progressive chain length compression approach, which involves step-by-step internalization or iterative updating of the reasoning chain, matching the 'progressive_refinement' category's key phrases and not falling under its hard negative."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": -1,
+          "reason": "CoT-Valve manipulates a direction in the model's parameter space to control reasoning length, which involves regulating the model's internal states or dynamics, fitting the 'internal_state_level' category's description of targeting internal states for reasoning regulation."
+        }
+      ]
+    }
+  }
+}

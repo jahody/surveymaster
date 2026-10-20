@@ -1,0 +1,25 @@
+{
+  "filename": "2406.18665.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.18665.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "Primary focus on model-level routing (Model Switch) between strong and weak LLMs to optimize cost vs. performance."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "Addresses inference-time compute scaling and dynamic resource usage during testing/inference."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 15,
+          "reason": "Applies efficient reasoning techniques to real-world deployment scenarios and tools (dynamic routing)."
+        }
+      ]
+    }
+  }
+}

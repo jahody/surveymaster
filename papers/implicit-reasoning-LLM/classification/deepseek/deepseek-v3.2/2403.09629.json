@@ -1,0 +1,25 @@
+{
+  "filename": "2403.09629.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2403.09629.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "The paper introduces Quiet-STaR, which generates rationales at each token using learnable start and end tokens to steer reasoning, aligning with token-level manipulation without generating full explicit CoT sequences."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 30,
+          "reason": "The method infers rationales iteratively during training to improve predictions, resembling progressive refinement through step-by-step internalization, unlike one-pass fine-tuning on final answers."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 20,
+          "reason": "It employs learnable tokens to indicate thought start and end, functioning as a single control mechanism (like pause tokens) to modulate reasoning dynamics uniformly."
+        }
+      ]
+    }
+  }
+}

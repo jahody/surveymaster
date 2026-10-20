@@ -1,0 +1,25 @@
+{
+  "filename": "2501.00663.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.00663.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 50,
+          "reason": "The paper introduces a neural long-term memory module that learns to memorize historical context at test time, which aligns with the core concept of Test-time training (TTT) where hidden states are updated during inference to process long sequences efficiently."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 30,
+          "reason": "The proposed memory module learns to memorize context, suggesting the hidden state is updated via a learnable process akin to gradient-based optimization, fitting the description of Gradient-State Recurrence where the state is treated as fast-adapting parameters."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 20,
+          "reason": "The architecture incorporates a memory module to handle long contexts with constant memory, similar to Infini-attention's compressive memory for streaming, though it uses a learned neural memory rather than a fixed linear-delta rule."
+        }
+      ]
+    }
+  }
+}

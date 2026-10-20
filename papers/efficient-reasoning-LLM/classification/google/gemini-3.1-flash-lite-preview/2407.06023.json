@@ -1,0 +1,25 @@
+{
+  "filename": "2407.06023.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.06023.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 60,
+          "reason": "The paper focuses on distilling System 2 reasoning into System 1 by training models to produce high-quality outputs without intermediate reasoning tokens, effectively compressing the reasoning process."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 25,
+          "reason": "The distillation process relies on training dynamics and supervised fine-tuning on distilled outputs rather than explicit length-based reward functions to achieve efficiency."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 15,
+          "reason": "The paper discusses the conceptual framework of System 1 and System 2 and aims to bridge the gap between them, which aligns with the dual process theory mentioned in the System Switch category."
+        }
+      ]
+    }
+  }
+}

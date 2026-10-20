@@ -1,0 +1,25 @@
+{
+  "filename": "2401.15077.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2401.15077.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 70,
+          "reason": "The paper introduces EAGLE, a speculative sampling framework that uses a draft model to predict features and accelerate autoregressive decoding, directly aligning with the 'speculative decoding' and 'draft model' key phrases in Model Switch."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 20,
+          "reason": "EAGLE focuses on improving inference efficiency by predicting second-to-top-layer features and reducing token-level autoregression, which relates to architectural modifications for deployment efficiency, though it is not a full linear RNN conversion."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "The paper's speculative sampling approach dynamically scales compute during inference by generating and verifying multiple tokens in parallel, which connects to test-time scaling via parallel sampling, though it is not the primary focus."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2411.15862.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.15862.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 50,
+          "reason": "The paper probes hidden states to examine if different layers play distinct computational roles analogous to explicit CoT steps, which aligns with the micro-level observation of functional differentiation and intermediate information integration described in this chapter."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 30,
+          "reason": "The study investigates the limitations of implicit CoT, which is directly related to the macro-level correlation between layer depth and reasoning capabilities, and discusses how the reasoning process is constrained by the network's architecture."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 20,
+          "reason": "The paper analyzes models that are trained or prompted to perform implicit reasoning without architectural changes, focusing on whether latent reasoning capabilities are developed through training, which matches the description of training-induced recurrence."
+        }
+      ]
+    }
+  }
+}

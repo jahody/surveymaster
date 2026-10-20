@@ -1,0 +1,25 @@
+{
+  "filename": "2502.10835.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.10835.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 60,
+          "reason": "Central focus on information flow across layers; introduces back attention as a cross-layer mechanism, directly matching the paper's contributions."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 25,
+          "reason": "Demonstrates layer-depth bottleneck in latent reasoning and shows back attention reduces required depth (1-layer vs 2-layer), highlighting depth efficiency."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 15,
+          "reason": "Micro-level view of layer-specific roles in reasoning; back attention modifies inter-layer information integration, aligning with this micro-structure perspective."
+        }
+      ]
+    }
+  }
+}

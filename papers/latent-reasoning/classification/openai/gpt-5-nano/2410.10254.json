@@ -1,0 +1,25 @@
+{
+  "filename": "2410.10254.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.10254.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 60,
+          "reason": "Describes converting fixed-architecture Transformers to linearized, sub-quadratic attention via targeted fine-tuning and low-rank adapters (LoRA) — a hidden-state conversion approach."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "Touches on linear-state recurrence concepts through linearized update rules and sub-quadratic attention, focusing on efficient computation with linear kernels."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "Demonstrates applications and capabilities achieved with linearized LLMs (e.g., large-scale models, improved benchmarks)."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.12629.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.12629.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 70,
+          "reason": "Latent tokens are used as dummy tokens to steer the autoregressive decoding of a Transformer, i.e., token-level control."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 20,
+          "reason": "The method suggests using multiple latent tokens as distinct control signals to influence reasoning dynamics."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 10,
+          "reason": "Involves a token-based control mechanism; aligns with a single-type token signal approach to modulate generation."
+        }
+      ]
+    }
+  }
+}

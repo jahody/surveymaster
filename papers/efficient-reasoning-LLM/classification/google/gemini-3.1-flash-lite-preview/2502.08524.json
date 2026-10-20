@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08524.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08524.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": 60,
+          "reason": "The paper explicitly proposes a pretraining framework that mixes continuous concepts (learned via sparse autoencoders) into the model's hidden states, fitting the definition of latent-space pretraining."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 25,
+          "reason": "The approach involves interleaving continuous hidden representations with token representations to enhance reasoning, which aligns with the concept of reasoning in latent space."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper evaluates the proposed framework on multiple benchmarks, specifically focusing on sample efficiency and reasoning performance improvements compared to standard methods."
+        }
+      ]
+    }
+  }
+}

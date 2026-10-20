@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13913.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13913.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 45,
+          "reason": "The paper explicitly reverse-engineers the internal information flow, showing how specific layers perform distinct roles (retrieving concepts vs. inferring answers) in a sequential query mechanism."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 30,
+          "reason": "The paper focuses on the fundamental capability of two-hop reasoning, analyzing how LLMs perform multi-step logical inference and the conditions under which they succeed or fail."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "The study provides a detailed analysis of how information is transmitted across layers, identifying a structured sequential query mechanism that connects early processing to the final conclusion."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.13379.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.13379.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 45,
+          "reason": "Uses explicit control tokens to steer reasoning at the token level (short vs think) affecting reasoning mode."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 35,
+          "reason": "Dynamically balances short- and long-form reasoning to improve efficiency via adaptive reasoning length."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 20,
+          "reason": "Employs multiple distinct control signals (two tokens) to enable finer-grained control over reasoning."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2408.03247.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.03247.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 45,
+          "reason": "Analyzes hidden information flow across layers during reasoning; aligns with the paper's focus on recall and how CoT prompts affect it."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 35,
+          "reason": "Micro-level view of layer-specific roles in reasoning, matching the paper's discussion of layer-wise recall across reasoning steps."
+        },
+        {
+          "chapter": "4.2.1",
+          "confidence": 20,
+          "reason": "Shallow layers recall factual knowledge; paper discusses knowledge neurons and factual recall at early processing stages."
+        }
+      ]
+    }
+  }
+}

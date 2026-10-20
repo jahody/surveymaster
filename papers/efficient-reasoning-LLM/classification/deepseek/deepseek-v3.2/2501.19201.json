@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19201.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19201.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 70,
+          "reason": "Core method replaces explicit CoT steps with hidden latent representations (single thinking token) to reduce token overhead, matches 'continuous thought, hidden state feedback' key phrases."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 20,
+          "reason": "Paper focuses on multimodal reasoning (MLLMs) and evaluates on multimodal benchmarks, aligning with 'Multimodal large reasoning models' and efficient reasoning for multimodal inputs."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 10,
+          "reason": "Hard negative explicitly states this category is not for 'Replacing explicit CoT steps with continuous hidden representations', but the paper's goal to reduce verbosity/minimize tokens is conceptually adjacent to chain compression."
+        }
+      ]
+    }
+  }
+}

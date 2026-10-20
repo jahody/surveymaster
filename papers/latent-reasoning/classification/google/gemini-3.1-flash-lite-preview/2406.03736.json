@@ -1,0 +1,25 @@
+{
+  "filename": "2406.03736.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.03736.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "The paper focuses on absorbing discrete diffusion models, which operate on discrete tokens via masking/absorbing processes, fitting the definition of masked diffusion models."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 25,
+          "reason": "The paper explicitly unifies absorbing discrete diffusion with any-order autoregressive models (AO-ARMs), demonstrating a hybrid approach between diffusion and autoregressive paradigms."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper demonstrates the application and capability of the proposed RADD model in achieving SOTA performance on zero-shot language modeling benchmarks."
+        }
+      ]
+    }
+  }
+}

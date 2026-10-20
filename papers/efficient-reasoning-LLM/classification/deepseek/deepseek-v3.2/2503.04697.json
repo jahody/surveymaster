@@ -1,0 +1,25 @@
+{
+  "filename": "2503.04697.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.04697.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 60,
+          "reason": "The paper introduces LCPO, a reinforcement learning method that explicitly optimizes for accuracy and adherence to user-specified length constraints, treating reasoning length as a trajectory-level resource with a target length instruction, which directly aligns with the 'with Length Reward' category."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "The paper derives Short Reasoning Models (SRMs) that generate concise chain-of-thought reasoning comparable to non-reasoning models, which involves training the model to produce shorter, explicit reasoning text, fitting the 'Reasoning Chain Compression' description of building concise reasoning paths."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "The paper's L1 model allows for controllable reasoning length via prompts to trade off compute and accuracy, which relates to explicit length budgeting at inference. However, the core method involves RL training, not purely inference-time control, making this a secondary aspect."
+        }
+      ]
+    }
+  }
+}

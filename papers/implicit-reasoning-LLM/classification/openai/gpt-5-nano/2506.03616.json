@@ -1,0 +1,25 @@
+{
+  "filename": "2506.03616.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2506.03616.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "Inserting control tokens to steer next-token predictions (token-level manipulation during training)."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "Uses a single control mechanism (pause tokens) to guide reasoning dynamics."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 15,
+          "reason": "Dynamic, progressive refinement of reasoning via iterative token insertion."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2402.01107.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.01107.md",
+      "chapters": [
+        {
+          "chapter": "4.3.2",
+          "confidence": 50,
+          "reason": "The paper explicitly proves a Turing Completeness result for the looped transformer architecture, which directly aligns with the chapter's focus on theoretical proofs of universal computational capabilities."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 35,
+          "reason": "The paper's core contribution is a 'looped transformer' architecture, which is an explicit structural modification for recurrence, fitting the description of Architectural Recurrence. It uses a loop to treat depth as a dynamic computational resource for simulating algorithms."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper demonstrates the model's capability to simulate complex, multi-step graph algorithms (e.g., Dijkstra's, BFS), which is a key application of recurrent models for algorithmic generalization and symbolic reasoning."
+        }
+      ]
+    }
+  }
+}

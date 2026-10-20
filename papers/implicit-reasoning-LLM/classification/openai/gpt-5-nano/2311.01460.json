@@ -1,0 +1,25 @@
+{
+  "filename": "2311.01460.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2311.01460.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "Layer-wise recurrence / vertical reasoning across hidden states (layer_recurrent_execution)."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 35,
+          "reason": "Distilling hidden states as the target of reasoning (internal_state_level)."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 15,
+          "reason": "Uses a teacher model with explicit chain-of-thought to anchor latent reasoning (semantic_anchoring)."
+        }
+      ]
+    }
+  }
+}

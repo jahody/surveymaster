@@ -1,0 +1,25 @@
+{
+  "filename": "2505.24688.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.24688.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 70,
+          "reason": "Demonstrates and analyzes the capabilities of the proposed embedding-based search approach to enhance multi-step reasoning and symbolic-like problem solving in LLMs."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 20,
+          "reason": "Relates to information flow and chain-of-embedding trajectories; the paper's embedding-guided reasoning touches cross-layer information propagation and embedding trajectories."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 10,
+          "reason": "Uses embedding-based approaches with perturbations in the embedding space, aligning with the embedding-centric diffusion-like paradigm described in this leaf category."
+        }
+      ]
+    }
+  }
+}

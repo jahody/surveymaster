@@ -1,0 +1,25 @@
+{
+  "filename": "2505.10446.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.10446.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": -1,
+          "reason": "The paper implements DCoLT on LLaDA, a discrete-time masked diffusion language model, and discusses its unmasking policy, directly aligning with the description of masked diffusion models."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": -1,
+          "reason": "The paper also implements DCoLT on SEDD, a continuous-time discrete diffusion model operating on continuous embeddings with Gaussian noise, matching the embedding-based diffusion models category."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": -1,
+          "reason": "DCoLT uses outcome-based reinforcement learning to optimize the entire reasoning trajectory, which is a specialized training strategy for models with recurrent activation flows (the diffusion chain), addressing challenges of learning iterative computation."
+        }
+      ]
+    }
+  }
+}

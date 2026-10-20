@@ -1,0 +1,25 @@
+{
+  "filename": "2505.20674.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.20674.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "Explicit iterative forward computation / recurrence to refine hidden states during a single token generation step (pondering)."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 30,
+          "reason": "Progressive refinement of latent reasoning via step-by-step internalization and iterative updates."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 10,
+          "reason": "Direct manipulation of token embeddings / token distributions to influence the next token embedding."
+        }
+      ]
+    }
+  }
+}

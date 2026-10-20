@@ -1,0 +1,25 @@
+{
+  "filename": "2402.07754.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.07754.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 70,
+          "reason": "DoT uses diffusion in continuous latent representations for reasoning, aligning with embedding-based diffusion models."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "Demonstrates multi-step reasoning capabilities and algorithmic problem solving, i.e., applications and capabilities of recurrent reasoning."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 10,
+          "reason": "Involves information flow across processing stages during reasoning, relevant to diffusion-based chain-of-thought reasoning dynamics."
+        }
+      ]
+    }
+  }
+}

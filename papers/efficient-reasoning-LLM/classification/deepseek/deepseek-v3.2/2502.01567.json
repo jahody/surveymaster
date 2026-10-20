@@ -1,0 +1,25 @@
+{
+  "filename": "2502.01567.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.01567.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": 70,
+          "reason": "The paper introduces Latent Thought Models (LTMs) that use explicit latent thought vectors during pretraining, aligning with the description of 'latent-space pretraining' which explores continuous representations like latent thought vectors to enhance understanding and efficiency."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 20,
+          "reason": "LTMs reason using continuous latent vectors that guide token generation, which relates to 'Latent-Space SFT' where reasoning occurs in latent space via hidden representations, though LTMs are a pretraining approach rather than fine-tuning."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "The paper scales inference-time computation by varying the number of iterations for latent vectors, which connects to 'Efficient Test-time Scaling' that investigates dynamic compute allocation during inference, such as through iterative processes."
+        }
+      ]
+    }
+  }
+}

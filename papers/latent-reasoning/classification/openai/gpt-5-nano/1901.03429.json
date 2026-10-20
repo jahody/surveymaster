@@ -1,0 +1,25 @@
+{
+  "filename": "1901.03429.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "1901.03429.md",
+      "chapters": [
+        {
+          "chapter": "4.3.2",
+          "confidence": 75,
+          "reason": "Proof of Turing completeness for model architectures (Transformers and Neural GPU) - the paper's main result."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 15,
+          "reason": "Theory of information flow across layers/attention, providing background for universal computation."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 10,
+          "reason": "Macro-level discussion of layer depth and reasoning capacity, supporting depth-based universality."
+        }
+      ]
+    }
+  }
+}

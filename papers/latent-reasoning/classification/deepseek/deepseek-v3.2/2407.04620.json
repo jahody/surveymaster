@@ -1,0 +1,25 @@
+{
+  "filename": "2407.04620.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.04620.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 70,
+          "reason": "The paper explicitly introduces 'Test-Time Training (TTT) layers' where the hidden state is updated via self-supervised learning steps during inference, directly matching the description and key phrases of this chapter."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 20,
+          "reason": "The paper's approach treats the hidden state as a model updated via a learning rule, aligning with the 'gradient-based optimization step' and 'fast weights' description of Gradient-State Recurrence, though it is specifically framed as test-time training."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 10,
+          "reason": "The paper compares against models like Mamba, which are Linear-State Recurrence models, and discusses RNNs with hidden states, providing a relevant contrast, but the core contribution is not a predetermined algebraic update rule."
+        }
+      ]
+    }
+  }
+}

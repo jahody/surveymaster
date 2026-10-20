@@ -1,0 +1,25 @@
+{
+  "filename": "2404.05892.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.05892.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces Eagle and Finch, which are based on the RWKV architecture and feature multi-headed matrix-valued states with predetermined update and decay rules, aligning with the linear-state recurrence description of applying algebraic update rules to a matrix-valued hidden state transmitted along the temporal dimension."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 25,
+          "reason": "The paper's title 'Transformers with infini-attention' and the architectural focus on handling long sequences efficiently with constant memory through recurrent mechanisms relate to the Infini-attention concept of compressive memory for streaming infinitely long inputs, though it uses a linear recurrence approach rather than a standard attention-based compressive memory."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 15,
+          "reason": "The paper describes explicit architectural modifications to the RWKV model, such as multi-headed matrix-valued states and dynamic recurrence mechanisms, which implement continuous activation propagation through structural changes, fitting the architectural recurrence category that requires explicit modifications for recurrence."
+        }
+      ]
+    }
+  }
+}

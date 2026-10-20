@@ -1,0 +1,25 @@
+{
+  "filename": "2404.07904.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.07904.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "The paper introduces HGRN2, a gated linear RNN with a state expansion mechanism, which aligns with linear-state recurrence using matrix-valued hidden states and predetermined update rules, as indicated by its outer product-based state expansion and linear attention interpretation."
+        },
+        {
+          "chapter": "5.2.3",
+          "confidence": 20,
+          "reason": "HGRN2's design as a recurrent model with state expansion and efficient training parallels implicit fixed-point RNNs that iterate state-space blocks for expressivity while maintaining parallel training, though it does not explicitly mention convergence halting."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 10,
+          "reason": "The paper involves architectural modifications to RNNs (state expansion) for improved expressiveness, which relates to architectural recurrence through explicit structural changes, though it focuses on RNNs rather than Transformers."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2501.18585.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.18585.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 60,
+          "reason": "Introduces a novel metric for token efficiency and multiple test sets to evaluate reasoning efficiency, aligning with Evaluation and Benchmark."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 25,
+          "reason": "Centers on the dynamics of thought switching and proposes penalties to discourage premature transitions, relating to System Switch."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "Uses decoding-time strategy to influence reasoning length and token usage, fitting Length Budgeting."
+        }
+      ]
+    }
+  }
+}

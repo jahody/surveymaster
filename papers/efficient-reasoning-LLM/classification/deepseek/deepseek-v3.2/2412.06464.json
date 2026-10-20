@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06464.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06464.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 50,
+          "reason": "The paper introduces Gated DeltaNet, a linear transformer variant that improves upon Mamba2 and DeltaNet, directly focusing on subquadratic attention mechanisms like linear attention and state space models for efficient sequence processing."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 30,
+          "reason": "The paper evaluates Gated DeltaNet on reasoning tasks such as language modeling and common-sense reasoning, and develops hybrid architectures with sliding window attention, aligning with the study of efficient reasoning using subquadratic attention models."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 20,
+          "reason": "The work builds upon and improves existing models like Mamba2 and DeltaNet, which are linear recurrent structures, relating to the conversion or enhancement of pre-trained models into more efficient linear architectures, though it does not start from a standard transformer."
+        }
+      ]
+    }
+  }
+}

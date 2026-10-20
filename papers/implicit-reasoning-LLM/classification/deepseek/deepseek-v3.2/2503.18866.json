@@ -1,0 +1,25 @@
+{
+  "filename": "2503.18866.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.18866.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 50,
+          "reason": "The paper explicitly uses an EM algorithm for iterative updating and bootstrapping to progressively refine the model's capability and the quality of thought-augmented data, aligning with the key phrase 'EM-style iterations'."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The approach involves inferring latent thoughts underlying text generation, which can be seen as manipulating non-interpretable latent tokens or discrete latent codes to steer reasoning, without generating full explicit Chain-of-Thought text sequences."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 20,
+          "reason": "The method infers latent thoughts that are semantically aligned with the text generation process, aiming to capture contextual knowledge and reasoning steps, which relates to ensuring semantic fidelity, though not explicitly using contrastive training with explicit CoT."
+        }
+      ]
+    }
+  }
+}

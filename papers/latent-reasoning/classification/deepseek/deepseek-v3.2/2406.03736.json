@@ -1,0 +1,25 @@
+{
+  "filename": "2406.03736.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.03736.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 70,
+          "reason": "The paper introduces RADD, a reparameterized absorbing discrete diffusion model for language modeling. It explicitly discusses discrete diffusion with an absorbing process, which aligns with the 'Masked Diffusion Models' category that operates on discrete tokens via masking/corruption processes, not continuous embeddings."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 20,
+          "reason": "The paper unifies absorbing discrete diffusion with any-order autoregressive models (AO-ARMs) and discusses their theoretical connection, indicating a hybrid integration of diffusion and autoregressive paradigms, which fits the 'Hybrid AR-Diffusion Models' description."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 10,
+          "reason": "While the paper focuses on discrete token diffusion, it discusses modeling conditional distributions and score functions, which are concepts also relevant in the continuous embedding space of 'Embedding-based Diffusion Models', though it is not the primary approach."
+        }
+      ]
+    }
+  }
+}

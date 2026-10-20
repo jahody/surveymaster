@@ -1,0 +1,25 @@
+{
+  "filename": "2503.16385.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.16385.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 50,
+          "reason": "The paper's core contribution, DLCoT, is a distillation framework that deconstructs and compresses long CoT reasoning chains via segmentation, simplification, and optimization, aligning directly with the description of building datasets with concise reasoning paths."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 30,
+          "reason": "The paper examines the universality of distillation data and evaluates the performance and token efficiency of models under its framework, involving metrics that quantify reasoning efficiency and trade-offs, as described in the benchmark category."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The distillation approach improves reasoning efficiency through data enhancement and training (SFT via R1 distillation), not by adding explicit length penalties to rewards, fitting the category's focus on implicit efficiency gains."
+        }
+      ]
+    }
+  }
+}

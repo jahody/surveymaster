@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19393.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19393.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "The paper's primary contribution is 'budget forcing' at test time, which dynamically controls compute via terminating or extending the reasoning chain ('Wait' appending), aligning directly with the category's focus on test-time scaling via search depth/sequential revision."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 25,
+          "reason": "Budget forcing explicitly manages reasoning length at inference time via forceful termination or extension, fitting the description of 'length budgeting' that operates purely via prompts/decoding strategies without SFT/RL for shorter reasoning."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 15,
+          "reason": "The paper uses supervised fine-tuning on a curated dataset (s1K) with concise reasoning traces, which involves building/training with compressed reasoning paths, though the primary innovation is the inference-time method."
+        }
+      ]
+    }
+  }
+}

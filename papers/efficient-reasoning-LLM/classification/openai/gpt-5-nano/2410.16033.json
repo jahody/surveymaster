@@ -1,0 +1,25 @@
+{
+  "filename": "2410.16033.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.16033.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "Main focus on dynamic test-time compute scaling and infinite-thinking via parallel and sequential search (Best-of-N, tree-search) as used by TreeBoN."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 30,
+          "reason": "Direct relevance through parallel search concepts like Best-of-N sampling and tree-search pruning, which TreeBoN extends."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "Involves evaluation/benchmarking of efficiency and alignment across datasets, relevant to how the method is validated."
+        }
+      ]
+    }
+  }
+}

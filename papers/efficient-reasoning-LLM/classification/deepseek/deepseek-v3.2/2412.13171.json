@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 70,
+          "reason": "The paper proposes CCoT, which generates 'continuous contemplation tokens' as compressed representations of explicit reasoning chains, operating on continuous hidden representations rather than discrete text tokens. This aligns directly with the Latent-Space SFT category."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "The method allows adaptive modification of reasoning by controlling the number of contemplation tokens generated, which involves explicit budgeting of computational resources (token count) during inference. This matches the Length Budgeting description."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "The framework generates variable-length contemplation tokens adaptively on demand, scaling compute dynamically during inference, which relates to Efficient Test-time Scaling techniques."
+        }
+      ]
+    }
+  }
+}

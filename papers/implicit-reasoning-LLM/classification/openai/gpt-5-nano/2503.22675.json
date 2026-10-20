@@ -1,0 +1,25 @@
+{
+  "filename": "2503.22675.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.22675.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 60,
+          "reason": "Centers on progressive, step-by-step multi-step reasoning during inference with autoregressive integration and reasoning space, matching progressive_refinement."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 25,
+          "reason": "Describes iterative computation within the model architecture (layer recurrence) to progressively refine hidden states as part of inference-time reasoning."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "Involves the model's internal states as targets for reasoning, connecting reasoning processes to internal hidden representations."
+        }
+      ]
+    }
+  }
+}

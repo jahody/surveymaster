@@ -1,0 +1,25 @@
+{
+  "filename": "2508.15487.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2508.15487.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 60,
+          "reason": "The paper explicitly combines autoregressive (AR) initialization with discrete diffusion modeling, fitting the hybrid AR-diffusion paradigm."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 25,
+          "reason": "The model employs discrete diffusion modeling to refine sequences in parallel, which is the core mechanism of masked diffusion models."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper highlights the model's superior planning abilities, infilling capabilities, and performance on mathematical and coding tasks."
+        }
+      ]
+    }
+  }
+}

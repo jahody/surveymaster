@@ -1,0 +1,25 @@
+{
+  "filename": "2409.08561.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2409.08561.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 60,
+          "reason": "The paper's core method involves compressing full CoT traces into compact token representations semantically aligned with the original CoT using contrastive training, directly matching the description and key phrases of semantic_anchoring."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The approach steers reasoning by inserting a compact special token representation (a non-interpretable latent token) into the model's input, aligning with token_level's description of manipulating individual tokens for reasoning."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "The method compresses the intermediate CoT process to achieve significant decoding speedups, which relates to adaptive_efficiency's focus on dynamic compression for adjusting reasoning speed, though the compression is learned rather than fully dynamic."
+        }
+      ]
+    }
+  }
+}

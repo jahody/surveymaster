@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "Primary focus on replacing explicit CoT with latent continuous representations via self-distillation (latent-space SFT)."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "Addresses reasoning chain compression by training to internalize concise CoT reasoning in hidden space."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 15,
+          "reason": "Engages latent-space representations during pretraining, aligning with the paper's emphasis on continuous reasoning in latent space."
+        }
+      ]
+    }
+  }
+}

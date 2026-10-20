@@ -1,0 +1,25 @@
+{
+  "filename": "2505.18454.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.18454.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 60,
+          "reason": "The paper's core method, HRPO, integrates prior hidden states into the reasoning process via a learnable gating mechanism and uses hybrid latent rollouts, directly targeting the model's internal states for reasoning regulation."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The approach maintains LLMs' generative capabilities by integrating hidden states with sampled tokens, employing a hybrid reasoning format that involves discrete token sampling, aligning with token-level steering."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 15,
+          "reason": "HRPO introduces stochasticity into latent reasoning via token sampling, which promotes diversity in reasoning trajectories, akin to using soft or perturbed latent representations for exploratory diversification."
+        }
+      ]
+    }
+  }
+}

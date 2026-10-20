@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13685.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13685.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "The paper introduces MoM, a linear sequence modeling architecture that improves memory capacity for recall-intensive tasks, directly aligning with the subquadratic attention category's focus on mechanisms like linear attention and state space models to reduce computational complexity."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "MoM is evaluated on downstream language tasks, including recall-intensive tasks, demonstrating its application to reasoning tasks with subquadratic models, which fits the category of efficient reasoning using subquadratic attention architectures."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "While MoM is a novel architecture rather than a conversion of a pretrained transformer, it shares the goal of enhancing deployment efficiency through linear recurrent structures, though it does not start from a pretrained transformer as specified in the hard negative."
+        }
+      ]
+    }
+  }
+}

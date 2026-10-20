@@ -1,0 +1,25 @@
+{
+  "filename": "2503.15793.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.15793.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 60,
+          "reason": "The paper introduces a new benchmark for evaluating reasoning efficiency and over-thinking, i.e., evaluation and benchmarking of reasoning processes."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 25,
+          "reason": "Discusses length budgeting and token/compute constraints at inference time relevant to measuring concise reasoning."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "Covers test-time scaling and inference-time compute considerations related to efficient reasoning and token usage."
+        }
+      ]
+    }
+  }
+}

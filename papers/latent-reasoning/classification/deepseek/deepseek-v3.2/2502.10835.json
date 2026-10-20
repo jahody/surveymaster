@@ -1,0 +1,25 @@
+{
+  "filename": "2502.10835.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.10835.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 60,
+          "reason": "The paper introduces 'back attention' as a novel mechanism to enhance cross-layer information flow during multi-hop reasoning, directly aligning with the theory of information flow which studies how hidden information is transmitted across specialized layers."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 25,
+          "reason": "The paper investigates how layer depth influences multi-hop reasoning capabilities, finding that a 1-layer transformer with back attention can match a 2-layer model, which relates to macro-level studies of the correlation between layer depth and reasoning."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 15,
+          "reason": "The proposed 'back attention' is an explicit architectural modification that allows lower layers to leverage higher-layer states, implementing a form of continuous activation propagation across layers, which fits the description of Architectural Recurrence."
+        }
+      ]
+    }
+  }
+}

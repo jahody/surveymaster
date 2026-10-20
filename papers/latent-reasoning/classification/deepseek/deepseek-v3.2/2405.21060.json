@@ -1,0 +1,25 @@
+{
+  "filename": "2405.21060.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.21060.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "The paper's core contribution, Mamba-2, is a state-space model (SSM) that refines the selective SSM of Mamba. SSMs are explicitly described as applying linear recurrence rules to a hidden state transmitted over time, aligning perfectly with the 'Linear-State Recurrence' definition of using predetermined update/decay rules on a matrix-valued state, and utilizing parallel scans for efficiency."
+        },
+        {
+          "chapter": "5.2.3",
+          "confidence": 20,
+          "reason": "The paper's theoretical framework connects SSMs to structured semiseparable matrices and attention variants. While not the primary implementation, the analysis of state-space duality and structured computations relates to the concept of iterating or analyzing state-space blocks, which is a core theme of 'Implicit Fixed-Point RNNs'."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 10,
+          "reason": "The paper positions SSMs like Mamba-2 as competitive alternatives to Transformers, discussing efficient algorithms. While not about converting a pretrained Transformer, the broader context of developing sub-quadratic mixers (SSMs) to replace self-attention is conceptually adjacent to the goal of 'Training-induced Hidden-State Conversion'."
+        }
+      ]
+    }
+  }
+}

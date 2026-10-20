@@ -1,0 +1,25 @@
+{
+  "filename": "2310.02226.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.02226.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "Single control signal (pause token) used to delay next-token prediction, aligning with the single_type_signal category."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 20,
+          "reason": "Dynamic control over reasoning length/efficiency via inference-time delays (adaptive computation)."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 10,
+          "reason": "Targets manipulation/regulation of internal hidden states (dynamic computation within the model)."
+        }
+      ]
+    }
+  }
+}

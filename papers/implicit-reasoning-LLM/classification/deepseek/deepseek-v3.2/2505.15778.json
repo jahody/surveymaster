@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15778.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15778.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 70,
+          "reason": "The paper's core method, Soft Thinking, generates 'soft, abstract concept tokens' via 'probability-weighted mixture of token embeddings' in a 'continuous concept space', directly aligning with the key phrase 'probabilistic mixtures' and the description of introducing soft latent representations to promote diverse reasoning trajectories."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The method operates by manipulating individual tokens to create new 'concept tokens' (a form of 'non-interpretable latent tokens' or 'discrete latent codes'), steering reasoning at the token level, as it does not generate full explicit CoT sequences."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 10,
+          "reason": "The approach implicitly works with the model's internal representations (embeddings) to form new concept tokens, which relates to manipulating internal states for reasoning, though it is less directly about distilling hidden states or dynamic shortcuts within layers."
+        }
+      ]
+    }
+  }
+}

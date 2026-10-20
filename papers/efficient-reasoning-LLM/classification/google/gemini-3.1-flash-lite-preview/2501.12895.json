@@ -1,0 +1,25 @@
+{
+  "filename": "2501.12895.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.12895.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "The paper focuses on iterative textual feedback and refinement during inference, which is a core mechanism of sequential revision and test-time scaling."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 25,
+          "reason": "The paper explicitly addresses alignment with human preferences and safety during the inference process, which falls under deliberative alignment."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 15,
+          "reason": "The iterative reflection and refinement process described is a key technique used in agentic workflows and tool-use scenarios."
+        }
+      ]
+    }
+  }
+}

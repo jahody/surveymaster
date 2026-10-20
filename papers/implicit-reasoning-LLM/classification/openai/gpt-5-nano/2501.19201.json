@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19201.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19201.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 50,
+          "reason": "Emphasizes adaptive efficiency by dynamically compressing intermediate reasoning into a compact latent representation to reduce token usage and increase throughput."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 30,
+          "reason": "Involves compressing CoT traces into hidden representations, aligning with semantic anchoring and aiming to preserve semantic fidelity during reconstruction."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 20,
+          "reason": "Uses a single thinking token as a control signal to modulate reasoning dynamics, fitting the single_type_signal category."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13842.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13842.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 60,
+          "reason": "The paper's core mechanism, the Inner Thinking Transformer (ITT), reimagines layer computations as implicit thinking steps and uses Residual Thinking Connections to iteratively refine internal states, directly aligning with the 'internal_state_level' description of reasoning regulation via the model's internal states and dynamic shortcuts in Transformer layers."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 25,
+          "reason": "The proposed Adaptive Token Routing dynamically allocates computation to critical tokens, enabling elastic control over reasoning length and efficiency during inference, which matches the 'adaptive_efficiency' category focused on dynamic trajectory compression and adjusting reasoning length."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 15,
+          "reason": "The iterative refinement of representations via Residual Thinking Connections and the step-by-step processing implied by 'thinking steps' corresponds to the 'progressive_refinement' approach of iterative updating and step-by-step internalization of the reasoning process."
+        }
+      ]
+    }
+  }
+}

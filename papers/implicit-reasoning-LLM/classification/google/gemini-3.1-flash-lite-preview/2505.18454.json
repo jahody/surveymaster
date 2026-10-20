@@ -1,0 +1,25 @@
+{
+  "filename": "2505.18454.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.18454.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper focuses on integrating prior hidden states into the generation process and uses hybrid latent rollouts to improve reasoning."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The approach uses a learnable gating mechanism to integrate hidden states into sampled tokens, creating a hybrid reasoning format."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 20,
+          "reason": "The training process initializes with token embeddings and progressively incorporates more hidden features, representing a curriculum-based refinement."
+        }
+      ]
+    }
+  }
+}

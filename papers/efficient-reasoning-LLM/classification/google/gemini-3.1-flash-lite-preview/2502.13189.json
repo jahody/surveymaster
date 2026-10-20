@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13189.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13189.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 70,
+          "reason": "The paper introduces MoBA, a Mixture of Experts approach to attention, specifically designed to reduce the quadratic complexity of standard attention mechanisms for long-context LLMs."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The paper highlights the deployment of MoBA in Kimi to support long-context requests, demonstrating its practical application in real-world production systems."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper evaluates the performance of MoBA on long-context tasks, focusing on the trade-off between computational efficiency and model performance."
+        }
+      ]
+    }
+  }
+}

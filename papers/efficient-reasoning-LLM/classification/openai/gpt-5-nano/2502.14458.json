@@ -1,0 +1,25 @@
+{
+  "filename": "2502.14458.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.14458.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 60,
+          "reason": "Paper focuses on efficient reasoning using subquadratic attention via Mamba architecture and distillation, aligning with chapter 6.4."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 25,
+          "reason": "Body relies on subquadratic attention mechanisms (Mamba) to achieve efficiency, fitting chapter 6.2."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "Emphasizes efficient test-time scaling, throughput, and memory efficiency during inference, matching chapter 7.2."
+        }
+      ]
+    }
+  }
+}

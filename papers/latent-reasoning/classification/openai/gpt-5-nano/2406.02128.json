@@ -1,0 +1,25 @@
+{
+  "filename": "2406.02128.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.02128.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 50,
+          "reason": "Analyzes information flow and attention mechanisms underpinning iterative reasoning (CoT) in transformers."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 30,
+          "reason": "Micro-level layer roles and correspondence between layers and reasoning steps; aligns with study of iteration heads across depths."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "Mid-level layers form specialized sub-circuits for reasoning; iteration heads act as latent intermediate modules for CoT."
+        }
+      ]
+    }
+  }
+}

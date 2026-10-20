@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08482.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08482.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper's core method, RELAY, is built upon Looped Transformers, which explicitly use iterative computation (looping layers) to align with and generate reasoning steps, directly matching the description of layer_recurrent_execution."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "The method applies intermediate supervision during loop iterations to align latent trajectories with explicit CoT reasoning steps, ensuring semantic fidelity, which is the key characteristic of semantic_anchoring."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 15,
+          "reason": "The iterative alignment and refinement of reasoning steps through loop iterations resembles a progressive refinement process, though the primary architectural mechanism is more strongly tied to layer recurrence."
+        }
+      ]
+    }
+  }
+}

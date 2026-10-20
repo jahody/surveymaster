@@ -1,0 +1,25 @@
+{
+  "filename": "2404.15758.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.15758.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "Paper centers on using a single type of control token (filler tokens) to modulate reasoning, aligning with the single_type_signal category."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "Demonstrates token-level manipulation of reasoning via intermediate/filler tokens, aligning with token_level classification."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 15,
+          "reason": "Discusses semantic fidelity and the relationship between intermediate tokens and explicit reasoning; includes theoretical/semantic anchoring aspects."
+        }
+      ]
+    }
+  }
+}

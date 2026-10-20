@@ -1,0 +1,25 @@
+{
+  "filename": "2410.11268.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.11268.md",
+      "chapters": [
+        {
+          "chapter": "3.2.2",
+          "confidence": 50,
+          "reason": "The paper explicitly models the looped Transformer as performing multi-step gradient descent updates, which aligns with the gradient-state recurrence framework where hidden states are treated as fast-adapting parameters."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The paper focuses on 'looped Transformers', which are a form of architectural recurrence where the model structure is modified to allow iterative forward passes."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper investigates the capability of Transformers to perform multi-step gradient descent for in-context learning, which is a core application of recurrent reasoning mechanisms."
+        }
+      ]
+    }
+  }
+}

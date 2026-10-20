@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01496.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01496.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": -1,
+          "reason": "The paper's core contribution is Liger, a method for converting pretrained LLMs into gated linear recurrent models without adding extra parameters, using lightweight fine-tuning (LoRA). This directly matches the description of 'Training-induced Hidden-State Conversion', which involves converting fixed-architecture Transformers into hidden-state RNN/SSM models through targeted fine-tuning, replacing self-attention with sub-quadratic mixers for constant-memory inference."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": -1,
+          "reason": "Liger linearizes LLMs to 'gated recurrent structures', which are a form of linear recurrent models. The paper discusses constructing gating mechanisms and forming gated recurrent structures, aligning with the concept of 'Linear-State Recurrence' that uses predetermined update rules (like gating) for a matrix-valued hidden state transmitted along the temporal dimension."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": -1,
+          "reason": "The paper employs 'lightweight fine-tuning with Low-Rank Adaptation (LoRA)' to restore the performance of the linearized models. This involves a specialized training strategy (LoRA) for models that have been given a recurrent structure (via conversion), addressing the challenge of optimizing such models after structural change, which fits 'Training Strategies for Recurrent Reasoning'."
+        }
+      ]
+    }
+  }
+}

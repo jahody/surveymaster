@@ -1,0 +1,25 @@
+{
+  "filename": "2312.06635.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2312.06635.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 80,
+          "reason": "The paper introduces Gated Linear Attention (GLA), a subquadratic attention mechanism designed to replace standard softmax attention for efficient sequence modeling."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 15,
+          "reason": "The paper discusses formulating linear attention as an RNN with matrix-valued hidden states, enabling linear-time inference similar to state-space models."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 5,
+          "reason": "The paper evaluates the GLA architecture on language modeling tasks, which serves as the foundation for efficient reasoning models."
+        }
+      ]
+    }
+  }
+}

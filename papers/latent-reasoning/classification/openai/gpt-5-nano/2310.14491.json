@@ -1,0 +1,25 @@
+{
+  "filename": "2310.14491.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.14491.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 70,
+          "reason": "Analyzes information flow across attention layers to uncover how reasoning steps are transmitted, aligning with MechanisticProbe's focus on attention-based reasoning trees."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "Discusses roles of intermediate layers in reasoning; the paper's mechanistic probe implies layer-specific sub-circuits for multi-step reasoning."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 10,
+          "reason": "Micro-level differentiation of layer roles in reasoning aligns with the idea of distinct layers contributing to the CoT-like process."
+        }
+      ]
+    }
+  }
+}

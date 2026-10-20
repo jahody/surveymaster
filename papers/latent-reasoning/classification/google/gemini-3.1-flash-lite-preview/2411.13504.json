@@ -1,0 +1,25 @@
+{
+  "filename": "2411.13504.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.13504.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 40,
+          "reason": "The paper focuses on decomposing inference into memory recall and reasoning, which aligns with the concept of creating specialized computational sub-circuits for reasoning functions."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 35,
+          "reason": "The proposed paradigm explicitly differentiates between memory and reasoning steps, mirroring the functional differentiation of layers in the reasoning process."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "The paper proposes a new inference paradigm to improve performance on complex tasks requiring both knowledge and reasoning, which falls under applications and capabilities of reasoning models."
+        }
+      ]
+    }
+  }
+}

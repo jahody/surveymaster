@@ -1,0 +1,25 @@
+{
+  "filename": "2505.11484.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.11484.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 60,
+          "reason": "The paper's core contribution, SoftCoT++, explicitly introduces perturbed latent representations to promote diversity in reasoning trajectories, directly matching the description and key phrases of 'exploratory_diversification'."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "The method applies contrastive learning to promote diversity among soft thought representations, which aligns with using contrastive training for semantic alignment, a key aspect of 'semantic_anchoring'."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "The approach operates by perturbing latent thoughts (continuous representations), which are a form of the model's internal states, fitting the 'internal_state_level' category that targets reasoning regulation via internal states."
+        }
+      ]
+    }
+  }
+}

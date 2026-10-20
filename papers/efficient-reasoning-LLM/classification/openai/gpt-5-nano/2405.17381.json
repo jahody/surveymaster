@@ -1,0 +1,25 @@
+{
+  "filename": "2405.17381.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.17381.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 70,
+          "reason": "Main focus is on subquadratic/linear attention mechanisms to reduce complexity in transformers."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "Discusses efficient reasoning with subquadratic attention, aligning with the paper's aims of efficient reasoning architectures."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 5,
+          "reason": "Includes evaluation/benchmark aspects related to efficiency and performance, relevant to the paper's empirical validation."
+        }
+      ]
+    }
+  }
+}

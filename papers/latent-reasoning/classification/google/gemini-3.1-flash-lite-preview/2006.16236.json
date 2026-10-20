@@ -1,0 +1,25 @@
+{
+  "filename": "2006.16236.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2006.16236.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "The paper introduces linear attention by expressing self-attention as a linear dot-product of kernel feature maps, utilizing the associativity property to maintain a matrix-valued hidden state that evolves linearly."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 20,
+          "reason": "The approach effectively converts the standard Transformer architecture into a recurrent model, allowing for constant-memory inference and linear complexity."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 10,
+          "reason": "The method shares the goal of Infini-attention in enabling streaming of long sequences with constant memory through linear-based state updates."
+        }
+      ]
+    }
+  }
+}

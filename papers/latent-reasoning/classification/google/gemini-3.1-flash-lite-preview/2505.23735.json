@@ -1,0 +1,25 @@
+{
+  "filename": "2505.23735.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.23735.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on optimizing memory at test time by treating the memory module as a learnable component updated based on input tokens, aligning with the test-time training paradigm."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 25,
+          "reason": "ATLAS reframes temporal evolution as an optimization process where the memory is updated to memorize context, which is a core characteristic of gradient-state recurrence."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "The paper addresses long-context understanding and memory capacity limitations, which are central themes in Infini-attention and related compressive memory architectures."
+        }
+      ]
+    }
+  }
+}

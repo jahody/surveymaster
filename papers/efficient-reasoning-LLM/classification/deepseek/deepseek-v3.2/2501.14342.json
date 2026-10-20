@@ -1,0 +1,25 @@
+{
+  "filename": "2501.14342.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.14342.md",
+      "chapters": [
+        {
+          "chapter": "7.4",
+          "confidence": 60,
+          "reason": "The paper introduces CoRAG, a method for training RAG models that perform iterative retrieval and reasoning, directly applying efficient reasoning techniques to Retrieval-Augmented Generation (RAG) systems, which aligns with the focus on practical applications like RAG and dynamic knowledge retrieval."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The paper proposes decoding strategies to scale test-time compute by controlling the length and number of sampled retrieval chains, which involves dynamic compute allocation during inference via search depth (sequential revision) and parallels concepts like iterative processes with intermediate steps."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "The paper discusses controlling the length of retrieval chains at test time as a decoding strategy, which relates to budgeting computational resources by managing reasoning chain length during inference, though it is not the primary focus."
+        }
+      ]
+    }
+  }
+}

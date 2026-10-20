@@ -1,0 +1,25 @@
+{
+  "filename": "2411.13504.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.13504.md",
+      "chapters": [
+        {
+          "chapter": "3.2.2",
+          "confidence": 55,
+          "reason": "Uses multiple distinct control signals (memory vs reasoning) via dedicated tokens to disentangle reasoning behavior."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "Token-level manipulation with specialized tokens to steer the inference process."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 20,
+          "reason": "Touches on semantic alignment by anchoring reasoning steps to explicit tokens, improving interpretability."
+        }
+      ]
+    }
+  }
+}

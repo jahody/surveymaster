@@ -1,0 +1,25 @@
+{
+  "filename": "2305.08379.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2305.08379.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 60,
+          "reason": "The paper explicitly proposes a diffusion model operating on the logit simplex space, which is a continuous latent space approach distinct from discrete masked diffusion."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "The paper demonstrates the model's capabilities across various natural language generation tasks such as summarization, simplification, and paraphrase generation."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 15,
+          "reason": "While the model is embedding-based, it addresses the discrete nature of text and non-autoregressive generation, which overlaps with the goals of masked diffusion models."
+        }
+      ]
+    }
+  }
+}

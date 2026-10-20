@@ -1,0 +1,25 @@
+{
+  "filename": "2503.07572.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.07572.md",
+      "chapters": [
+        {
+          "chapter": "5.2",
+          "confidence": 50,
+          "reason": "The paper explicitly uses meta-reinforcement learning to optimize test-time compute without introducing explicit length penalties, relying on dense reward bonuses based on progress."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "The paper focuses on optimizing test-time compute by treating the output stream as a sequence of episodes, which aligns with scaling compute dynamically during inference."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "The paper introduces a new metric (cumulative regret over output tokens) to measure the efficacy of test-time compute, which is central to the evaluation of their proposed method."
+        }
+      ]
+    }
+  }
+}

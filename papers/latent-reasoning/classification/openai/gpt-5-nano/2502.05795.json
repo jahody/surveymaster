@@ -1,0 +1,25 @@
+{
+  "filename": "2502.05795.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.05795.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 50,
+          "reason": "Formal focus on layer depth as the primary bottleneck for latent reasoning and depth-enabled capacity."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 30,
+          "reason": "Macro-level analysis of how layer depth relates to reasoning capabilities and multi-step inference."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 20,
+          "reason": "Discusses information flow across Transformer layers, relevant to how depth affects training dynamics."
+        }
+      ]
+    }
+  }
+}

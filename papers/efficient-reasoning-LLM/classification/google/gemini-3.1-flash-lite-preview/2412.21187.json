@@ -1,0 +1,25 @@
+{
+  "filename": "2412.21187.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.21187.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 50,
+          "reason": "The paper introduces novel efficiency metrics from both outcome and process perspectives to quantify overthinking, which is the core contribution."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 30,
+          "reason": "The paper proposes a self-training paradigm to streamline reasoning processes and reduce computational overhead, aligning with training models to produce concise reasoning."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The paper focuses on mitigating overthinking through training strategies that improve efficiency without explicitly relying on a length-penalty reward function."
+        }
+      ]
+    }
+  }
+}

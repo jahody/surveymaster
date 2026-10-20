@@ -1,0 +1,25 @@
+{
+  "filename": "2312.06635.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2312.06635.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "The paper introduces a gated linear attention (GLA) Transformer, which is formulated as an RNN with a 2D (matrix-valued) hidden state, directly aligning with the description of Linear-State Recurrence. It emphasizes efficient parallel training and linear-time inference, using predetermined update rules rather than gradient-based optimization."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 20,
+          "reason": "The work focuses on efficient long-context processing, enabling generalization from 2K to >20K sequences. While not using compressive memory, its core motivation of handling long sequences with constant memory inference is conceptually related to Infini-attention's goal of streaming infinite inputs, though the technical approach differs."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 10,
+          "reason": "The GLA Transformer involves an explicit architectural modification (gated linear attention layer) to enable recurrent computation during inference. This fits Architectural Recurrence, as it changes the model structure for recurrence, rather than relying on training-induced behavior in a standard Transformer."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15778.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15778.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on generating soft, abstract concept tokens in a continuous concept space to explore multiple reasoning paths, which aligns perfectly with exploratory diversification."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The method steers reasoning by manipulating individual tokens into probability-weighted mixtures, effectively creating hybrid reasoning formats that transcend discrete boundaries."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "The paper demonstrates improved efficiency and reduced token usage, indicating that the soft reasoning approach acts as a form of dynamic trajectory compression compared to standard CoT."
+        }
+      ]
+    }
+  }
+}

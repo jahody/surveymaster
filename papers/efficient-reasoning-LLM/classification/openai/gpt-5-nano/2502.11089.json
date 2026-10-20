@@ -1,0 +1,25 @@
+{
+  "filename": "2502.11089.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.11089.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 50,
+          "reason": "Primary focus on subquadratic/sparse attention to reduce compute for long sequences, which NSA embodies."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 30,
+          "reason": "Discusses efficient reasoning with subquadratic attention, aligning with NSA's goals for reasoning efficiency."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "Covers efficient test-time scaling and iterative reasoning approaches, matching NSA's reported speedups during decoding and inference."
+        }
+      ]
+    }
+  }
+}

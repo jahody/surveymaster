@@ -1,0 +1,25 @@
+{
+  "filename": "2412.18547.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.18547.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 70,
+          "reason": "Explicit token budgeting in prompts and dynamic control of reasoning length."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 20,
+          "reason": "Frames efficient reasoning as a trajectory-level budget optimization related to token cost."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "Includes evaluation metrics for reasoning efficiency and token-cost vs accuracy trade-offs."
+        }
+      ]
+    }
+  }
+}

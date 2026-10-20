@@ -1,0 +1,25 @@
+{
+  "filename": "2402.18312.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.18312.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 60,
+          "reason": "Micro-level layer depth correspondence in CoT: different layers have distinct computational roles during step-by-step reasoning."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 25,
+          "reason": "Intermediate layers form specialized sub-circuits for reasoning, aligning with the paper's observation of separate pathways and functional roles."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 15,
+          "reason": "Theory of information flow across layers and attention mechanisms during reasoning, relevant to mechanistic CoT analysis."
+        }
+      ]
+    }
+  }
+}

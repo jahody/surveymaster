@@ -1,0 +1,25 @@
+{
+  "filename": "2405.15302.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.15302.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 50,
+          "reason": "The paper investigates the internal reasoning mechanisms of Transformers, specifically how different layers play distinct computational roles in multi-step reasoning, aligning with the micro-level observation of functional differentiation and intermediate information integration described in this chapter."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 30,
+          "reason": "The study introduces a 'buffer mechanism' to explain how information is stored and selectively extracted across layers via attention mechanisms, directly addressing the theory of cross-layer information flow and how hidden information is transmitted during reasoning."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 20,
+          "reason": "The paper proposes a random matrix-based algorithm that enhances reasoning ability with minimal trainable parameters, suggesting an implicit improvement in recurrent activation flows through specialized training without explicit architectural modifications, fitting the description of training-induced recurrence."
+        }
+      ]
+    }
+  }
+}

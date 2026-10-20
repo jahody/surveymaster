@@ -1,0 +1,25 @@
+{
+  "filename": "2503.03961.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.03961.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 60,
+          "reason": "The paper's core contribution is a formal theory establishing that layer depth is the primary bottleneck for expressive power, showing log-depth transformers can solve problems fixed-depth ones cannot, which directly matches the description of 'layer depth serves as the primary bottleneck' and its key phrase 'log-depth transformers'."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 25,
+          "reason": "The work studies the macro-level correlation between transformer depth and reasoning capabilities (e.g., for regular languages and graph connectivity), demonstrating how increasing depth enhances expressive power for multi-step reasoning, aligning with the chapter's focus on macro-level correlation and multi-hop reasoning."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 15,
+          "reason": "The paper provides theoretical analysis proving transformers with logarithmic depth can express important computational problems (recognizing regular languages, graph connectivity), contributing to the investigation of transformers' universal computational capabilities, which relates to proofs of Turing completeness in model architectures."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2012.14913.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2012.14913.md",
+      "chapters": [
+        {
+          "chapter": "4.2.1",
+          "confidence": 40,
+          "reason": "The paper identifies that lower layers capture shallow, syntactic patterns, aligning with the definition of basic representational processing."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 35,
+          "reason": "The paper performs a micro-level analysis of how different layers (specifically feed-forward layers) play distinct computational roles in the model."
+        },
+        {
+          "chapter": "4.2.3",
+          "confidence": 25,
+          "reason": "The paper demonstrates that upper layers learn more semantic patterns and contribute to the final output distribution, consistent with the role of deep layers."
+        }
+      ]
+    }
+  }
+}

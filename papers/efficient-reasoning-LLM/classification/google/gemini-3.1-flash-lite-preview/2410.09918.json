@@ -1,0 +1,25 @@
+{
+  "filename": "2410.09918.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.09918.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 50,
+          "reason": "The paper's core contribution is a single model that dynamically toggles between fast (System 1) and slow (System 2) reasoning modes based on task requirements."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 30,
+          "reason": "The model is trained on randomized reasoning traces where parts are dropped, effectively teaching the model to internalize and produce concise reasoning paths."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The efficiency is achieved through training dynamics (randomized trace dropping) rather than explicit length-penalty reward functions."
+        }
+      ]
+    }
+  }
+}

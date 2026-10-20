@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 50,
+          "reason": "The paper's CODI framework compresses natural language CoT into continuous space by aligning hidden states with explicit CoT supervision, directly matching the description of 'semantic_anchoring' which focuses on ensuring semantic fidelity through explicit reasoning supervision."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "CODI distills reasoning ability into continuous space by aligning the hidden states of a designated token, which directly corresponds to the 'internal_state_level' category that targets the model's internal states (e.g., hidden states) for reasoning regulation."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The method uses a designated token for reasoning in latent continuous space, which aligns with 'token_level' manipulation of non-interpretable latent tokens or discrete latent codes, though it avoids generating full explicit CoT text sequences."
+        }
+      ]
+    }
+  }
+}

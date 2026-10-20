@@ -1,0 +1,25 @@
+{
+  "filename": "2402.16837.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.16837.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 60,
+          "reason": "Demonstrates the capabilities of LLMs to perform multi-step, symbolic reasoning and latent multi-hop inference; fits Applications and Capabilities."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 25,
+          "reason": "Addresses information flow across layers and chain-of-embedding mechanisms relevant to how latent reasoning propagates in models."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 15,
+          "reason": "Relates to intermediate layers forming specialized sub-circuits for reasoning, aligning with latent CoT analysis."
+        }
+      ]
+    }
+  }
+}

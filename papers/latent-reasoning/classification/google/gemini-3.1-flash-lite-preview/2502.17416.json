@@ -1,0 +1,25 @@
+{
+  "filename": "2502.17416.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.17416.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 45,
+          "reason": "The paper explicitly argues that layer depth is the primary bottleneck for reasoning and that looped models effectively increase this depth to improve performance."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 35,
+          "reason": "The core methodology involves using looped transformers, which are a form of architectural recurrence where layers are reused to simulate greater depth."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 20,
+          "reason": "The paper establishes a strong correlation between effective depth (via looping) and reasoning capabilities, mirroring the behavior of chain-of-thought."
+        }
+      ]
+    }
+  }
+}

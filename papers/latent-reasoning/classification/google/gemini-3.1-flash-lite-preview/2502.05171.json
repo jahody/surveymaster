@@ -1,0 +1,25 @@
+{
+  "filename": "2502.05171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.05171.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "The paper explicitly introduces a recurrent block architecture that iterates to arbitrary depth at test-time, fitting the definition of architectural recurrence."
+        },
+        {
+          "chapter": "5.2.3",
+          "confidence": 30,
+          "reason": "The model uses iterative refinement of a recurrent block to scale test-time compute, which aligns with the concept of implicit fixed-point iteration for depth."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 20,
+          "reason": "The paper demonstrates that increasing the effective depth through recurrence enhances reasoning capacity, supporting the theory that depth is a primary bottleneck."
+        }
+      ]
+    }
+  }
+}

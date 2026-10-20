@@ -1,0 +1,25 @@
+{
+  "filename": "2501.01306.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.01306.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 45,
+          "reason": "The paper explicitly uses tree search-based algorithms (MCTS) to explore multiple generation pathways, which is the core mechanism for mitigating hallucinations."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 35,
+          "reason": "The paper introduces a hierarchical thinking system switch mechanism inspired by dual process theory to alternate between fast and slow thinking modes."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 20,
+          "reason": "The primary goal of the framework is to mitigate hallucinations and improve the factual reliability of LLM responses through deliberative reasoning."
+        }
+      ]
+    }
+  }
+}

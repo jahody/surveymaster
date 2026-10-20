@@ -1,0 +1,25 @@
+{
+  "filename": "2404.07904.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.07904.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "Focuses on Linear-State Recurrence with matrix-valued hidden states and state updates, aligning with the paper's linear RNN and state-expansion approach."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "Represents architectural recurrence via explicit structural modifications to enable recurrent processing."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "Touches on capabilities of recurrent models in multi-step computation, albeit not the primary focus."
+        }
+      ]
+    }
+  }
+}

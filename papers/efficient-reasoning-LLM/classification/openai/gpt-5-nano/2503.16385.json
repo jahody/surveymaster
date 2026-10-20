@@ -1,0 +1,25 @@
+{
+  "filename": "2503.16385.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.16385.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 70,
+          "reason": "Main contribution is DLCoT data segmentation, simplification, and optimization to compress long CoT reasoning and train concise CoT."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "Focus on efficiency metrics and benchmarking of reasoning efficiency; aligns with evaluation of token efficiency."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 10,
+          "reason": "Discusses efficient reasoning applications; DLCoT aims to enable efficient reasoning in real-world systems through distillation."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,645 @@
+{% extends "base.html" %}
+
+{% block title %}Evolution Tree - SurveyMaster{% endblock %}
+
+{% block head %}
+<script src="https://cdn.jsdelivr.net/npm/cytoscape@3/dist/cytoscape.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dagre@0.8/dist/dagre.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2/cytoscape-dagre.js"></script>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #fileSelect, #taxonomySelect {
+            padding: .45rem .7rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: .85rem;
+            background: var(--surface);
+            color: var(--text);
+        }
+
+        /* Main content: legend sidebar + diagram */
+        .content-layout {
+            display: flex;
+            flex-grow: 1;
+            overflow: hidden;
+            gap: 0;
+        }
+
+        /* Legend sidebar */
+        .legend {
+            width: 280px;
+            min-width: 280px;
+            background: var(--surface);
+            border-right: 1px solid var(--border);
+            padding: 1.25rem;
+            overflow-y: auto;
+        }
+
+        .legend h3 {
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-dim);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.6rem;
+            font-size: 0.82rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .legend-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .color-box {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            border: 2px solid;
+            margin-right: 12px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+
+        .legend-divider {
+            height: 1px;
+            background-color: var(--border);
+            margin: 1rem 0;
+        }
+
+        .line-icon {
+            width: 24px;
+            height: 10px;
+            margin-right: 8px;
+            overflow: visible;
+            flex-shrink: 0;
+        }
+
+        .legend-empty {
+            color: var(--text-dim);
+            font-size: .82rem;
+            font-style: italic;
+        }
+
+        /* Graph area */
+        .graph-wrap {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            overflow: hidden;
+            background: var(--bg);
+        }
+
+        .loading-msg {
+            text-align: center;
+            color: var(--text-dim);
+            padding: 4rem;
+            font-size: .95rem;
+        }
+
+        #cy {
+            flex: 1;
+            min-height: 0;
+            background: var(--bg);
+        }
+
+        /* Time axis */
+        .time-axis-wrapper {
+            position: relative;
+            margin-top: 1rem;
+            padding: 0 2rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .time-axis-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: var(--text-dim);
+        }
+
+        .time-axis-arrow {
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-left: 6px solid var(--text-dim);
+        }
+
+        .year-marker {
+            display: inline-block;
+            margin-right: 2rem;
+            text-align: center;
+        }
+
+        .year-marker .tick {
+            width: 1px;
+            height: 10px;
+            background-color: var(--text-dim);
+            margin: 0 auto 4px;
+        }
+
+        .year-marker .label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--text-dim);
+            letter-spacing: 0.05em;
+        }
+    </style>
+{% endblock %}
+
+{% block header_controls %}
+<select id="fileSelect"></select>
+<button id="saveBtn" class="btn btn-primary btn-sm" disabled>Save</button>
+<span id="status"></span>
+{% endblock %}
+
+{% block body %}
+    <div class="content-layout">
+
+        <aside class="legend" id="legend">
+            <p class="legend-empty">Select a file to load...</p>
+        </aside>
+
+        <div class="graph-wrap" id="graphWrap">
+            <p class="loading-msg">Select a folder and file above to load the evolution tree.</p>
+        </div>
+    </div>
+
+    <script>
+        const CATEGORY_COLORS = [
+            '#0284c7', '#7c3aed', '#d97706', '#0d9488', '#e11d48',
+            '#475569', '#db2777', '#c026d3', '#16a34a', '#8b8fa5',
+            '#059669', '#dc2626', '#2563eb', '#ca8a04', '#9333ea',
+        ];
+
+        cytoscape.use(cytoscapeDagre);
+
+        const folderSelect = document.getElementById('topicSelect');
+        const fileSelect = document.getElementById('fileSelect');
+        const statusEl = document.getElementById('status');
+        const legendEl = document.getElementById('legend');
+        const graphWrap = document.getElementById('graphWrap');
+
+        let treeData = null;
+        let categoryMap = {};
+        let categoryColors = [];
+        let cy = null;
+
+        // --- Helpers ---
+
+        function esc(s) {
+            if (s == null) return '';
+            return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function prettyName(s) {
+            return (s || '').replace(/_/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); });
+        }
+
+        function truncate(s, max) {
+            if (s.length <= max) return s;
+            return s.substring(0, max - 1) + '\u2026';
+        }
+
+        // Split title into exactly 2 lines for fixed 4-line node label
+        function titleLines(name, maxLen) {
+            if (name.length <= maxLen) return [name, '\u00A0'];
+            var idx = name.lastIndexOf(' ', maxLen);
+            if (idx < 5) idx = maxLen;
+            var line1 = name.substring(0, idx).trim();
+            var rest = name.substring(idx).trim();
+            var line2 = rest.length <= maxLen ? rest : rest.substring(0, maxLen - 1) + '\u2026';
+            return [line1, line2];
+        }
+
+        function nodeLabel(name, arxiv, chapter) {
+            var ch = chapter || '\u00A0';
+            var tl = titleLines(name, 28);
+            return ch + '\n' + tl[0] + '\n' + tl[1] + '\n' + arxiv;
+        }
+
+        async function fetchJSON(url) {
+            var r = await fetch(url);
+            if (!r.ok) throw new Error(r.statusText);
+            return r.json();
+        }
+
+        function folderApiBase() {
+            return '/api/paper-folder/' + encodeURIComponent(folderSelect.value);
+        }
+
+        // --- Selectors ---
+
+        async function loadFileList() {
+            var folder = folderSelect.value;
+            if (!folder) return;
+            
+            // Load taxonomies for the fileSelect just like in 2_editor.html
+            var files = await fetchJSON(folderApiBase() + '/taxonomies');
+            fileSelect.innerHTML = '';
+            if (!files.length) {
+                fileSelect.innerHTML = '<option value="">No taxonomies</option>';
+            } else {
+                files.forEach(function(f) {
+                    var o = document.createElement('option');
+                    o.value = f;
+                    o.textContent = f;
+                    fileSelect.appendChild(o);
+                });
+            }
+
+            // Auto-load the first evolution tree
+            try {
+                var trees = await fetchJSON(folderApiBase() + '/evolution-trees');
+                if (trees.length > 0) {
+                    loadTreeFile(trees[0]);
+                } else {
+                    statusEl.textContent = 'No evolution tree found';
+                    statusEl.className = 'dirty';
+                }
+            } catch (e) {
+                statusEl.textContent = 'Error loading tree: ' + e.message;
+                statusEl.className = 'dirty';
+            }
+        }
+
+        async function loadTreeFile(name) {
+            var folder = folderSelect.value;
+            if (!folder) return;
+            statusEl.textContent = 'Loading...';
+            statusEl.className = '';
+            try {
+                treeData = await fetchJSON(folderApiBase() + '/evolution-tree/' + encodeURIComponent(name));
+                statusEl.textContent = treeData.nodes.length + ' papers, ' + treeData.edges.length + ' edges';
+                statusEl.className = '';
+                await applyTaxonomyAndRender();
+            } catch (e) {
+                statusEl.textContent = 'Error: ' + e.message;
+                statusEl.className = 'dirty';
+            }
+        }
+
+        async function loadTaxonomy(name) {
+            if (!name) {
+                categoryMap = {};
+                categoryColors = [];
+                return;
+            }
+            var taxonomy = await fetchJSON(folderApiBase() + '/taxonomy/' + encodeURIComponent(name));
+            buildCategoryMap(taxonomy);
+        }
+
+        function buildCategoryMap(taxonomy) {
+            categoryMap = {};
+            categoryColors = [];
+            var colorIdx = 0;
+
+            function walk(items, pathParts) {
+                for (var i = 0; i < items.length; i++) {
+                    var item = items[i];
+                    var current = pathParts.concat([item.name]);
+                    if (item.papers && item.papers.length) {
+                        var color = CATEGORY_COLORS[colorIdx % CATEGORY_COLORS.length];
+                        colorIdx++;
+                        categoryColors.push({
+                            chapter: item.chapter,
+                            name: item.name,
+                            color: color,
+                            full_path: current.join(' / '),
+                        });
+                        for (var j = 0; j < item.papers.length; j++) {
+                            categoryMap[item.papers[j].arxiv] = {
+                                chapter: item.chapter,
+                                name: item.name,
+                                color: color,
+                                full_path: current.join(' / '),
+                            };
+                        }
+                    }
+                    if (item.items) walk(item.items, current);
+                }
+            }
+
+            walk(taxonomy, []);
+        }
+
+        async function applyTaxonomyAndRender() {
+            if (!treeData) return;
+            await loadTaxonomy(fileSelect.value);
+            renderLegend();
+            if (!cy) {
+                renderGraph();
+            } else {
+                updateNodeTaxonomy();
+            }
+        }
+
+        function updateNodeTaxonomy() {
+            cy.nodes().forEach(function(n) {
+                var arxiv = n.data('arxiv');
+                var cat = categoryMap[arxiv];
+                var nd = treeData.nodes.find(function(x) { return x.arxiv === arxiv; });
+                if (!nd) return;
+                n.data('label', nodeLabel(nd.name, arxiv, cat ? cat.chapter : null));
+                n.data('borderColor', cat ? cat.color : '#8b8fa5');
+                n.style('border-color', cat ? cat.color : '#8b8fa5');
+            });
+        }
+
+        document.addEventListener('topicChanged', function () {
+            treeData = null;
+            cy = null;
+            fileSelect.innerHTML = '<option value="">Loading\u2026</option>';
+            graphWrap.innerHTML = '<p class="loading-msg">Select a file above to load the evolution tree.</p>';
+            legendEl.innerHTML = '<p class="legend-empty">Select a file to load...</p>';
+            loadFileList();
+        });
+        
+        fileSelect.addEventListener('change', function() {
+            applyTaxonomyAndRender();
+        });
+
+        // --- Legend ---
+
+        function renderLegend() {
+            if (!treeData) return;
+            var hasTaxonomy = categoryColors.length > 0;
+            var uncatCount = 0;
+            for (var i = 0; i < treeData.nodes.length; i++) {
+                if (!categoryMap[treeData.nodes[i].arxiv]) uncatCount++;
+            }
+
+            var html = '<h3>Categories</h3>';
+
+            if (!hasTaxonomy) {
+                html += '<p class="legend-empty">Select a taxonomy to color nodes.</p>';
+            } else {
+                if (uncatCount > 0) {
+                    html += '<div class="legend-item"><span class="color-box" style="background:#242837;border-color:#8b8fa5;"></span> Uncategorized (' + uncatCount + ')</div>';
+                }
+
+                var groups = {};
+                categoryColors.forEach(function(cat) {
+                    var topCh = cat.chapter.split('.')[0];
+                    if (!groups[topCh]) groups[topCh] = [];
+                    groups[topCh].push(cat);
+                });
+
+                var sortedKeys = Object.keys(groups).sort(function(a, b) { return Number(a) - Number(b); });
+                for (var k = 0; k < sortedKeys.length; k++) {
+                    var topCh = sortedKeys[k];
+                    var items = groups[topCh];
+                    var parentName = items[0].full_path ? items[0].full_path.split(' / ')[0] : topCh;
+                    html += '<div class="legend-item" style="margin-top:8px;margin-bottom:4px;"><strong>' + esc(topCh) + '. ' + esc(prettyName(parentName)) + '</strong></div>';
+                    items.forEach(function(cat) {
+                        var count = 0;
+                        for (var n = 0; n < treeData.nodes.length; n++) {
+                            var c = categoryMap[treeData.nodes[n].arxiv];
+                            if (c && c.chapter === cat.chapter) count++;
+                        }
+                        html += '<div class="legend-item" style="margin-left:20px;font-size:.78rem;margin-bottom:.4rem;">' +
+                            '<span class="color-box" style="background:#1a1d27;border-color:' + cat.color + ';"></span> ' +
+                            esc(cat.chapter) + ' ' + esc(prettyName(cat.name)) + ' (' + count + ')' +
+                            '</div>';
+                    });
+                }
+            }
+
+            html += '<div class="legend-divider"></div>';
+            html += '<h3>Relationships</h3>';
+            html += '<div class="legend-item">' +
+                '<svg class="line-icon" viewBox="0 0 24 10"><path d="M0,5 L20,5 M16,1 L20,5 L16,9" stroke="#60a5fa" stroke-width="2.5" fill="none" /></svg>' +
+                'Direct Extension</div>';
+            html += '<div class="legend-item">' +
+                '<svg class="line-icon" viewBox="0 0 24 10"><path d="M0,5 L20,5 M16,1 L20,5 L16,9" stroke="#a78bfa" stroke-width="2" fill="none" /></svg>' +
+                'Conceptual Influence</div>';
+            html += '<div class="legend-item">' +
+                '<svg class="line-icon" viewBox="0 0 24 10"><path d="M0,5 L20,5 M16,1 L20,5 L16,9" stroke="#0d9488" stroke-width="2" fill="none" /></svg>' +
+                'Shared Benchmark</div>';
+            html += '<div class="legend-item">' +
+                '<svg class="line-icon" viewBox="0 0 24 10"><path d="M0,5 L20,5 M16,1 L20,5 L16,9" stroke="#e11d48" stroke-width="2" fill="none" /></svg>' +
+                'Challenges</div>';
+
+            if (treeData.metadata) {
+                html += '<div class="legend-divider"></div>';
+                html += '<h3>Metadata</h3>';
+                html += '<div style="font-size:.75rem;color:var(--text-dim);line-height:1.7;">';
+                html += 'Query: <strong>' + esc(treeData.metadata.query) + '</strong>';
+                html += '</div>';
+            }
+
+            legendEl.innerHTML = html;
+        }
+
+        // --- Cytoscape Graph Rendering ---
+
+        function renderGraph() {
+            if (!treeData || !treeData.nodes.length) {
+                graphWrap.innerHTML = '<p class="loading-msg">No data in this file.</p>';
+                return;
+            }
+
+            // Destroy previous instance
+            if (cy) { cy.destroy(); cy = null; }
+
+            // Build timeline HTML
+            var yearList = treeData.nodes.map(function(n) { return n.year; }).filter(Boolean);
+            var timelineHtml = '';
+            if (yearList.length > 0) {
+                var minYear = Math.min.apply(null, yearList);
+                var maxYear = Math.max.apply(null, yearList);
+                timelineHtml = buildSimpleTimeline(minYear, maxYear);
+            }
+
+            graphWrap.innerHTML = '<div id="cy"></div>' + timelineHtml;
+
+            // Build elements
+            var elements = [];
+
+            treeData.nodes.forEach(function(n) {
+                var cat = categoryMap[n.arxiv];
+                var label = nodeLabel(n.name, n.arxiv, cat ? cat.chapter : null);
+
+                elements.push({
+                    group: 'nodes',
+                    data: {
+                        id: 'n_' + n.arxiv.replace('.', '_'),
+                        arxiv: n.arxiv,
+                        label: label,
+                        borderColor: cat ? cat.color : '#8b8fa5',
+                    }
+                });
+            });
+
+            treeData.edges.forEach(function(e) {
+                var srcId = 'n_' + e.source.replace('.', '_');
+                var tgtId = 'n_' + e.target.replace('.', '_');
+                elements.push({
+                    group: 'edges',
+                    data: {
+                        id: 'e_' + e.source + '_' + e.target,
+                        source: srcId,
+                        target: tgtId,
+                        type: e.type || 'direct_extension',
+                        label: e.label || '',
+                    }
+                });
+            });
+
+            cy = cytoscape({
+                container: document.getElementById('cy'),
+                elements: elements,
+                layout: {
+                    name: 'dagre',
+                    rankDir: 'LR',
+                    ranker: 'longest-path',
+                    nodeSep: 30,
+                    rankSep: 120,
+                    animate: false,
+                },
+                style: [
+                    {
+                        selector: 'node',
+                        style: {
+                            'background-color': '#1a1d27',
+                            'border-width': 2.5,
+                            'border-color': 'data(borderColor)',
+                            'label': 'data(label)',
+                            'color': '#e2e4ed',
+                            'font-size': '11px',
+                            'font-family': 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                            'text-wrap': 'wrap',
+                            'text-max-width': '176px',
+                            'width': 190,
+                            'height': 80,
+                            'shape': 'roundrectangle',
+                            'text-valign': 'center',
+                            'text-halign': 'center',
+                            'cursor': 'pointer',
+                        }
+                    },
+                    {
+                        selector: 'edge',
+                        style: {
+                            'curve-style': 'taxi',
+                            'taxi-direction': 'rightward',
+                            'taxi-turn': 80,
+                            'target-arrow-shape': 'triangle',
+                            'arrow-scale': 1.1,
+                            'label': '',
+                            'font-size': '10px',
+                            'font-weight': '500',
+                            'text-background-color': '#0f1117',
+                            'text-background-opacity': 0.9,
+                            'text-background-padding': '4px',
+                            'text-rotation': 'autorotate',
+                        }
+                    },
+                    {
+                        selector: 'edge[type="direct_extension"]',
+                        style: {
+                            'line-color': '#60a5fa',
+                            'target-arrow-color': '#60a5fa',
+                            'color': '#60a5fa',
+                            'width': 2.5,
+                        }
+                    },
+                    {
+                        selector: 'edge[type="conceptual_influence"]',
+                        style: {
+                            'line-color': '#a78bfa',
+                            'target-arrow-color': '#a78bfa',
+                            'color': '#a78bfa',
+                            'width': 2,
+                        }
+                    },
+                    {
+                        selector: 'edge[type="shared_benchmark"]',
+                        style: {
+                            'line-color': '#0d9488',
+                            'target-arrow-color': '#0d9488',
+                            'color': '#0d9488',
+                            'width': 2,
+                        }
+                    },
+                    {
+                        selector: 'edge[type="challenges"]',
+                        style: {
+                            'line-color': '#e11d48',
+                            'target-arrow-color': '#e11d48',
+                            'color': '#e11d48',
+                            'width': 2,
+                        }
+                    },
+                    {
+                        selector: 'node.dimmed',
+                        style: { 'opacity': 0.15 }
+                    },
+                    {
+                        selector: 'edge.dimmed',
+                        style: { 'opacity': 0.08 }
+                    },
+                ],
+            });
+
+            // Click → open arxiv
+            cy.on('tap', 'node', function(evt) {
+                window.open('https://arxiv.org/abs/' + evt.target.data('arxiv'), '_blank');
+            });
+
+            // Node hover → dim unconnected
+            cy.on('mouseover', 'node', function(evt) {
+                var node = evt.target;
+                var connected = node.closedNeighborhood();
+                cy.elements().not(connected).addClass('dimmed');
+            });
+            cy.on('mouseout', 'node', function() {
+                cy.elements().removeClass('dimmed');
+            });
+
+            // Edge hover → show label
+            cy.on('mouseover', 'edge', function(evt) {
+                evt.target.style('label', evt.target.data('label'));
+            });
+            cy.on('mouseout', 'edge', function(evt) {
+                evt.target.style('label', '');
+            });
+
+        }
+
+        // --- Simplified Timeline ---
+
+        function buildSimpleTimeline(minYear, maxYear) {
+            var html = '<div class="time-axis-wrapper">';
+            html += '<div class="time-axis-line"></div><div class="time-axis-arrow"></div>';
+
+            for (var y = minYear; y <= maxYear; y++) {
+                html += '<span class="year-marker">';
+                html += '<div class="tick"></div>';
+                html += '<div class="label">' + y + '</div>';
+                html += '</span>';
+            }
+
+            html += '</div>';
+            return html;
+        }
+
+    </script>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13260.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13260.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 60,
+          "reason": "The paper's core method uses perplexity to identify and retain only critical reasoning steps, compressing CoT chains via supervised fine-tuning or demonstration refinement, directly aligning with 'Reasoning Chain Compression'."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 25,
+          "reason": "The approach implicitly budgets computational resources by reducing reasoning chain length, though it operates via training/refinement rather than purely inference-time prompts, making it a secondary fit."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper evaluates trade-offs between reasoning accuracy and efficiency (generation time, computational cost), which relates to benchmarks measuring such trade-offs, though it is not its primary focus."
+        }
+      ]
+    }
+  }
+}

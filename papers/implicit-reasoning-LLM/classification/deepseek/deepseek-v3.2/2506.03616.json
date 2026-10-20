@@ -1,0 +1,25 @@
+{
+  "filename": "2506.03616.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2506.03616.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces a method that dynamically inserts a single type of control token ([PAUSE]) at positions of low model confidence to enhance reasoning, aligning with the 'single_type_signal' category's focus on uniform modulation via tokens like pause tokens."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The approach operates at the token level by strategically inserting [PAUSE] tokens into sequences to steer reasoning, which matches the 'token_level' description of manipulating individual tokens to improve model learning, without generating full explicit Chain-of-Thought."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "The method dynamically identifies and inserts tokens based on model confidence to adjust reasoning effectiveness, which relates to 'adaptive_efficiency' through dynamic trajectory compression and elastic control over reasoning, though it focuses on token insertion rather than parameter pruning."
+        }
+      ]
+    }
+  }
+}

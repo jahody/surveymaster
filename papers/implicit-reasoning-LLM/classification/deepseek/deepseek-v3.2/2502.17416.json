@@ -1,0 +1,25 @@
+{
+  "filename": "2502.17416.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.17416.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 70,
+          "reason": "The paper's core contribution is the use of looped models, where a k-layer transformer is executed L times with shared weights, directly aligning with 'layer_recurrent_execution' which involves iterative computation and looping layers for progressive refinement of hidden states."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 20,
+          "reason": "The work focuses on regulating reasoning by manipulating the model's internal states through looping, implicitly generating latent thoughts, which matches 'internal_state_level' targeting internal states for reasoning regulation, distinct from token-level interventions."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 10,
+          "reason": "The looping mechanism enables progressive refinement of implicit reasoning through iterative updates across loops, akin to step-by-step internalization, though it is more architectural than training-based."
+        }
+      ]
+    }
+  }
+}

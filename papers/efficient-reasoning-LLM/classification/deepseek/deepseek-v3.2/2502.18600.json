@@ -1,0 +1,25 @@
+{
+  "filename": "2502.18600.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.18600.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 70,
+          "reason": "The paper proposes Chain of Draft (CoD), which explicitly generates minimalistic intermediate reasoning outputs to reduce token usage, matching the description of budgeting computational resources via length constraints and concise steps during inference, without training the model."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "CoD focuses on producing concise reasoning chains by removing redundant information, aligning with reasoning chain compression that builds datasets with shorter paths, though the paper emphasizes prompt-based inference rather than supervised fine-tuning."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The work evaluates reasoning efficiency by measuring accuracy versus token consumption across tasks, which relates to benchmarks quantifying trade-offs between answer correctness and computational cost, though it is not the primary focus."
+        }
+      ]
+    }
+  }
+}

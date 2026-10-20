@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21030.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21030.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": -1,
+          "reason": "The paper proposes an Implicit Memory Module (IMM) integrated into the internal reasoning processes of LLMs, directly aligning with the description of targeting the model's internal states for reasoning regulation, as indicated by key phrases like 'implicit memory modules' and 'distilling hidden states'."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": -1,
+          "reason": "The framework incorporates implicit mental representations that recall past sensory and episodic information, which can be seen as anchoring latent trajectories to explicit reasoning supervision to ensure semantic fidelity, especially with the mention of an optional explicit interpretability channel like a chain-of-thought decoder."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": -1,
+          "reason": "The approach aims for more computationally efficient internal reasoning by integrating implicit representations, which relates to dynamically compressing intermediate thoughts to adjust reasoning length or speed, as suggested by the goal of reducing training loss and improving efficiency."
+        }
+      ]
+    }
+  }
+}

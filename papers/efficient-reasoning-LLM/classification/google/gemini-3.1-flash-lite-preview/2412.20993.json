@@ -1,0 +1,25 @@
+{
+  "filename": "2412.20993.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.20993.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 50,
+          "reason": "The paper focuses on dynamic compute allocation during inference using confidence-based metrics to decide when to stop reasoning, which is a core aspect of test-time scaling."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 30,
+          "reason": "The paper implements early exit mechanisms to manage the length of reasoning chains, effectively budgeting computational resources at inference time."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The paper integrates the Certaindex metric into a real-world LLM serving system (Dynasor) to improve throughput and efficiency in practical deployment scenarios."
+        }
+      ]
+    }
+  }
+}

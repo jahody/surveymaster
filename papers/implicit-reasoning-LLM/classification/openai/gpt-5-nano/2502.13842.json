@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13842.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13842.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 45,
+          "reason": "Dynamic computation allocation and elastic control over reasoning length align with adaptive efficiency in ITT."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 35,
+          "reason": "Iterative, layer-wise refinement and recurrence-like processing match layer_recurrent_execution."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 20,
+          "reason": "Step-by-step internalization and progressive refinement of representations fits progressive_refinement."
+        }
+      ]
+    }
+  }
+}

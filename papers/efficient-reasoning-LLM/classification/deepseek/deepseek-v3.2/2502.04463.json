@@ -1,0 +1,25 @@
+{
+  "filename": "2502.04463.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.04463.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": -1,
+          "reason": "The paper uses reinforcement learning to train models to dynamically allocate inference-time compute based on task complexity, incentivizing them to minimize unnecessary computational overhead while maintaining accuracy. This directly aligns with 'with Length Reward', which treats reasoning length as a trajectory-level resource in a constrained optimization problem. The method involves a reward function that likely includes a length penalty (though not explicitly detailed in the abstract, the description matches the category's focus on trajectory-level budget and preserving correctness)."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": -1,
+          "reason": "The paper's approach involves training models to dynamically allocate inference-time compute, which includes managing the length of the reasoning chain based on task difficulty. This relates to 'Length Budgeting' as it deals with difficulty-adaptive budget allocation. However, the hard negative specifies that length budgeting operates purely at inference time via prompts or decoding strategies, while this paper uses RL training to achieve dynamic allocation, so it is not a pure inference-time method but shares the goal of adaptive budgeting."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": -1,
+          "reason": "The paper trains models to reason efficiently, which could involve producing concise reasoning paths. While not explicitly mentioned as supervised fine-tuning (SFT) in the abstract, the method uses RL to reduce unnecessary computational overhead, potentially leading to compressed reasoning chains. This aligns with 'Reasoning Chain Compression' in spirit, but the hard negative indicates that chain compression uses SFT, whereas this paper uses RL, so it is a related but distinct approach."
+        }
+      ]
+    }
+  }
+}

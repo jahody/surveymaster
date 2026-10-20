@@ -1,0 +1,25 @@
+{
+  "filename": "2411.13504.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.13504.md",
+      "chapters": [
+        {
+          "chapter": "4.2.1",
+          "confidence": -40,
+          "reason": "The paper explicitly separates 'memory recall' (knowledge retrieval) and 'reasoning' steps, aligning with shallow layers handling factual knowledge recall, as indicated by the introduction of special tokens to guide this distinction."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": -35,
+          "reason": "The paper's decomposition into reasoning steps based on recalled knowledge corresponds to intermediate layers forming the core of latent Chain-of-Thought, where specialized sub-circuits perform logical integration and influence final outcomes."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": -25,
+          "reason": "The proposed inference paradigm assigns distinct computational roles (memory vs. reasoning) to different stages, reflecting a micro-level clear correspondence between layer depth and specific functions in the reasoning process."
+        }
+      ]
+    }
+  }
+}

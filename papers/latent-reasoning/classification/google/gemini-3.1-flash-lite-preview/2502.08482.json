@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08482.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08482.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper focuses on CoT-aligned supervision and iterative training strategies to align reasoning steps with loop iterations in Looped Transformers."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The core methodology relies on Looped Transformers, which are a form of architectural recurrence that enables length generalization."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper demonstrates the application of these recurrent models to generate reasoning chains for complex problems, enhancing auto-regressive model performance."
+        }
+      ]
+    }
+  }
+}

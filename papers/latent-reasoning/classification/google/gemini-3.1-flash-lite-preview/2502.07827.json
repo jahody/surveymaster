@@ -1,0 +1,25 @@
+{
+  "filename": "2502.07827.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.07827.md",
+      "chapters": [
+        {
+          "chapter": "5.2.3",
+          "confidence": 60,
+          "reason": "The paper explicitly proposes 'implicit SSMs' which iterate a transformation until convergence to a fixed point, matching the definition of Implicit Fixed-Point RNNs."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The paper builds upon state-space models (SSMs) and aims to improve their expressivity by implementing non-linear state transitions, which relates to the linear-state recurrence category."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper demonstrates the model's capabilities on regular languages and natural language reasoning tasks, showing its utility for complex multi-step computation."
+        }
+      ]
+    }
+  }
+}

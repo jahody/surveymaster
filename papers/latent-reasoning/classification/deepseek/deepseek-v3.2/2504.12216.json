@@ -1,0 +1,25 @@
+{
+  "filename": "2504.12216.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2504.12216.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "The paper focuses on masked diffusion large language models (dLLMs), which operate by predicting masked tokens in a non-autoregressive, coarse-to-fine manner, directly aligning with the description of Masked Diffusion Models."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "The paper introduces specialized training strategies, including masked supervised fine-tuning (SFT) and a novel RL algorithm (diffu-GRPO), to improve reasoning in pre-trained dLLMs, which fits the category of Training Strategies for Recurrent Reasoning."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 15,
+          "reason": "The work adapts pre-trained masked dLLMs via fine-tuning and RL to develop latent reasoning capabilities without architectural modifications, aligning with Training-induced Recurrence that unlocks latent capacity through training."
+        }
+      ]
+    }
+  }
+}

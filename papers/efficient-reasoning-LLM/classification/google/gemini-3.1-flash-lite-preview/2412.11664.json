@@ -1,0 +1,25 @@
+{
+  "filename": "2412.11664.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.11664.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 70,
+          "reason": "The paper explicitly proposes a framework to compress longer CoT into shorter CoT using a compressor and conditioned training, which is the core definition of this category."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The paper motivates its research by the need for efficient reasoning in real-world applications like search and recommendation systems that are sensitive to latency."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper conducts experiments across four datasets to quantify the trade-off between CoT length reduction and reasoning effectiveness, contributing to the evaluation of reasoning efficiency."
+        }
+      ]
+    }
+  }
+}

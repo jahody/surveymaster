@@ -1,0 +1,25 @@
+{
+  "filename": "2502.05171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.05171.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper's core architecture is based on iterating a recurrent block to unroll to arbitrary depth at test-time, which directly matches the 'layer_recurrent_execution' description of introducing iterative computation to progressively refine hidden states."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "The model performs reasoning by iterating in latent space, which aligns with 'internal_state_level' targeting the model's internal states for reasoning regulation, as it does not manipulate explicit tokens but rather implicit representations."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 15,
+          "reason": "The iterative unrolling of the recurrent block for progressive refinement of the implicit reasoning process corresponds to 'progressive_refinement', which involves step-by-step internalization or iterative updating."
+        }
+      ]
+    }
+  }
+}

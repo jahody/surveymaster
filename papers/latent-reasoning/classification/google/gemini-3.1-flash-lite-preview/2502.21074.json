@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper introduces a training framework (CODI) that uses self-distillation to compress explicit CoT into continuous space, which is a specialized training strategy for CoT-aligned supervision."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 30,
+          "reason": "CODI enables implicit CoT reasoning within standard transformer architectures without changing the underlying structure, focusing on latent reasoning capabilities."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper demonstrates the capability of the model to perform multi-step reasoning in a latent continuous space, matching explicit CoT performance on complex datasets like GSM8k."
+        }
+      ]
+    }
+  }
+}

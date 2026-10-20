@@ -1,0 +1,25 @@
+{
+  "filename": "2310.10845.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.10845.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "CoTFormer introduces an explicit architectural modification to allow token-wise variable depth and adaptive computation, fitting the definition of architectural recurrence."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 30,
+          "reason": "The paper explicitly addresses the bottleneck of model depth and proposes a mechanism to overcome it by dynamically allocating compute, treating depth as a resource."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 20,
+          "reason": "The architecture mimics Chain-of-Thought at the token level, implying a micro-level correspondence between the iterative application of the model and reasoning steps."
+        }
+      ]
+    }
+  }
+}

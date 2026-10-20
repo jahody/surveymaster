@@ -1,0 +1,25 @@
+{
+  "filename": "2502.10835.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.10835.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 50,
+          "reason": "The paper explicitly introduces the 'back attention' mechanism to improve cross-layer information flow and analyzes the trajectory of reasoning."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 30,
+          "reason": "The paper performs a micro-level analysis of how different layers contribute to specific stages of multi-hop reasoning (e.g., entity/relation extraction)."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper focuses on enhancing latent multi-hop reasoning capabilities in LLMs, which is a core application of recurrent/iterative reasoning research."
+        }
+      ]
+    }
+  }
+}

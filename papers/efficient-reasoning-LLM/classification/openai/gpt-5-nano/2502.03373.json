@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03373.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03373.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 70,
+          "reason": "Directly discusses length-aware RL with a length reward and trajectory-level budgeting for CoT length."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "Involves the concept of budgeting reasoning length, aligning with inference-time length control, though primarily explored via training dynamics."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "Touches on evaluation and benchmarks related to reasoning efficiency and length, relevant to assessment of CoT length and performance."
+        }
+      ]
+    }
+  }
+}

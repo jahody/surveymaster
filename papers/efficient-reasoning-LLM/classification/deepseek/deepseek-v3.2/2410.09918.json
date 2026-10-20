@@ -1,0 +1,25 @@
+{
+  "filename": "2410.09918.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.09918.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 70,
+          "reason": "The paper introduces Dualformer, which dynamically switches between fast (System 1) and slow (System 2) reasoning modes within a single model based on randomized reasoning traces, directly aligning with the dual process theory and complexity-based toggling described in System Switch."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "Dualformer trains on randomized reasoning traces where parts are strategically dropped, effectively compressing reasoning chains by learning to produce concise or full traces as needed, matching the description of building target datasets with concise reasoning paths."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 10,
+          "reason": "The model improves reasoning efficiency without explicit length rewards by leveraging training dynamics (randomized trace dropping) to implicitly encourage efficient reasoning, aligning with methods that achieve efficiency through algorithmic properties rather than direct penalties."
+        }
+      ]
+    }
+  }
+}

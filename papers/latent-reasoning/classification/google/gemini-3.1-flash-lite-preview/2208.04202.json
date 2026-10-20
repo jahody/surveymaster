@@ -1,0 +1,25 @@
+{
+  "filename": "2208.04202.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2208.04202.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 60,
+          "reason": "The paper proposes modeling discrete data as continuous 'analog bits' and applying diffusion models to these continuous representations, which aligns with embedding-based diffusion."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 25,
+          "reason": "The paper focuses on generating discrete data (tokens), which is the primary objective of masked diffusion models, even though the specific implementation uses continuous diffusion."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 15,
+          "reason": "The paper compares its performance against autoregressive models and discusses its application to tasks like image captioning where autoregressive models are standard, touching on the hybrid nature of discrete generation."
+        }
+      ]
+    }
+  }
+}

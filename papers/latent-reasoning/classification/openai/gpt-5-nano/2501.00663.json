@@ -1,0 +1,25 @@
+{
+  "filename": "2501.00663.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.00663.md",
+      "chapters": [
+        {
+          "chapter": "5.2.1",
+          "confidence": 60,
+          "reason": "Core contribution involves a memory-attached mechanism to Transformer blocks (Infini-attention-style) enabling long-context processing."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "Ranks as architectural recurrence with explicit structural changes to enable memory/recurrence across layers."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 15,
+          "reason": "Relates to information flow across layers and how memory interacts with attention, relevant to understanding the mechanism."
+        }
+      ]
+    }
+  }
+}

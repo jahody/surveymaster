@@ -1,0 +1,25 @@
+{
+  "filename": "2412.21187.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.21187.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "Centers on dynamic test-time compute scaling and iterative reasoning, aligning with reducing overthinking and efficiency during inference."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 25,
+          "reason": "Focuses on evaluation metrics for reasoning efficiency and overthinking, matching the paper's emphasis on metrics."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 15,
+          "reason": "Discusses concise reasoning paths and training methods to reduce unnecessary CoT steps, related to streamlining reasoning."
+        }
+      ]
+    }
+  }
+}

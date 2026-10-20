@@ -1,0 +1,25 @@
+{
+  "filename": "2410.20672.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.20672.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly modifies the Transformer architecture to implement recursive layer-tying, creating a loop structure that treats depth as a dynamic computational resource."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "The authors introduce specific training strategies, including initialization from pretrained models and the use of depth-wise LoRA modules to optimize the recursive structure."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 15,
+          "reason": "The approach involves converting existing, fixed-architecture pretrained Transformers into recursive models with minimal retraining, aligning with the concept of architecture distillation."
+        }
+      ]
+    }
+  }
+}

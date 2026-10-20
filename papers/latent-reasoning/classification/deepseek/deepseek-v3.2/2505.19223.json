@@ -1,0 +1,25 @@
+{
+  "filename": "2505.19223.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.19223.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 70,
+          "reason": "The paper focuses on Masked Diffusion Models (MDMs), specifically LLaDA, and proposes a variance-reduced preference optimization method for aligning them with human preferences, directly matching the description of Masked Diffusion Models."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 20,
+          "reason": "The paper mentions LLaDA as a language diffusion model and compares it to autoregressive models (ARMs), suggesting a potential hybrid context, though the core contribution is optimization for MDMs rather than explicit architectural integration."
+        },
+        {
+          "chapter": "3.1.3",
+          "reason": "The paper introduces VRPO, a specialized training strategy for improving model alignment via preference optimization, which involves gradient variance reduction techniques, aligning with the focus on training strategies for enhancing model capabilities.",
+          "confidence": 10
+        }
+      ]
+    }
+  }
+}

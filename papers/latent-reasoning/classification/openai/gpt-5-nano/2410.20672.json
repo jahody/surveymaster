@@ -1,0 +1,25 @@
+{
+  "filename": "2410.20672.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.20672.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "Core idea is architectural recurrence via repeated transformer blocks and parameter sharing across layers."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "Demonstrates capabilities and applications of recurrent architectures, including multi-step computation and throughput considerations."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 15,
+          "reason": "Discusses layer depth as a bottleneck and the role of depth in reasoning, relevant to the paper's depth-sharing approach."
+        }
+      ]
+    }
+  }
+}

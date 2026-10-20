@@ -1,0 +1,25 @@
+{
+  "filename": "2410.18514.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.18514.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 90,
+          "reason": "The paper's core contribution is scaling up Masked Diffusion Models (MDMs) for text, explicitly discussing token-level masking, bidirectional unmasking, and KV-cache integration, which directly matches the description and key phrases of this category."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 7,
+          "reason": "The paper compares MDMs to autoregressive models (ARMs) and discusses trade-offs, including using KV-Cache for accelerated sampling, which involves integrating aspects of autoregressive paradigms for efficiency, aligning with hybrid AR-Diffusion model concepts."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 3,
+          "reason": "The paper explores scaling laws and model capabilities, implying depth as a factor for complex reasoning (e.g., math reasoning on GSM8K), though it is not the primary focus, making it a minor relevant category."
+        }
+      ]
+    }
+  }
+}

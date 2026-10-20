@@ -1,0 +1,25 @@
+{
+  "filename": "2501.15781.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.15781.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 60,
+          "reason": "The paper proposes a finetuning method to unify autoregressive (AR) and diffusion frameworks, explicitly combining AR's single-step generation with diffusion's multi-step refinement, which is the core definition of a Hybrid AR-Diffusion Model."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 25,
+          "reason": "The method uses the diffusion framework, which typically involves denoising steps. While the paper does not explicitly detail the noise type, the diffusion process applied to language model outputs aligns more closely with operating on continuous embeddings rather than discrete token masking."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 15,
+          "reason": "The method is a finetuning approach that enables pre-trained LMs to perform iterative, multi-step reasoning (via diffusion steps) without modifying the model's architecture, aligning with training-induced recurrence that unlocks latent iterative capabilities."
+        }
+      ]
+    }
+  }
+}

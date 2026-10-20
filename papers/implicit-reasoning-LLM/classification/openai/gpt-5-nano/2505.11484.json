@@ -1,0 +1,25 @@
+{
+  "filename": "2505.11484.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.11484.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 60,
+          "reason": "Introduces soft/perturbed latent representations to promote diversity of reasoning trajectories in continuous latent space."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "Focuses on leveraging and regulating the model's internal latent states (latent thoughts) during reasoning."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "Relates to test-time efficiency/adaptive reasoning by allocating extra computation during inference (test-time scaling)."
+        }
+      ]
+    }
+  }
+}

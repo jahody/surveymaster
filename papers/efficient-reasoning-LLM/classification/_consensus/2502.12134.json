@@ -1,0 +1,19 @@
+{
+  "filename": "2502.12134.md",
+  "classifications": {
+    "taxonomy": {
+      "chapter": "4.2",
+      "score": 200.0,
+      "votes": {
+        "4.2": 200,
+        "6.1": 25,
+        "3.3": 20,
+        "7.4": 20,
+        "6.4": 15,
+        "4.1": 10,
+        "7.5": 10
+      },
+      "reason": "Consensus: 3/3 models ranked this #1"
+    }
+  }
+}

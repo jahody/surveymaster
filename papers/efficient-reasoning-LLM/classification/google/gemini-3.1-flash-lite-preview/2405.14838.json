@@ -1,0 +1,25 @@
+{
+  "filename": "2405.14838.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.14838.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 50,
+          "reason": "The paper focuses on internalizing CoT steps, effectively moving explicit reasoning into the model's internal representations, which aligns with the core concept of latent-space reasoning."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 30,
+          "reason": "The method involves training the model to remove intermediate steps, which is a form of compressing the reasoning chain, though the paper pushes this to the limit of complete internalization."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The approach uses a gradual removal of steps during fine-tuning to achieve efficiency without explicit length-based reward functions, relying on training dynamics to internalize the process."
+        }
+      ]
+    }
+  }
+}

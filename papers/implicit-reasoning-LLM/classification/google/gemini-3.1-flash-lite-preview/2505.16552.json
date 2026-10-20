@@ -1,0 +1,25 @@
+{
+  "filename": "2505.16552.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.16552.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 50,
+          "reason": "The paper focuses on dynamically compressing reasoning processes and adjusting reasoning speed at inference time via a compression factor."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 30,
+          "reason": "The framework uses supervised fine-tuning with an auxiliary objective to align compressed latent embeddings with explicit reasoning traces."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 20,
+          "reason": "The paper utilizes reinforcement learning to leverage the latent head's non-deterministic nature to explore diverse reasoning paths."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2408.08862.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.08862.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 60,
+          "reason": "The paper explicitly introduces a switch adapter to dynamically select between System 1 and System 2 modes based on task complexity, which is the core mechanism of the FaST model."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 25,
+          "reason": "The paper focuses on visual agents and multimodal reasoning, specifically addressing the challenge of adjusting model confidence and reasoning depth for visual tasks."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 15,
+          "reason": "The paper frames the model as a 'visual agent' and focuses on improving the decision-making pipeline for real-world visual intelligence tasks."
+        }
+      ]
+    }
+  }
+}

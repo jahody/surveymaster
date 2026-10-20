@@ -1,0 +1,25 @@
+{
+  "filename": "2403.09629.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2403.09629.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 50,
+          "reason": "Quiet-STaR uses learnable thought start and end tokens to uniformly modulate reasoning dynamics across the text generation process."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 30,
+          "reason": "The method uses an EM-style iterative training process to refine the model's ability to generate and utilize internal rationales."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 20,
+          "reason": "The approach employs tokenwise parallel sampling to explore multiple potential reasoning trajectories before selecting the most helpful ones."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2408.10189.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.10189.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on distilling pretrained Transformer architectures into SSMs, which is the definition of training-induced hidden-state conversion."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The target architecture for the distillation is a State Space Model (SSM), which relies on linear-state recurrence mechanisms."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper demonstrates the practical application and capability of the distilled Phi-Mamba models in achieving strong performance with significantly less training data."
+        }
+      ]
+    }
+  }
+}

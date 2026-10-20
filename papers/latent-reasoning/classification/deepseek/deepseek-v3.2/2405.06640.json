@@ -1,0 +1,25 @@
+{
+  "filename": "2405.06640.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.06640.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 70,
+          "reason": "The paper proposes SUPRA, a method to uptrain existing pre-trained transformers into RNNs with a modest compute budget, directly aligning with the description of converting fixed-architecture Transformers into hidden-state RNN models through targeted fine-tuning."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 20,
+          "reason": "The paper focuses on linear transformers and recurrent models with fixed-size recurrent states, which are characteristic of linear-state recurrence using predetermined update rules, though the primary contribution is the conversion approach rather than a novel linear-state architecture."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 10,
+          "reason": "The method involves specialized training (uptraining) to enable recurrent behavior in a standard transformer architecture, but it is more specifically a conversion technique (3.2.3) rather than purely training-induced recurrence without architectural changes."
+        }
+      ]
+    }
+  }
+}

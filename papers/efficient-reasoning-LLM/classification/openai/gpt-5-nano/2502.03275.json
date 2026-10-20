@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03275.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03275.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 50,
+          "reason": "Main contribution uses latent discrete tokens to enable reasoning in latent space (latent-space SFT)."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 35,
+          "reason": "Approach effectively compresses reasoning traces using latent abstractions, aligning with reasoning chain compression."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 15,
+          "reason": "Touches latent representations in pretraining, aligning with latent-space pretraining concepts."
+        }
+      ]
+    }
+  }
+}

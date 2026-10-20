@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 50,
+          "reason": "The core mechanism of CODI is distilling explicit CoT into continuous space by aligning hidden states, which directly matches the definition of anchoring latent trajectories to explicit supervision."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "The paper focuses on distilling reasoning ability into the model's hidden states of a designated token, which is the primary target of reasoning regulation."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The method uses a designated 'contemplation token' to steer reasoning in the latent space, representing a form of non-interpretable latent token manipulation."
+        }
+      ]
+    }
+  }
+}

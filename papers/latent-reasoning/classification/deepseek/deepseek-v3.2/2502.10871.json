@@ -1,0 +1,25 @@
+{
+  "filename": "2502.10871.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.10871.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": -1,
+          "reason": "The paper studies how intermediate layers encode continuous, overlapping attributes and form the core of latent reasoning, aligning with the description of intermediate layers as the core of Latent CoT and handling specialized computational sub-circuits."
+        },
+        {
+          "chapter": "4.2.3",
+          "confidence": -1,
+          "reason": "The paper finds that deeper layers sharpen categorical distinctions and incorporate linguistic context for decision-making, matching the role of deep layers in output refinement and logical integration."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": -1,
+          "reason": "The paper examines distinct computational roles of different layers (e.g., middle vs. deep) in encoding knowledge, which corresponds to micro-level observation of functional differentiation across layers."
+        }
+      ]
+    }
+  }
+}

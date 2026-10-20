@@ -1,0 +1,25 @@
+{
+  "filename": "2402.13572.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.13572.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 70,
+          "reason": "The paper explicitly designs a transformer framework with a 'pre-transformer', 'looped transformer', and 'post-transformer', which is an architectural modification for recurrence, directly matching the description of Architectural Recurrence (e.g., Pre/Loop/Coda structure). It is not training-induced recurrence, as it requires explicit structural changes."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper focuses on empowering transformers with algorithmic capabilities, demonstrating performance in tasks that require multi-step computation and algorithm representation (e.g., iterative optimization algorithms), aligning with the Applications and Capabilities category for solving complex, structured tasks."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 10,
+          "reason": "The paper provides theoretical evidence of the expressive power of AlgoFormer in solving challenging problems, mirroring human-designed algorithms, which relates to investigating theoretical computational capabilities, though it is more specific to algorithmic structures rather than a general proof of Turing completeness."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12067.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12067.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": -1,
+          "reason": "The paper proposes TokenSkip, which compresses CoT outputs by selectively skipping less important tokens during inference. This aligns with the 'Reasoning Chain Compression' category, which involves compressing existing reasoning chains to remove redundant information. However, the paper's approach operates at inference time via a decoding strategy, not through supervised fine-tuning (SFT) on compressed datasets, which is a key aspect of chapter 4.1. The hard negative for 4.1 is 'Replacing explicit CoT steps with continuous hidden representations,' which does not apply, but the method does not involve training the model to internalize concise reasoning via SFT as described. Instead, it seems to use a perplexity-based or importance-based step selection at inference, which is more aligned with length budgeting techniques. Therefore, while the goal is compression, the method does not fit the training-based approach of 4.1."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": -1,
+          "reason": "TokenSkip manages the length of the reasoning chain during inference by skipping tokens based on their importance, which resembles explicit budgeting of computational resources. The key phrases for 3.1 include 'token budget' and 'concise intermediate steps,' which are relevant. However, the hard negative for 3.1 is 'Training the model with SFT or RL to produce shorter reasoning,' and TokenSkip does not involve such training; it operates at inference time via a decoding strategy. But the description of 3.1 emphasizes prompt-based constraints or forced delimiters, while TokenSkip uses token importance analysis for selective skipping, which is not explicitly mentioned in 3.1's key phrases. It may overlap but is not a perfect fit."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": -1,
+          "reason": "The paper evaluates the trade-off between token reduction and performance drop, which relates to metrics for reasoning efficiency. However, it does not develop new benchmarks or metrics specifically for quantifying efficiency; it uses existing tasks like GSM8K. The hard negative for 7.5 is 'Standard capability benchmarks that only measure final answer correctness,' and while the paper measures accuracy and token consumption, it is more focused on demonstrating TokenSkip's effectiveness rather than introducing new evaluation frameworks. Thus, it is a weak match."
+        }
+      ]
+    }
+  }
+}

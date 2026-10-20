@@ -1,0 +1,25 @@
+{
+  "filename": "2305.18619.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2305.18619.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 70,
+          "reason": "The paper explicitly focuses on embedding-based diffusion language models, using Gaussian noise on continuous embeddings and studying scaling laws for this specific architecture."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 20,
+          "reason": "The paper discusses diffusion-based language modeling, which is the broader category encompassing both masked and embedding-based diffusion approaches."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 10,
+          "reason": "The paper demonstrates the capabilities of the Plaid model in unconditional and zero-shot control settings, evaluating its performance against autoregressive baselines."
+        }
+      ]
+    }
+  }
+}

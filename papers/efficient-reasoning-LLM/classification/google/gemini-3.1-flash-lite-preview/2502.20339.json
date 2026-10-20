@@ -1,0 +1,25 @@
+{
+  "filename": "2502.20339.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.20339.md",
+      "chapters": [
+        {
+          "chapter": "6.4",
+          "confidence": 50,
+          "reason": "The paper explicitly focuses on distilling Mamba (subquadratic) models for reasoning tasks and evaluating their performance/scaling."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 30,
+          "reason": "The core methodology involves distilling pretrained Transformers into pure and hybrid Mamba models to improve inference efficiency."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The paper investigates scaling inference compute by generating multiple CoT trajectories and aggregating them, which is a core test-time scaling strategy."
+        }
+      ]
+    }
+  }
+}

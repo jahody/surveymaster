@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13842.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13842.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "The paper explicitly proposes 'Inner Thinking Transformer' which uses iterative computation and adaptive token routing to refine representations, fitting the definition of recurrent execution."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "The approach focuses on architectural stress points and dynamic shortcuts within Transformer layers to regulate internal state processing."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 20,
+          "reason": "The model uses 'Residual Thinking Connections' to iteratively refine representations, aligning with the concept of step-by-step internalization."
+        }
+      ]
+    }
+  }
+}

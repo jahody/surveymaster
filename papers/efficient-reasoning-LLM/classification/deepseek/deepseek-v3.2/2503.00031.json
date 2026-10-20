@@ -1,0 +1,25 @@
+{
+  "filename": "2503.00031.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.00031.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 70,
+          "reason": "The paper's core contribution is 'Efficient Test-time Scaling' via confidence-based methods like Early-Stopping for Best-of-N and Self-Consistency, which dynamically allocate compute during inference based on query difficulty. This directly matches the chapter's description of scaling compute via search width (parallel sampling) and using confidence-based methods."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 20,
+          "reason": "The paper builds upon and improves Best-of-N sampling and Self-Consistency (majority voting), which are classic 'Parallel Search' techniques. It introduces early termination based on calibrated confidence to make these parallel search methods more efficient."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper evaluates its methods by measuring the trade-off between accuracy and computational cost (sample budget), which aligns with the evaluation focus on quantifying reasoning efficiency and trade-offs. However, this is a secondary aspect compared to the primary methodological contribution."
+        }
+      ]
+    }
+  }
+}

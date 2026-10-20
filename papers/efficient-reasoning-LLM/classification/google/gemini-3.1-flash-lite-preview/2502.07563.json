@@ -1,0 +1,25 @@
+{
+  "filename": "2502.07563.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.07563.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 80,
+          "reason": "The paper focuses on optimizing linear attention and hybrid attention models, which are core subquadratic attention mechanisms."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "The paper evaluates its sequence parallelism method on a Linear-Llama3 model, demonstrating the application of subquadratic architectures to LLMs."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 5,
+          "reason": "The paper discusses replacing standard attention with linear attention in Llama3, which relates to the architectural conversion of transformers."
+        }
+      ]
+    }
+  }
+}

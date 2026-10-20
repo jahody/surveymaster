@@ -1,0 +1,25 @@
+{
+  "filename": "2410.10254.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.10254.md",
+      "chapters": [
+        {
+          "chapter": "6.3",
+          "confidence": 60,
+          "reason": "Primary focus on converting pretrained transformers into linearized, more efficient architectures (LoLCATs)."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 25,
+          "reason": "Uses subquadratic/linear attention as the underlying mechanism to reduce compute."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "Discusses efficient reasoning with subquadratic attention, aligning with the paper's efficiency goals."
+        }
+      ]
+    }
+  }
+}

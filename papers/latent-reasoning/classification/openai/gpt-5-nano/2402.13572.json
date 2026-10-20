@@ -1,0 +1,25 @@
+{
+  "filename": "2402.13572.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.13572.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "Proposes an explicit looped transformer architecture with pre/loop/post components, enabling architectural recurrence through structural modifications."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 30,
+          "reason": "Discusses algorithmic generalization and multi-step computation capabilities of the framework, illustrating higher-level applications."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 10,
+          "reason": "Involves training strategies for recurrent reasoning in the context of looped architectures, albeit less central to the paper."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2310.05707.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.05707.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": -1,
+          "reason": "The paper introduces a hierarchical generation scheme where the model generates a planning token at the start of each reasoning step, which serves as a high-level plan. This approach aims to produce more structured and concise reasoning steps, aligning with the concept of compressing or structuring reasoning chains to improve efficiency. However, it does not explicitly compress existing chains or build datasets with concise paths; instead, it modifies the generation process to include planning tokens. This is a borderline case, but the focus on structuring steps for efficiency suggests relevance to Reasoning Chain Compression."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": -1,
+          "reason": "The method involves fine-tuning the model (either fully or parameter-efficiently) to generate planning tokens without introducing explicit length-related rewards. It improves reasoning efficiency by encouraging structural generation through the planning tokens, which could be seen as exploiting implicit biases from the training process to let efficient reasoning emerge naturally, fitting the description of methods without direct length rewards."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": -1,
+          "reason": "The paper applies the planning token approach to enhance reasoning in LLMs for tasks like math word problems and multihop QA, demonstrating practical improvements in accuracy. While it is not specifically focused on applications like RAG or autonomous agents, it contributes to efficient reasoning techniques that could be applied in real-world systems, making it somewhat relevant to Efficient Reasoning Applications."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.16552.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.16552.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 50,
+          "reason": "The paper's core contribution, CoLaR, focuses on dynamically compressing reasoning processes in latent space to adjust reasoning length and speed, directly matching the 'adaptive_efficiency' description of dynamic trajectory compression and elastic control."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 30,
+          "reason": "The reinforcement learning enhancement leverages the latent head's non-deterministic nature to explore diverse reasoning paths, aligning with 'exploratory_diversification' for promoting diversity in reasoning trajectories via soft/probabilistic latent representations."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 20,
+          "reason": "The method operates by predicting and manipulating compressed embeddings (latent representations) which are internal states, fitting 'internal_state_level' as it targets internal states for reasoning regulation rather than inserting control tokens."
+        }
+      ]
+    }
+  }
+}

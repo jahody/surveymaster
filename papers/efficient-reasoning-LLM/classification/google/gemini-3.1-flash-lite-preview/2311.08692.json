@@ -1,0 +1,25 @@
+{
+  "filename": "2311.08692.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2311.08692.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 60,
+          "reason": "The paper proposes a routing module to distribute queries to the most expert LLM among an ensemble, which is the definition of model switching/routing."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "The routing mechanism acts as a system-level optimization for query distribution, which is a common strategy in agentic and RAG-based application architectures."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 15,
+          "reason": "The paper compares its routing method against reward model ranking methods, which are a form of parallel search/evaluation of multiple candidate outputs."
+        }
+      ]
+    }
+  }
+}

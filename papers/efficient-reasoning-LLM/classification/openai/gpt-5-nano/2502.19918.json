@@ -1,0 +1,25 @@
+{
+  "filename": "2502.19918.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.19918.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 60,
+          "reason": "Dynamically toggles reasoning modes (fast vs. slow) within inference, aligning with System Switch."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "Centers on efficient test-time scaling and iterative/infinite thinking through adaptive computation during inference."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "Involves evaluation metrics/datasets for reasoning efficiency and trade-offs, i.e., benchmarking efficiency."
+        }
+      ]
+    }
+  }
+}

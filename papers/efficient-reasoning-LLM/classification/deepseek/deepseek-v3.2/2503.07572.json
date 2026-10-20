@@ -1,0 +1,25 @@
+{
+  "filename": "2503.07572.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.07572.md",
+      "chapters": [
+        {
+          "chapter": "5.2",
+          "confidence": 60,
+          "reason": "The paper frames optimizing test-time compute as a meta-RL problem, improving efficiency without direct length rewards, aligning with the 'without Length Reward' category's focus on implicit budget awareness and meta-reinforcement learning."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The work investigates scaling compute dynamically during inference via sequential revision (viewing output as episodes) and balancing search depth, fitting the 'Efficient Test-time Scaling and Infinity Thinking' category's focus on on-the-fly compute allocation."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 15,
+          "reason": "While the primary method avoids explicit length rewards, the paper discusses balancing exploration/exploitation in the token stream, which relates to trajectory-level budget considerations, though it is not the core approach."
+        }
+      ]
+    }
+  }
+}

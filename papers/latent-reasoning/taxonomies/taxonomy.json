@@ -1,0 +1,406 @@
+[
+  {
+    "chapter": "3",
+    "name": "Latent Reasoning",
+    "description": "Methodologies for performing multi-step inference in the model's continuous hidden state, focusing on expanding depth through activation loops and expanding temporal capacity through hidden state evolution.",
+    "items": [
+      {
+        "name": "Activation-based Recurrent Methods",
+        "chapter": "3.1",
+        "description": "Achieves latent reasoning by creating recurrent computational flows that iteratively refine representations without generating explicit reasoning tokens, either through architectural design or training-time manipulation.",
+        "phrases": [
+          "Activation recurrence",
+          "iterative refinement",
+          "layer-wise recurrence",
+          "computational depth expansion",
+          "shared-weight loops"
+        ],
+        "hard_negative": "Hidden-state-based methods that propagate a compressed state across time steps — activation-based methods loop through the same layers to deepen computation within a single forward pass.",
+        "items": [
+          {
+            "name": "Architectural Recurrence",
+            "description": "Implements continuous activation propagation across Transformer layers through explicit architectural modifications, treating network depth as a dynamic computational resource allocated based on task complexity.",
+            "phrases": [
+              "Universal Transformer",
+              "Pre/Loop/Coda structure",
+              "adaptive computation time",
+              "dynamic stopping",
+              "depth embeddings"
+            ],
+            "hard_negative": "Training-induced recurrence where standard transformers learn iterative behavior through training alone — loop architectures require explicit structural modifications for recurrence.",
+            "papers": [],
+            "chapter": "3.1.1"
+          },
+          {
+            "name": "Training-induced Recurrence",
+            "description": "Creates implicit recurrent activation flows in standard transformer architectures through specialized training, without changing the model's underlying structure. Enables existing pretrained models to develop latent reasoning capabilities.",
+            "phrases": [
+              "Implicit loops in computation graph",
+              "training-induced iterative refinement",
+              "no architectural modifications",
+              "latent capacity unlocking"
+            ],
+            "hard_negative": "Architectural recurrence requiring explicit structural modifications like loop blocks — training-induced recurrence achieves similar computational benefits through training alone on standard architectures.",
+            "papers": [],
+            "chapter": "3.1.2"
+          },
+          {
+            "name": "Training Strategies for Recurrent Reasoning",
+            "description": "Specialized training strategies for models with recurrent activation flows, addressing challenges of learning to leverage iterative computation through progressive stacking, curriculum-based compression, and CoT-aligned supervision.",
+            "phrases": [
+              "Progressive stacking",
+              "curriculum-based CoT compression",
+              "stepwise internalization",
+              "CoT-aligned supervision",
+              "looping-inspired regularization"
+            ],
+            "hard_negative": "Architectural design choices for recurrence — training strategies address how to optimize models that already have recurrent structure.",
+            "papers": [],
+            "chapter": "3.1.3"
+          },
+          {
+            "name": "Applications and Capabilities",
+            "description": "Demonstrates how recurrent models solve complex tasks by performing multi-step computation, algorithm generalization, and symbolic reasoning.",
+            "phrases": [
+              "Algorithmic generalization",
+              "Symbolic reasoning",
+              "Multi-hop reasoning",
+              "Multi-step gradient descent"
+            ],
+            "hard_negative": "Simple classification tasks that do not require structured, multi-step logical inference.",
+            "papers": [],
+            "chapter": "3.1.4"
+          }
+        ]
+      },
+      {
+        "name": "Temporal Hidden-state Methods",
+        "chapter": "3.2",
+        "description": "Expands latent reasoning along the temporal dimension by compressing previous information into a fixed-size vector or matrix, addressing the KV cache bottleneck through linear-state recurrence, gradient-state recurrence, or architecture conversion.",
+        "phrases": [
+          "Hidden state evolution",
+          "temporal expansion",
+          "fixed-size memory state",
+          "RNN-like compression",
+          "horizontal recurrence"
+        ],
+        "hard_negative": "Activation-based vertical recurrence that deepens computation by looping through layers — hidden-state methods expand along the temporal/sequence dimension with compressed states.",
+        "items": [
+          {
+            "name": "Linear-State Recurrence",
+            "description": "Applies predetermined update and decay rules to a matrix-valued hidden state transmitted along the temporal dimension. These models can be unified under associative recurrent neural networks with matrix-valued hidden states.",
+            "phrases": [
+              "Matrix-valued hidden state",
+              "global decay with updates",
+              "associative operator",
+              "parallel scan",
+              "right-product kernel trick"
+            ],
+            "hard_negative": "Gradient-state recurrence that treats the hidden state as fast-adapting parameters updated via optimization — linear-state models use predetermined algebraic update rules.",
+            "papers": [],
+            "chapter": "3.2.1"
+          },
+          {
+            "name": "Gradient-State Recurrence",
+            "description": "Treats the hidden matrix as fast-adapting parameters updated by a learnable optimizer. Each token triggers a lightweight descent step steering the state toward the current key-value target, reframing temporal evolution as iterative optimization.",
+            "phrases": [
+              "Online learning formulation",
+              "fast weights",
+              "SGD/Adam-like state updates",
+              "gradient-based optimization step",
+              "chunk-wise parallelization"
+            ],
+            "hard_negative": "Linear-state recurrence with closed-form algebraic update rules — gradient-state methods explicitly formulate state updates as optimization steps with learnable learning rates.",
+            "papers": [],
+            "chapter": "3.2.2"
+          },
+          {
+            "name": "Training-induced Hidden-State Conversion",
+            "description": "Converts fixed-architecture Transformers into hidden-state RNN/SSM models through targeted fine-tuning or distillation, replacing quadratic self-attention with sub-quadratic mixers that maintain a single recurrent state for constant-memory inference.",
+            "phrases": [
+              "Transformer-to-RNN conversion",
+              "architecture distillation",
+              "linear kernel replacement",
+              "low-rank linearization",
+              "gated recurrent student"
+            ],
+            "hard_negative": "Pretraining recurrent models from scratch — conversion methods start from pretrained Transformer checkpoints and convert them with minimal retraining.",
+            "papers": [],
+            "chapter": "3.2.3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "4",
+    "name": "Mechanical Interpretability",
+    "description": "Explores how model layers specialize to support reasoning and whether layer stacking represents a form of Latent CoT.",
+    "items": [
+      {
+        "name": "Do Layer Stacks Reflect Latent CoT?",
+        "chapter": "4.1",
+        "description": "Investigates whether the stacking of layers in neural networks impacts reasoning capabilities, indicating a layer-based hidden CoT where layer depth correlates with reasoning capability.",
+        "phrases": [
+          "Layer-based hidden CoT",
+          "Layer depth",
+          "Reasoning capability",
+          "Structural advantages"
+        ],
+        "hard_negative": "Explicit CoT that relies on generating sequential thought tokens over time, rather than reasoning implicitly across layers.",
+        "items": [
+          {
+            "name": "Layer Depth Influence Reasoning Capabilities",
+            "description": "At a macro level, studies find a close correlation between layer depth and reasoning capabilities, with implicit CoT limited by the number of network layers and a minimum number of layers required for multi-hop reasoning chains.",
+            "phrases": [
+              "Macro level correlation",
+              "Implicit CoT limitations",
+              "Two-step reasoning chain",
+              "Multi-hop reasoning"
+            ],
+            "hard_negative": "Functional differentiation of specific layers, which looks at the micro-level roles rather than the macro-level depth constraints.",
+            "papers": [],
+            "chapter": "4.1.1"
+          },
+          {
+            "name": "Layer Depth Serves As The Primary Bottleneck",
+            "description": "Formal theories establish that layer depth serves as the primary bottleneck for latent reasoning capacity, where achievable CoT step length scales linearly with layer count, and increasing depth enhances expressive power for complex tasks.",
+            "phrases": [
+              "Primary bottleneck",
+              "Expressive power",
+              "Linear scaling with layer count",
+              "Log-depth transformers"
+            ],
+            "hard_negative": "Temporal expansion limits like KV-cache bottlenecks, which restrict context length rather than the depth of reasoning steps.",
+            "papers": [],
+            "chapter": "4.1.2"
+          },
+          {
+            "name": "Clear Correspondence Between Layer Depth and Resoning",
+            "description": "At a micro level, different layers play distinct computational roles in the reasoning process, analogous to steps in an explicit CoT, integrating and transmitting intermediate information across depths.",
+            "phrases": [
+              "Micro level observation",
+              "Functional differentiation",
+              "Distinct computational roles",
+              "Intermediate information integration"
+            ],
+            "hard_negative": "Macro-level layer depth counts that dictate overall capability, rather than the specific roles each individual layer plays.",
+            "papers": [],
+            "chapter": "4.1.3"
+          }
+        ]
+      },
+      {
+        "name": "Mechanisms of Latent CoT in Layer Representation",
+        "chapter": "4.2",
+        "description": "Formalizes the theory of Layer Specialization, positing that individual layers systematically specialize to support distinct operations, forming an implicit computational pipeline.",
+        "phrases": [
+          "Layer Specialization",
+          "Implicit computational pipeline",
+          "Alternating self-attention and FFN",
+          "Division of labor"
+        ],
+        "hard_negative": "Homogeneous layer theories where all layers perform the same generalized transformations rather than specializing.",
+        "items": [
+          {
+            "name": "Shallow Layers",
+            "description": "Serve as the basic representational processor, handling specific, local, and syntactic information, forming early circuit primitives, and recalling factual knowledge.",
+            "phrases": [
+              "Basic representational processor",
+              "Syntactic structures",
+              "Early circuit primitives",
+              "Factual knowledge recall"
+            ],
+            "hard_negative": "Intermediate and deep layers that perform complex logical integration and decision-making instead of basic feature extraction.",
+            "papers": [],
+            "chapter": "4.2.1"
+          },
+          {
+            "name": "Intermediate Layers",
+            "description": "Form the core of Latent CoT by creating specialized computational sub-circuits for reasoning functions, distilling essential information, and causally influencing final reasoning outcomes.",
+            "phrases": [
+              "Core of Latent CoT",
+              "Specialized sub-circuits",
+              "Information bottleneck distillation",
+              "Causal influence"
+            ],
+            "hard_negative": "Shallow layers that process surface patterns, as intermediate layers handle coordinated reasoning and semantic integration.",
+            "papers": [],
+            "chapter": "4.2.2"
+          },
+          {
+            "name": "Deep Layers",
+            "description": "Act as the output refinement and decision-making stage, receiving representations to perform complex logical integration, semantic transformation, and determine the final answer, though they can suffer from layer degradation.",
+            "phrases": [
+              "Output refinement",
+              "Decision-making",
+              "Logical integration",
+              "Layer degradation"
+            ],
+            "hard_negative": "Intermediate layers that create bridging entities; deep layers focus on final task-specific transformations and answers.",
+            "papers": [],
+            "chapter": "4.2.3"
+          }
+        ]
+      },
+      {
+        "name": "Limits of Layer-Based Latent CoT Interpretation",
+        "chapter": "4.3",
+        "description": "Explores the boundaries of understanding reasoning solely through layers by examining cross-layer information flow and the theoretical Turing completeness of Transformer architectures.",
+        "phrases": [
+          "Information flow pathways",
+          "Turing completeness",
+          "Computational limit",
+          "Implicit vs Explicit Unfolding"
+        ],
+        "hard_negative": "Empirical observations of layer behavior without theoretical boundaries or proofs of computational limits.",
+        "items": [
+          {
+            "name": "Theory of Information Flow",
+            "description": "Clarifies how hidden information is transmitted across specialized layers during reasoning, utilizing attention mechanisms, generalizing circuits, and chain-of-embedding trajectories to connect early processing to final tokens.",
+            "phrases": [
+              "Cross-layer information flow",
+              "Back attention mechanism",
+              "Chain-of-Embedding",
+              "Trajectory geometry"
+            ],
+            "hard_negative": "Isolated layer analysis that ignores how intermediate results are transmitted between different depths.",
+            "papers": [],
+            "chapter": "4.3.1"
+          },
+          {
+            "name": "Proof of Turing completeness in model architectures",
+            "description": "Investigates theoretical proofs demonstrating that Transformers can achieve universal computational capabilities, either through architectural configurations or via explicit Chain-of-Thought reasoning as a computational tape.",
+            "phrases": [
+              "Universal Turing machine",
+              "Computable function",
+              "Constant numerical precision",
+              "Computational tape"
+            ],
+            "hard_negative": "Empirical performance limits on specific benchmarks, as Turing completeness relates to theoretical universality rather than practical accuracy.",
+            "papers": [],
+            "chapter": "4.3.2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "chapter": "5",
+    "name": "Towards Infinite-depth Reasoning",
+    "description": "Advanced paradigms pursuing unbounded computational steps to refine solutions without being limited by fixed architectures.",
+    "items": [
+      {
+        "name": "Spatial Infinite Reasoning: Text Diffusion Models",
+        "chapter": "5.1",
+        "description": "Text diffusion models that begin with a fully masked or noisy draft and iteratively denoise in parallel with bidirectional context, enabling global planning, logical consistency, and iterative self-correction with adjustable refinement depth.",
+        "phrases": [
+          "Iterative denoising",
+          "bidirectional context",
+          "global planning",
+          "parallel refinement",
+          "spatial reasoning"
+        ],
+        "hard_negative": "Autoregressive generation that produces tokens sequentially left-to-right — diffusion models operate on the entire output simultaneously with reversible refinement.",
+        "items": [
+          {
+            "name": "Masked Diffusion Models",
+            "description": "Operate on complete text sequences where tokens are initially masked, requiring simultaneous prediction of all missing tokens based on bidirectional context. Includes temporal-only variants and KV-cache integrated variants.",
+            "phrases": [
+              "Token-level masking",
+              "bidirectional unmasking",
+              "discrete random masking",
+              "delayed KV-cache",
+              "diffusion-based reinforcement learning"
+            ],
+            "hard_negative": "Embedding-based diffusion that adds Gaussian noise to continuous embeddings — masked diffusion operates on discrete token masks.",
+            "papers": [],
+            "chapter": "5.1.1"
+          },
+          {
+            "name": "Embedding-based Diffusion Models",
+            "description": "Map discrete token sequences into continuous token embeddings, disrupt them with Gaussian noise, then denoise every latent vector using bidirectional context. Operate in a fundamentally different design space from masked diffusion due to continuous formulation.",
+            "phrases": [
+              "Continuous embeddings",
+              "Gaussian noise corruption",
+              "latent vector denoising",
+              "empirical scaling laws",
+              "controllable generation"
+            ],
+            "hard_negative": "Masked diffusion models that corrupt discrete tokens via masking — embedding-based models operate on continuous vector representations with additive noise.",
+            "papers": [],
+            "chapter": "5.1.2"
+          },
+          {
+            "name": "Hybrid AR-Diffusion Models",
+            "description": "Directly integrate diffusion and autoregressive paradigms, combining sequential coherence with bidirectional reasoning. Leverage AR prefix caching alongside diffusion refinement for both global planning and sequential fluency.",
+            "phrases": [
+              "AR prefix caching",
+              "autoregressive initialization",
+              "context-adaptive noise scheduling",
+              "modular AR-diffusion integration",
+              "parallel coarse-to-fine generation"
+            ],
+            "hard_negative": "Pure masked or embedding-based diffusion without any autoregressive component — hybrid models explicitly combine both AR and diffusion paradigms.",
+            "papers": [],
+            "chapter": "5.1.3"
+          }
+        ]
+      },
+      {
+        "name": "’Infinitely Long’ Optimizer Network",
+        "chapter": "5.2",
+        "description": "Trades time for network depth by treating each additional token's hidden state update as an optimization step that refines an implicit layer, so processing longer sequences yields greater reasoning depth without adding parameters.",
+        "phrases": [
+          "Trading time for depth",
+          "fast-weight layer",
+          "unbounded depth through optimization",
+          "stochastic optimizer per token",
+          "million-token contexts"
+        ],
+        "hard_negative": "Spatial diffusion models that refine all positions in parallel — optimization-based methods process tokens sequentially, accumulating depth through iterative state updates.",
+        "items": [
+          {
+            "name": "Infini-attention",
+            "description": "Attaches a compressive memory to every Transformer block, updating it via a linear-delta rule to allow streaming infinitely long inputs with constant memory, though it faces practical convergence challenges.",
+            "phrases": [
+              "Compressive memory",
+              "Linear-delta rule",
+              "Constant memory streaming",
+              "Associative array fixed-point"
+            ],
+            "hard_negative": "Gradient-state updates that optimize fast-weights via SGD or Adam, as Infini-attention uses an associative cache compression mechanism.",
+            "papers": [],
+            "chapter": "5.2.1"
+          },
+          {
+            "name": "Test-time training (TTT) and its descendants",
+            "description": "Performs optimization steps like SGD, Adam, or Muon on the hidden state during inference, treating the state as fast weights updated via large-chunk training to process million-token streams efficiently.",
+            "phrases": [
+              "Test-time training",
+              "Fast-weight layer",
+              "Chunk-wise parallelism",
+              "Hardware utilization efficiency"
+            ],
+            "hard_negative": "Implicit fixed-point methods that iterate state-space blocks until convergence without explicitly applying standard optimizers like SGD or Adam.",
+            "papers": [],
+            "chapter": "5.2.2"
+          },
+          {
+            "name": "Implicit Fixed-Point RNNs",
+            "description": "Iterates a state-space block until convergence to yield non-linear transitions that recover RNN expressivity while maintaining parallel training, providing unbounded depth by halting when refinement is complete.",
+            "phrases": [
+              "State-space block iteration",
+              "Non-linear transitions",
+              "Adaptive self-iterations",
+              "Convergence halting"
+            ],
+            "hard_negative": "Methods using explicit learning rate schedules or momentum to optimize weights, since fixed-point RNNs rely on reaching an equilibrium state through self-iteration.",
+            "papers": [],
+            "chapter": "5.2.3"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "filename": "2503.06252.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.06252.md",
+      "chapters": [
+        {
+          "chapter": "7.1",
+          "confidence": 60,
+          "reason": "Focuses on efficient multimodal reasoning with atomic step decomposition, aligning with the paper's multimodal reasoning and dynamic depth strategies."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "Emphasizes concise reasoning paths and chain compression, matching the paper's self-structured, minimal atomic steps (CoT) objective."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "Deals with test-time scaling and iterative reasoning, reflecting dynamic compute and inference efficiency aspects of the approach."
+        }
+      ]
+    }
+  }
+}

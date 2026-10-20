@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03275.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03275.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 50,
+          "reason": "The paper explicitly uses VQ-VAE generated discrete latent tokens to replace text tokens in reasoning traces, fitting the definition of manipulating individual tokens."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 30,
+          "reason": "The approach relies on training the model to map latent tokens to explicit reasoning supervision (CoT) to ensure the latent representations maintain semantic fidelity."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 20,
+          "reason": "The primary goal of the hybrid representation is to compress reasoning traces, effectively adjusting the length of the reasoning process during generation."
+        }
+      ]
+    }
+  }
+}

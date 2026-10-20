@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15781.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15781.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 80,
+          "reason": "The paper introduces a delayed KV-Cache for diffusion language models, addressing KV-cache integration in masked diffusion models. It directly mentions 'delayed KV-cache' and focuses on token-level acceleration for masked diffusion architectures."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "dKV-Cache involves caching key and value states across steps, which resembles a compressive memory mechanism for efficient inference, though it is specific to diffusion processes rather than infinite streaming."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 5,
+          "reason": "The paper addresses inference bottlenecks in diffusion models, which relate to temporal expansion limits (KV-cache bottlenecks) rather than layer depth, but it touches on performance constraints due to non-autoregressive architecture."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2405.14838.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.14838.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 60,
+          "reason": "The paper describes stepwise internalization and iterative refinement of reasoning by progressively removing explicit chain-of-thought steps."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "Initial use of explicit CoT supervision to anchor semantic trajectories before internalization, aligning latent reasoning with explicit steps."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "Focus on internalizing reasoning into internal states or implicit memory, i.e., distilling/targeting internal representations during training."
+        }
+      ]
+    }
+  }
+}

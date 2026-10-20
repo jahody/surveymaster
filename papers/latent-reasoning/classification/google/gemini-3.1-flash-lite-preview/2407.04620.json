@@ -1,0 +1,25 @@
+{
+  "filename": "2407.04620.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.04620.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 70,
+          "reason": "The paper explicitly introduces 'Test-Time Training (TTT) layers' where the hidden state is updated via self-supervised learning steps, matching the definition of TTT and its descendants."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 20,
+          "reason": "The TTT layers treat the hidden state as fast-adapting parameters updated by an optimization step, which aligns with the gradient-state recurrence paradigm."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 10,
+          "reason": "The paper addresses the limitations of existing linear-complexity RNNs and proposes a framework that maintains linear complexity, sharing the goal of efficient sequence modeling."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.09990.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.09990.md",
+      "chapters": [
+        {
+          "chapter": "7.3",
+          "confidence": 80,
+          "reason": "The paper proposes X-Boundary to establish an exact safety boundary for LLMs to defend against multi-turn jailbreaks, directly addressing safety and trustworthy reasoning by preventing harmful outputs while maintaining usability, which aligns with the chapter's focus on safe reasoning mechanisms and mentions 'X-Boundary' as a key phrase."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 15,
+          "reason": "The paper discusses manipulating feature representations in the latent space to distinguish safe and harmful representations, which relates to using continuous hidden representations for reasoning, though it focuses on safety alignment rather than efficiency."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 5,
+          "reason": "The method involves training to push harmful representations away without explicit length rewards, using a boundary-based approach that could be seen as exploiting implicit biases, but this is a minor aspect compared to the primary safety focus."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2503.05788.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.05788.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 40,
+          "reason": "The paper focuses on the emergence of advanced reasoning, coding, and problem-solving capabilities in LLMs, which aligns with the study of multi-step computation and reasoning."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 35,
+          "reason": "The paper discusses scaling laws and the relationship between model size/depth and the emergence of reasoning abilities, which is central to the chapter's theme."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 25,
+          "reason": "The paper explores the theoretical underpinnings of emergent abilities and the computational mechanisms (like reasoning chains) that enable them, touching on the limits of model expressivity."
+        }
+      ]
+    }
+  }
+}

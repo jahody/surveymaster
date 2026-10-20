@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12025.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12025.md",
+      "chapters": [
+        {
+          "chapter": "7.3",
+          "confidence": 70,
+          "reason": "The paper directly addresses safety and reliability challenges of long reasoning chains, focusing on preventing harmful outputs and hallucinations, which aligns with the 'Efficient and Trustworthy Reasoning' category's focus on safety, factual alignment, and safe reasoning mechanisms."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "The paper develops new safety metrics calibrated against human annotations and conducts a systematic evaluation of LRM safety on datasets like StrongReject and WildJailbreak, which matches the 'Evaluation and Benchmark' category's focus on developing metrics to quantify reasoning safety and trade-offs."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 10,
+          "reason": "The paper introduces SafeChain, a safety training dataset in CoT style, and fine-tunes models with it to enhance safety while preserving reasoning performance, which relates to 'Reasoning Chain Compression' as it involves building target datasets with concise reasoning paths for training, though the primary goal is safety rather than compression."
+        }
+      ]
+    }
+  }
+}

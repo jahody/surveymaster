@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13917.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13917.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 60,
+          "reason": "The paper introduces TESS 2, a diffusion language model trained by adapting an autoregressive model with cross-entropy as diffusion loss, which aligns with embedding-based diffusion models that operate on continuous token embeddings and use denoising processes, as opposed to masked or hybrid approaches."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 25,
+          "reason": "TESS 2 is adapted from a strong autoregressive model and integrates autoregressive components through continued pretraining and instruction tuning, fitting the hybrid AR-diffusion paradigm that combines both autoregressive and diffusion methods for improved performance."
+        },
+        {
+          "chapter": "5.2.2",
+          "confidence": 15,
+          "reason": "The paper proposes reward guidance, an inference-time guidance procedure that aligns model outputs without retraining, which resembles test-time training methods that perform optimization steps during inference to enhance performance, though it is not explicitly based on SGD or Adam."
+        }
+      ]
+    }
+  }
+}

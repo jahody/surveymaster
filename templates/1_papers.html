@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+
+{% block title %}Papers – SurveyMaster{% endblock %}
+
+{% block head %}
+<style>
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+
+  .add-form {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+  }
+
+  .add-form input {
+    flex: 1;
+    max-width: 320px;
+    padding: .45rem .75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: .85rem;
+    font-family: inherit;
+  }
+
+  .add-form input::placeholder { color: var(--text-dim); }
+  .add-form input:focus { outline: none; border-color: var(--accent1); }
+
+  .msg { font-size: .82rem; margin-left: .5rem; }
+  .msg.error { color: var(--negative); }
+  .msg.ok { color: var(--success); }
+
+  .papers-table { width: 100%; border-collapse: collapse; }
+
+  .papers-table th,
+  .papers-table td {
+    text-align: left;
+    padding: .55rem .75rem;
+    border-bottom: 1px solid var(--border);
+    font-size: .85rem;
+  }
+
+  .papers-table th {
+    color: var(--text-dim);
+    font-weight: 600;
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+  }
+
+  .papers-table tr:hover td { background: var(--surface); }
+  .papers-table a { color: var(--accent1); text-decoration: none; }
+  .papers-table a:hover { text-decoration: underline; }
+
+  .authors-cell {
+    color: var(--text-dim);
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .year-cell { white-space: nowrap; }
+  .actions-cell { width: 60px; text-align: center; }
+
+  .empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-dim);
+  }
+
+  .paper-count { font-size: .82rem; color: var(--text-dim); margin-bottom: 1rem; }
+
+
+</style>
+{% endblock %}
+
+{% block header_controls %}{% endblock %}
+
+{% block body %}
+
+  <div class="container">
+    <div class="add-form" id="addForm" style="display:none;">
+      <input type="text" id="arxivInput" placeholder="Enter arXiv ID (e.g. 2501.12948)">
+      <button class="btn btn-primary" id="addBtn">Add</button>
+      <span class="msg" id="addMsg"></span>
+    </div>
+
+    <div class="paper-count" id="paperCount"></div>
+
+    <table class="papers-table" id="papersTable" style="display:none;">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>arXiv ID</th>
+          <th>Year</th>
+          <th>Authors</th>
+          <th class="actions-cell"></th>
+        </tr>
+      </thead>
+      <tbody id="papersBody"></tbody>
+    </table>
+
+    <div class="empty-state" id="emptyState">
+      Select a topic folder to view its papers.
+    </div>
+  </div>
+
+  <script>
+    const addForm = document.getElementById("addForm");
+    const arxivInput = document.getElementById("arxivInput");
+    const addBtn = document.getElementById("addBtn");
+    const addMsg = document.getElementById("addMsg");
+    const papersTable = document.getElementById("papersTable");
+    const papersBody = document.getElementById("papersBody");
+    const emptyState = document.getElementById("emptyState");
+    const paperCount = document.getElementById("paperCount");
+
+    let currentFolder = "";
+    let papers = [];
+
+    document.addEventListener("topicChanged", function (e) {
+      currentFolder = e.detail;
+      if (currentFolder) {
+        loadPapers();
+        addForm.style.display = "flex";
+      } else {
+        papers = [];
+        render();
+        addForm.style.display = "none";
+      }
+    });
+
+    function loadPapers() {
+      fetch(`/api/paper-folder/${currentFolder}/papers`)
+        .then(r => r.json())
+        .then(data => { papers = data; render(); });
+    }
+
+    function render() {
+      addMsg.textContent = "";
+      if (!currentFolder || papers.length === 0) {
+        papersTable.style.display = "none";
+        paperCount.textContent = "";
+        emptyState.style.display = "block";
+        emptyState.textContent = currentFolder
+          ? "No papers in this topic yet. Add one above."
+          : "Select a topic folder to view its papers.";
+        return;
+      }
+      emptyState.style.display = "none";
+      papersTable.style.display = "table";
+      paperCount.textContent = `${papers.length} paper${papers.length !== 1 ? "s" : ""}`;
+      papersBody.innerHTML = "";
+      papers.forEach(p => {
+        const arxiv = (p.externalIds || {}).ArXiv || "";
+        const authors = (p.authors || []).map(a => a.name).join(", ");
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${esc(p.title || "Untitled")}</td>
+          <td><a href="https://arxiv.org/abs/${esc(arxiv)}" target="_blank" rel="noopener">${esc(arxiv)}</a></td>
+          <td class="year-cell">${p.year || ""}</td>
+          <td class="authors-cell" title="${esc(authors)}">${esc(authors)}</td>
+          <td class="actions-cell">
+            <button class="btn btn-danger btn-sm" data-arxiv="${esc(arxiv)}">Remove</button>
+          </td>`;
+        tr.querySelector("button").addEventListener("click", () => removePaper(arxiv));
+        papersBody.appendChild(tr);
+      });
+    }
+
+    addBtn.addEventListener("click", addPaper);
+    arxivInput.addEventListener("keydown", e => { if (e.key === "Enter") addPaper(); });
+
+    function addPaper() {
+      const id = arxivInput.value.trim();
+      if (!id) return;
+      addBtn.disabled = true;
+      addMsg.className = "msg";
+      addMsg.textContent = "Fetching...";
+      fetch(`/api/paper-folder/${currentFolder}/papers`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ arxiv_id: id }),
+      })
+        .then(async r => {
+          const data = await r.json();
+          if (!r.ok) throw new Error(data.error || "Failed");
+          papers.push(data);
+          render();
+          arxivInput.value = "";
+          addMsg.className = "msg ok";
+          addMsg.textContent = "Added!";
+          setTimeout(() => { addMsg.textContent = ""; }, 2000);
+        })
+        .catch(err => { addMsg.className = "msg error"; addMsg.textContent = err.message; })
+        .finally(() => { addBtn.disabled = false; });
+    }
+
+    function removePaper(arxivId) {
+      if (!confirm(`Remove paper ${arxivId}?`)) return;
+      fetch(`/api/paper-folder/${currentFolder}/papers/${arxivId}`, { method: "DELETE" })
+        .then(async r => {
+          const data = await r.json();
+          if (!r.ok) throw new Error(data.error || "Failed");
+          papers = papers.filter(p => (p.externalIds || {}).ArXiv !== arxivId);
+          render();
+        })
+        .catch(err => { alert("Error: " + err.message); });
+    }
+
+    function esc(s) {
+      const d = document.createElement("div");
+      d.textContent = s;
+      return d.innerHTML;
+    }
+  </script>
+
+{% endblock %}

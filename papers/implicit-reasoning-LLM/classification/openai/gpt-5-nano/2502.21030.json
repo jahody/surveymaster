@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21030.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21030.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 60,
+          "reason": "Direct alignment with internal-state level: use of implicit memory modules and dynamic shortcuts to regulate hidden states."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 25,
+          "reason": "Presents mechanisms that enable iterative, recurrent-style refinement of hidden states via the memory module within Transformer layers."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "Emphasizes efficiency gains (training loss reduction) from memory module, aligning with dynamic efficiency control."
+        }
+      ]
+    }
+  }
+}

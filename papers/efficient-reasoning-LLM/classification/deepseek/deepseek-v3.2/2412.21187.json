@@ -1,0 +1,25 @@
+{
+  "filename": "2412.21187.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.21187.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 45,
+          "reason": "The paper introduces novel efficiency metrics from both outcome and process perspectives to evaluate overthinking and the rational use of computational resources, directly aligning with the description of developing metrics to quantify reasoning efficiency and trade-offs between accuracy and token consumption."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 35,
+          "reason": "The paper proposes strategies to mitigate overthinking using a self-training paradigm, which likely involves treating reasoning length as a resource to optimize, fitting the description of framing efficient reasoning as a constrained optimization problem with trajectory-level budget considerations."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The approach involves streamlining reasoning processes without compromising accuracy, which suggests building concise reasoning paths or compressing existing chains via supervised fine-tuning, as indicated by the use of a self-training paradigm to reduce computational overhead."
+        }
+      ]
+    }
+  }
+}

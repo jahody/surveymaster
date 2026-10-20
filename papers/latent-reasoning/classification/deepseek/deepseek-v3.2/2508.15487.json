@@ -1,0 +1,25 @@
+{
+  "filename": "2508.15487.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2508.15487.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 60,
+          "reason": "The paper introduces Dream 7B, a diffusion language model that uses AR-based LLM initialization and context-adaptive noise scheduling, directly aligning with the description of Hybrid AR-Diffusion Models that combine autoregressive and diffusion paradigms."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 25,
+          "reason": "Dream 7B employs discrete diffusion modeling with iterative denoising on token sequences, which matches the core concept of Masked Diffusion Models that operate on discrete token masking and bidirectional unmasking, despite not explicitly mentioning masking."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper demonstrates the model's superior performance on complex tasks requiring multi-step reasoning, such as mathematical and coding tasks, and highlights planning abilities and inference flexibility, aligning with Applications and Capabilities for multi-step computation."
+        }
+      ]
+    }
+  }
+}

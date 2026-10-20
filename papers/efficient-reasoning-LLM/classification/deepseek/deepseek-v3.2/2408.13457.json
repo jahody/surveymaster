@@ -1,0 +1,25 @@
+{
+  "filename": "2408.13457.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.13457.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 70,
+          "reason": "The paper's core method, Difficulty-Adaptive Self-Consistency (DSC), is a variant of Self-Consistency (SC) that generates multiple reasoning paths (parallel candidates) and uses early termination strategies based on difficulty to reduce cost, directly aligning with the 'Parallel Search' category's focus on Best-of-N sampling, majority voting, self-consistency, and early termination."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 20,
+          "reason": "The paper adaptively allocates inference resources (sampling budget) based on question difficulty, which conceptually aligns with 'difficulty-adaptive budget allocation' mentioned in the Length Budgeting category. However, the method budgets the number of samples (compute) rather than the length of the reasoning chain in tokens, making it a secondary fit."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "The work dynamically scales compute during inference by adjusting the sampling width (number of reasoning paths) based on difficulty, which relates to 'scaling compute dynamically during inference via search width' and 'confidence-based methods' under Efficient Test-time Scaling. However, its primary mechanism is parallel sampling adaptation, not sequential revision or infinite thinking loops."
+        }
+      ]
+    }
+  }
+}

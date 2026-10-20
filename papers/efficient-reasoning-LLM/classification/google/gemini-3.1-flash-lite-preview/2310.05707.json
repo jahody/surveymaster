@@ -1,0 +1,25 @@
+{
+  "filename": "2310.05707.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.05707.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "The paper introduces 'planning tokens' which are continuous embeddings added to the model parameters to guide reasoning, effectively operating in a latent space to structure CoT generation."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "The hierarchical generation scheme aims to improve reasoning efficiency and structure, which aligns with the goal of optimizing reasoning paths."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 15,
+          "reason": "The method is applied to improve reasoning performance on downstream tasks like math word problems and multihop QA, demonstrating its utility in practical reasoning applications."
+        }
+      ]
+    }
+  }
+}

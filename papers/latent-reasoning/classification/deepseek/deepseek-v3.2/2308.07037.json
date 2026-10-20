@@ -1,0 +1,25 @@
+{
+  "filename": "2308.07037.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2308.07037.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 60,
+          "reason": "Bayesian Flow Networks operate on continuous data spaces (like embeddings) and involve a process analogous to denoising diffusion models, aligning with embedding-based diffusion's focus on continuous latent representations and probabilistic corruption/denoising."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 25,
+          "reason": "BFNs also apply to discrete data (like text) and generate samples through iterative refinement akin to masked diffusion's iterative unmasking, though they use Bayesian parameter updates rather than direct masking."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 15,
+          "reason": "BFNs could be interpreted as a generative procedure combining iterative refinement (like diffusion) with sequential parameter updates, but they are not explicitly hybrid AR-diffusion models; this is a speculative connection due to their iterative nature."
+        }
+      ]
+    }
+  }
+}

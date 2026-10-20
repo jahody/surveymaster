@@ -1,0 +1,25 @@
+{
+  "filename": "2502.04463.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.04463.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 50,
+          "reason": "The paper explicitly uses reinforcement learning to train models to allocate inference-time compute based on task complexity, treating reasoning length as a resource to be optimized."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 30,
+          "reason": "The method incentivizes models to dynamically toggle between different levels of reasoning depth (efficiency levels) within the same model based on task complexity."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The approach aims to minimize unnecessary computational overhead by training models to produce more efficient, concise reasoning traces."
+        }
+      ]
+    }
+  }
+}

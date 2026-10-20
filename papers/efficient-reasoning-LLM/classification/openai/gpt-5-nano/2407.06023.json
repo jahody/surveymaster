@@ -1,0 +1,25 @@
+{
+  "filename": "2407.06023.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.06023.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 60,
+          "reason": "Primary focus on distilling or compressing reasoning chains into more concise representations for System 1, i.e., reducing explicit CoT while preserving performance."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 30,
+          "reason": "Discusses latent-space SFT, i.e., reasoning in hidden representations rather than explicit tokens, aligning with the paper's goal of avoiding explicit intermediate reasoning tokens."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 10,
+          "reason": "Considers efficient test-time scaling and dynamic compute considerations, reflecting the paper's emphasis on reducing inference cost when deploying distilled System 1 outputs."
+        }
+      ]
+    }
+  }
+}

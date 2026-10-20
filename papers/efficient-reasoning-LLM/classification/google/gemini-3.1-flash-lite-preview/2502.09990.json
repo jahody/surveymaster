@@ -1,0 +1,25 @@
+{
+  "filename": "2502.09990.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.09990.md",
+      "chapters": [
+        {
+          "chapter": "7.3",
+          "confidence": 80,
+          "reason": "The paper explicitly addresses the safety of LLMs against jailbreaks and is cited as an example of inherently safe reasoning mechanisms."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 10,
+          "reason": "The paper discusses training dynamics and representation learning to improve robustness without relying on explicit length-based reward penalties."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 10,
+          "reason": "The method focuses on manipulating feature representations in the latent space to distinguish safe from harmful content, aligning with latent-space manipulation techniques."
+        }
+      ]
+    }
+  }
+}

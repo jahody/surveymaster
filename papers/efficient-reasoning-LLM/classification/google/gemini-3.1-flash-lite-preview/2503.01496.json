@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01496.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01496.md",
+      "chapters": [
+        {
+          "chapter": "6.3",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on converting pretrained standard LLMs into linear recurrent structures without adding extra parameters, which is the core definition of this category."
+        },
+        {
+          "chapter": "6.2",
+          "confidence": 25,
+          "reason": "The paper introduces Liger Attention and transforms standard attention into linear recurrent structures, which inherently reduces the quadratic complexity of the original transformer."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "The paper evaluates the linearized models on multiple benchmarks to ensure performance recovery, aligning with the investigation of efficient architectures for reasoning tasks."
+        }
+      ]
+    }
+  }
+}

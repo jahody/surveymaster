@@ -1,0 +1,25 @@
+{
+  "filename": "2501.17974.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.17974.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 60,
+          "reason": "The paper formulates efficient reasoning as a constrained optimization problem (utility maximization with an inference budget constraint) and fine-tunes models using a policy optimization algorithm (IBPO) that treats reasoning length as a trajectory-level resource, aligning with the 'with Length Reward' category's focus on trajectory-level budget constraints."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 25,
+          "reason": "The paper's core contribution is adaptive budget allocation based on query difficulty, allowing models to allocate longer reasoning chains to harder queries, which matches the 'Length Budgeting' category's description of difficulty-adaptive budget allocation, though it is achieved via training (IBPO) rather than purely inference-time methods."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "The paper evaluates its approach on MATH500, reporting improvements in accuracy relative to inference budgets, which involves analyzing trade-offs between answer correctness and computational token costs, a key aspect of the 'Evaluation and Benchmark' category focused on reasoning efficiency metrics."
+        }
+      ]
+    }
+  }
+}

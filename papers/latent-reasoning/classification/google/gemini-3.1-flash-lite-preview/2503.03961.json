@@ -1,0 +1,25 @@
+{
+  "filename": "2503.03961.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.03961.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 50,
+          "reason": "The paper explicitly establishes that layer depth is the primary bottleneck for reasoning and demonstrates that log-depth scaling enhances expressive power."
+        },
+        {
+          "chapter": "4.3.2",
+          "confidence": 30,
+          "reason": "The paper provides theoretical proofs regarding the expressive power of transformers for complex problems like regular languages and graph connectivity."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper demonstrates how increasing depth allows transformers to solve complex sequential reasoning tasks that fixed-depth models cannot."
+        }
+      ]
+    }
+  }
+}

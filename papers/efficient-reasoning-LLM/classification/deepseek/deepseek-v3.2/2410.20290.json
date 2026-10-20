@@ -1,0 +1,25 @@
+{
+  "filename": "2410.20290.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.20290.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 60,
+          "reason": "The paper introduces Speculative Rejection, an inference-time alignment algorithm that improves upon Best-of-N sampling. It explicitly generates multiple candidate outputs concurrently (like Best-of-N) and uses early termination/speculative verification to reduce latency, which directly matches the 'Parallel Search' category's description and key phrases."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The work focuses on scaling compute dynamically during inference to improve alignment, specifically by making Best-of-N sampling more efficient. It discusses balancing computational efficiency (a form of search width/parallel sampling) with reward model scoring, aligning with the 'Efficient Test-time Scaling and Infinity Thinking' category's focus on inference-time compute allocation and Best-of-N sampling."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 15,
+          "reason": "The method 'Speculative Rejection' uses a speculative verification mechanism reminiscent of speculative decoding with draft models, which involves distinct models or verification steps. While the core is parallel search, the speculative verification component shares conceptual ground with 'Model Switch' techniques that use draft models for efficiency."
+        }
+      ]
+    }
+  }
+}

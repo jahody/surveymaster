@@ -1,0 +1,25 @@
+{
+  "filename": "2006.16236.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2006.16236.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": -1,
+          "reason": "The paper introduces a linear attention mechanism by expressing self-attention as a linear dot-product of kernel feature maps and leveraging the associativity property of matrix products to achieve O(N) complexity. This formulation allows an iterative implementation that reveals a relationship to recurrent neural networks, aligning with the description of Linear-State Recurrence, which involves matrix-valued hidden states and associative operators for efficient sequential processing."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": -1,
+          "reason": "The paper proposes converting standard transformers into a linear attention form to achieve sub-quadratic complexity and constant-memory inference, which relates to Training-induced Hidden-State Conversion, where pretrained transformers are adapted to recurrent models through methods like linear kernel replacement, though the paper focuses on a novel formulation rather than fine-tuning existing checkpoints."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": -1,
+          "reason": "The paper's linear attention enables an iterative, autoregressive implementation that mimics recurrent behavior, which can be seen as an architectural modification to transformers for efficient sequence processing, though it does not explicitly involve adaptive computation time or dynamic stopping as in typical Architectural Recurrence approaches."
+        }
+      ]
+    }
+  }
+}

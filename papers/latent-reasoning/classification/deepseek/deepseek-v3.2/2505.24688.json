@@ -1,0 +1,25 @@
+{
+  "filename": "2505.24688.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.24688.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 60,
+          "reason": "The paper proposes Soft Reasoning, which uses embedding perturbation (adding controlled noise) and Bayesian optimization to refine continuous token embeddings for guided generation, aligning with the description of embedding-based diffusion models that operate on continuous embeddings with noise corruption and denoising for controllable generation."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 25,
+          "reason": "Soft Reasoning integrates embedding exploration with autoregressive generation, using a verifier-guided objective to refine embeddings during inference, which combines aspects of diffusion-like refinement with sequential autoregressive generation, fitting the hybrid AR-diffusion paradigm that blends both approaches for improved reasoning."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The framework aims to enhance complex reasoning in LLMs by navigating solution spaces, improving multi-step reasoning accuracy and coherence, which relates to applications requiring structured, multi-step logical inference as described in this category."
+        }
+      ]
+    }
+  }
+}

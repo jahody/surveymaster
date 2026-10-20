@@ -1,0 +1,25 @@
+{
+  "filename": "2412.16339.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.16339.md",
+      "chapters": [
+        {
+          "chapter": "7.3",
+          "confidence": 70,
+          "reason": "The paper explicitly introduces 'Deliberative Alignment' to ensure safety and reliability in reasoning models, which is the core focus of this category."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The alignment approach relies on training models to reason over specifications without explicit length-based reward penalties, aligning with implicit training dynamics."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper introduces new evaluation frameworks to measure the robustness and safety of reasoning models against jailbreaks and overrefusal."
+        }
+      ]
+    }
+  }
+}

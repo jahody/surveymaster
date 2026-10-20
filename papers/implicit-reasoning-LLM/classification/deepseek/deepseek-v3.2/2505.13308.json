@@ -1,0 +1,25 @@
+{
+  "filename": "2505.13308.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.13308.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 60,
+          "reason": "The paper's core method, LatentSeek, explicitly optimizes the model's internal latent representations (hidden states) at test time to steer reasoning, aligning with the 'internal_state_level' description of targeting internal states for reasoning regulation."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 25,
+          "reason": "LatentSeek introduces and updates instance-specific latent representations to explore diverse reasoning trajectories, using policy gradient to maximize reward, which matches 'exploratory_diversification' through soft/perturbed latent representations to promote trajectory diversity."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 15,
+          "reason": "The method iteratively updates latent representations at test time until a reward threshold is met, reflecting a 'progressive_refinement' approach via iterative updating of the implicit reasoning process."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2407.14414.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.14414.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 70,
+          "reason": "The paper's core contribution is the System-1.x Planner, which dynamically switches between fast (System-1) and slow (System-2) reasoning modes based on problem difficulty, directly aligning with the dual-process theory and complexity-based toggling described in System Switch."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The framework balances computational cost by controlling the mixture (hybridization factor) between fast and slow planning, effectively scaling search depth and width at test time, which relates to efficient test-time scaling and balancing search strategies."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 10,
+          "reason": "The System-1.x Planner is applied to practical planning tasks like Maze Navigation and Blocksworld, demonstrating its use in autonomous agent-like scenarios, which falls under the application of efficient reasoning techniques to real-world systems."
+        }
+      ]
+    }
+  }
+}

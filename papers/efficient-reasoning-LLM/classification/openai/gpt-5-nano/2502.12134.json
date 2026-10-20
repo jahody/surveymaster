@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12134.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12134.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "Core idea is replacing explicit CoT with continuous latent representations (latent-space SFT), matching SoftCoT's use of soft thought tokens in latent space."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 25,
+          "reason": "Also centers on latent/continuous representations for reasoning, conceptually aligning with SoftCoT's latent thought vectors, though in the pretraining context."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "Relates to efficient reasoning with subquadratic attention, an efficiency-focused angle that complements the paper's goal of efficient reasoning, even if not the core method."
+        }
+      ]
+    }
+  }
+}

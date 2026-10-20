@@ -1,0 +1,25 @@
+{
+  "filename": "2305.08379.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2305.08379.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 60,
+          "reason": "TESS applies diffusion on the logit simplex space, which is a continuous representation analogous to token embeddings, aligning with embedding-based diffusion models that operate on continuous representations rather than discrete token masking."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 25,
+          "reason": "The paper focuses on non-autoregressive text generation using diffusion, which shares the goal of simultaneous token prediction with masked diffusion models, though TESS uses a continuous simplex space instead of discrete masking."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 15,
+          "reason": "TESS is compared to autoregressive models and aims for competitive performance, but it is explicitly non-autoregressive; the hybrid AR-diffusion category is less relevant as TESS does not integrate autoregressive components directly."
+        }
+      ]
+    }
+  }
+}

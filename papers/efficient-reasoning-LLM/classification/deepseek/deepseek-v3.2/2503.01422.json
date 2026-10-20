@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01422.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01422.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 70,
+          "reason": "The paper proposes ST-BoN, a method that improves Best-of-N sampling by generating multiple candidate outputs concurrently and using early termination to prune suboptimal paths, directly aligning with the Parallel Search category's focus on Best-of-N variants and early termination."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The work investigates test-time scaling via parallel sampling (Best-of-N) to dynamically allocate compute during inference, which matches the Efficient Test-time Scaling and Infinity Thinking category's focus on scaling compute through search width and parallel sampling."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 10,
+          "reason": "While not the primary focus, the method implicitly manages computational resources during inference by truncating samples early, which relates to length budgeting through dynamic allocation, though it does not explicitly budget token length or use prompt constraints."
+        }
+      ]
+    }
+  }
+}

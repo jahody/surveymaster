@@ -1,0 +1,25 @@
+{
+  "filename": "2502.18600.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.18600.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 60,
+          "reason": "The work focuses on explicit token budgeting and concise reasoning during inference (Chain of Draft reduces intermediate reasoning tokens)."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "Aligns with Reasoning Chain Compression by advocating concise intermediate thoughts and compressed reasoning paths."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "Discusses evaluation/metrics around efficiency and token usage, e.g., achieving low token counts while maintaining accuracy."
+        }
+      ]
+    }
+  }
+}

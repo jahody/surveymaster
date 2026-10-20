@@ -1,0 +1,25 @@
+{
+  "filename": "2411.04282.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.04282.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 40,
+          "reason": "LaTRO uses variational approaches and EM-style iterations to progressively refine reasoning, aligning with step-by-step internalization and iterative updating."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 35,
+          "reason": "The framework formulates reasoning as sampling from a latent distribution and optimizes it via variational methods, targeting internal states rather than explicit tokens."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 25,
+          "reason": "LaTRO improves reasoning quality without external feedback, suggesting semantic anchoring through self-improvement, though not explicitly compressing full traces."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.23648.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.23648.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 50,
+          "reason": "The paper focuses on continuous-valued tokens (CoT2) to track multiple discrete traces in parallel, directly aligning with the use of continuous latent representations to promote diverse parallel reasoning trajectories."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 30,
+          "reason": "The authors introduce a novel supervision strategy that matches language model outputs to empirical token distributions of target traces, ensuring semantic fidelity between continuous latent outputs and explicit reasoning targets."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "The approach steers reasoning by manipulating individual tokens through a continuous-valued representation (CoT2) rather than relying on standard discrete text token generation."
+        }
+      ]
+    }
+  }
+}

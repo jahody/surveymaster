@@ -1,0 +1,25 @@
+{
+  "filename": "2502.04463.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.04463.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 45,
+          "reason": "Inference-time length budgeting is central to the method: budgeted compute based on task complexity."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 35,
+          "reason": "Dynamically scales compute during inference (search width/depth) to balance cost and accuracy, i.e., test-time scaling."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 20,
+          "reason": "Reinforcement learning with a length-aware objective / reward to minimize reasoning steps while preserving correctness."
+        }
+      ]
+    }
+  }
+}

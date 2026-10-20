@@ -1,0 +1,25 @@
+{
+  "filename": "2502.05795.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.05795.md",
+      "chapters": [
+        {
+          "chapter": "4.2.3",
+          "confidence": 50,
+          "reason": "The paper explicitly addresses the 'Curse of Depth' and 'layer degradation' in deep layers, identifying them as the primary focus of the study."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 30,
+          "reason": "The paper discusses how layer depth acts as a bottleneck for model performance and proposes a scaling solution to improve the contribution of deeper layers."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 20,
+          "reason": "The research analyzes the functional contribution of different layers, specifically how deep layers fail to integrate information effectively due to variance explosion."
+        }
+      ]
+    }
+  }
+}

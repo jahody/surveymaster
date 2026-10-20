@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06769.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06769.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 60,
+          "reason": "The paper introduces a latent reasoning paradigm (Coconut) that uses the last hidden state as a continuous thought, fed back as input, enabling implicit recurrent activation flows through specialized training without architectural modifications, aligning with 'Training-induced Recurrence'."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 25,
+          "reason": "Coconut involves a training strategy where the model learns to reason in a continuous latent space by feeding hidden states back as inputs, which addresses challenges of leveraging iterative computation, fitting 'Training Strategies for Recurrent Reasoning'."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 15,
+          "reason": "The method implicitly explores reasoning depth by reusing hidden states iteratively, potentially alleviating layer depth bottlenecks for multi-step reasoning, though not explicitly studying depth scaling, making it a secondary match."
+        }
+      ]
+    }
+  }
+}

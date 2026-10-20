@@ -1,0 +1,25 @@
+{
+  "filename": "2410.16033.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2410.16033.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 60,
+          "reason": "TreeBoN integrates speculative tree-search into Best-of-N sampling, generating multiple candidates concurrently and pruning low-quality paths, which directly aligns with the Parallel Search category's focus on tree-search pruning and Best-of-N variants."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The paper enhances inference-time alignment by scaling compute dynamically via search width (parallel sampling) and uses iterative tree expansion, fitting the Efficient Test-time Scaling and Infinity Thinking category's focus on parallel sampling and balancing search depth/width."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 15,
+          "reason": "TreeBoN employs a speculative tree-search strategy that involves branching and pruning, which shares conceptual similarities with speculative decoding techniques mentioned in Model Switch, though it operates within a single model framework rather than distinct separate models."
+        }
+      ]
+    }
+  }
+}

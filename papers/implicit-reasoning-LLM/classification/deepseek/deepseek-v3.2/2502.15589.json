@@ -1,0 +1,25 @@
+{
+  "filename": "2502.15589.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.15589.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 50,
+          "reason": "The paper's core contribution, LightThinker, focuses on dynamically compressing intermediate thoughts during reasoning to adjust efficiency, directly matching the 'adaptive_efficiency' description and key phrases like 'Dynamic trajectory compression' and 'adjusting reasoning length'."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "The method operates by mapping hidden states to condensed gist tokens and manipulating attention masks, which aligns with the 'internal_state_level' description of targeting the model's internal states (e.g., hidden states) for reasoning regulation."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 20,
+          "reason": "The approach involves training the model to compress thoughts into compact representations, ensuring the compressed 'gist tokens' retain semantic meaning from the original reasoning chain, which relates to 'semantic_anchoring' for semantic fidelity."
+        }
+      ]
+    }
+  }
+}

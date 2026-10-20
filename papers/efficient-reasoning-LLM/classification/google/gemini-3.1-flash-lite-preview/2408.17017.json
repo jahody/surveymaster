@@ -1,0 +1,25 @@
+{
+  "filename": "2408.17017.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.17017.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 50,
+          "reason": "The paper focuses on optimizing self-consistency sampling by dynamically evaluating multiple reasoning paths and using early stopping, which is a core parallel search technique."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "The method scales compute dynamically during inference by adjusting the number of samples based on confidence, fitting the test-time scaling paradigm."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 20,
+          "reason": "The paper explicitly addresses hallucination mitigation and faithfulness of rationales, which are key components of trustworthy reasoning."
+        }
+      ]
+    }
+  }
+}

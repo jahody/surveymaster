@@ -1,0 +1,25 @@
+{
+  "filename": "2310.02226.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.02226.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper explicitly uses learnable pause tokens to delay next-token prediction, which is the definition of a single control mechanism for modulating reasoning dynamics."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 25,
+          "reason": "The pause tokens effectively introduce iterative computation by allowing the model to process extra hidden vectors before committing to an output, functioning as a form of recurrent execution."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 15,
+          "reason": "The approach manipulates the reasoning process by inserting non-interpretable latent tokens (pause tokens) into the sequence to steer the model's hidden state computation."
+        }
+      ]
+    }
+  }
+}

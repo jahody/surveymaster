@@ -1,0 +1,25 @@
+{
+  "filename": "2404.05892.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.05892.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "The paper introduces RWKV-5 and RWKV-6, which are defined by matrix-valued hidden states and predetermined update rules, fitting the definition of linear-state recurrence."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 20,
+          "reason": "The architecture is designed to maintain the inference efficiency of RNNs while replacing traditional self-attention with sub-quadratic mixers, aligning with the goal of hidden-state conversion."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 10,
+          "reason": "The paper demonstrates the practical application and competitive performance of these recurrent models across a wide variety of benchmarks."
+        }
+      ]
+    }
+  }
+}

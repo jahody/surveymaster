@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13685.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13685.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 70,
+          "reason": "The paper introduces MoM, a framework for linear sequence modeling that improves upon linear attention and state space models by using multiple memory states."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 20,
+          "reason": "The paper evaluates the MoM architecture on downstream language tasks, specifically focusing on recall-intensive tasks where efficient sequence modeling is critical."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 10,
+          "reason": "The architecture involves novel memory state mechanisms that function as latent representations to improve sequence modeling capacity."
+        }
+      ]
+    }
+  }
+}

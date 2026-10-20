@@ -1,0 +1,25 @@
+{
+  "filename": "2505.23735.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.23735.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 70,
+          "reason": "Introduces a long-term memory module by modifying architecture to memorize context across tokens (architectural recurrence)."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "Demonstrates capabilities on long-context and multi-step reasoning tasks using the memory-augmented architecture."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 10,
+          "reason": "Potentially relates to training strategies for recurrent-style memory; secondary relevance."
+        }
+      ]
+    }
+  }
+}

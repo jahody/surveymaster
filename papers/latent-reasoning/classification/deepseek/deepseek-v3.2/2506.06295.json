@@ -1,0 +1,25 @@
+{
+  "filename": "2506.06295.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2506.06295.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "The paper focuses on accelerating diffusion-based Large Language Models (dLLMs) that generate text by iteratively denoising masked segments, which directly aligns with the 'Masked Diffusion Models' category. The proposed caching method addresses the bidirectional attention mechanism inherent in these models."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 25,
+          "reason": "The core contribution, dLLM-Cache, is an adaptive caching framework that reuses intermediate computations (prompt caching and partial response updates) to accelerate inference. This shares conceptual similarities with memory/cache mechanisms like Infini-attention, though it is specifically designed for the diffusion inference process rather than infinite context."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 15,
+          "reason": "The paper discusses bringing dLLM inference latency close to that of Autoregressive Models (ARMs), implying a performance comparison and potential integration of paradigms. However, the method itself is a training-free caching framework for pure diffusion models, not a direct architectural hybrid, making this a less direct but relevant connection."
+        }
+      ]
+    }
+  }
+}

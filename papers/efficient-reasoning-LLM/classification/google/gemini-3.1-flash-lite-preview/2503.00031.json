@@ -1,0 +1,25 @@
+{
+  "filename": "2503.00031.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.00031.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on test-time scaling, using confidence-based early stopping for Best-of-N and self-consistency, which are core methods in this category."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 25,
+          "reason": "The methodology relies on Best-of-N sampling and self-consistency, which are parallel search techniques that the paper optimizes via early termination."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "The paper implements a form of difficulty-adaptive budget allocation by dynamically stopping the sampling process based on model confidence."
+        }
+      ]
+    }
+  }
+}

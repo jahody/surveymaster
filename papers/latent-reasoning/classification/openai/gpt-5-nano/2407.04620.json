@@ -1,0 +1,25 @@
+{
+  "filename": "2407.04620.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.04620.md",
+      "chapters": [
+        {
+          "chapter": "5.2.2",
+          "confidence": 60,
+          "reason": "paper directly proposes test-time training (TTT) layers and updates hidden state during inference using optimization steps."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 25,
+          "reason": "hidden state acts as fast-adapting parameters updated by a learnable optimizer, aligning with gradient-state recurrence concepts."
+        },
+        {
+          "chapter": "5.2.3",
+          "confidence": 15,
+          "reason": "involves iterative refinement of hidden states and convergence-like behavior, conceptually related to test-time iterative updates."
+        }
+      ]
+    }
+  }
+}

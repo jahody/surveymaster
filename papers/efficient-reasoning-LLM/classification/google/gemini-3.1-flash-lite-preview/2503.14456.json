@@ -1,0 +1,25 @@
+{
+  "filename": "2503.14456.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.14456.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "The paper introduces RWKV-7, a sequence modeling architecture that achieves constant memory and inference time, which is a hallmark of subquadratic/linear sequence modeling architectures."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "The paper evaluates the model's capability for state tracking and regular language recognition, demonstrating how this subquadratic architecture performs complex reasoning tasks."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 15,
+          "reason": "The architecture utilizes a generalized delta rule with vector-valued gating and state evolution, which aligns with the concept of processing information through latent state dynamics rather than standard attention."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15781.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15781.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on Diffusion Language Models (DLMs) and introduces a 'delayed KV-Cache' specifically for the denoising process of these models, which aligns with the masked diffusion paradigm."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 25,
+          "reason": "The paper discusses the denoising process of DLMs, which often involves continuous latent representations, making it relevant to the embedding-based diffusion model category."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 15,
+          "reason": "The paper aims to narrow the gap between Autoregressive (AR) models and DLMs, and discusses how the proposed cache mechanism helps DLMs compete with AR models, touching on the hybrid integration of these paradigms."
+        }
+      ]
+    }
+  }
+}

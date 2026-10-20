@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03373.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03373.md",
+      "chapters": [
+        {
+          "chapter": "5.1",
+          "confidence": 50,
+          "reason": "The paper explicitly investigates using reinforcement learning (RL) with reward shaping to manage and stabilize the growth of chain-of-thought (CoT) length, which aligns with the 'with Length Reward' category's focus on treating reasoning length as a trajectory-level resource for constrained optimization."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 30,
+          "reason": "The paper discusses RL training and the emergence of reasoning capabilities without guaranteed development, which relates to methods that improve efficiency without direct length rewards, such as exploiting implicit biases from RL formulations, though the primary focus is on explicit reward shaping."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 20,
+          "reason": "The study involves systematic investigation and measurement of long CoT reasoning emergence, requiring nuanced evaluation approaches, which connects to developing metrics to quantify reasoning efficiency and trade-offs, though it is not the paper's core contribution."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2502.15589.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.15589.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 50,
+          "reason": "The paper focuses on training strategies for CoT compression, specifically constructing data to teach the model when and how to compress reasoning steps."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 30,
+          "reason": "The method is specifically applied to complex reasoning tasks to improve efficiency while maintaining performance, demonstrating a capability for multi-step reasoning."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 20,
+          "reason": "The paper introduces a Dependency (Dep) metric to quantify how historical tokens are relied upon, which relates to the theory of information flow during reasoning."
+        }
+      ]
+    }
+  }
+}

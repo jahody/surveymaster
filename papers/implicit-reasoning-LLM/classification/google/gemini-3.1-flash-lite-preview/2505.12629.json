@@ -1,0 +1,25 @@
+{
+  "filename": "2505.12629.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.12629.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly introduces non-interpretable latent tokens to steer the autoregressive decoding process, fitting the definition of manipulating individual tokens."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The latent tokens act as a uniform control mechanism integrated into the Transformer to modulate reasoning dynamics."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "The latent tokens influence the attention mechanism and internal state flow of the Transformer to improve model performance."
+        }
+      ]
+    }
+  }
+}

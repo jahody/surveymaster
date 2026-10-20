@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03275.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03275.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 42,
+          "reason": "Paper uses hybrid latent representations to regulate internal reasoning states, akin to internal_state_level concepts and 'hybrid latent rollouts'."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 33,
+          "reason": "Involves discrete latent tokens and hybrid reasoning formats, i.e., token-level manipulation of reasoning traces."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 25,
+          "reason": "Aims to dynamically compress reasoning traces by introducing latent abstractions, aligning with adaptive_efficiency."
+        }
+      ]
+    }
+  }
+}

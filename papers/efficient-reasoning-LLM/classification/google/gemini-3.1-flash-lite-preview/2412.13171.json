@@ -1,0 +1,25 @@
+{
+  "filename": "2412.13171.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.13171.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "The paper explicitly replaces explicit CoT text with continuous hidden representations (contemplation tokens) to perform reasoning in latent space."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 25,
+          "reason": "The method allows for adaptive control of reasoning depth by varying the number of contemplation tokens generated during inference."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "The approach focuses on scaling compute dynamically during inference by adjusting the sequence length of contemplation tokens to improve reasoning performance."
+        }
+      ]
+    }
+  }
+}

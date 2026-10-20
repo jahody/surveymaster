@@ -1,0 +1,25 @@
+{
+  "filename": "2405.21060.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.21060.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces Mamba-2, which is built on the State Space Duality (SSD) framework, a core advancement in linear-state recurrence using structured semiseparable matrices and parallel scan algorithms."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 25,
+          "reason": "The paper explicitly establishes a theoretical bridge between Transformers and SSMs, showing how attention mechanisms can be decomposed into structured state-space forms, effectively converting Transformer-like computation into recurrent-like inference."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "The architecture focuses on efficient, constant-memory inference for long sequences, which aligns with the goals of compressive memory and efficient state-space modeling discussed in the context of long-context architectures."
+        }
+      ]
+    }
+  }
+}

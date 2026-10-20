@@ -1,0 +1,25 @@
+{
+  "filename": "2406.06484.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.06484.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "The paper introduces DeltaNet, a linear transformer variant using the delta rule for associative recall, which aligns with linear-state recurrence through its matrix-valued hidden state and predetermined algebraic update rules, as indicated by the parallel scan algorithm and associative operator concepts."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 20,
+          "reason": "DeltaNet's use of a memory-efficient representation for computing products of Householder matrices and its focus on efficient training over sequence length relate to Infini-attention's compressive memory and linear-delta rule for handling long sequences, though it does not explicitly target infinite streaming."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 10,
+          "reason": "The delta rule in DeltaNet has conceptual similarities to gradient-state recurrence's online learning formulation, but the paper emphasizes parallelization over sequence length with closed-form updates rather than explicit optimization steps like SGD, making this a less direct match."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2307.08621.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2307.08621.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 65,
+          "reason": "Proposes RetNet with a retention mechanism as an architectural modification enabling recurrent, parallel, and chunkwise computation (architectural recurrence)."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "The retention memory can be interpreted as a linear-state recurrence with fixed update rules for temporal memory, aligning with linear-state recurrence concepts."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 10,
+          "reason": "Discusses capabilities and applications of the recurrent architectural approach, including training parallelism and efficient long-sequence modeling."
+        }
+      ]
+    }
+  }
+}

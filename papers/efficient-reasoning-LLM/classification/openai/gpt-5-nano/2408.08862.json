@@ -1,0 +1,25 @@
+{
+  "filename": "2408.08862.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.08862.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 62,
+          "reason": "Main contribution is the Fast and Slow Thinking mechanism with a switch adapter that toggles System 1 (fast) and System 2 (slow) reasoning."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 25,
+          "reason": "Addresses multimodal/video reasoning and dynamic reasoning strategies across modalities, relevant to visual agents and video inputs."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 13,
+          "reason": "Touches on test-time scaling and dynamic inference strategies, aligning with adaptive compute during reasoning."
+        }
+      ]
+    }
+  }
+}

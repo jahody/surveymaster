@@ -1,0 +1,25 @@
+{
+  "filename": "2408.13457.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.13457.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "The paper focuses on optimizing self-consistency, a parallel sampling strategy, by dynamically adjusting the number of samples based on query difficulty, which is a core test-time scaling technique."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 25,
+          "reason": "The method is a direct improvement on self-consistency, which is a classic parallel search/sampling strategy, by introducing early termination and adaptive sample allocation."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 15,
+          "reason": "The paper implements a difficulty-adaptive budget allocation for inference resources, which aligns with the principles of explicit computational resource budgeting."
+        }
+      ]
+    }
+  }
+}

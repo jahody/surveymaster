@@ -1,0 +1,25 @@
+{
+  "filename": "2506.06295.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2506.06295.md",
+      "chapters": [
+        {
+          "chapter": "5.1.1",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on accelerating diffusion-based Large Language Models (dLLMs) which operate by iteratively denoising masked segments, fitting the definition of Masked Diffusion Models."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 25,
+          "reason": "The paper discusses the integration of autoregressive-style caching techniques (prompt caching) within the diffusion inference process, bridging the gap between AR and diffusion paradigms."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 15,
+          "reason": "The proposed dLLM-Cache relies on analyzing the similarity of intermediate feature representations across denoising steps to reuse computations, which relates to the theory of information flow in iterative models."
+        }
+      ]
+    }
+  }
+}

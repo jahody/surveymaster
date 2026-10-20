@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}SurveyMaster{% endblock %}
+
+{% block body %}
+
+<style>
+  .nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .nav-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color .2s, transform .15s;
+    display: block;
+  }
+
+  .nav-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent1);
+  }
+
+  .nav-card h2 {
+    color: var(--accent1);
+    margin-bottom: .4rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-card p {
+    color: var(--text-dim);
+    font-size: .85rem;
+  }
+
+
+</style>
+
+<div class="nav-grid">
+  <a href="/papers" class="nav-card">
+    <h2>1. Papers</h2>
+    <p>View, add, and remove papers for each research topic.</p>
+  </a>
+  <a href="/editor" class="nav-card">
+    <h2>2. Taxonomy Editor</h2>
+    <p>View taxonomy axes, items, phrases, and hard negatives.</p>
+  </a>
+  <a href="/classification" class="nav-card">
+    <h2>3. Classification</h2>
+    <p>View and edit per-paper taxonomy classifications.</p>
+  </a>
+  <a href="/evaluation" class="nav-card">
+    <h2>4. Evaluation</h2>
+    <p>Assess classification quality and model agreement across taxonomies.</p>
+  </a>
+  <a href="/evolution-tree" class="nav-card">
+    <h2>5. Evolution Tree</h2>
+    <p>Paper timeline by chapter swim lanes.</p>
+  </a>
+</div>
+
+
+{% endblock %}

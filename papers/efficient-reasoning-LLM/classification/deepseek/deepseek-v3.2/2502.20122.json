@@ -1,0 +1,25 @@
+{
+  "filename": "2502.20122.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.20122.md",
+      "chapters": [
+        {
+          "chapter": "4.1",
+          "confidence": 70,
+          "reason": "The paper's core method involves fine-tuning models using self-generated concise reasoning paths to produce shorter, explicit reasoning chains, directly aligning with the 'Reasoning Chain Compression' description of building datasets with concise paths and training via SFT."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 20,
+          "reason": "The approach uses self-training with best-of-N sampling and few-shot conditioning to elicit concise reasoning without an explicit length penalty, fitting 'without Length Reward' as it exploits stochasticity and in-context learning for implicit efficiency."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 10,
+          "reason": "The method employs best-of-N sampling to generate multiple reasoning candidates, which is a key technique under 'Parallel Search', though the paper's primary contribution is fine-tuning rather than inference-time search."
+        }
+      ]
+    }
+  }
+}

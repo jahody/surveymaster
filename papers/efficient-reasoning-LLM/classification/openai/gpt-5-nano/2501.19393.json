@@ -1,0 +1,25 @@
+{
+  "filename": "2501.19393.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.19393.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "Investigates dynamic test-time compute scaling and iterative reasoning (inference-time compute budgeting) for improved performance."
+        },
+        {
+          "chapter": "3.1",
+          "confidence": 25,
+          "reason": "Uses explicit length budgeting at inference time via forced termination/extension of thinking."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 15,
+          "reason": "Introduces and evaluates a dataset focusing on reasoning efficiency and token-cost trade-offs."
+        }
+      ]
+    }
+  }
+}

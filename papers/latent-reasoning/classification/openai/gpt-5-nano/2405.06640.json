@@ -1,0 +1,25 @@
+{
+  "filename": "2405.06640.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.06640.md",
+      "chapters": [
+        {
+          "chapter": "3.2.3",
+          "confidence": 60,
+          "reason": "Converts fixed-architecture Transformers into hidden-state RNNs via targeted fine-tuning/distillation, replacing quadratic self-attention with sub-quadratic mixers and a recurrent state."
+        },
+        {
+          "chapter": "3.2.1",
+          "confidence": 25,
+          "reason": "Involves linear-state recurrence with matrix-valued hidden states, aligning with the paper's focus on linearized, recurrent computation."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 15,
+          "reason": "Relates to training-induced recurrence (implicit recurrence through training without structural changes); relevant but less directly aligned with the architectural conversion focus."
+        }
+      ]
+    }
+  }
+}

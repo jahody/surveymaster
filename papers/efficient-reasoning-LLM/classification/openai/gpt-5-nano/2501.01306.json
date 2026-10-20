@@ -1,0 +1,25 @@
+{
+  "filename": "2501.01306.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.01306.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 40,
+          "reason": "Centers on dual-process thinking with a System 1/System 2 switch mechanism to adapt reasoning speed and depth."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 35,
+          "reason": "Employs tree search and parallel reasoning paths (e.g., MCTS) to generate reliable outputs."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 25,
+          "reason": "Addresses efficient and trustworthy reasoning, focusing on reducing hallucinations and ensuring factuality."
+        }
+      ]
+    }
+  }
+}

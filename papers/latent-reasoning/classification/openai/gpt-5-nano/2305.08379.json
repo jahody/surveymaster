@@ -1,0 +1,25 @@
+{
+  "filename": "2305.08379.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2305.08379.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 65,
+          "reason": "Diffusion-based generation in a continuous space (logit simplex) aligns with embedding/continuous diffusion approaches for text."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 25,
+          "reason": "Diffusion for text tasks is relevant, though this describes masked diffusion on complete sequences rather than the specific logit simplex approach."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 10,
+          "reason": "Hybrid AR-diffusion is less relevant since the paper emphasizes a non-autoregressive diffusion method without AR components."
+        }
+      ]
+    }
+  }
+}

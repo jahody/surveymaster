@@ -1,0 +1,25 @@
+{
+  "filename": "2412.06769.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.06769.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "The paper's core contribution is 'Coconut', which replaces explicit chain-of-thought tokens with continuous hidden representations fed back into the model."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 25,
+          "reason": "The paper explicitly mentions that continuous thoughts allow the model to encode multiple alternative next steps, enabling a breadth-first search (BFS) pattern."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 15,
+          "reason": "The approach enables advanced reasoning patterns and search-based planning during inference, which aligns with test-time compute scaling."
+        }
+      ]
+    }
+  }
+}

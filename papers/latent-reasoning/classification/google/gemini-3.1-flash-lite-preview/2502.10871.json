@@ -1,0 +1,25 @@
+{
+  "filename": "2502.10871.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.10871.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 50,
+          "reason": "The paper investigates the micro-level functional differentiation of layers, showing how different layers contribute to the recall and geometric organization of knowledge."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 30,
+          "reason": "The study analyzes the trajectory of hidden states across layers, describing how knowledge is interwoven and transmitted through the model's depth."
+        },
+        {
+          "chapter": "4.2.1",
+          "confidence": 20,
+          "reason": "The paper specifically identifies that middle layers encode continuous attributes while deeper layers sharpen categorical distinctions, aligning with the functional role of different layer depths."
+        }
+      ]
+    }
+  }
+}

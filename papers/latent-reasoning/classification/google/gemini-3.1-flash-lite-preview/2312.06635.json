@@ -1,0 +1,25 @@
+{
+  "filename": "2312.06635.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2312.06635.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces Gated Linear Attention (GLA), which uses matrix-valued hidden states and associative operators to achieve linear-time inference, fitting the definition of linear-state recurrence."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 25,
+          "reason": "The paper focuses on replacing standard quadratic attention in Transformers with linear-time alternatives, effectively converting the architecture to a recurrent-like model."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "The work emphasizes hardware-efficient training and long-context capabilities, sharing the goal of efficient streaming and memory management found in Infini-attention-style architectures."
+        }
+      ]
+    }
+  }
+}

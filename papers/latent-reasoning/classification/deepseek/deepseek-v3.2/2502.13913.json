@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13913.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13913.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 50,
+          "reason": "The paper reverse-engineers the internal information flow of a Transformer trained on a two-hop reasoning task, observing distinct computational roles in early vs. later layers (e.g., retrieving bridge concepts early, then inferring the final answer), which aligns with the micro-level observation of functional differentiation across layers."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 30,
+          "reason": "The study focuses on two-hop reasoning, a specific case of multi-hop reasoning, and finds that fine-tuning enables models to achieve near-perfect accuracy and length generalization, which relates to the macro-level correlation between layer depth and reasoning capabilities, though it doesn't explicitly test depth limits."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 20,
+          "reason": "The paper shows that pre-trained LLMs initially fail at two-hop reasoning but, after fine-tuning, develop strong reasoning capabilities without architectural changes, fitting the description of training-induced recurrence where latent reasoning capabilities are unlocked through specialized training."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2403.09629.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2403.09629.md",
+      "chapters": [
+        {
+          "chapter": "3.1.1",
+          "confidence": 70,
+          "reason": "Uses token-level reasoning via start/end thought tokens and tokenwise rationale generation."
+        },
+        {
+          "chapter": "3.2.2",
+          "confidence": 20,
+          "reason": "Employs multiple distinct control signals (start/end tokens) to control reasoning trajectories."
+        },
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 10,
+          "reason": "Introduces soft/perturbed latent representations to diversify reasoning trajectories via parallel sampling."
+        }
+      ]
+    }
+  }
+}

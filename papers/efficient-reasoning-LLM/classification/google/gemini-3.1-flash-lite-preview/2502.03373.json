@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03373.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03373.md",
+      "chapters": [
+        {
+          "chapter": "5.2",
+          "confidence": 40,
+          "reason": "The paper investigates how long CoT reasoning emerges through RL training dynamics and reward shaping, focusing on the conditions for emergence rather than explicit length penalties."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 35,
+          "reason": "The paper emphasizes the need for a nuanced approach to measuring the emergence of reasoning capabilities and the development of training strategies, which aligns with evaluating reasoning efficiency."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 25,
+          "reason": "The paper discusses scaling inference compute and the role of long CoTs in enabling strategies like backtracking and error correction, which are central to test-time scaling."
+        }
+      ]
+    }
+  }
+}

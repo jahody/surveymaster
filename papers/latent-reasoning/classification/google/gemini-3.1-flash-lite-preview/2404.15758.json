@@ -1,0 +1,25 @@
+{
+  "filename": "2404.15758.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.15758.md",
+      "chapters": [
+        {
+          "chapter": "4.3.2",
+          "confidence": 45,
+          "reason": "The paper provides a theoretical characterization of problems solvable by filler tokens, relating them to the quantifier depth of first-order formulas and the computational power of transformers."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 30,
+          "reason": "The paper explores how additional tokens (filler tokens) provide computational benefits, effectively acting as a mechanism to overcome depth-related bottlenecks in reasoning tasks."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 25,
+          "reason": "The paper demonstrates that transformers can solve hard algorithmic tasks using filler tokens, showcasing the model's capability to perform multi-step computation without explicit chain-of-thought."
+        }
+      ]
+    }
+  }
+}

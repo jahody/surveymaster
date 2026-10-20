@@ -1,0 +1,25 @@
+{
+  "filename": "2211.15089.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2211.15089.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 80,
+          "reason": "The paper explicitly proposes a framework for modeling categorical data using diffusion models that operate in continuous input space (embeddings) with Gaussian noise, fitting the definition of embedding-based diffusion."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 15,
+          "reason": "The paper addresses categorical data, which is often handled by masked diffusion models; while CDCD uses continuous embeddings, it is a direct alternative to the masked diffusion paradigm for discrete data."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 5,
+          "reason": "The paper discusses language modeling tasks where diffusion models are applied to sequences, which often involves considerations of autoregressive-like generation or sequential coherence in the context of diffusion."
+        }
+      ]
+    }
+  }
+}

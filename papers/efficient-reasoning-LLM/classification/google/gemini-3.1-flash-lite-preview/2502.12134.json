@@ -1,0 +1,25 @@
+{
+  "filename": "2502.12134.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.12134.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 70,
+          "reason": "The paper explicitly proposes mapping soft thought tokens into the LLM's representation space to perform reasoning in continuous space, which is the core definition of Latent-Space SFT."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The method acts as a plug-in assistant model to enhance existing LLMs, functioning as an architectural application layer to improve reasoning efficiency without modifying the base model."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper evaluates its method across five reasoning benchmarks to demonstrate the trade-off between reasoning performance and parameter-efficient fine-tuning."
+        }
+      ]
+    }
+  }
+}

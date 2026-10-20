@@ -1,0 +1,25 @@
+{
+  "filename": "2503.01422.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.01422.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "The paper explicitly focuses on optimizing Best-of-N sampling, a core test-time scaling technique, by introducing early truncation to improve efficiency."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 25,
+          "reason": "The method is a variant of Best-of-N sampling that employs early termination/pruning of parallel candidates to reduce computational overhead."
+        },
+        {
+          "chapter": "3.3",
+          "confidence": 15,
+          "reason": "The approach utilizes early exit/truncation strategies during the decoding process to avoid full generation, which aligns with early-exit mechanisms."
+        }
+      ]
+    }
+  }
+}

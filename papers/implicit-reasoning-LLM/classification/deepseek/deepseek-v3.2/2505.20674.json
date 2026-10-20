@@ -1,0 +1,25 @@
+{
+  "filename": "2505.20674.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.20674.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 50,
+          "reason": "The paper introduces iterative forward passes (pondering) within a single token generation step, aligning with 'layer_recurrent_execution' which involves token-wise adaptive repeats and recurrence in forward computation."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "Pondering manipulates the model's internal states by repeatedly feeding back weighted token embeddings, matching 'internal_state_level' as it targets hidden states for reasoning regulation without explicit control tokens."
+        },
+        {
+          "chapter": "3.1.2(c)",
+          "confidence": 20,
+          "reason": "The pondering process refines reasoning progressively through iterative updates within each token step, consistent with 'progressive_refinement' involving step-by-step internalization."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2208.04202.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2208.04202.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 70,
+          "reason": "The paper treats discrete data by embedding/discretizing into continuous analog bits and models with diffusion in continuous space, i.e., embedding-based diffusion."
+        },
+        {
+          "chapter": "5.1.1",
+          "confidence": 20,
+          "reason": "Diffusion-based methods for discrete data are relevant, though this work specifically uses continuous analogs rather than masking."
+        },
+        {
+          "chapter": "5.1.3",
+          "confidence": 10,
+          "reason": "Hybrid AR-Diffusion models are another diffusion-based category; mentioned for context but not the core approach here."
+        }
+      ]
+    }
+  }
+}

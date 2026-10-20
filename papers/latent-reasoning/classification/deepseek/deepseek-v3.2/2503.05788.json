@@ -1,0 +1,25 @@
+{
+  "filename": "2503.05788.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.05788.md",
+      "chapters": [
+        {
+          "chapter": "4.1.1",
+          "confidence": 40,
+          "reason": "The paper surveys emergent abilities linked to model scaling, including reasoning, which is closely correlated with layer depth at a macro level as discussed in the abstract and review of conditions like scaling laws."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 35,
+          "reason": "The paper critically analyzes how scaling (e.g., increasing parameters) relates to emergent reasoning capabilities, addressing depth as a bottleneck for latent reasoning capacity and expressive power, as highlighted in the discussion of scaling laws and task complexity."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 25,
+          "reason": "The review explores the underlying mechanisms of emergent abilities, including how different layers may play distinct computational roles in reasoning processes, aligning with micro-level observations of functional differentiation in latent CoT."
+        }
+      ]
+    }
+  }
+}

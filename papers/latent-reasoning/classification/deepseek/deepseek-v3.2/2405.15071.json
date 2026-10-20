@@ -1,0 +1,25 @@
+{
+  "filename": "2405.15071.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.15071.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 60,
+          "reason": "The paper studies how standard transformers, through extended training (grokking), develop implicit reasoning capabilities over parametric knowledge without architectural modifications, aligning with training-induced recurrence."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 25,
+          "reason": "The paper analyzes internal model mechanisms, such as the formation of generalizing circuits and cross-layer information flow, which relates to micro-level observations of distinct computational roles across layers during reasoning."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper demonstrates transformers solving complex reasoning tasks like composition and comparison, showcasing multi-step computation and symbolic reasoning capabilities, which falls under applications and capabilities."
+        }
+      ]
+    }
+  }
+}

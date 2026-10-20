@@ -1,0 +1,25 @@
+{
+  "filename": "2505.07856.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.07856.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 50,
+          "reason": "Discusses Theory of Information Flow and uses interpretability techniques to analyze information propagation related to robustness in inflectional languages."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 30,
+          "reason": "Presents applications and capabilities in evaluating robustness and identifying mechanistic elements of model behavior under adversarial perturbations."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 20,
+          "reason": "Explores intermediate layers' roles and circuit-level reasoning related to robustness and inflection-informed processing via mechanistic interpretability."
+        }
+      ]
+    }
+  }
+}

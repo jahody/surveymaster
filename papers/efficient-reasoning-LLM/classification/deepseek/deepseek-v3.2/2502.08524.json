@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08524.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08524.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": -70,
+          "reason": "The paper introduces CoCoMix, a pretraining framework that predicts continuous concepts learned from a sparse autoencoder and mixes them into hidden states, directly aligning with the description of latent-space pretraining using continuous representations and abstract concept units."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": 20,
+          "reason": "The method interleaves continuous concepts with token hidden representations during pretraining, which involves reasoning with continuous hidden states, similar to latent-space SFT, though it is applied during pretraining rather than fine-tuning."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 10,
+          "reason": "The paper mentions that CoCoMix enhances interpretability and steerability by allowing direct inspection and modification of predicted concepts, which relates to trustworthy reasoning by offering transparency in the internal reasoning process."
+        }
+      ]
+    }
+  }
+}

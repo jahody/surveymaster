@@ -1,0 +1,25 @@
+{
+  "filename": "2408.17017.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.17017.md",
+      "chapters": [
+        {
+          "chapter": "3.4",
+          "confidence": 50,
+          "reason": "The paper introduces RASC, which enhances Self-Consistency by dynamically evaluating multiple reasoning paths and using early stopping and weighted majority voting, directly aligning with parallel search's focus on generating and evaluating multiple candidates concurrently."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "RASC dynamically scales compute during inference via parallel sampling (search width) and early stopping decisions, focusing on test-time efficiency and balancing search depth/width, which matches the description of efficient test-time scaling and infinity thinking."
+        },
+        {
+          "chapter": "7.3",
+          "confidence": 20,
+          "reason": "The paper addresses hallucination mitigation and improves reasoning faithfulness by selecting high-fidelity rationales, targeting the intersection of efficiency and trustworthy reasoning to reduce unreliable outputs in long reasoning chains."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2211.04928.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2211.04928.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2",
+          "confidence": 50,
+          "reason": "The paper introduces a contrastive learning framework (miCSE) that imposes alignment between attention patterns of different views during training, which is a specialized training strategy that creates implicit recurrent activation flows without architectural modifications, fitting the description of training-induced recurrence."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "miCSE employs a mutual information-based contrastive learning approach to enforce structural consistency across augmented views, which is a specialized training strategy aimed at improving sample efficiency and robustness in sentence embedding, aligning with training strategies for recurrent reasoning."
+        },
+        {
+          "chapter": "4.2.2",
+          "reason": "The method focuses on aligning attention patterns across different views, which involves intermediate layers in creating specialized computational sub-circuits for reasoning functions and distilling essential information, as part of the core latent CoT process.",
+          "confidence": 20
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2405.15071.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2405.15071.md",
+      "chapters": [
+        {
+          "chapter": "4.3.1",
+          "confidence": 40,
+          "reason": "The paper analyzes hidden information flow across transformer layers and proposes generalizing circuits, aligning with Theory of Information Flow."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 35,
+          "reason": "Demonstrates and analyzes transformer capabilities for multi-step, symbolic-like reasoning via grokking."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 25,
+          "reason": "Micro-level role differentiation across layers and the link between layer config and systematic generalization."
+        }
+      ]
+    }
+  }
+}

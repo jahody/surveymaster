@@ -1,0 +1,25 @@
+{
+  "filename": "2503.14456.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.14456.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "Paper emphasizes constant memory usage and constant per-token inference time, aligning with test-time compute scaling and infinite-thinking style efficiency."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 25,
+          "reason": "RWKV-7 adopts a linear recurrent-like computation to achieve efficiency, resembling linearization of Transformer-style models."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 15,
+          "reason": "Discusses efficient reasoning approaches; the work’s focus on efficient, scalable reasoning aligns with themes in this leaf."
+        }
+      ]
+    }
+  }
+}

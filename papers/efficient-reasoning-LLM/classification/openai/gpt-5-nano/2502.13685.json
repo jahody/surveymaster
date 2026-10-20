@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13685.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13685.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "MoM tackles linear sequence modeling with memory routing to achieve subquadratic/linear-time processing, aligning with subquadratic attention and linear sequence modeling."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 30,
+          "reason": "Describes efficient reasoning with subquadratic attention; MoM emphasizes efficient recall-intensive reasoning with memory routing, fitting this category."
+        },
+        {
+          "chapter": "6.3",
+          "confidence": 10,
+          "reason": "MoM focuses on linear-model architectures and memory updates, which relates to linearization concepts (converting or adopting linearized computation), though not transforming a Transformer."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2505.15809.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.15809.md",
+      "chapters": [
+        {
+          "chapter": "5.1.2",
+          "confidence": 50,
+          "reason": "MMaDA is a multimodal diffusion foundation model that operates on continuous latent representations, fitting the embedding-based diffusion model category."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 30,
+          "reason": "The paper emphasizes a mixed long chain-of-thought (CoT) fine-tuning strategy and unified post-training, which aligns with training strategies for complex reasoning."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 20,
+          "reason": "The paper demonstrates multi-step reasoning and multimodal understanding capabilities, showcasing the application of its unified diffusion architecture."
+        }
+      ]
+    }
+  }
+}

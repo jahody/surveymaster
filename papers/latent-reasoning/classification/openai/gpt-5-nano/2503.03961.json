@@ -1,0 +1,25 @@
+{
+  "filename": "2503.03961.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.03961.md",
+      "chapters": [
+        {
+          "chapter": "4.1.2",
+          "confidence": 45,
+          "reason": "Formal theory that layer depth is the primary bottleneck for latent reasoning; aligns with log-depth transformer focus."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 35,
+          "reason": "Macro-level correlation between depth and reasoning capabilities; discusses how depth enables multi-step reasoning."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 20,
+          "reason": "Micro-level view of how different layers contribute to reasoning and information integration across depths."
+        }
+      ]
+    }
+  }
+}

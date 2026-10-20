@@ -1,0 +1,25 @@
+{
+  "filename": "2302.07863.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2302.07863.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 70,
+          "reason": "The paper's core contribution, Big Little Decoder (BiLD), explicitly involves routing queries between a large model and a small model, using the small model as a draft model for speculative decoding and verification, which directly matches the description and key phrases of 'Model Switch'."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The framework improves inference latency by dynamically scaling compute during test time, using a small model for most steps (parallel-like draft generation) and a large model for verification/refinement (sequential revision), aligning with the chapter's focus on test-time scaling via search width and depth."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 10,
+          "reason": "The method is applied to practical text generation tasks like machine translation and summarization to reduce latency, demonstrating an application of efficient reasoning techniques to real-world systems, though it is not the core architectural focus."
+        }
+      ]
+    }
+  }
+}

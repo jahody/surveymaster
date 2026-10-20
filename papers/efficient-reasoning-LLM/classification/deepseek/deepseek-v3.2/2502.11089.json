@@ -1,0 +1,25 @@
+{
+  "filename": "2502.11089.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.11089.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 60,
+          "reason": "The paper introduces NSA, a 'Natively trainable Sparse Attention mechanism' designed to reduce the quadratic complexity of standard attention, directly aligning with the 'Subquadratic Attention' category's focus on sparse attention and subquadratic complexity."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 25,
+          "reason": "The paper evaluates NSA on reasoning tasks (e.g., 'instruction-based reasoning') and shows it maintains performance on general benchmarks, fitting 'Efficient Reasoning with Subquadratic Attention' which applies such architectures to reasoning tasks."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 15,
+          "reason": "While not the primary focus, NSA's 'dynamic hierarchical sparse strategy' and hardware-aligned design involve novel representations and processing for efficiency, partially resonating with 'Latent-space Pretraining' themes of enhanced efficiency through architectural innovation, though it is not strictly about continuous latent representations from scratch."
+        }
+      ]
+    }
+  }
+}

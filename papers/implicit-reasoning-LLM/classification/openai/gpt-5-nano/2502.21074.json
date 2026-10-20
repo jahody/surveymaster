@@ -1,0 +1,25 @@
+{
+  "filename": "2502.21074.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.21074.md",
+      "chapters": [
+        {
+          "chapter": "3.1.3",
+          "confidence": 45,
+          "reason": "Distills hidden states / targets reasoning regulation; uses latent continuous space and token-level state alignment."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 40,
+          "reason": "Anchors latent trajectories to explicit CoT; semantic fidelity via distillation between explicit and implicit CoT."
+        },
+        {
+          "chapter": "3.1.2(b)",
+          "confidence": 15,
+          "reason": "Involves dynamic compression of intermediate thoughts into latent space to improve efficiency (compression rate mentioned)."
+        }
+      ]
+    }
+  }
+}

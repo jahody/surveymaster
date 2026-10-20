@@ -1,0 +1,25 @@
+{
+  "filename": "2503.05179.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.05179.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 50,
+          "reason": "The paper proposes Sketch-of-Thought (SoT) to reduce token usage in reasoning by using cognitively inspired paradigms and linguistic constraints, which aligns with explicit length budgeting via prompt-based constraints and concise intermediate steps, operating purely at inference time."
+        },
+        {
+          "chapter": "3.2",
+          "confidence": 30,
+          "reason": "SoT dynamically selects among three reasoning paradigms (Conceptual Chaining, Chunked Symbolism, Expert Lexicons) based on task complexity via a lightweight router, resembling a System 1/System 2 switch within a single framework, though not explicitly framed as dual-process theory."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 20,
+          "reason": "The method compresses reasoning chains into shorter, sketch-like outputs to reduce verbosity, which is analogous to reasoning chain compression by producing explicit but concise text tokens, though it is implemented via prompting rather than supervised fine-tuning."
+        }
+      ]
+    }
+  }
+}

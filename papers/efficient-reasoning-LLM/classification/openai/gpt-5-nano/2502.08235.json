@@ -1,0 +1,25 @@
+{
+  "filename": "2502.08235.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.08235.md",
+      "chapters": [
+        {
+          "chapter": "7.5",
+          "confidence": 60,
+          "reason": "Evaluation and Benchmark: paper introduces metrics and datasets to quantify reasoning efficiency and overthinking phenomena."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "Efficient Reasoning Applications: discusses agentic tasks and practical use-cases for efficient reasoning and tool use."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 15,
+          "reason": "With Length Reward: involves trajectory-level budgeting of reasoning length and related incentives/penalties relevant to overthinking."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2404.07904.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.07904.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "HGRN2 is a linear-state recurrent model that uses a matrix-valued hidden state and predetermined algebraic update rules to achieve efficient inference."
+        },
+        {
+          "chapter": "3.2.3",
+          "confidence": 25,
+          "reason": "The paper focuses on improving the expressiveness of recurrent models by replacing standard attention mechanisms with linear-state mixers, which is a core aspect of transformer-to-RNN conversion research."
+        },
+        {
+          "chapter": "5.2.1",
+          "confidence": 15,
+          "reason": "The paper discusses hardware-efficient training and linear attention interpretations, which align with the goals of compressive memory and efficient streaming architectures."
+        }
+      ]
+    }
+  }
+}

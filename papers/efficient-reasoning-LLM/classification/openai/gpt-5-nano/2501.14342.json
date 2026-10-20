@@ -1,0 +1,25 @@
+{
+  "filename": "2501.14342.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.14342.md",
+      "chapters": [
+        {
+          "chapter": "7.2",
+          "confidence": 60,
+          "reason": "Explicit focus on test-time compute scaling via parallel sampling and control of retrieval-chain length/depth."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 25,
+          "reason": "Applies efficient reasoning techniques to RAG/knowledge tasks and demonstrates improvements on multi-hop QA benchmarks."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 15,
+          "reason": "Involves generating multiple retrieval chains (parallel exploration) and selecting among them, akin to parallel search strategies."
+        }
+      ]
+    }
+  }
+}

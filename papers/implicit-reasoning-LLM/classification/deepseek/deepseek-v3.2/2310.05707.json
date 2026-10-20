@@ -1,0 +1,25 @@
+{
+  "filename": "2310.05707.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2310.05707.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper introduces a single type of planning token at the start of each reasoning step to modulate reasoning dynamics, aligning with 'single_type_signal' key phrases like 'generic prefix planning tokens'."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The method manipulates individual planning tokens to steer reasoning, matching the description of steering by manipulating individual tokens, and does not generate full explicit CoT sequences."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "The approach adds embeddings of planning tokens to model parameters, which can be seen as regulating reasoning through internal states (embeddings), though it does not explicitly distill hidden states or use implicit memory modules."
+        }
+      ]
+    }
+  }
+}

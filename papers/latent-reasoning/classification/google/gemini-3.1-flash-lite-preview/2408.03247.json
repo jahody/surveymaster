@@ -1,0 +1,25 @@
+{
+  "filename": "2408.03247.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2408.03247.md",
+      "chapters": [
+        {
+          "chapter": "4.2.1",
+          "confidence": 50,
+          "reason": "The paper focuses on 'Knowledge Neurons' and how LLMs recall factual knowledge, which aligns with the role of shallow layers as representational processors for factual recall."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 30,
+          "reason": "The study investigates how Chain-of-Thought (CoT) prompting influences factual recall and reasoning, which relates to the intermediate layers' role in forming latent CoT sub-circuits."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 20,
+          "reason": "The paper analyzes the internal factual recall at each reasoning step, reflecting the micro-level observation of distinct computational roles across different layers."
+        }
+      ]
+    }
+  }
+}

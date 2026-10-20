@@ -1,0 +1,25 @@
+{
+  "filename": "2503.05788.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.05788.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 45,
+          "reason": "Direct focus on intermediate layers as core of Latent CoT and specialized reasoning sub-circuits."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 35,
+          "reason": "Addresses Theory of Information Flow, i.e., how hidden information is transmitted across layers during reasoning."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 20,
+          "reason": "Discusses macro-level influence of layer depth on reasoning capabilities and multi-hop reasoning."
+        }
+      ]
+    }
+  }
+}

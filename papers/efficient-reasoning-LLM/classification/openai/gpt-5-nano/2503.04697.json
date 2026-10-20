@@ -1,0 +1,25 @@
+{
+  "filename": "2503.04697.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2503.04697.md",
+      "chapters": [
+        {
+          "chapter": "3.1",
+          "confidence": 45,
+          "reason": "Directly addresses inference-time length budgeting by constraining and controlling the length of chain-of-thought through prompts and constraints."
+        },
+        {
+          "chapter": "5.1",
+          "confidence": 35,
+          "reason": "Uses trajectory-level length optimization with a length reward to enforce length constraints during RL training (Length Reward)."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "Focuses on dynamic test-time scaling of reasoning compute, aligning with allocating resources based on reasoning length."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2411.15862.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2411.15862.md",
+      "chapters": [
+        {
+          "chapter": "4.2.2",
+          "confidence": 45,
+          "reason": "The paper investigates whether LLMs perform implicit reasoning (Latent CoT) in their hidden states, which directly relates to the core of Latent CoT and how intermediate information is processed."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 30,
+          "reason": "The study probes hidden states to analyze the information flow and reasoning trajectories, which is central to understanding how models perform implicit reasoning."
+        },
+        {
+          "chapter": "3.1.2",
+          "confidence": 25,
+          "reason": "The paper specifically examines how training influences the model's ability to perform implicit reasoning without architectural changes, aligning with the concept of training-induced recurrence."
+        }
+      ]
+    }
+  }
+}

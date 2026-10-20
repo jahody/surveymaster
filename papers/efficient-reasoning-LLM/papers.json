@@ -1,0 +1,322 @@
+[
+    {
+        "name": "BiLD",
+        "arxiv": "2302.07863"
+    },
+    {
+        "name": "Planning Tokens",
+        "arxiv": "2310.05707"
+    },
+    {
+        "name": "Zooter",
+        "arxiv": "2311.08692"
+    },
+    {
+        "name": "GLA",
+        "arxiv": "2312.06635"
+    },
+    {
+        "name": "MEDUSA",
+        "arxiv": "2401.10774"
+    },
+    {
+        "name": "EAGLE",
+        "arxiv": "2401.15077"
+    },
+    {
+        "name": "LayerSkip",
+        "arxiv": "2404.16710"
+    },
+    {
+        "name": "Implicit CoT",
+        "arxiv": "2405.14838"
+    },
+    {
+        "name": "Lightning Attention",
+        "arxiv": "2405.17381"
+    },
+    {
+        "name": "Mamba-2",
+        "arxiv": "2405.21060"
+    },
+    {
+        "name": "RouteLLM",
+        "arxiv": "2406.18665"
+    },
+    {
+        "name": "Dyna-Think",
+        "arxiv": "2407.01009"
+    },
+    {
+        "name": "Distill System 2",
+        "arxiv": "2407.06023"
+    },
+    {
+        "name": "System 1.x",
+        "arxiv": "2407.14414"
+    },
+    {
+        "name": "FaST",
+        "arxiv": "2408.08862"
+    },
+    {
+        "name": "DSC",
+        "arxiv": "2408.13457"
+    },
+    {
+        "name": "Dynamic self-consistency",
+        "arxiv": "2408.17017"
+    },
+    {
+        "name": "Dualformer",
+        "arxiv": "2410.09918"
+    },
+    {
+        "name": "LoLCATs",
+        "arxiv": "2410.10254"
+    },
+    {
+        "name": "TreeBoN",
+        "arxiv": "2410.16033"
+    },
+    {
+        "name": "SBoN",
+        "arxiv": "2410.20290"
+    },
+    {
+        "name": "Skip Steps",
+        "arxiv": "2411.01855"
+    },
+    {
+        "name": "Gated DeltaNet",
+        "arxiv": "2412.06464"
+    },
+    {
+        "name": "Coconut",
+        "arxiv": "2412.06769"
+    },
+    {
+        "name": "LCMs",
+        "arxiv": "2412.08821"
+    },
+    {
+        "name": "BLT",
+        "arxiv": "2412.09871"
+    },
+    {
+        "name": "C3ot",
+        "arxiv": "2412.11664"
+    },
+    {
+        "name": "CCoT",
+        "arxiv": "2412.13171"
+    },
+    {
+        "name": "Deliberative Alignment",
+        "arxiv": "2412.16339"
+    },
+    {
+        "name": "TALE",
+        "arxiv": "2412.18547"
+    },
+    {
+        "name": "Dynasor",
+        "arxiv": "2412.20993"
+    },
+    {
+        "name": "overthink",
+        "arxiv": "2412.21187"
+    },
+    {
+        "name": "Overthinking",
+        "arxiv": "2412.21187"
+    },
+    {
+        "name": "HaluSearch",
+        "arxiv": "2501.01306"
+    },
+    {
+        "name": "O1-Pruner",
+        "arxiv": "2501.12570"
+    },
+    {
+        "name": "Kimi-1.5",
+        "arxiv": "2501.12599"
+    },
+    {
+        "name": "TPO",
+        "arxiv": "2501.12895"
+    },
+    {
+        "name": "Chain-of-Retrieval",
+        "arxiv": "2501.14342"
+    },
+    {
+        "name": "IBPO",
+        "arxiv": "2501.17974"
+    },
+    {
+        "name": "TSP",
+        "arxiv": "2501.18585"
+    },
+    {
+        "name": "Heima",
+        "arxiv": "2501.19201"
+    },
+    {
+        "name": "Heima",
+        "arxiv": "2501.19201"
+    },
+    {
+        "name": "S1",
+        "arxiv": "2501.19393"
+    },
+    {
+        "name": "LTMs",
+        "arxiv": "2502.01567"
+    },
+    {
+        "name": "Token Assorted",
+        "arxiv": "2502.03275"
+    },
+    {
+        "name": "Demisifying",
+        "arxiv": "2502.03373"
+    },
+    {
+        "name": "Training",
+        "arxiv": "2502.04463"
+    },
+    {
+        "name": "LASP-2",
+        "arxiv": "2502.07563"
+    },
+    {
+        "name": "Overthinking in Agent",
+        "arxiv": "2502.08235"
+    },
+    {
+        "name": "CoCoMix",
+        "arxiv": "2502.08524"
+    },
+    {
+        "name": "X-Boundary",
+        "arxiv": "2502.09990"
+    },
+    {
+        "name": "NSA",
+        "arxiv": "2502.11089"
+    },
+    {
+        "name": "SafeChain",
+        "arxiv": "2502.12025"
+    },
+    {
+        "name": "TokenSkip",
+        "arxiv": "2502.12067"
+    },
+    {
+        "name": "SoftCoT",
+        "arxiv": "2502.12134"
+    },
+    {
+        "name": "MoBA",
+        "arxiv": "2502.13189"
+    },
+    {
+        "name": "SPIRIT-FT",
+        "arxiv": "2502.13260"
+    },
+    {
+        "name": "MoM",
+        "arxiv": "2502.13685"
+    },
+    {
+        "name": "Llamba",
+        "arxiv": "2502.14458"
+    },
+    {
+        "name": "LightThinker",
+        "arxiv": "2502.15589"
+    },
+    {
+        "name": "MixLLM",
+        "arxiv": "2502.18482"
+    },
+    {
+        "name": "Chain of Draft",
+        "arxiv": "2502.18600"
+    },
+    {
+        "name": "MetaReasoner",
+        "arxiv": "2502.19918"
+    },
+    {
+        "name": "Self-Training",
+        "arxiv": "2502.20122"
+    },
+    {
+        "name": "TSF",
+        "arxiv": "2502.20339"
+    },
+    {
+        "name": "CODI",
+        "arxiv": "2502.21074"
+    },
+    {
+        "name": "SelfCalibration",
+        "arxiv": "2503.00031"
+    },
+    {
+        "name": "Self-Calibration",
+        "arxiv": "2503.00031"
+    },
+    {
+        "name": "STBoN",
+        "arxiv": "2503.01422"
+    },
+    {
+        "name": "Liger",
+        "arxiv": "2503.01496"
+    },
+    {
+        "name": "CRQs",
+        "arxiv": "2503.01544"
+    },
+    {
+        "name": "DAST",
+        "arxiv": "2503.04472"
+    },
+    {
+        "name": "L1",
+        "arxiv": "2503.04697"
+    },
+    {
+        "name": "SketchofThought",
+        "arxiv": "2503.05179"
+    },
+    {
+        "name": "SCoT",
+        "arxiv": "2503.06252"
+    },
+    {
+        "name": "Meta-RL",
+        "arxiv": "2503.07572"
+    },
+    {
+        "name": "RWKV-7",
+        "arxiv": "2503.14456"
+    },
+    {
+        "name": "Cosmos-Reason1",
+        "arxiv": "2503.15558"
+    },
+    {
+        "name": "DNA Bench",
+        "arxiv": "2503.15793"
+    },
+    {
+        "name": "AL-CoTD",
+        "arxiv": "2503.16385"
+    }
+]

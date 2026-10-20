@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13917.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13917.md",
+      "chapters": [
+        {
+          "chapter": "5.1.3",
+          "confidence": 60,
+          "reason": "The paper explicitly describes TESS 2 as a diffusion language model that adapts an autoregressive (AR) base model, fitting the hybrid AR-diffusion paradigm."
+        },
+        {
+          "chapter": "5.1.2",
+          "confidence": 25,
+          "reason": "The model operates as a diffusion language model using continuous embeddings and denoising, which aligns with the embedding-based diffusion category."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper focuses on instruction-following capabilities and inference-time controllability, which are key applications and capabilities of the proposed model."
+        }
+      ]
+    }
+  }
+}

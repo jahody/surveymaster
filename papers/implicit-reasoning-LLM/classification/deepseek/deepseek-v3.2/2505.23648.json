@@ -1,0 +1,25 @@
+{
+  "filename": "2505.23648.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.23648.md",
+      "chapters": [
+        {
+          "chapter": "3.1.2(d)",
+          "confidence": 50,
+          "reason": "The paper's core contribution is CoT2, which uses continuously-valued tokens to enable parallel reasoning trajectories and explores a continuous concept space, directly matching the key phrases for exploratory_diversification."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 30,
+          "reason": "The work explicitly focuses on manipulating individual tokens (albeit continuous-valued ones) to steer reasoning, which aligns with the token_level description, and it is not about generating a full explicit CoT sequence."
+        },
+        {
+          "chapter": "3.1.2(a)",
+          "confidence": 20,
+          "reason": "The paper introduces a novel supervision strategy matching model outputs to empirical token distributions of target traces, anchoring the continuous latent space to explicit reasoning supervision for semantic fidelity."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "1901.03429.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "1901.03429.md",
+      "chapters": [
+        {
+          "chapter": "4.3.2",
+          "confidence": 80,
+          "reason": "The paper explicitly provides a theoretical proof that Transformers and Neural GPUs are Turing complete without external memory."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 15,
+          "reason": "The paper discusses the computational power and algorithmic capabilities of these architectures, which relates to their ability to solve complex tasks."
+        },
+        {
+          "chapter": "4.1.2",
+          "confidence": 5,
+          "reason": "The paper touches upon the capacity of these models to compute, which is fundamentally linked to the depth and expressive power of the architectures."
+        }
+      ]
+    }
+  }
+}

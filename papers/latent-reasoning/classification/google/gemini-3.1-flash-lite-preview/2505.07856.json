@@ -1,0 +1,25 @@
+{
+  "filename": "2505.07856.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.07856.md",
+      "chapters": [
+        {
+          "chapter": "4.2.1",
+          "confidence": 50,
+          "reason": "The paper focuses on how inflectional morphology (syntactic/local information) is processed by models, identifying mechanistic circuits related to these linguistic features."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 30,
+          "reason": "The study uses Edge Attribution Patching to identify specific sub-circuits within the model that are causally responsible for robustness against adversarial attacks."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 20,
+          "reason": "The research investigates the flow of information across layers to explain how inflectional variants impact model behavior and robustness."
+        }
+      ]
+    }
+  }
+}

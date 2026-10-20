@@ -1,0 +1,25 @@
+{
+  "filename": "2402.16837.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2402.16837.md",
+      "chapters": [
+        {
+          "chapter": "4.1.1",
+          "confidence": 50,
+          "reason": "The paper explicitly investigates the correlation between model size (depth) and the ability to perform multi-hop reasoning chains."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 30,
+          "reason": "The study focuses on evaluating the capability of LLMs to perform multi-hop reasoning, a core task in symbolic and logical inference."
+        },
+        {
+          "chapter": "4.1.3",
+          "confidence": 20,
+          "reason": "The paper analyzes the reasoning pathway by looking at how intermediate information (the bridge entity) is processed and utilized across the model's layers."
+        }
+      ]
+    }
+  }
+}

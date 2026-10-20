@@ -1,0 +1,25 @@
+{
+  "filename": "2501.12599.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2501.12599.md",
+      "chapters": [
+        {
+          "chapter": "5.2",
+          "confidence": 50,
+          "reason": "The paper focuses on scaling reinforcement learning (RL) for LLMs without explicit length rewards, using improved policy optimization methods and a simplistic RL framework that avoids complex techniques like value functions, aligning with 'without Length Reward' which exploits implicit biases from RL formulations."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 30,
+          "reason": "The paper discusses long context scaling and effective long2short methods that use long-CoT techniques to improve short-CoT models, which relates to dynamic compute scaling during inference via sequential revision and iterative processes, fitting 'Efficient Test-time Scaling and Infinity Thinking'."
+        },
+        {
+          "chapter": "7.1",
+          "confidence": 20,
+          "reason": "The paper presents a multi-modal LLM trained with RL, achieving state-of-the-art reasoning across multiple benchmarks and modalities (e.g., MathVista), indicating a focus on dynamically adjusting reasoning for multimodal inputs, relevant to 'Efficient Multimodality and Video Reasoning'."
+        }
+      ]
+    }
+  }
+}

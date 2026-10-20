@@ -1,0 +1,25 @@
+{
+  "filename": "2406.18665.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.18665.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 70,
+          "reason": "The paper's core approach involves routing queries between a stronger (large) and weaker (small) LLM during inference, which directly matches the 'Model Switch' description of allocating computational budgets across different models and using a routing module."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The work applies efficient reasoning via dynamic routing to practical deployment scenarios, optimizing cost-performance trade-offs for real-world LLM use, aligning with application-focused strategies like dynamic query routing in systems."
+        },
+        {
+          "chapter": "5.2",
+          "confidence": 10,
+          "reason": "The router models are trained using human preference data and data augmentation, which resembles improving efficiency through preference optimization between concise and extended traces without explicit length penalties."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "filename": "2404.15758.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.15758.md",
+      "chapters": [
+        {
+          "chapter": "3.1.4",
+          "confidence": 60,
+          "reason": "Demonstrates multi-step computation and latent reasoning capabilities (CoT-like) in transformers; central to the paper's claims."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 25,
+          "reason": "Discusses macro-level link between depth and reasoning; aligns with findings on depth as a bottleneck for CoT-like reasoning."
+        },
+        {
+          "chapter": "4.3.1",
+          "confidence": 15,
+          "reason": "Addresses information flow across layers during reasoning, relevant to hidden computation and CoT phenomena."
+        }
+      ]
+    }
+  }
+}

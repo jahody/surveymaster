@@ -1,0 +1,25 @@
+{
+  "filename": "2505.14467.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2505.14467.md",
+      "chapters": [
+        {
+          "chapter": "4.1.3",
+          "confidence": 50,
+          "reason": "The paper analyzes layer activation at a micro level, showing distinct computational roles for different layers during prompt processing and response generation, which aligns with the functional differentiation described in this chapter."
+        },
+        {
+          "chapter": "4.2.2",
+          "confidence": 30,
+          "reason": "The study identifies specific layers that are activated or remain voids, suggesting specialized roles in information processing and reasoning, which corresponds to the core of Latent CoT and specialized sub-circuits in intermediate layers."
+        },
+        {
+          "chapter": "4.1.1",
+          "confidence": 20,
+          "reason": "The paper investigates the correlation between layer activation and model performance, touching on macro-level implications of layer depth for reasoning capabilities, though its primary focus is on specific layer roles rather than overall depth constraints."
+        }
+      ]
+    }
+  }
+}

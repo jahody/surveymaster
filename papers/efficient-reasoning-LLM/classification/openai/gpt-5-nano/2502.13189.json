@@ -1,0 +1,25 @@
+{
+  "filename": "2502.13189.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.13189.md",
+      "chapters": [
+        {
+          "chapter": "6.2",
+          "confidence": 90,
+          "reason": "Central focus on subquadratic attention to reduce complexity for long-context LLMs (core to MoBA)."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": 70,
+          "reason": "Discusses efficient reasoning with subquadratic attention, closely aligned with MoBA's goals."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 50,
+          "reason": "Addresses test-time scaling and dynamic inference strategies relevant to efficiency on long contexts."
+        }
+      ]
+    }
+  }
+}

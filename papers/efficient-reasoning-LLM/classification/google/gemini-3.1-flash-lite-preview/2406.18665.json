@@ -1,0 +1,25 @@
+{
+  "filename": "2406.18665.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2406.18665.md",
+      "chapters": [
+        {
+          "chapter": "3.3",
+          "confidence": 70,
+          "reason": "The paper's core contribution is a router that dynamically selects between a stronger and a weaker LLM to optimize cost and performance, which is the definition of Model Switch."
+        },
+        {
+          "chapter": "7.4",
+          "confidence": 20,
+          "reason": "The paper focuses on the practical deployment of LLMs in real-world systems where cost-effective query routing is a critical application-layer optimization."
+        },
+        {
+          "chapter": "7.5",
+          "confidence": 10,
+          "reason": "The paper introduces a framework for evaluating the trade-off between cost and response quality, contributing to the measurement of reasoning efficiency."
+        }
+      ]
+    }
+  }
+}

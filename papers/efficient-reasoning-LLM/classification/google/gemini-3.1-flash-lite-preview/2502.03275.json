@@ -1,0 +1,25 @@
+{
+  "filename": "2502.03275.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2502.03275.md",
+      "chapters": [
+        {
+          "chapter": "4.2",
+          "confidence": 60,
+          "reason": "The paper explicitly uses VQ-VAE to generate latent discrete tokens to replace explicit reasoning steps, which aligns with the definition of reasoning in latent space."
+        },
+        {
+          "chapter": "4.1",
+          "confidence": 25,
+          "reason": "The core goal of the paper is to reduce the length of reasoning traces by abstracting steps, effectively compressing the chain of thought."
+        },
+        {
+          "chapter": "6.1",
+          "confidence": 15,
+          "reason": "The paper explores training models from scratch using these latent trace abstractions for specific problems, which falls under the pretraining/training-from-scratch category."
+        }
+      ]
+    }
+  }
+}

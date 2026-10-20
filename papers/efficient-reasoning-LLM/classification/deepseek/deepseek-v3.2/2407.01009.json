@@ -1,0 +1,25 @@
+{
+  "filename": "2407.01009.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2407.01009.md",
+      "chapters": [
+        {
+          "chapter": "3.2",
+          "confidence": 70,
+          "reason": "The paper introduces a dynamic decision-making framework that switches between fast (System 1-like) and slow (System 2-like) reasoning modes based on task complexity and confidence, directly aligning with the dual process theory and complexity-based toggling described in System Switch."
+        },
+        {
+          "chapter": "7.2",
+          "confidence": 20,
+          "reason": "The framework dynamically scales compute during inference by allocating tasks to either a fast, single-path approach or a slow, multi-path verification approach, which relates to test-time scaling via search width (parallel reasoning paths) and confidence-based methods."
+        },
+        {
+          "chapter": "3.4",
+          "confidence": 10,
+          "reason": "The 'Slow' pathway involves generating and verifying multiple reasoning paths, which shares conceptual similarities with parallel search methods that generate multiple candidates, though the paper emphasizes sequential decision-making rather than purely parallel generation."
+        }
+      ]
+    }
+  }
+}

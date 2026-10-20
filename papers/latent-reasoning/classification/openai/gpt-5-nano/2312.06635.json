@@ -1,0 +1,25 @@
+{
+  "filename": "2312.06635.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2312.06635.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 70,
+          "reason": "Paper describes linear attention implemented as a matrix-valued hidden state with predetermined updates, i.e., Linear-State Recurrence."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 20,
+          "reason": "Discusses architectural modifications to Transformer layers enabling recurrence-like behavior and efficient computation."
+        },
+        {
+          "chapter": "3.1.4",
+          "confidence": 10,
+          "reason": "Demonstrates capabilities and practical benefits (throughput, length generalization) of the proposed recurrent/linear-attention approach."
+        }
+      ]
+    }
+  }
+}

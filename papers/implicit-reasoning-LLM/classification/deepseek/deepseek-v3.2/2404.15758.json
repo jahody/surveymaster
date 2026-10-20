@@ -1,0 +1,25 @@
+{
+  "filename": "2404.15758.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2404.15758.md",
+      "chapters": [
+        {
+          "chapter": "3.2.1",
+          "confidence": 60,
+          "reason": "The paper explicitly studies the use of filler tokens (e.g., '……') as a single control mechanism to improve performance, aligning with the description of 'single_type_signal' which includes filler tokens and pause tokens."
+        },
+        {
+          "chapter": "3.1.1",
+          "confidence": 25,
+          "reason": "The paper manipulates individual tokens (filler tokens) to steer reasoning, which matches 'token_level' as it involves inserting non-interpretable latent tokens without generating full explicit Chain-of-Thought sequences."
+        },
+        {
+          "chapter": "3.1.3",
+          "confidence": 15,
+          "reason": "The paper discusses how intermediate tokens enable hidden computations, which relates to regulating reasoning via internal states, though it focuses more on token manipulation than direct internal state distillation."
+        }
+      ]
+    }
+  }
+}

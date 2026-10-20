@@ -1,0 +1,25 @@
+{
+  "filename": "2412.08821.md",
+  "classifications": {
+    "taxonomy": {
+      "filename": "2412.08821.md",
+      "chapters": [
+        {
+          "chapter": "6.1",
+          "confidence": -1,
+          "reason": "The paper introduces a novel pretraining approach that operates on continuous sentence-level representations (concepts) instead of discrete tokens, aligning with latent-space pretraining's focus on continuous representations and abstract concept units."
+        },
+        {
+          "chapter": "4.2",
+          "confidence": -1,
+          "reason": "The model performs autoregressive prediction in a continuous embedding space (SONAR), using hidden state representations for generation, which matches latent-space SFT's use of continuous hidden representations for reasoning, though it is applied during pretraining rather than fine-tuning."
+        },
+        {
+          "chapter": "6.4",
+          "confidence": -1,
+          "reason": "The architecture's use of sentence-level concepts may imply more efficient processing, but the paper does not explicitly focus on subquadratic attention mechanisms or their application to reasoning tasks, making this a weaker match."
+        }
+      ]
+    }
+  }
+}
